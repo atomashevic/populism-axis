@@ -12,6 +12,15 @@ authors:
     given-names: "Aleksandar"
     email: "atomashevic@gmail.com"
 version: "0.1.0"
+doi: "10.5281/zenodo.23315930"
+date-released: "2026-10-12"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23315930"
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.23315931"
+    description: "Version 0.1.0"
 license: MIT
 repository-code: "https://github.com/atomashevic/populism-axis"
 keywords:
