@@ -1,0 +1,346 @@
+{
+  "schema": "populism_axis.v4.nuisance_sets.v1",
+  "set_id": "pa_v4_nuisance_r1",
+  "status": "reviewed",
+  "outcome_labels_used": false,
+  "drafting_note": "Each set isolates one source of variance that codebooks exclude from populism but that the V3 E/M anchors confound with it. In every pair the nuisance sentence carries the nuisance and the neutral sentence states the same topic without it, matched in length, person and sentence form. No nuisance sentence opposes 'the people' to 'the elite', claims that institutions are captured or that power belongs to the people, so projecting these directions out of the channel axes should remove confounds and not populism itself. Drafted before any step-2 result was computed.",
+  "construct_source": "Exclusions in the GPD codebook and the Chalkidis et al. (2025) annotation guide: hostility, partisan attack, nationalism toward other states, grievance and incivility are not populism unless combined with people-centrism and anti-elitism.",
+  "sets": {
+    "hostility_negative_affect": {
+      "label": "Hostility and negative affect",
+      "description": "Anger, fear or outrage about a situation or event, with no elite antagonist and no appeal to popular sovereignty.",
+      "pairs": [
+        {
+          "pair_id": "hos01",
+          "topic": "floods",
+          "nuisance": "I am furious that these floods destroyed so many homes again this year.",
+          "neutral": "I am aware that these floods affected many homes again this year."
+        },
+        {
+          "pair_id": "hos02",
+          "topic": "crime",
+          "nuisance": "This brutal attack on a young nurse is an outrage and it sickens me.",
+          "neutral": "This attack on a young nurse is under investigation and I am following it."
+        },
+        {
+          "pair_id": "hos03",
+          "topic": "prices",
+          "nuisance": "The shocking rise in food prices is a disgrace that terrifies families.",
+          "neutral": "The recent rise in food prices is a trend that affects many families."
+        },
+        {
+          "pair_id": "hos04",
+          "topic": "roads",
+          "nuisance": "These deadly roads are a nightmare and I am sick of the carnage.",
+          "neutral": "These rural roads need repairs and I have asked for an assessment."
+        },
+        {
+          "pair_id": "hos05",
+          "topic": "wildfire",
+          "nuisance": "The horrific fires have left us angry, frightened and utterly devastated.",
+          "neutral": "The recent fires have left us with repairs, reviews and new plans."
+        },
+        {
+          "pair_id": "hos06",
+          "topic": "unemployment",
+          "nuisance": "It is appalling and infuriating that the factory closure hit this town so hard.",
+          "neutral": "It is important and necessary that we support this town after the factory closure."
+        },
+        {
+          "pair_id": "hos07",
+          "topic": "hospital",
+          "nuisance": "The waiting lists at this hospital are a scandal and a terrible shame.",
+          "neutral": "The waiting lists at this hospital are a concern and a planning priority."
+        },
+        {
+          "pair_id": "hos08",
+          "topic": "drought",
+          "nuisance": "This cruel drought is ruining our farms and I hate watching it happen.",
+          "neutral": "This long drought is affecting our farms and I am monitoring it closely."
+        },
+        {
+          "pair_id": "hos09",
+          "topic": "violence",
+          "nuisance": "Violence on our streets makes me angry and it has to stop now.",
+          "neutral": "Violence on our streets has declined and we will keep working on it."
+        },
+        {
+          "pair_id": "hos10",
+          "topic": "accident",
+          "nuisance": "The mine disaster was a horrible tragedy and the grief is unbearable.",
+          "neutral": "The mine incident was reviewed in detail and the report is published."
+        }
+      ]
+    },
+    "partisan_attack_on_opposition": {
+      "label": "Partisan attack on a rival party",
+      "description": "Criticism of a named rival party's competence or record as a party competing in normal politics, without casting it as an elite set against the people.",
+      "pairs": [
+        {
+          "pair_id": "par01",
+          "topic": "budget",
+          "nuisance": "The opposition party wrecked the budget with reckless spending when it was in office.",
+          "neutral": "The opposition party presented a budget with different spending priorities when it was in office."
+        },
+        {
+          "pair_id": "par02",
+          "topic": "health",
+          "nuisance": "The Labour plan for health is a costly failure that will not work.",
+          "neutral": "The Labour plan for health is a costly proposal that we have examined."
+        },
+        {
+          "pair_id": "par03",
+          "topic": "tax",
+          "nuisance": "Our opponents botched tax reform and left us a mess to clean up.",
+          "neutral": "Our opponents proposed tax reform and we will debate the details."
+        },
+        {
+          "pair_id": "par04",
+          "topic": "schools",
+          "nuisance": "The Conservatives failed our schools for nine years with incompetent policy.",
+          "neutral": "The Conservatives governed our schools for nine years with a different policy."
+        },
+        {
+          "pair_id": "par05",
+          "topic": "housing",
+          "nuisance": "The other party has no credible plan on housing and never did.",
+          "neutral": "The other party has a different plan on housing and we disagree."
+        },
+        {
+          "pair_id": "par06",
+          "topic": "jobs",
+          "nuisance": "The previous government's jobs record was dismal and embarrassing.",
+          "neutral": "The previous government's jobs record was mixed and is documented."
+        },
+        {
+          "pair_id": "par07",
+          "topic": "energy",
+          "nuisance": "The Greens' energy policy is naive nonsense that would raise bills.",
+          "neutral": "The Greens' energy policy is an alternative that would change bills."
+        },
+        {
+          "pair_id": "par08",
+          "topic": "election",
+          "nuisance": "Our rivals ran a sloppy campaign full of empty slogans and mistakes.",
+          "neutral": "Our rivals ran a campaign built on their own slogans and priorities."
+        },
+        {
+          "pair_id": "par09",
+          "topic": "debt",
+          "nuisance": "The Democrats piled up debt carelessly and cannot be trusted with money.",
+          "neutral": "The Democrats increased debt to fund programmes and defend that choice."
+        },
+        {
+          "pair_id": "par10",
+          "topic": "infrastructure",
+          "nuisance": "The opposition bungled every infrastructure project it ever started.",
+          "neutral": "The opposition started several infrastructure projects while governing."
+        }
+      ]
+    },
+    "foreign_enemy": {
+      "label": "Hostility toward another state",
+      "description": "Nationalist or security hostility toward a foreign government or country, without an internal elite antagonist.",
+      "pairs": [
+        {
+          "pair_id": "for01",
+          "topic": "border",
+          "nuisance": "Our neighbour's aggression on the border is a threat we will crush.",
+          "neutral": "Our neighbour's position on the border is an issue we will negotiate."
+        },
+        {
+          "pair_id": "for02",
+          "topic": "trade",
+          "nuisance": "That foreign regime cheats on trade and we will punish it hard.",
+          "neutral": "That foreign government differs on trade and we will discuss it."
+        },
+        {
+          "pair_id": "for03",
+          "topic": "security",
+          "nuisance": "Hostile powers want to destroy our nation and we must stand against them.",
+          "neutral": "Other powers have their own interests and we must work with them."
+        },
+        {
+          "pair_id": "for04",
+          "topic": "territory",
+          "nuisance": "They stole our islands and we will never forgive that invasion.",
+          "neutral": "They claim our islands and we will settle that dispute lawfully."
+        },
+        {
+          "pair_id": "for05",
+          "topic": "war",
+          "nuisance": "The enemy army committed atrocities and must be driven out by force.",
+          "neutral": "The foreign army withdrew from the region under the agreed ceasefire."
+        },
+        {
+          "pair_id": "for06",
+          "topic": "espionage",
+          "nuisance": "Their spies are poisoning our country and we will expel every one.",
+          "neutral": "Their diplomats are visiting our country and we will meet each one."
+        },
+        {
+          "pair_id": "for07",
+          "topic": "history",
+          "nuisance": "That empire enslaved our ancestors and still humiliates us today.",
+          "neutral": "That empire ruled our ancestors and relations have changed today."
+        },
+        {
+          "pair_id": "for08",
+          "topic": "sanctions",
+          "nuisance": "We will strike back at the bullies who sanction our industries.",
+          "neutral": "We will respond to the partners who review our industries."
+        },
+        {
+          "pair_id": "for09",
+          "topic": "migration route",
+          "nuisance": "A hostile neighbour is weaponising the border to attack us.",
+          "neutral": "A neighbouring country is managing the border crossings with us."
+        },
+        {
+          "pair_id": "for10",
+          "topic": "defence",
+          "nuisance": "Our enemies across the sea are arming and they will regret it.",
+          "neutral": "Our partners across the sea are investing and we will cooperate."
+        }
+      ]
+    },
+    "generic_grievance": {
+      "label": "Generic grievance",
+      "description": "Complaint that life has become harder for citizens, without naming an elite responsible and without a sovereignty claim.",
+      "pairs": [
+        {
+          "pair_id": "gri01",
+          "topic": "cost of living",
+          "nuisance": "Families are struggling to pay rent and cannot make ends meet anymore.",
+          "neutral": "Families are paying rent and many have moved to new homes recently."
+        },
+        {
+          "pair_id": "gri02",
+          "topic": "pensions",
+          "nuisance": "Our pensioners have been left to suffer in cold homes this winter.",
+          "neutral": "Our pensioners have received the heating payment this winter."
+        },
+        {
+          "pair_id": "gri03",
+          "topic": "youth",
+          "nuisance": "Young people have no future here and are forced to leave.",
+          "neutral": "Young people have many options here and some choose to travel."
+        },
+        {
+          "pair_id": "gri04",
+          "topic": "rural",
+          "nuisance": "The countryside has been abandoned and its villages are dying.",
+          "neutral": "The countryside has been surveyed and its villages are growing."
+        },
+        {
+          "pair_id": "gri05",
+          "topic": "wages",
+          "nuisance": "Workers have seen their wages fall year after year after year.",
+          "neutral": "Workers have seen their wages change year by year by sector."
+        },
+        {
+          "pair_id": "gri06",
+          "topic": "health access",
+          "nuisance": "People wait months in pain for an operation and nobody helps them.",
+          "neutral": "People wait several weeks for an operation and clinics schedule them."
+        },
+        {
+          "pair_id": "gri07",
+          "topic": "farmers",
+          "nuisance": "Our farmers are drowning in debt and losing everything they built.",
+          "neutral": "Our farmers are investing in equipment and expanding what they built."
+        },
+        {
+          "pair_id": "gri08",
+          "topic": "towns",
+          "nuisance": "Towns like ours have seen shops close and streets decay for decades.",
+          "neutral": "Towns like ours have seen shops open and streets repaved in recent years."
+        },
+        {
+          "pair_id": "gri09",
+          "topic": "energy bills",
+          "nuisance": "Energy bills are crushing ordinary households every single month.",
+          "neutral": "Energy bills are sent to ordinary households every single month."
+        },
+        {
+          "pair_id": "gri10",
+          "topic": "jobs",
+          "nuisance": "Good jobs have disappeared and whole communities are in despair.",
+          "neutral": "Good jobs have been created and whole communities are adapting."
+        }
+      ]
+    },
+    "incivility": {
+      "label": "Incivility and personal insult",
+      "description": "Name-calling, mockery or vulgar dismissal of an individual opponent, without an elite-versus-people frame.",
+      "pairs": [
+        {
+          "pair_id": "inc01",
+          "topic": "debate",
+          "nuisance": "My opponent is a clown who has no idea what he is talking about.",
+          "neutral": "My opponent is a candidate who has a different view on this topic."
+        },
+        {
+          "pair_id": "inc02",
+          "topic": "speech",
+          "nuisance": "That speech was idiotic drivel from a man who cannot think straight.",
+          "neutral": "That speech was a long address from a man who argued his case."
+        },
+        {
+          "pair_id": "inc03",
+          "topic": "minister",
+          "nuisance": "The minister is a pathetic fool and frankly an embarrassment.",
+          "neutral": "The minister is a senior colleague and frankly an experienced one."
+        },
+        {
+          "pair_id": "inc04",
+          "topic": "interview",
+          "nuisance": "She rambled like a lunatic in that interview and made no sense.",
+          "neutral": "She spoke at length in that interview and made several points."
+        },
+        {
+          "pair_id": "inc05",
+          "topic": "candidate",
+          "nuisance": "Shut up and sit down, you loser, nobody wants to hear you.",
+          "neutral": "Please sit down and wait, sir, you will be heard shortly."
+        },
+        {
+          "pair_id": "inc06",
+          "topic": "rival",
+          "nuisance": "My rival is a weak, low-energy nobody who whines all day.",
+          "neutral": "My rival is a careful, experienced speaker who talks all day."
+        },
+        {
+          "pair_id": "inc07",
+          "topic": "proposal",
+          "nuisance": "Only a total moron would come up with such a stupid idea.",
+          "neutral": "Only a small group would come up with such a specific idea."
+        },
+        {
+          "pair_id": "inc08",
+          "topic": "record",
+          "nuisance": "He is a nasty little man with a disgusting record.",
+          "neutral": "He is a younger member with a documented record."
+        },
+        {
+          "pair_id": "inc09",
+          "topic": "questions",
+          "nuisance": "That reporter asks dumb questions because she is a nasty person.",
+          "neutral": "That reporter asks detailed questions because she is a careful person."
+        },
+        {
+          "pair_id": "inc10",
+          "topic": "leader",
+          "nuisance": "Their leader is clueless, lazy and dumb as a rock.",
+          "neutral": "Their leader is new, busy and focused on the budget."
+        }
+      ]
+    }
+  },
+  "review": {
+    "reviewer": "Aleksandar Tomasevic (project lead)",
+    "date": "2026-09-23",
+    "outcome": "approved",
+    "changes": "none"
+  }
+}

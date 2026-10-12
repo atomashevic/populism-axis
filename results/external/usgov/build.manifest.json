@@ -1,0 +1,45 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "freeze_id": "pa_v4_external_usgov_r1"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "04253b30e209bf73e2808d1f25f7f6d0ea45dd15",
+    "dirty": true
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "gov_2010_2018": {
+      "path": "/home/aleksandar/work/populism-axis/data/external/usgov/Code + Output 19.2.26/Importing/Output/gov_2010_2018.csv",
+      "sha256": "d26f31a6b0701ff9e206c6f7d4cfe348a0d4dce7c53c8bfc3a819ac81e654eda"
+    },
+    "gov_2018_2022": {
+      "path": "/home/aleksandar/work/populism-axis/data/external/usgov/Code + Output 19.2.26/Importing/Output/gov_2018_2022.csv",
+      "sha256": "3546533bd8ab2bed5981d46c8d7dce46c5cf4dfb9e15002128bfd4da687d7984"
+    },
+    "pres_data": {
+      "path": "/home/aleksandar/work/populism-axis/data/external/usgov/Code + Output 19.2.26/Importing/Output/pres_data.csv",
+      "sha256": "221585cc36421a649fda695a2e4bfdb3c755a4b2827411c875c34c13e33961bd"
+    },
+    "sentences": {
+      "path": "/home/aleksandar/work/populism-axis/data/external/usgov/Code + Output 19.2.26/Importing/Output/sentences_2010_2018.csv",
+      "sha256": "eaa815cf04b548cc5514b8285210fe813b4d132511dfb028b62358be7d25f701"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "35bd29f25089b355baa96f72589d6c037587431c00099067b0654834cd748eea",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/build_usgov_benchmark.py",
+  "timestamp_utc": "2026-09-24T08:07:27Z"
+}

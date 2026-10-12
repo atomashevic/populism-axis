@@ -1,0 +1,55 @@
+{
+  "argv": [
+    "--label",
+    "B0_v3_splitter",
+    "--embeddings-dir",
+    "results/v4/embeddings/e5-large-v2/spw1_cap0",
+    "--anchors",
+    "results/v4/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+    "--out-dir",
+    "results/v4/step1_splitter/B0_v3_splitter"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "english_split": "dev",
+    "label": "B0_v3_splitter"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "ff9af06d99bb7e6a7158535bb438ca8062e592b5",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "anchors": {
+      "path": "results/v4/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+      "sha256": "322ed72f9360521a6dd34e7b8c89a3af3ccc19509e741afa8858c2a20e346f8f"
+    },
+    "embeddings_agora": {
+      "path": "results/v4/embeddings/e5-large-v2/spw1_cap0/embeddings_agora.npz",
+      "sha256": "5a7c45d1020d3bc6ee5830898abea71a8fe97172c13165b3c796a599f5b60f2e"
+    },
+    "embeddings_english": {
+      "path": "results/v4/embeddings/e5-large-v2/spw1_cap0/embeddings_english.npz",
+      "sha256": "3ab533944ace3afc37b8567fd181244c0005e0a1f10d89fe090b9b7e01748552"
+    },
+    "split": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_v4/english_split.csv",
+      "sha256": "fe6bea109fcba5946eb1cc9cbacb3d9cfd112954137f4f884c93653f4c7824cb"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "86aeb112e5b37f4ee90429108f38fc4a741ed5460722fbd833b3fc303df2eb08",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/run_config_v4.py",
+  "timestamp_utc": "2026-09-23T17:34:32Z"
+}

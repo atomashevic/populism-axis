@@ -1,0 +1,44 @@
+{
+  "argv": [
+    "final"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "stage": "final",
+    "xlmt_included": true
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "61f3cbf10d583152fa9a817b1afd99d8b7204f53",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "axis": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/antielite_tweets/axis_scores.csv",
+      "sha256": "ed8204a80ee7548b501adf4404bae6459b127480630a39fdbcb8cc312dc46df5"
+    },
+    "labels": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_antielite_tweets/tweets_labels.csv",
+      "sha256": "5d0a0686d2a9aea54dcd8d9436d7ce993256e16406464aea46d736a59488fe04"
+    },
+    "nli": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/antielite_tweets/nli_antielite_tweets__bart-large-mnli.npz",
+      "sha256": "57ced8abe24ba8e801fd52770fd110c089ab460da0f6b511e14fc0e3c5a4d9d1"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "3f474ebf137162da2de3c0668cdfd185bec119e65306633acfab486f65b98dbd",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/score_antielite_tweets_v4.py",
+  "timestamp_utc": "2026-09-24T08:45:28Z"
+}

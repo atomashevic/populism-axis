@@ -1,0 +1,47 @@
+{
+  "baseline_dir": "results/v4/step1_splitter/B1_cap60",
+  "candidate_dir": "results/v4/step1b_text_cleaning/B1c_cap60_clean",
+  "candidate_system": "PE__frozen__soft",
+  "decision": {
+    "checks": {
+      "primary_ci_not_entirely_below_0": true,
+      "primary_delta_at_least_+0.01": false,
+      "secondary_ci_not_entirely_below_0": true,
+      "secondary_delta_at_least_-0.01": true
+    },
+    "outcome": "ADOPT (defect fix, adopted regardless of the rule)",
+    "rule": "defect_fix",
+    "rule_passed": false
+  },
+  "draws": 4000,
+  "paired": {
+    "agora": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "cluster": "politician",
+      "delta_spearman": 0.0,
+      "n_clusters": 6,
+      "n_documents": 5272,
+      "n_draws": 4000,
+      "p_two_sided": 1.0,
+      "p_two_sided_raw_v3_formula": 2.0
+    },
+    "english": {
+      "ci95": [
+        -0.0025475322611033203,
+        0.0008295179463271952
+      ],
+      "cluster": "leader",
+      "delta_spearman": -0.0002174956960588892,
+      "n_clusters": 57,
+      "n_documents": 174,
+      "n_draws": 4000,
+      "p_two_sided": 1.0,
+      "p_two_sided_raw_v3_formula": 1.1735
+    }
+  },
+  "seed": 20260923,
+  "system": "PE__frozen__soft"
+}

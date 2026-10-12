@@ -1,0 +1,56 @@
+{
+  "argv": [
+    "--names",
+    "english_dev,agora",
+    "--model",
+    "cross-encoder/nli-deberta-v3-xsmall",
+    "--batch-size",
+    "64"
+  ],
+  "encoder_id": "cross-encoder/nli-deberta-v3-xsmall",
+  "extra": {
+    "agora": {
+      "output": "nli_agora__nli-deberta-v3-xsmall.npz",
+      "pairs": 226680,
+      "seconds": 116.7
+    },
+    "english_dev": {
+      "output": "nli_english_dev__nli-deberta-v3-xsmall.npz",
+      "pairs": 13920,
+      "seconds": 8.9
+    },
+    "id2label": {
+      "0": "contradiction",
+      "1": "entailment",
+      "2": "neutral"
+    },
+    "model": "cross-encoder/nli-deberta-v3-xsmall",
+    "peak_vram_mb": 893.5
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "f6a84eda6923a45a8f0d86bb5df5856dcf380f01",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis/results/v4/step6_nli/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "c16de0ed37ca2a9df614d4ac61b2e5638196b38d01d08ab27b312e6b9641aef4",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/nli_stage_v4.py",
+  "timestamp_utc": "2026-09-24T13:04:28Z"
+}

@@ -1,0 +1,25 @@
+{
+  "access_reason": "V4 final one-time scoring of English holdout and EU-OOD (pre-declared B0, B4, B6)",
+  "anchors": [
+    "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz"
+  ],
+  "dataset_dir": [
+    "eu=/home/aleksandar/work/populism-axis/results/v4/embeddings_eu/e5-large-v2/spw1_cap0"
+  ],
+  "datasets": "english,eu",
+  "draws": 2000,
+  "embeddings_dir": "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/spw1_cap0",
+  "english_split": "holdout",
+  "final": true,
+  "label": "B0_v3_config",
+  "n_pcs": 0,
+  "nuisance": null,
+  "nuisance_sets": "",
+  "out_dir": "/home/aleksandar/work/populism-axis/results/v4/final/B0_v3_config",
+  "save_projections": true,
+  "seed": 20260923,
+  "top_k": 3,
+  "top_rule": null,
+  "transform": "v3",
+  "whiten_shrinkage": null
+}

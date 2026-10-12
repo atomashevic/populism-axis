@@ -1,0 +1,47 @@
+{
+  "argv": [
+    "final"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "stage": "final"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "3814010b888a276b21fd58d145e9fa8eb4c51b29",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "axis_scores": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/usgov/axis_scores_speeches.csv",
+      "sha256": "392a9ed699a1ba8fd1ed2163ad2d1fca61e04064d113da5d0edc356d97f97e72"
+    },
+    "comparator": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_usgov/comparator_predictions.csv",
+      "sha256": "cd89e3c2739e5b422c6b923b3ec906172e91761f87a2abb2f3684701cc5f09d0"
+    },
+    "nli_speeches": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/usgov/nli_usgov_speeches__bart-large-mnli.npz",
+      "sha256": "a926c39b23a1a2efa75121d6249197dc8af6d6eb18cc01dce62c2d8fb319c640"
+    },
+    "roberta_speeches": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/usgov/roberta/probabilities_usgov_speeches.npz",
+      "sha256": "77837463d63ad0fbdcdeb803c537ff081cf4a66affe0162b8fb7ce6649906fef"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "52572048f923eac914c2fa91ba2055085a9e97fa21b7ab9e0fdbb3dce5bcce67",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/score_usgov_v4.py",
+  "timestamp_utc": "2026-09-24T08:13:31Z"
+}

@@ -1,0 +1,315 @@
+{
+  "anchors": "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+  "axis_rule": "normalize(mean(T(populist)) - mean(T(mainstream))) with T fitted on the scored dataset's windows",
+  "difference_parallelism": {
+    "E": 0.23895613727069553,
+    "M": 0.2236165594252877,
+    "P": 0.23670763734860117
+  },
+  "nuisance": "results/v4/embeddings/e5-large-v2/sentences/v4_nuisance_r1__a23d574b.npz",
+  "per_dataset": {
+    "agora": {
+      "channel_axis_gram": {
+        "E": {
+          "E": 1.0000000000000002,
+          "M": 0.2489567249064194,
+          "P": 0.277332584357076
+        },
+        "M": {
+          "E": 0.2489567249064194,
+          "M": 0.9999999999999999,
+          "P": 0.09201319425791296
+        },
+        "P": {
+          "E": 0.277332584357076,
+          "M": 0.09201319425791296,
+          "P": 1.0
+        }
+      },
+      "channel_axis_gram_before_residualization": {
+        "E": {
+          "E": 0.9999999999999999,
+          "M": 0.29026417540353183,
+          "P": 0.3156273175086701
+        },
+        "M": {
+          "E": 0.29026417540353183,
+          "M": 0.9999999999999999,
+          "P": 0.14284845115138012
+        },
+        "P": {
+          "E": 0.3156273175086701,
+          "M": 0.14284845115138012,
+          "P": 0.9999999999999999
+        }
+      },
+      "cosine_to_v3_rule_axes": {
+        "E": 0.7138868815171346,
+        "M": 0.7228376802048444,
+        "P": 0.8396525320411673
+      },
+      "nuisance_direction_gram": {
+        "foreign_enemy": {
+          "foreign_enemy": 1.0,
+          "generic_grievance": 0.17467740573742904,
+          "hostility_negative_affect": 0.21426856861974655,
+          "incivility": 0.1226813831105091,
+          "partisan_attack_on_opposition": 0.19369942331840795
+        },
+        "generic_grievance": {
+          "foreign_enemy": 0.17467740573742904,
+          "generic_grievance": 1.0,
+          "hostility_negative_affect": 0.26915165292650856,
+          "incivility": 0.057471820108255287,
+          "partisan_attack_on_opposition": 0.22464448816884958
+        },
+        "hostility_negative_affect": {
+          "foreign_enemy": 0.21426856861974655,
+          "generic_grievance": 0.26915165292650856,
+          "hostility_negative_affect": 1.0,
+          "incivility": 0.14456147287988413,
+          "partisan_attack_on_opposition": 0.210606097232452
+        },
+        "incivility": {
+          "foreign_enemy": 0.1226813831105091,
+          "generic_grievance": 0.057471820108255287,
+          "hostility_negative_affect": 0.14456147287988413,
+          "incivility": 1.0000000000000002,
+          "partisan_attack_on_opposition": 0.38329982423173903
+        },
+        "partisan_attack_on_opposition": {
+          "foreign_enemy": 0.19369942331840795,
+          "generic_grievance": 0.22464448816884958,
+          "hostility_negative_affect": 0.210606097232452,
+          "incivility": 0.38329982423173903,
+          "partisan_attack_on_opposition": 1.0
+        }
+      },
+      "residualization": {
+        "cosine_after": {
+          "E": {
+            "foreign_enemy": -1.0148132334464322e-16,
+            "generic_grievance": 7.979727989493313e-17,
+            "hostility_negative_affect": -3.8163916471489756e-17,
+            "incivility": -2.6020852139652106e-18,
+            "partisan_attack_on_opposition": -3.122502256758253e-17
+          },
+          "M": {
+            "foreign_enemy": -1.3183898417423734e-16,
+            "generic_grievance": -1.9081958235744878e-17,
+            "hostility_negative_affect": 1.9081958235744878e-17,
+            "incivility": 1.8214596497756474e-17,
+            "partisan_attack_on_opposition": -2.0816681711721685e-17
+          },
+          "P": {
+            "foreign_enemy": -1.214306433183765e-17,
+            "generic_grievance": -2.7755575615628914e-17,
+            "hostility_negative_affect": -1.3444106938820255e-17,
+            "incivility": -1.3877787807814457e-17,
+            "partisan_attack_on_opposition": -1.3877787807814457e-17
+          }
+        },
+        "cosine_before": {
+          "E": {
+            "foreign_enemy": 0.17820169045702028,
+            "generic_grievance": 0.16625166978406258,
+            "hostility_negative_affect": 0.21898961755131954,
+            "incivility": 0.04186429189864668,
+            "partisan_attack_on_opposition": 0.0608748979625536
+          },
+          "M": {
+            "foreign_enemy": 0.25368514404922793,
+            "generic_grievance": 0.1323751660491772,
+            "hostility_negative_affect": 0.14697040653196605,
+            "incivility": 0.14890276797597513,
+            "partisan_attack_on_opposition": 0.26002963427735243
+          },
+          "P": {
+            "foreign_enemy": 0.14413072425470447,
+            "generic_grievance": 0.1053895212837867,
+            "hostility_negative_affect": 0.15995448859399586,
+            "incivility": 0.08055169646448418,
+            "partisan_attack_on_opposition": 0.07817212275593512
+          }
+        },
+        "removed_norm_share": {
+          "E": 0.0756236945737071,
+          "M": 0.11689577387530681,
+          "P": 0.043088997918774075
+        }
+      },
+      "transform": {
+        "explained_variance_of_removed_pcs": [
+          0.05776446054171587,
+          0.04016059739345593,
+          0.029354611788402533,
+          0.024981103815596727
+        ],
+        "n_fit_rows": 41912,
+        "n_pcs": 4,
+        "whiten_shrinkage": 0.5
+      }
+    },
+    "english": {
+      "channel_axis_gram": {
+        "E": {
+          "E": 1.0,
+          "M": 0.24632473356222345,
+          "P": 0.2552516206006946
+        },
+        "M": {
+          "E": 0.24632473356222345,
+          "M": 1.0,
+          "P": 0.05334931455450016
+        },
+        "P": {
+          "E": 0.2552516206006946,
+          "M": 0.05334931455450016,
+          "P": 1.0
+        }
+      },
+      "channel_axis_gram_before_residualization": {
+        "E": {
+          "E": 0.9999999999999999,
+          "M": 0.29274820736727514,
+          "P": 0.28407597391223904
+        },
+        "M": {
+          "E": 0.29274820736727514,
+          "M": 1.0,
+          "P": 0.10160936742785034
+        },
+        "P": {
+          "E": 0.28407597391223904,
+          "M": 0.10160936742785034,
+          "P": 1.0
+        }
+      },
+      "cosine_to_v3_rule_axes": {
+        "E": 0.7195035086880939,
+        "M": 0.7072409473259665,
+        "P": 0.8342662145274593
+      },
+      "nuisance_direction_gram": {
+        "foreign_enemy": {
+          "foreign_enemy": 1.0,
+          "generic_grievance": 0.16303589236471566,
+          "hostility_negative_affect": 0.19104583268173286,
+          "incivility": 0.1700288193265169,
+          "partisan_attack_on_opposition": 0.20297859887226222
+        },
+        "generic_grievance": {
+          "foreign_enemy": 0.16303589236471566,
+          "generic_grievance": 0.9999999999999999,
+          "hostility_negative_affect": 0.2631908481979711,
+          "incivility": 0.10572079263347935,
+          "partisan_attack_on_opposition": 0.23291019722501563
+        },
+        "hostility_negative_affect": {
+          "foreign_enemy": 0.19104583268173286,
+          "generic_grievance": 0.2631908481979711,
+          "hostility_negative_affect": 1.0,
+          "incivility": 0.18014627825539758,
+          "partisan_attack_on_opposition": 0.20509708487268213
+        },
+        "incivility": {
+          "foreign_enemy": 0.1700288193265169,
+          "generic_grievance": 0.10572079263347935,
+          "hostility_negative_affect": 0.18014627825539758,
+          "incivility": 0.9999999999999999,
+          "partisan_attack_on_opposition": 0.41970661084630834
+        },
+        "partisan_attack_on_opposition": {
+          "foreign_enemy": 0.20297859887226222,
+          "generic_grievance": 0.23291019722501563,
+          "hostility_negative_affect": 0.20509708487268213,
+          "incivility": 0.41970661084630834,
+          "partisan_attack_on_opposition": 1.0000000000000004
+        }
+      },
+      "residualization": {
+        "cosine_after": {
+          "E": {
+            "foreign_enemy": -1.3530843112619095e-16,
+            "generic_grievance": -3.642919299551295e-17,
+            "hostility_negative_affect": -1.214306433183765e-17,
+            "incivility": -2.2551405187698492e-17,
+            "partisan_attack_on_opposition": -2.6020852139652106e-17
+          },
+          "M": {
+            "foreign_enemy": 2.7755575615628914e-17,
+            "generic_grievance": 8.326672684688674e-17,
+            "hostility_negative_affect": 1.0408340855860843e-17,
+            "incivility": -5.204170427930421e-18,
+            "partisan_attack_on_opposition": 7.979727989493313e-17
+          },
+          "P": {
+            "foreign_enemy": -1.1449174941446927e-16,
+            "generic_grievance": -4.85722573273506e-17,
+            "hostility_negative_affect": -3.903127820947816e-17,
+            "incivility": -2.7755575615628914e-17,
+            "partisan_attack_on_opposition": -6.938893903907228e-18
+          }
+        },
+        "cosine_before": {
+          "E": {
+            "foreign_enemy": 0.17769670662845746,
+            "generic_grievance": 0.16292747838243077,
+            "hostility_negative_affect": 0.18720626112342426,
+            "incivility": 0.07204214161231348,
+            "partisan_attack_on_opposition": 0.06570792830245077
+          },
+          "M": {
+            "foreign_enemy": 0.24640030701737936,
+            "generic_grievance": 0.15967741364561494,
+            "hostility_negative_affect": 0.15820233776105902,
+            "incivility": 0.18055078698398996,
+            "partisan_attack_on_opposition": 0.2641671333054605
+          },
+          "P": {
+            "foreign_enemy": 0.11665731961574846,
+            "generic_grievance": 0.09855689258256409,
+            "hostility_negative_affect": 0.11014894532405164,
+            "incivility": 0.06788735229084346,
+            "partisan_attack_on_opposition": 0.0810901082118686
+          }
+        },
+        "removed_norm_share": {
+          "E": 0.0668829484060044,
+          "M": 0.12113568673792519,
+          "P": 0.026939254218178332
+        }
+      },
+      "transform": {
+        "explained_variance_of_removed_pcs": [
+          0.05553923346943646,
+          0.037069623660989856,
+          0.02968515345748357,
+          0.022658573595424312
+        ],
+        "n_fit_rows": 20632,
+        "n_pcs": 4,
+        "whiten_shrinkage": 0.5
+      }
+    }
+  },
+  "transform": "ref",
+  "v3_rule_channel_axis_gram": {
+    "E": {
+      "E": 0.9999999999999999,
+      "M": 0.5586655447773936,
+      "P": 0.5029144872605233
+    },
+    "M": {
+      "E": 0.5586655447773936,
+      "M": 0.9999999999999998,
+      "P": 0.26608372896713284
+    },
+    "P": {
+      "E": 0.5029144872605233,
+      "M": 0.26608372896713284,
+      "P": 1.0000000000000002
+    }
+  },
+  "window_transform": "center, remove 4 PCs, whiten=0.5, L2-normalize"
+}

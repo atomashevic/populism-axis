@@ -1,0 +1,4 @@
+{
+  "passing": [],
+  "rule": "paired delta of combined vs B6 >= -0.01 on English-dev and Agora"
+}

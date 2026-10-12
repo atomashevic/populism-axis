@@ -1,0 +1,58 @@
+{
+  "argv": [
+    "--in-dir",
+    "results/v4/external/usgov",
+    "--names",
+    "usgov_speeches,usgov_sentences",
+    "--model",
+    "facebook/bart-large-mnli",
+    "--batch-size",
+    "64"
+  ],
+  "encoder_id": "facebook/bart-large-mnli",
+  "extra": {
+    "id2label": {
+      "0": "contradiction",
+      "1": "neutral",
+      "2": "entailment"
+    },
+    "model": "facebook/bart-large-mnli",
+    "peak_vram_mb": 2536.7,
+    "usgov_sentences": {
+      "output": "nli_usgov_sentences__bart-large-mnli.npz",
+      "pairs": 36200,
+      "seconds": 25.2
+    },
+    "usgov_speeches": {
+      "output": "nli_usgov_speeches__bart-large-mnli.npz",
+      "pairs": 28590,
+      "seconds": 43.8
+    }
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "dd9e07331c8dbe23d3ebafb1ac21c64eec2c580d",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis/results/v4/external/usgov/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "8b4972b8afa8c7f83b50b07d4588347c4e07d2a97f6a74a529431f91188ca604",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/nli_stage_v4.py",
+  "timestamp_utc": "2026-09-24T08:05:50Z"
+}

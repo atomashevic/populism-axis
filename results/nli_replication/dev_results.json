@@ -1,0 +1,248 @@
+{
+  "rule": "paired delta of combined vs B6 >= -0.01 on English-dev and Agora",
+  "draws": 4000,
+  "seed": 20260923,
+  "candidates": {
+    "DeBERTa-v3-base-mnli-fever-anli": {
+      "model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+      "corpora": {
+        "english_dev": {
+          "combined_spearman": 0.49674410908336614,
+          "bart_combined_spearman": 0.5367457391310595,
+          "nli_only_spearman": 0.2877570273658428,
+          "bart_nli_only_spearman": 0.4677983070147858,
+          "axis_only_spearman": 0.5165550867152585,
+          "paired_combined_vs_b6": {
+            "delta": -0.04000163004769336,
+            "ci95": [
+              -0.1075789693447957,
+              0.025301001805603945
+            ]
+          },
+          "paired_nli_only_vs_bart_nli": {
+            "delta": -0.180041279648943,
+            "ci95": [
+              -0.3298455665418952,
+              -0.05785800883181027
+            ]
+          },
+          "doc_spearman_nli_vs_bart": 0.5517133764781189,
+          "tail": {
+            "P": {
+              "median": 0.021636962890625,
+              "p99": 0.7564013671874968,
+              "share_gt_0.5": 0.03017241379310345,
+              "window_spearman_vs_bart": 0.49220794952096497
+            },
+            "E": {
+              "median": 0.0098114013671875,
+              "p99": 0.5349414062499966,
+              "share_gt_0.5": 0.011494252873563218,
+              "window_spearman_vs_bart": 0.4025171935302611
+            },
+            "PE_window_spearman_vs_bart": 0.44376654719002656
+          }
+        },
+        "agora": {
+          "combined_spearman": 0.360289124781454,
+          "bart_combined_spearman": 0.3823007058125725,
+          "nli_only_spearman": 0.29253065609592405,
+          "bart_nli_only_spearman": 0.3420376886819554,
+          "axis_only_spearman": 0.3588332643197715,
+          "paired_combined_vs_b6": {
+            "delta": -0.022011581031118554,
+            "ci95": [
+              -0.038815597277596064,
+              -0.0077985204032473
+            ]
+          },
+          "paired_nli_only_vs_bart_nli": {
+            "delta": -0.04950703258603134,
+            "ci95": [
+              -0.07287557952208235,
+              -0.023487204143891438
+            ]
+          },
+          "doc_spearman_nli_vs_bart": 0.6302767941491547,
+          "tail": {
+            "P": {
+              "median": 0.016204833984375,
+              "p99": 0.41902587890624954,
+              "share_gt_0.5": 0.006308452443973884,
+              "window_spearman_vs_bart": 0.4675354870455138
+            },
+            "E": {
+              "median": 0.01074981689453125,
+              "p99": 0.8002880859374972,
+              "share_gt_0.5": 0.025895535556731956,
+              "window_spearman_vs_bart": 0.5573082514793682
+            },
+            "PE_window_spearman_vs_bart": 0.5243792240574496
+          }
+        }
+      },
+      "non_inferior": false
+    },
+    "nli-deberta-v3-small": {
+      "model": "cross-encoder/nli-deberta-v3-small",
+      "corpora": {
+        "english_dev": {
+          "combined_spearman": 0.4991730219393642,
+          "bart_combined_spearman": 0.5367457391310595,
+          "nli_only_spearman": 0.3472490487212673,
+          "bart_nli_only_spearman": 0.4677983070147858,
+          "axis_only_spearman": 0.5165550867152585,
+          "paired_combined_vs_b6": {
+            "delta": -0.037572717191695304,
+            "ci95": [
+              -0.10457749423492971,
+              0.023538518331961
+            ]
+          },
+          "paired_nli_only_vs_bart_nli": {
+            "delta": -0.12054925829351854,
+            "ci95": [
+              -0.2270562681295495,
+              -0.020223393156565406
+            ]
+          },
+          "doc_spearman_nli_vs_bart": 0.5706843255039442,
+          "tail": {
+            "P": {
+              "median": 0.0017008781433105469,
+              "p99": 0.11686706542968663,
+              "share_gt_0.5": 0.004310344827586207,
+              "window_spearman_vs_bart": 0.42572200602786037
+            },
+            "E": {
+              "median": 0.0008335113525390625,
+              "p99": 0.10467041015624856,
+              "share_gt_0.5": 0.0028735632183908046,
+              "window_spearman_vs_bart": 0.23672242735058785
+            },
+            "PE_window_spearman_vs_bart": 0.38168349070956675
+          }
+        },
+        "agora": {
+          "combined_spearman": 0.3411154833260369,
+          "bart_combined_spearman": 0.3823007058125725,
+          "nli_only_spearman": 0.24116966497246797,
+          "bart_nli_only_spearman": 0.3420376886819554,
+          "axis_only_spearman": 0.3588332643197715,
+          "paired_combined_vs_b6": {
+            "delta": -0.04118522248653561,
+            "ci95": [
+              -0.07514304652541903,
+              -0.020092977850732552
+            ]
+          },
+          "paired_nli_only_vs_bart_nli": {
+            "delta": -0.10086802370948741,
+            "ci95": [
+              -0.15407827799358584,
+              -0.05728058461497604
+            ]
+          },
+          "doc_spearman_nli_vs_bart": 0.4559215242680643,
+          "tail": {
+            "P": {
+              "median": 0.0017695426940917969,
+              "p99": 0.04491088867187454,
+              "share_gt_0.5": 0.0009264160931709899,
+              "window_spearman_vs_bart": 0.34248818618861543
+            },
+            "E": {
+              "median": 0.0012145042419433594,
+              "p99": 0.22399658203124861,
+              "share_gt_0.5": 0.005382036350802894,
+              "window_spearman_vs_bart": 0.35232475195851937
+            },
+            "PE_window_spearman_vs_bart": 0.35667233821283456
+          }
+        }
+      },
+      "non_inferior": false
+    },
+    "nli-deberta-v3-xsmall": {
+      "model": "cross-encoder/nli-deberta-v3-xsmall",
+      "corpora": {
+        "english_dev": {
+          "combined_spearman": 0.5618872501529267,
+          "bart_combined_spearman": 0.5367457391310595,
+          "nli_only_spearman": 0.4826144239961192,
+          "bart_nli_only_spearman": 0.4677983070147858,
+          "axis_only_spearman": 0.5165550867152585,
+          "paired_combined_vs_b6": {
+            "delta": 0.025141511021867236,
+            "ci95": [
+              -0.03751934470094716,
+              0.08910577954502998
+            ]
+          },
+          "paired_nli_only_vs_bart_nli": {
+            "delta": 0.014816116981333394,
+            "ci95": [
+              -0.09793161774365015,
+              0.13230022950513393
+            ]
+          },
+          "doc_spearman_nli_vs_bart": 0.6474610865469819,
+          "tail": {
+            "P": {
+              "median": 0.00543975830078125,
+              "p99": 0.2136486816406223,
+              "share_gt_0.5": 0.0028735632183908046,
+              "window_spearman_vs_bart": 0.4031477595354616
+            },
+            "E": {
+              "median": 0.0028209686279296875,
+              "p99": 0.07506164550781246,
+              "share_gt_0.5": 0.0,
+              "window_spearman_vs_bart": 0.38419927360044015
+            },
+            "PE_window_spearman_vs_bart": 0.4467884732257648
+          }
+        },
+        "agora": {
+          "combined_spearman": 0.3408328166828859,
+          "bart_combined_spearman": 0.3823007058125725,
+          "nli_only_spearman": 0.27473572672599667,
+          "bart_nli_only_spearman": 0.3420376886819554,
+          "axis_only_spearman": 0.3588332643197715,
+          "paired_combined_vs_b6": {
+            "delta": -0.04146788912968663,
+            "ci95": [
+              -0.05787994919786416,
+              -0.023532020057099534
+            ]
+          },
+          "paired_nli_only_vs_bart_nli": {
+            "delta": -0.06730196195595872,
+            "ci95": [
+              -0.09694247922388918,
+              -0.030151527586313398
+            ]
+          },
+          "doc_spearman_nli_vs_bart": 0.5663871371205157,
+          "tail": {
+            "P": {
+              "median": 0.0052165985107421875,
+              "p99": 0.11232482910156238,
+              "share_gt_0.5": 0.0005734956767248985,
+              "window_spearman_vs_bart": 0.3701050472018953
+            },
+            "E": {
+              "median": 0.0032052993774414062,
+              "p99": 0.09901916503906238,
+              "share_gt_0.5": 0.001146991353449797,
+              "window_spearman_vs_bart": 0.5105775556293833
+            },
+            "PE_window_spearman_vs_bart": 0.4402502399343396
+          }
+        }
+      },
+      "non_inferior": false
+    }
+  },
+  "passing": []
+}

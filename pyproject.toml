@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "populism-axis"
+version = "0.1.0"
+description = "The populism axis: a training-free, proposition-anchored measure of populist rhetoric with an NLI claim check."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}  # project code, anchors and docs; data/ keeps its sources' terms (docs/publication-rights.md)
+authors = [{name = "Aleksandar Tomašević", email = "atomashevic@gmail.com"}]
+keywords = ["populism", "political communication", "text as data", "sentence embeddings", "natural language inference"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pyarrow>=15",
+    "scipy>=1.9",
+    "scikit-learn>=1.3",
+    "safetensors>=0.4",
+    "transformers>=4.43",
+    "vaderSentiment>=3.3.2",
+    "sentencepiece>=0.2.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/atomashevic/populism-axis"
+Documentation = "https://github.com/atomashevic/populism-axis/blob/main/docs/method.md"
+Issues = "https://github.com/atomashevic/populism-axis/issues"
+
+[project.scripts]
+populism-axis = "populism_axis.cli:main"
+
+[project.optional-dependencies]
+# torch comes from exactly one of these extras. Local scoring and evaluation use
+# `cpu`; the GPU encoder host (driver 560, CUDA 12.6) uses `cu126`. Both pin the
+# same torch release so encoding and evaluation run identical library code.
+cpu = ["torch==2.14.0", "accelerate>=0.30"]
+cu126 = ["torch==2.14.0", "accelerate>=0.30"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+conflicts = [[{ extra = "cpu" }, { extra = "cu126" }]]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", extra = "cpu" },
+    { index = "pytorch-cu126", extra = "cu126" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[tool.setuptools.package-data]
+populism_axis = ["resources/*.json", "resources/*.npy"]

@@ -1,0 +1,40 @@
+{
+  "anchor_counts": {
+    "E__mainstream": 10,
+    "E__populist": 10,
+    "M__mainstream": 10,
+    "M__populist": 10,
+    "P__mainstream": 10,
+    "P__populist": 10
+  },
+  "anchors": [
+    "results/v4/embeddings/qwen3-emb-4b-noinstr/sentences/v3_proposition__ea98e5b2.npz"
+  ],
+  "axis_rule": "normalize(mean(unit populist) - mean(unit mainstream)); anchors not centered (V3 rule)",
+  "difference_parallelism": {
+    "E": 0.25058661077849975,
+    "M": 0.2182115085070797,
+    "P": 0.2689552719079227
+  },
+  "nuisance": null,
+  "per_dataset": {},
+  "transform": "v3",
+  "v3_rule_channel_axis_gram": {
+    "E": {
+      "E": 1.0,
+      "M": 0.45967293343187177,
+      "P": 0.3440722240733951
+    },
+    "M": {
+      "E": 0.45967293343187177,
+      "M": 1.0,
+      "P": 0.3041902217873016
+    },
+    "P": {
+      "E": 0.3440722240733951,
+      "M": 0.3041902217873016,
+      "P": 1.0
+    }
+  },
+  "window_transform": "center on scored documents' window mean, then L2-normalize (V3 rule)"
+}

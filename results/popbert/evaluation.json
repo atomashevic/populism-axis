@@ -1,0 +1,68 @@
+{
+  "dimensions": {
+    "centr": {
+      "auroc": 0.755532666274279,
+      "average_precision": 0.13756490162003035,
+      "channel": "P",
+      "fleiss_kappa": 0.244,
+      "human_ceiling_f1": 0.3272114670316459,
+      "human_pairwise_f1": 0.2617822162553983,
+      "popbert_published_f1": 0.696,
+      "prevalence": {
+        "f1": 0.15517241379310345,
+        "f1_ci95": [
+          0.06446572580645162,
+          0.2537439919048823
+        ],
+        "precision": 0.16071428571428573,
+        "recall": 0.15,
+        "threshold": 0.18888906059938104
+      },
+      "test_positive_rate": 0.03411028993746447,
+      "train_threshold": {
+        "f1": 0.20359281437125748,
+        "f1_ci95": [
+          0.11764705882352941,
+          0.28439404197698015
+        ],
+        "precision": 0.1588785046728972,
+        "recall": 0.2833333333333333,
+        "threshold": 0.16392635129765923
+      }
+    },
+    "elite": {
+      "auroc": 0.7936767399044978,
+      "average_precision": 0.40437123936860464,
+      "channel": "E",
+      "fleiss_kappa": 0.41,
+      "human_ceiling_f1": 0.5762887881754317,
+      "human_pairwise_f1": 0.4962053824226655,
+      "popbert_published_f1": 0.847,
+      "prevalence": {
+        "f1": 0.39705882352941174,
+        "f1_ci95": [
+          0.34444068343004514,
+          0.4485335677749361
+        ],
+        "precision": 0.40601503759398494,
+        "recall": 0.38848920863309355,
+        "threshold": 0.1443583622464678
+      },
+      "test_positive_rate": 0.1580443433769187,
+      "train_threshold": {
+        "f1": 0.4312169312169312,
+        "f1_ci95": [
+          0.385663664711398,
+          0.47292570158198277
+        ],
+        "precision": 0.3410041841004184,
+        "recall": 0.5863309352517986,
+        "threshold": 0.0998644886457402
+      }
+    }
+  },
+  "human_macro_two_dimensions": 0.45175012760353883,
+  "label": "multilingual-e5-large-instruct",
+  "macro_f1_two_dimensions": 0.31740487279409435,
+  "popbert_macro_two_dimensions": 0.7715
+}

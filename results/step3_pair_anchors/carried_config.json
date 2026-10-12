@@ -1,0 +1,23 @@
+{
+  "step": 3,
+  "label": "B1c_cap60_clean",
+  "result_dir": "results/step1b_text_cleaning/B1c_cap60_clean",
+  "encoder": "e5-large-v2",
+  "window_setting": "spw1_cap60 (English: spw1_cap60_clean, text cleaning v4_clean_r1)",
+  "embeddings_dirs": {
+    "english": "results/embeddings/e5-large-v2/spw1_cap60_clean",
+    "agora": "results/embeddings/e5-large-v2/spw1_cap60"
+  },
+  "anchors": "results/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+  "anchor_file": "anchors/proposition_anchors.json",
+  "anchor_sha256": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6",
+  "text_cleaning": "v4_clean_r1 (src/populism_axis/v4_text.py), English only",
+  "transform": "v3",
+  "top_k": 3,
+  "system": "PE__frozen__soft",
+  "dev_english_spearman": 0.4826,
+  "agora_spearman": 0.3591,
+  "decision": "V4 minimal-pair anchors and the pooled set fail the adoption rule; V3 anchors carried",
+  "grid": "results/step2_whitening/grid.json",
+  "step3_summary": "results/step3_pair_anchors/summary.json"
+}

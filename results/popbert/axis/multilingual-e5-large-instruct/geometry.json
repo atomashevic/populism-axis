@@ -1,0 +1,26 @@
+{
+  "anchor_language": "en",
+  "anchor_set_id": "pa_v3_proposition_anchors_r1",
+  "anchor_sha256": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6",
+  "anchors_translated": false,
+  "channel_axis_gram": {
+    "E": {
+      "E": 1.0,
+      "M": 0.5394315123558044,
+      "P": 0.45532548427581787
+    },
+    "M": {
+      "E": 0.5394315123558044,
+      "M": 0.9999998211860657,
+      "P": 0.3129838705062866
+    },
+    "P": {
+      "E": 0.45532548427581787,
+      "M": 0.3129838705062866,
+      "P": 1.0
+    }
+  },
+  "encoder": "intfloat/multilingual-e5-large-instruct",
+  "label": "multilingual-e5-large-instruct",
+  "text_language": "de"
+}

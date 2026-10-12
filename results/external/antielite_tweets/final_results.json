@@ -1,0 +1,1651 @@
+{
+  "all": {
+    "y_any": {
+      "E_axis": {
+        "auroc": 0.7719586579145084,
+        "auroc_ci95_country": [
+          0.7552451307259067,
+          0.7876412077285332
+        ],
+        "average_precision": 0.6703289477507446,
+        "n": 5401,
+        "n_positive": 2057,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.7019070542492131,
+            "f1_macro": 0.6956403068710533,
+            "f1_pos": 0.6519671422395158,
+            "precision_pos": 0.5869988322304399,
+            "recall_pos": 0.7331064657267866
+          },
+          "oracle": {
+            "accuracy": 0.7019070542492131,
+            "f1_macro": 0.6957389647942718,
+            "f1_pos": 0.6524179620034543,
+            "precision_pos": 0.5867961165048544,
+            "recall_pos": 0.7345649003403014
+          },
+          "prevalence_train": {
+            "accuracy": 0.7293093871505277,
+            "f1_macro": 0.7125809231116873,
+            "f1_pos": 0.6432406051732552,
+            "precision_pos": 0.6457618814306713,
+            "recall_pos": 0.6407389402041809
+          }
+        }
+      },
+      "E_axis_plus_nli": {
+        "auroc": 0.7923478122317772,
+        "auroc_ci95_country": [
+          0.7741113494222971,
+          0.8088787907035431
+        ],
+        "average_precision": 0.7166710174890402,
+        "n": 5401,
+        "n_positive": 2057,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.7291242362525459,
+            "f1_macro": 0.7195485383621397,
+            "f1_pos": 0.6677265500794912,
+            "precision_pos": 0.6265984654731458,
+            "recall_pos": 0.7146329606222654
+          },
+          "oracle": {
+            "accuracy": 0.7394926865395297,
+            "f1_macro": 0.7272113042509043,
+            "f1_pos": 0.6693301997649824,
+            "precision_pos": 0.6478616924476797,
+            "recall_pos": 0.6922702965483715
+          },
+          "prevalence_train": {
+            "accuracy": 0.7444917607850398,
+            "f1_macro": 0.7287015553311412,
+            "f1_pos": 0.6632503660322109,
+            "precision_pos": 0.6658500734933855,
+            "recall_pos": 0.6606708799222168
+          }
+        }
+      },
+      "E_nli": {
+        "auroc": 0.7647083537832073,
+        "auroc_ci95_country": [
+          0.7465816928860893,
+          0.7802100195818337
+        ],
+        "average_precision": 0.6948808953909107,
+        "n": 5401,
+        "n_positive": 2057,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6998703943714127,
+            "f1_macro": 0.6912199638952182,
+            "f1_pos": 0.6395374694240605,
+            "precision_pos": 0.589344262295082,
+            "recall_pos": 0.699076324744774
+          },
+          "oracle": {
+            "accuracy": 0.6998703943714127,
+            "f1_macro": 0.6912199638952182,
+            "f1_pos": 0.6395374694240605,
+            "precision_pos": 0.589344262295082,
+            "recall_pos": 0.699076324744774
+          },
+          "prevalence_train": {
+            "accuracy": 0.7178300314756526,
+            "f1_macro": 0.7003921524091734,
+            "f1_pos": 0.6281112737920937,
+            "precision_pos": 0.6305732484076433,
+            "recall_pos": 0.6256684491978609
+          }
+        }
+      },
+      "PE_axis": {
+        "auroc": 0.7214533812655118,
+        "auroc_ci95_country": [
+          0.7054593854484799,
+          0.7361578703369025
+        ],
+        "average_precision": 0.6045951275612349,
+        "n": 5401,
+        "n_positive": 2057,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6458063321607109,
+            "f1_macro": 0.6431498348480822,
+            "f1_pos": 0.6123606889564336,
+            "precision_pos": 0.5250173731758165,
+            "recall_pos": 0.7345649003403014
+          },
+          "oracle": {
+            "accuracy": 0.6261803369746344,
+            "f1_macro": 0.6258268768628887,
+            "f1_pos": 0.6143266475644699,
+            "precision_pos": 0.5059786028949025,
+            "recall_pos": 0.7817209528439475
+          },
+          "prevalence_train": {
+            "accuracy": 0.6785780411034994,
+            "f1_macro": 0.6587144203296096,
+            "f1_pos": 0.5763787213274768,
+            "precision_pos": 0.5786379225869672,
+            "recall_pos": 0.5741370928536704
+          }
+        }
+      },
+      "PE_axis_plus_nli": {
+        "auroc": 0.7540131666174319,
+        "auroc_ci95_country": [
+          0.7374941955842996,
+          0.7690806145144958
+        ],
+        "average_precision": 0.6573176389242517,
+        "n": 5401,
+        "n_positive": 2057,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6743195704499166,
+            "f1_macro": 0.6710556571147264,
+            "f1_pos": 0.6382891219411886,
+            "precision_pos": 0.5531004989308624,
+            "recall_pos": 0.7544968400583374
+          },
+          "oracle": {
+            "accuracy": 0.6882058877985558,
+            "f1_macro": 0.6822572689022199,
+            "f1_pos": 0.6387816387816387,
+            "precision_pos": 0.5715930902111325,
+            "recall_pos": 0.723869713174526
+          },
+          "prevalence_train": {
+            "accuracy": 0.7163488242917978,
+            "f1_macro": 0.6988194078023974,
+            "f1_pos": 0.6261591020009761,
+            "precision_pos": 0.6286134247917687,
+            "recall_pos": 0.6237238697131745
+          }
+        }
+      },
+      "P_axis": {
+        "auroc": 0.6206117574951211,
+        "auroc_ci95_country": [
+          0.6083845490914144,
+          0.6321261279896961
+        ],
+        "average_precision": 0.4761680763791517,
+        "n": 5401,
+        "n_positive": 2057,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.5343454915756342,
+            "f1_macro": 0.5315933206215783,
+            "f1_pos": 0.5674978503869303,
+            "precision_pos": 0.4390633315593401,
+            "recall_pos": 0.8021390374331551
+          },
+          "oracle": {
+            "accuracy": 0.5360118496574708,
+            "f1_macro": 0.5335673266726215,
+            "f1_pos": 0.5673342541436464,
+            "precision_pos": 0.4398929049531459,
+            "recall_pos": 0.7987360233349539
+          },
+          "prevalence_train": {
+            "accuracy": 0.604887983706721,
+            "f1_macro": 0.5804703761425039,
+            "f1_pos": 0.4792581747193753,
+            "precision_pos": 0.48113669769720724,
+            "recall_pos": 0.47739426349052017
+          }
+        }
+      },
+      "RoBERTa_anti_elitism": {
+        "auroc": 0.5650584391493162,
+        "auroc_ci95_country": [
+          0.5497819163750591,
+          0.57903342114728
+        ],
+        "average_precision": 0.4731796219808318,
+        "n": 5401,
+        "n_positive": 2057,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.48676171079429736,
+            "f1_macro": 0.4837723623434067,
+            "f1_pos": 0.5230557467309016,
+            "precision_pos": 0.4047936085219707,
+            "recall_pos": 0.7389402041808459
+          },
+          "oracle": {
+            "accuracy": 0.48676171079429736,
+            "f1_macro": 0.4837723623434067,
+            "f1_pos": 0.5230557467309016,
+            "precision_pos": 0.4047936085219707,
+            "recall_pos": 0.7389402041808459
+          },
+          "prevalence_train": {
+            "accuracy": 0.5689687094982411,
+            "f1_macro": 0.5428492894882657,
+            "f1_pos": 0.4335766423357664,
+            "precision_pos": 0.4339990258158792,
+            "recall_pos": 0.43315508021390375
+          }
+        }
+      },
+      "RoBERTa_populist_total": {
+        "auroc": 0.5622769170739196,
+        "auroc_ci95_country": [
+          0.5470054262799465,
+          0.5751925916516699
+        ],
+        "average_precision": 0.4606042410973779,
+        "n": 5401,
+        "n_positive": 2057,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.479540825773005,
+            "f1_macro": 0.47567099934882845,
+            "f1_pos": 0.5207161125319693,
+            "precision_pos": 0.4009978991596639,
+            "recall_pos": 0.7423432182790471
+          },
+          "oracle": {
+            "accuracy": 0.479540825773005,
+            "f1_macro": 0.47567099934882845,
+            "f1_pos": 0.5207161125319693,
+            "precision_pos": 0.4009978991596639,
+            "recall_pos": 0.7423432182790471
+          },
+          "prevalence_train": {
+            "accuracy": 0.5658211442325495,
+            "f1_macro": 0.539554198084314,
+            "f1_pos": 0.42957917781561666,
+            "precision_pos": 0.4298928919182084,
+            "recall_pos": 0.4292659212445309
+          }
+        }
+      },
+      "XLMT_released_classifier": {
+        "auroc": 0.7714714953955799,
+        "auroc_ci95_country": [
+          0.7438428678997205,
+          0.798661150736325
+        ],
+        "average_precision": 0.8005957362996798,
+        "n": 5401,
+        "n_positive": 2057,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.8250324014071468,
+            "f1_macro": 0.7979933686175913,
+            "f1_pos": 0.724087591240876,
+            "precision_pos": 0.9064327485380117,
+            "recall_pos": 0.6028196402527953
+          },
+          "oracle": {
+            "accuracy": 0.8237363451212738,
+            "f1_macro": 0.797471349991429,
+            "f1_pos": 0.7245370370370371,
+            "precision_pos": 0.8949249463902788,
+            "recall_pos": 0.6086533787068547
+          },
+          "prevalence_train": {
+            "accuracy": 0.7589335308276245,
+            "f1_macro": 0.7440358152472071,
+            "f1_pos": 0.6822840409956076,
+            "precision_pos": 0.6849583537481627,
+            "recall_pos": 0.6796305298979096
+          }
+        }
+      }
+    },
+    "y_general": {
+      "E_axis": {
+        "auroc": 0.7363811342910529,
+        "auroc_ci95_country": [
+          0.7174098292326769,
+          0.7581857769180386
+        ],
+        "average_precision": 0.4578057436726267,
+        "n": 5401,
+        "n_positive": 1289,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.7187557859655619,
+            "f1_macro": 0.6548515186796706,
+            "f1_pos": 0.5063373415664608,
+            "precision_pos": 0.4356823266219239,
+            "recall_pos": 0.604344453064391
+          },
+          "oracle": {
+            "accuracy": 0.7169042769857433,
+            "f1_macro": 0.6537931549125662,
+            "f1_pos": 0.5059773828756058,
+            "precision_pos": 0.4335548172757475,
+            "recall_pos": 0.6074476338246703
+          },
+          "prevalence_train": {
+            "accuracy": 0.748009627846695,
+            "f1_macro": 0.651895855939015,
+            "f1_pos": 0.4689816621147093,
+            "precision_pos": 0.4717425431711146,
+            "recall_pos": 0.4662529092319628
+          }
+        }
+      },
+      "E_axis_plus_nli": {
+        "auroc": 0.7368850615655366,
+        "auroc_ci95_country": [
+          0.7171317160623224,
+          0.7597564109110833
+        ],
+        "average_precision": 0.4451894099864434,
+        "n": 5401,
+        "n_positive": 1289,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6839474171449732,
+            "f1_macro": 0.6383383354757637,
+            "f1_pos": 0.5099052540913006,
+            "precision_pos": 0.4047402005469462,
+            "recall_pos": 0.6889061287820015
+          },
+          "oracle": {
+            "accuracy": 0.6839474171449732,
+            "f1_macro": 0.6385556664819491,
+            "f1_pos": 0.510467450530542,
+            "precision_pos": 0.4049135577797998,
+            "recall_pos": 0.6904577191621412
+          },
+          "prevalence_train": {
+            "accuracy": 0.746898722458804,
+            "f1_macro": 0.65036123076314,
+            "f1_pos": 0.4666406554818572,
+            "precision_pos": 0.46938775510204084,
+            "recall_pos": 0.46392552366175327
+          }
+        }
+      },
+      "E_nli": {
+        "auroc": 0.6463596489904098,
+        "auroc_ci95_country": [
+          0.626354366742564,
+          0.6691574676791415
+        ],
+        "average_precision": 0.3453818699029568,
+        "n": 5401,
+        "n_positive": 1289,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.5458248472505092,
+            "f1_macro": 0.5279145094174953,
+            "f1_pos": 0.43596229018165095,
+            "precision_pos": 0.30980392156862746,
+            "recall_pos": 0.7354538401861909
+          },
+          "oracle": {
+            "accuracy": 0.5604517681910757,
+            "f1_macro": 0.5380647387981733,
+            "f1_pos": 0.43637226970560306,
+            "precision_pos": 0.31440301060554227,
+            "recall_pos": 0.712955779674166
+          },
+          "prevalence_train": {
+            "accuracy": 0.6917237548602111,
+            "f1_macro": 0.5741415136946805,
+            "f1_pos": 0.3503706593835349,
+            "precision_pos": 0.35243328100470955,
+            "recall_pos": 0.3483320403413499
+          }
+        }
+      },
+      "PE_axis": {
+        "auroc": 0.6984039598759935,
+        "auroc_ci95_country": [
+          0.6846536930409532,
+          0.7133582582947847
+        ],
+        "average_precision": 0.414281096568595,
+        "n": 5401,
+        "n_positive": 1289,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6322903166080356,
+            "f1_macro": 0.595193688660427,
+            "f1_pos": 0.4726500265533723,
+            "precision_pos": 0.3593056116269681,
+            "recall_pos": 0.6904577191621412
+          },
+          "oracle": {
+            "accuracy": 0.633030920199963,
+            "f1_macro": 0.5956087924787521,
+            "f1_pos": 0.4725918041511442,
+            "precision_pos": 0.3596597812879708,
+            "recall_pos": 0.6889061287820015
+          },
+          "prevalence_train": {
+            "accuracy": 0.7243103129050176,
+            "f1_macro": 0.6191571855203478,
+            "f1_pos": 0.4190401872805306,
+            "precision_pos": 0.4215070643642072,
+            "recall_pos": 0.41660201706749417
+          }
+        }
+      },
+      "PE_axis_plus_nli": {
+        "auroc": 0.6755064931340616,
+        "auroc_ci95_country": [
+          0.6639647435475572,
+          0.6874757921199078
+        ],
+        "average_precision": 0.3940730837958177,
+        "n": 5401,
+        "n_positive": 1289,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6807998518792816,
+            "f1_macro": 0.6156962181630399,
+            "f1_pos": 0.45752045311516676,
+            "precision_pos": 0.3848597141344627,
+            "recall_pos": 0.5640031031807603
+          },
+          "oracle": {
+            "accuracy": 0.6758007776337716,
+            "f1_macro": 0.6133926386179063,
+            "f1_pos": 0.4580625193438564,
+            "precision_pos": 0.38105046343975285,
+            "recall_pos": 0.574088440651668
+          },
+          "prevalence_train": {
+            "accuracy": 0.7170894278837252,
+            "f1_macro": 0.6092871245803948,
+            "f1_pos": 0.4040561622464899,
+            "precision_pos": 0.40627450980392155,
+            "recall_pos": 0.4018619084561676
+          }
+        }
+      },
+      "P_axis": {
+        "auroc": 0.6183234824449925,
+        "auroc_ci95_country": [
+          0.6060402261006624,
+          0.6296657022203892
+        ],
+        "average_precision": 0.32175349661744856,
+        "n": 5401,
+        "n_positive": 1289,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.5134234401036845,
+            "f1_macro": 0.4994310782231471,
+            "f1_pos": 0.4157403290351267,
+            "precision_pos": 0.29136802742287315,
+            "recall_pos": 0.7253685027152832
+          },
+          "oracle": {
+            "accuracy": 0.4969450101832994,
+            "f1_macro": 0.4873738378504666,
+            "f1_pos": 0.4173279004932447,
+            "precision_pos": 0.2883817427385892,
+            "recall_pos": 0.7548487199379363
+          },
+          "prevalence_train": {
+            "accuracy": 0.6832068135530457,
+            "f1_macro": 0.5623760540129719,
+            "f1_pos": 0.33242294186500193,
+            "precision_pos": 0.33437990580847726,
+            "recall_pos": 0.330488750969744
+          }
+        }
+      },
+      "RoBERTa_anti_elitism": {
+        "auroc": 0.5727050461401925,
+        "auroc_ci95_country": [
+          0.5528563657102972,
+          0.5914245846438411
+        ],
+        "average_precision": 0.3253802533791553,
+        "n": 5401,
+        "n_positive": 1289,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.42917978152194036,
+            "f1_macro": 0.42599986480149726,
+            "f1_pos": 0.3832766553310662,
+            "precision_pos": 0.2582210242587601,
+            "recall_pos": 0.743211792086889
+          },
+          "oracle": {
+            "accuracy": 0.4241807072764303,
+            "f1_macro": 0.42165387796835574,
+            "f1_pos": 0.38342585249801747,
+            "precision_pos": 0.25752330226364845,
+            "recall_pos": 0.7501939487975174
+          },
+          "prevalence_train": {
+            "accuracy": 0.6730235141640437,
+            "f1_macro": 0.5510727940351424,
+            "f1_pos": 0.317092034029389,
+            "precision_pos": 0.3161141094834233,
+            "recall_pos": 0.3180760279286268
+          }
+        }
+      },
+      "RoBERTa_populist_total": {
+        "auroc": 0.5657678863052528,
+        "auroc_ci95_country": [
+          0.5488445769256922,
+          0.5819987166611311
+        ],
+        "average_precision": 0.30880126079839326,
+        "n": 5401,
+        "n_positive": 1289,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.41658952045917425,
+            "f1_macro": 0.41473534379574384,
+            "f1_pos": 0.38179321169315283,
+            "precision_pos": 0.2555147058823529,
+            "recall_pos": 0.7548487199379363
+          },
+          "oracle": {
+            "accuracy": 0.41658952045917425,
+            "f1_macro": 0.41473534379574384,
+            "f1_pos": 0.38179321169315283,
+            "precision_pos": 0.2555147058823529,
+            "recall_pos": 0.7548487199379363
+          },
+          "prevalence_train": {
+            "accuracy": 0.671357156082207,
+            "f1_macro": 0.5474633016317335,
+            "f1_pos": 0.3106796116504854,
+            "precision_pos": 0.3110419906687403,
+            "recall_pos": 0.3103180760279286
+          }
+        }
+      },
+      "XLMT_released_classifier": {
+        "auroc": 0.9709473945959979,
+        "auroc_ci95_country": [
+          0.9654194155516365,
+          0.9771607967782695
+        ],
+        "average_precision": 0.9490162465296661,
+        "n": 5401,
+        "n_positive": 1289,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.9548231808924273,
+            "f1_macro": 0.9366109572320549,
+            "f1_pos": 0.902633679169992,
+            "precision_pos": 0.9293344289235825,
+            "recall_pos": 0.8774243599689682
+          },
+          "oracle": {
+            "accuracy": 0.9563043880762822,
+            "f1_macro": 0.9394587251828631,
+            "f1_pos": 0.9075235109717869,
+            "precision_pos": 0.9168646080760094,
+            "recall_pos": 0.8983708301008534
+          },
+          "prevalence_train": {
+            "accuracy": 0.9553786335863729,
+            "f1_macro": 0.9383592221023531,
+            "f1_pos": 0.905969566913773,
+            "precision_pos": 0.9113029827315542,
+            "recall_pos": 0.9006982156710628
+          }
+        }
+      }
+    }
+  },
+  "nli_model": "bart-large-mnli",
+  "paired_auroc_test": {
+    "E_axis - RoBERTa_anti_elitism": {
+      "ci95": [
+        0.12233810423811109,
+        0.2534196417555847
+      ],
+      "delta_auroc": 0.18310203887647947,
+      "n_draws": 2000,
+      "p_two_sided": 0.0
+    },
+    "E_axis_plus_nli - E_axis": {
+      "ci95": [
+        -0.006820378837526101,
+        0.01002880924981562
+      ],
+      "delta_auroc": 0.0015208402642458152,
+      "n_draws": 2000,
+      "p_two_sided": 0.699
+    },
+    "E_axis_plus_nli - PE_axis_plus_nli": {
+      "ci95": [
+        0.03692260688219543,
+        0.10392773183979857
+      ],
+      "delta_auroc": 0.06830473836794837,
+      "n_draws": 2000,
+      "p_two_sided": 0.0
+    },
+    "E_axis_plus_nli - RoBERTa_anti_elitism": {
+      "ci95": [
+        0.12180579370952938,
+        0.25691957872341276
+      ],
+      "delta_auroc": 0.18462287914072528,
+      "n_draws": 2000,
+      "p_two_sided": 0.0
+    },
+    "E_axis_plus_nli - XLMT_released_classifier": {
+      "ci95": [
+        -0.1020382891636853,
+        0.0017120408904742579
+      ],
+      "delta_auroc": -0.05205075804381909,
+      "n_draws": 2000,
+      "p_two_sided": 0.056
+    },
+    "RoBERTa_anti_elitism - XLMT_released_classifier": {
+      "ci95": [
+        -0.28872130708422566,
+        -0.18548251770576654
+      ],
+      "delta_auroc": -0.23667363718454437,
+      "n_draws": 2000,
+      "p_two_sided": 0.0
+    }
+  },
+  "published": {
+    "other_best_test": {
+      "bow/per/macro avg": {
+        "f1": 0.6113265354971515,
+        "precision": 0.6080979047379349,
+        "recall": 0.630640178698731
+      },
+      "bow/per/micro avg": {
+        "f1": 0.6742209631728046,
+        "precision": 0.6742209631728046,
+        "recall": 0.6742209631728046
+      },
+      "bow/per/neg": {
+        "f1": 0.7676767676767676,
+        "precision": 0.8248914616497829,
+        "recall": 0.7178841309823678
+      },
+      "bow/per/pos": {
+        "f1": 0.4549763033175355,
+        "precision": 0.391304347826087,
+        "recall": 0.5433962264150943
+      },
+      "mse/per/macro avg": {
+        "f1": 0.6853738297781388,
+        "precision": 0.6763916595421298,
+        "recall": 0.7118007699253838
+      },
+      "mse/per/micro avg": {
+        "f1": 0.7374881964117092,
+        "precision": 0.7374881964117092,
+        "recall": 0.7374881964117092
+      },
+      "mse/per/neg": {
+        "f1": 0.8134228187919463,
+        "precision": 0.8706896551724138,
+        "recall": 0.7632241813602015
+      },
+      "mse/per/pos": {
+        "f1": 0.5573248407643312,
+        "precision": 0.4820936639118457,
+        "recall": 0.660377358490566
+      },
+      "transformer/nan/macro avg": {
+        "f1": 0.7448368442792235,
+        "precision": 0.7544928053883049,
+        "recall": 0.7370395893731286
+      },
+      "transformer/nan/micro avg": {
+        "f1": 0.8149197355996223,
+        "precision": 0.8149197355996223,
+        "recall": 0.8149197355996223
+      },
+      "transformer/nan/neg": {
+        "f1": 0.8785625774473359,
+        "precision": 0.8646341463414634,
+        "recall": 0.8929471032745592
+      },
+      "transformer/nan/pos": {
+        "f1": 0.611111111111111,
+        "precision": 0.6443514644351465,
+        "recall": 0.5811320754716981
+      }
+    },
+    "xlmt_test": {
+      "macro avg": {
+        "f1-score": 0.7448368442792235,
+        "precision": 0.7544928053883049,
+        "recall": 0.7370395893731286
+      },
+      "neg": {
+        "f1-score": 0.8785625774473359,
+        "precision": 0.8646341463414634,
+        "recall": 0.8929471032745592
+      },
+      "pos": {
+        "f1-score": 0.611111111111111,
+        "precision": 0.6443514644351465,
+        "recall": 0.5811320754716981
+      }
+    }
+  },
+  "roberta_correction": {
+    "corrected_runs": [
+      "results/roberta-correction/rc-20261002T1415Z-sigmoid",
+      "results/roberta-correction/rc-20261002T1530Z-sigmoid-usgov-sentences"
+    ],
+    "date": "2026-10-02",
+    "note": "RoBERTa entries use the corrected comparator: independent sigmoid outputs of the multi-label checkpoint (coastalcph/roberta-large-ft-trump-populism@9b5badfa), same windows, pooling, splits and seeds. The softmax values first reported are kept under superseded_softmax_roberta. Axis and claim-check entries are unchanged.",
+    "refresh": "results/roberta-correction/rc-20261002T1600Z-refresh-result-files"
+  },
+  "superseded_softmax_roberta": {
+    "/all/y_any/RoBERTa_anti_elitism": {
+      "auroc": 0.5638182899796005,
+      "auroc_ci95_country": [
+        0.549899290909276,
+        0.5763745242603119
+      ],
+      "average_precision": 0.4710445789098369,
+      "n": 5401,
+      "n_positive": 2057,
+      "thresholds": {
+        "f1opt_train": {
+          "accuracy": 0.4843547491205332,
+          "f1_macro": 0.48181659056004605,
+          "f1_pos": 0.5180827132721925,
+          "precision_pos": 0.40220311660397634,
+          "recall_pos": 0.7277588721438989
+        },
+        "oracle": {
+          "accuracy": 0.48250324014071466,
+          "f1_macro": 0.47953318153764385,
+          "f1_pos": 0.5188500602513342,
+          "precision_pos": 0.40165245202558636,
+          "recall_pos": 0.732620320855615
+        },
+        "prevalence_train": {
+          "accuracy": 0.5684132568042956,
+          "f1_macro": 0.5417849883298259,
+          "f1_pos": 0.4313247133447182,
+          "precision_pos": 0.43290891283055827,
+          "recall_pos": 0.4297520661157025
+        }
+      }
+    },
+    "/all/y_any/RoBERTa_populist_total": {
+      "auroc": 0.5633236404807485,
+      "auroc_ci95_country": [
+        0.5478833698934532,
+        0.5769717104724456
+      ],
+      "average_precision": 0.4555204327454769,
+      "n": 5401,
+      "n_positive": 2057,
+      "thresholds": {
+        "f1opt_train": {
+          "accuracy": 0.41196074800962784,
+          "f1_macro": 0.3582129669177807,
+          "f1_pos": 0.5439402642159679,
+          "precision_pos": 0.38597921336865704,
+          "recall_pos": 0.9207583859990277
+        },
+        "oracle": {
+          "accuracy": 0.41196074800962784,
+          "f1_macro": 0.3582129669177807,
+          "f1_pos": 0.5439402642159679,
+          "precision_pos": 0.38597921336865704,
+          "recall_pos": 0.9207583859990277
+        },
+        "prevalence_train": {
+          "accuracy": 0.5539714867617108,
+          "f1_macro": 0.5353223850062984,
+          "f1_pos": 0.44223199814771935,
+          "precision_pos": 0.42219274977895666,
+          "recall_pos": 0.4642683519688867
+        }
+      }
+    },
+    "/all/y_general/RoBERTa_anti_elitism": {
+      "auroc": 0.5716148388187386,
+      "auroc_ci95_country": [
+        0.5525389249729682,
+        0.588920357387395
+      ],
+      "average_precision": 0.32561868721030096,
+      "n": 5401,
+      "n_positive": 1289,
+      "thresholds": {
+        "f1opt_train": {
+          "accuracy": 0.437326421033142,
+          "f1_macro": 0.4327712931865224,
+          "f1_pos": 0.38194020744356316,
+          "precision_pos": 0.25882028665931645,
+          "recall_pos": 0.7284716834755625
+        },
+        "oracle": {
+          "accuracy": 0.437326421033142,
+          "f1_macro": 0.4327712931865224,
+          "f1_pos": 0.38194020744356316,
+          "precision_pos": 0.25882028665931645,
+          "recall_pos": 0.7284716834755625
+        },
+        "prevalence_train": {
+          "accuracy": 0.6817256063691909,
+          "f1_macro": 0.5603298871118052,
+          "f1_pos": 0.32930159968786576,
+          "precision_pos": 0.33124018838304553,
+          "recall_pos": 0.3273855702094647
+        }
+      }
+    },
+    "/all/y_general/RoBERTa_populist_total": {
+      "auroc": 0.5640661176733389,
+      "auroc_ci95_country": [
+        0.5485946945168403,
+        0.5790449938007229
+      ],
+      "average_precision": 0.303811547585585,
+      "n": 5401,
+      "n_positive": 1289,
+      "thresholds": {
+        "f1opt_train": {
+          "accuracy": 0.29383447509720423,
+          "f1_macro": 0.2781956030630045,
+          "f1_pos": 0.38444157520981276,
+          "precision_pos": 0.24271448950478908,
+          "recall_pos": 0.9239720713731575
+        },
+        "oracle": {
+          "accuracy": 0.29383447509720423,
+          "f1_macro": 0.2781956030630045,
+          "f1_pos": 0.38444157520981276,
+          "precision_pos": 0.24271448950478908,
+          "recall_pos": 0.9239720713731575
+        },
+        "prevalence_train": {
+          "accuracy": 0.6491390483243844,
+          "f1_macro": 0.5464442124424812,
+          "f1_pos": 0.3306252207700459,
+          "precision_pos": 0.3035019455252918,
+          "recall_pos": 0.3630721489526765
+        }
+      }
+    },
+    "/paired_auroc_test/E_axis - RoBERTa_anti_elitism": {
+      "ci95": [
+        0.12693817956701617,
+        0.2461900988647053
+      ],
+      "delta_auroc": 0.1813269331305548,
+      "n_draws": 2000,
+      "p_two_sided": 0.0
+    },
+    "/paired_auroc_test/E_axis_plus_nli - RoBERTa_anti_elitism": {
+      "ci95": [
+        0.12762567161939442,
+        0.24728050618213174
+      ],
+      "delta_auroc": 0.18284777339480063,
+      "n_draws": 2000,
+      "p_two_sided": 0.0
+    },
+    "/paired_auroc_test/RoBERTa_anti_elitism - XLMT_released_classifier": {
+      "ci95": [
+        -0.28091343591382717,
+        -0.1890418425798719
+      ],
+      "delta_auroc": -0.23489853143861972,
+      "n_draws": 2000,
+      "p_two_sided": 0.0
+    },
+    "/test/y_any/RoBERTa_anti_elitism": {
+      "auroc": 0.5575390297882523,
+      "auroc_ci95_country": [
+        0.5305731474171519,
+        0.5823107387819362
+      ],
+      "average_precision": 0.4751329602149739,
+      "n": 1059,
+      "n_positive": 416,
+      "thresholds": {
+        "f1opt_train": {
+          "accuracy": 0.47592067988668557,
+          "f1_macro": 0.4726024631536443,
+          "f1_pos": 0.5144356955380578,
+          "precision_pos": 0.40440165061898214,
+          "recall_pos": 0.7067307692307693
+        },
+        "oracle": {
+          "accuracy": 0.47780925401322,
+          "f1_macro": 0.47329875516806263,
+          "f1_pos": 0.5220397579948142,
+          "precision_pos": 0.407557354925776,
+          "recall_pos": 0.7259615384615384
+        },
+        "prevalence_train": {
+          "accuracy": 0.559017941454202,
+          "f1_macro": 0.5347209612791968,
+          "f1_pos": 0.4283965728274174,
+          "precision_pos": 0.43640897755610975,
+          "recall_pos": 0.4206730769230769
+        }
+      }
+    },
+    "/test/y_any/RoBERTa_populist_total": {
+      "auroc": 0.5538341906926666,
+      "auroc_ci95_country": [
+        0.5271946399240077,
+        0.5803267812008592
+      ],
+      "average_precision": 0.45834875530194596,
+      "n": 1059,
+      "n_positive": 416,
+      "thresholds": {
+        "f1opt_train": {
+          "accuracy": 0.42965061378659114,
+          "f1_macro": 0.37194532814893366,
+          "f1_pos": 0.5623188405797102,
+          "precision_pos": 0.4024896265560166,
+          "recall_pos": 0.9326923076923077
+        },
+        "oracle": {
+          "accuracy": 0.42965061378659114,
+          "f1_macro": 0.37194532814893366,
+          "f1_pos": 0.5623188405797102,
+          "precision_pos": 0.4024896265560166,
+          "recall_pos": 0.9326923076923077
+        },
+        "prevalence_train": {
+          "accuracy": 0.5410764872521246,
+          "f1_macro": 0.5235699897803516,
+          "f1_pos": 0.4322429906542056,
+          "precision_pos": 0.42045454545454547,
+          "recall_pos": 0.44471153846153844
+        }
+      }
+    },
+    "/test/y_general/RoBERTa_anti_elitism": {
+      "auroc": 0.572810227650777,
+      "auroc_ci95_country": [
+        0.5364670641343933,
+        0.602737173952107
+      ],
+      "average_precision": 0.3516407312263874,
+      "n": 1059,
+      "n_positive": 265,
+      "thresholds": {
+        "f1opt_train": {
+          "accuracy": 0.43531633616619453,
+          "f1_macro": 0.43165484412917676,
+          "f1_pos": 0.3860369609856263,
+          "precision_pos": 0.2651622002820874,
+          "recall_pos": 0.7094339622641509
+        },
+        "oracle": {
+          "accuracy": 0.4183191690273843,
+          "f1_macro": 0.4168585608650257,
+          "f1_pos": 0.38767395626242546,
+          "precision_pos": 0.2631578947368421,
+          "recall_pos": 0.7358490566037735
+        },
+        "prevalence_train": {
+          "accuracy": 0.6817752596789424,
+          "f1_macro": 0.5677001253717242,
+          "f1_pos": 0.34563106796116505,
+          "precision_pos": 0.356,
+          "recall_pos": 0.33584905660377357
+        }
+      }
+    },
+    "/test/y_general/RoBERTa_populist_total": {
+      "auroc": 0.5694881421985647,
+      "auroc_ci95_country": [
+        0.5360563990359428,
+        0.5985173603262316
+      ],
+      "average_precision": 0.32724340619631287,
+      "n": 1059,
+      "n_positive": 265,
+      "thresholds": {
+        "f1opt_train": {
+          "accuracy": 0.307837582625118,
+          "f1_macro": 0.2895291058511909,
+          "f1_pos": 0.403580146460537,
+          "precision_pos": 0.2572614107883817,
+          "recall_pos": 0.9358490566037736
+        },
+        "oracle": {
+          "accuracy": 0.307837582625118,
+          "f1_macro": 0.2895291058511909,
+          "f1_pos": 0.403580146460537,
+          "precision_pos": 0.2572614107883817,
+          "recall_pos": 0.9358490566037736
+        },
+        "prevalence_train": {
+          "accuracy": 0.6496694995278565,
+          "f1_macro": 0.5522351828319724,
+          "f1_pos": 0.3433628318584071,
+          "precision_pos": 0.3233333333333333,
+          "recall_pos": 0.3660377358490566
+        }
+      }
+    }
+  },
+  "test": {
+    "y_any": {
+      "E_axis": {
+        "auroc": 0.7969142540973801,
+        "auroc_ci95_country": [
+          0.7718746320257979,
+          0.8222256878245945
+        ],
+        "average_precision": 0.7091436855417402,
+        "n": 1059,
+        "n_positive": 416,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.7101038715769594,
+            "f1_macro": 0.7063331409354872,
+            "f1_pos": 0.6730564430244942,
+            "precision_pos": 0.6042065009560229,
+            "recall_pos": 0.7596153846153846
+          },
+          "oracle": {
+            "accuracy": 0.7488196411709159,
+            "f1_macro": 0.7386398218593431,
+            "f1_pos": 0.6870588235294117,
+            "precision_pos": 0.6728110599078341,
+            "recall_pos": 0.7019230769230769
+          },
+          "prevalence_train": {
+            "accuracy": 0.7488196411709159,
+            "f1_macro": 0.73485926628716,
+            "f1_pos": 0.6740196078431373,
+            "precision_pos": 0.6875,
+            "recall_pos": 0.6610576923076923
+          }
+        }
+      },
+      "E_axis_plus_nli": {
+        "auroc": 0.8176927563105635,
+        "auroc_ci95_country": [
+          0.7904639399249914,
+          0.8443752228929219
+        ],
+        "average_precision": 0.7558272180539143,
+        "n": 1059,
+        "n_positive": 416,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.7374881964117092,
+            "f1_macro": 0.7302904488288235,
+            "f1_pos": 0.6862302483069977,
+            "precision_pos": 0.6468085106382979,
+            "recall_pos": 0.7307692307692307
+          },
+          "oracle": {
+            "accuracy": 0.7544853635505193,
+            "f1_macro": 0.7451197476191181,
+            "f1_pos": 0.6962616822429907,
+            "precision_pos": 0.6772727272727272,
+            "recall_pos": 0.7163461538461539
+          },
+          "prevalence_train": {
+            "accuracy": 0.7620396600566572,
+            "f1_macro": 0.7488140417457305,
+            "f1_pos": 0.6911764705882353,
+            "precision_pos": 0.705,
+            "recall_pos": 0.6778846153846154
+          }
+        }
+      },
+      "E_nli": {
+        "auroc": 0.7887867866969733,
+        "auroc_ci95_country": [
+          0.7558015916549182,
+          0.8184918471181254
+        ],
+        "average_precision": 0.7355477715455118,
+        "n": 1059,
+        "n_positive": 416,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.7119924457034938,
+            "f1_macro": 0.7059343012462933,
+            "f1_pos": 0.6637265711135611,
+            "precision_pos": 0.6130346232179226,
+            "recall_pos": 0.7235576923076923
+          },
+          "oracle": {
+            "accuracy": 0.7053824362606232,
+            "f1_macro": 0.7025687928042115,
+            "f1_pos": 0.6736401673640168,
+            "precision_pos": 0.5962962962962963,
+            "recall_pos": 0.7740384615384616
+          },
+          "prevalence_train": {
+            "accuracy": 0.7337110481586402,
+            "f1_macro": 0.7189109514773652,
+            "f1_pos": 0.6544117647058824,
+            "precision_pos": 0.6675,
+            "recall_pos": 0.6418269230769231
+          }
+        }
+      },
+      "PE_axis": {
+        "auroc": 0.74757746141883,
+        "auroc_ci95_country": [
+          0.7212722148948459,
+          0.7727223822777262
+        ],
+        "average_precision": 0.6338260884529188,
+        "n": 1059,
+        "n_positive": 416,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6562795089707271,
+            "f1_macro": 0.6549797002656509,
+            "f1_pos": 0.6338028169014085,
+            "precision_pos": 0.5449826989619377,
+            "recall_pos": 0.7572115384615384
+          },
+          "oracle": {
+            "accuracy": 0.6506137865911237,
+            "f1_macro": 0.6505760861810659,
+            "f1_pos": 0.6469465648854962,
+            "precision_pos": 0.5363924050632911,
+            "recall_pos": 0.8149038461538461
+          },
+          "prevalence_train": {
+            "accuracy": 0.6864966949952785,
+            "f1_macro": 0.6690724676967561,
+            "f1_pos": 0.5931372549019608,
+            "precision_pos": 0.605,
+            "recall_pos": 0.5817307692307693
+          }
+        }
+      },
+      "PE_axis_plus_nli": {
+        "auroc": 0.7836239382701281,
+        "auroc_ci95_country": [
+          0.749576717905547,
+          0.8125602080846094
+        ],
+        "average_precision": 0.7043360862148472,
+        "n": 1059,
+        "n_positive": 416,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6921624173748819,
+            "f1_macro": 0.6899727001688278,
+            "f1_pos": 0.6639175257731958,
+            "precision_pos": 0.5812274368231047,
+            "recall_pos": 0.7740384615384616
+          },
+          "oracle": {
+            "accuracy": 0.7271010387157696,
+            "f1_macro": 0.7205618509966336,
+            "f1_pos": 0.6778149386845039,
+            "precision_pos": 0.632016632016632,
+            "recall_pos": 0.7307692307692307
+          },
+          "prevalence_train": {
+            "accuracy": 0.7450424929178471,
+            "f1_macro": 0.7308721875847113,
+            "f1_pos": 0.6691176470588235,
+            "precision_pos": 0.6825,
+            "recall_pos": 0.65625
+          }
+        }
+      },
+      "P_axis": {
+        "auroc": 0.6439915061610241,
+        "auroc_ci95_country": [
+          0.613714847905559,
+          0.6716010421064191
+        ],
+        "average_precision": 0.4900436556656216,
+        "n": 1059,
+        "n_positive": 416,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.5533522190745986,
+            "f1_macro": 0.550246602205009,
+            "f1_pos": 0.5876198779424586,
+            "precision_pos": 0.46101231190150477,
+            "recall_pos": 0.8100961538461539
+          },
+          "oracle": {
+            "accuracy": 0.5807365439093485,
+            "f1_macro": 0.5804638314274702,
+            "f1_pos": 0.5911602209944752,
+            "precision_pos": 0.4791044776119403,
+            "recall_pos": 0.7716346153846154
+          },
+          "prevalence_train": {
+            "accuracy": 0.6203966005665722,
+            "f1_macro": 0.5992985904039034,
+            "f1_pos": 0.5073529411764706,
+            "precision_pos": 0.5175,
+            "recall_pos": 0.49759615384615385
+          }
+        }
+      },
+      "RoBERTa_anti_elitism": {
+        "auroc": 0.5559613889221199,
+        "auroc_ci95_country": [
+          0.5209699289288064,
+          0.5831005885658879
+        ],
+        "average_precision": 0.4762278465140655,
+        "n": 1059,
+        "n_positive": 416,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.4740321057601511,
+            "f1_macro": 0.4682953827404652,
+            "f1_pos": 0.523524379811805,
+            "precision_pos": 0.4063745019920319,
+            "recall_pos": 0.7355769230769231
+          },
+          "oracle": {
+            "accuracy": 0.47780925401322,
+            "f1_macro": 0.4731111013143724,
+            "f1_pos": 0.5228645383951682,
+            "precision_pos": 0.4078061911170929,
+            "recall_pos": 0.7283653846153846
+          },
+          "prevalence_train": {
+            "accuracy": 0.5637393767705382,
+            "f1_macro": 0.5394924098671727,
+            "f1_pos": 0.4338235294117647,
+            "precision_pos": 0.4425,
+            "recall_pos": 0.4254807692307692
+          }
+        }
+      },
+      "RoBERTa_populist_total": {
+        "auroc": 0.5559931660485703,
+        "auroc_ci95_country": [
+          0.5289895629533644,
+          0.5832702529458517
+        ],
+        "average_precision": 0.4658611267178655,
+        "n": 1059,
+        "n_positive": 416,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.48536355051935787,
+            "f1_macro": 0.4814499688684,
+            "f1_pos": 0.526498696785404,
+            "precision_pos": 0.4122448979591837,
+            "recall_pos": 0.7283653846153846
+          },
+          "oracle": {
+            "accuracy": 0.48725212464589235,
+            "f1_macro": 0.4824508112399051,
+            "f1_pos": 0.5322997416020672,
+            "precision_pos": 0.4147651006711409,
+            "recall_pos": 0.7427884615384616
+          },
+          "prevalence_train": {
+            "accuracy": 0.5533522190745986,
+            "f1_macro": 0.5287430721307496,
+            "f1_pos": 0.42105263157894735,
+            "precision_pos": 0.428927680798005,
+            "recall_pos": 0.41346153846153844
+          }
+        }
+      },
+      "XLMT_released_classifier": {
+        "auroc": 0.6940984268453165,
+        "auroc_ci95_country": [
+          0.6528686042335206,
+          0.7385703544455842
+        ],
+        "average_precision": 0.6589147323722044,
+        "n": 1059,
+        "n_positive": 416,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.7129367327667611,
+            "f1_macro": 0.6775093160235606,
+            "f1_pos": 0.5706214689265536,
+            "precision_pos": 0.6917808219178082,
+            "recall_pos": 0.4855769230769231
+          },
+          "oracle": {
+            "accuracy": 0.6581680830972616,
+            "f1_macro": 0.6525212643303095,
+            "f1_pos": 0.6082251082251082,
+            "precision_pos": 0.5531496062992126,
+            "recall_pos": 0.6754807692307693
+          },
+          "prevalence_train": {
+            "accuracy": 0.6808309726156752,
+            "f1_macro": 0.6630918496430831,
+            "f1_pos": 0.5857843137254902,
+            "precision_pos": 0.5975,
+            "recall_pos": 0.5745192307692307
+          }
+        }
+      }
+    },
+    "y_general": {
+      "E_axis": {
+        "auroc": 0.7541371607813319,
+        "auroc_ci95_country": [
+          0.7137460488774126,
+          0.7986182448528857
+        ],
+        "average_precision": 0.466626509483528,
+        "n": 1059,
+        "n_positive": 265,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.7252124645892352,
+            "f1_macro": 0.6697452109845947,
+            "f1_pos": 0.5344,
+            "precision_pos": 0.4638888888888889,
+            "recall_pos": 0.630188679245283
+          },
+          "oracle": {
+            "accuracy": 0.6949952785646837,
+            "f1_macro": 0.6566261613286956,
+            "f1_pos": 0.5418439716312057,
+            "precision_pos": 0.4340909090909091,
+            "recall_pos": 0.720754716981132
+          },
+          "prevalence_train": {
+            "accuracy": 0.7365439093484419,
+            "f1_macro": 0.642101884209825,
+            "f1_pos": 0.458252427184466,
+            "precision_pos": 0.472,
+            "recall_pos": 0.44528301886792454
+          }
+        }
+      },
+      "E_axis_plus_nli": {
+        "auroc": 0.7556580010455777,
+        "auroc_ci95_country": [
+          0.7142581632192331,
+          0.8008072253740812
+        ],
+        "average_precision": 0.4562943679872148,
+        "n": 1059,
+        "n_positive": 265,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6940509915014165,
+            "f1_macro": 0.6553177639192491,
+            "f1_pos": 0.5397727272727273,
+            "precision_pos": 0.4328018223234624,
+            "recall_pos": 0.7169811320754716
+          },
+          "oracle": {
+            "accuracy": 0.724268177525968,
+            "f1_macro": 0.6730928619756427,
+            "f1_pos": 0.54375,
+            "precision_pos": 0.464,
+            "recall_pos": 0.6566037735849056
+          },
+          "prevalence_train": {
+            "accuracy": 0.7384324834749764,
+            "f1_macro": 0.6446674621007941,
+            "f1_pos": 0.4621359223300971,
+            "precision_pos": 0.476,
+            "recall_pos": 0.4490566037735849
+          }
+        }
+      },
+      "E_nli": {
+        "auroc": 0.6699253837745354,
+        "auroc_ci95_country": [
+          0.6315726586102071,
+          0.7056510033347727
+        ],
+        "average_precision": 0.37980216676562056,
+        "n": 1059,
+        "n_positive": 265,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.5646836638338055,
+            "f1_macro": 0.5498881171879106,
+            "f1_pos": 0.4682814302191465,
+            "precision_pos": 0.3372093023255814,
+            "recall_pos": 0.7660377358490567
+          },
+          "oracle": {
+            "accuracy": 0.5996222851746931,
+            "f1_macro": 0.5769810524411751,
+            "f1_pos": 0.47911547911547914,
+            "precision_pos": 0.3551912568306011,
+            "recall_pos": 0.7358490566037735
+          },
+          "prevalence_train": {
+            "accuracy": 0.7006610009442871,
+            "f1_macro": 0.593355904281414,
+            "f1_pos": 0.3844660194174757,
+            "precision_pos": 0.396,
+            "recall_pos": 0.37358490566037733
+          }
+        }
+      },
+      "PE_axis": {
+        "auroc": 0.7106791502305023,
+        "auroc_ci95_country": [
+          0.6743935685278923,
+          0.7498849616087531
+        ],
+        "average_precision": 0.4098850230230535,
+        "n": 1059,
+        "n_positive": 265,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6458923512747875,
+            "f1_macro": 0.6145454086619424,
+            "f1_pos": 0.5046235138705416,
+            "precision_pos": 0.3882113821138211,
+            "recall_pos": 0.720754716981132
+          },
+          "oracle": {
+            "accuracy": 0.6430594900849859,
+            "f1_macro": 0.6130313904119653,
+            "f1_pos": 0.5052356020942408,
+            "precision_pos": 0.3867735470941884,
+            "recall_pos": 0.7283018867924528
+          },
+          "prevalence_train": {
+            "accuracy": 0.7119924457034938,
+            "f1_macro": 0.6087493716272281,
+            "f1_pos": 0.4077669902912621,
+            "precision_pos": 0.42,
+            "recall_pos": 0.39622641509433965
+          }
+        }
+      },
+      "PE_axis_plus_nli": {
+        "auroc": 0.6873532626776293,
+        "auroc_ci95_country": [
+          0.6537122059823107,
+          0.716680171909976
+        ],
+        "average_precision": 0.39631995020155264,
+        "n": 1059,
+        "n_positive": 265,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.6855524079320113,
+            "f1_macro": 0.627521106260635,
+            "f1_pos": 0.48049921996879874,
+            "precision_pos": 0.4095744680851064,
+            "recall_pos": 0.5811320754716981
+          },
+          "oracle": {
+            "accuracy": 0.6440037771482531,
+            "f1_macro": 0.6092078796035727,
+            "f1_pos": 0.49259757738896365,
+            "precision_pos": 0.38284518828451886,
+            "recall_pos": 0.690566037735849
+          },
+          "prevalence_train": {
+            "accuracy": 0.7025495750708215,
+            "f1_macro": 0.595921482172383,
+            "f1_pos": 0.3883495145631068,
+            "precision_pos": 0.4,
+            "recall_pos": 0.37735849056603776
+          }
+        }
+      },
+      "P_axis": {
+        "auroc": 0.6210969060405873,
+        "auroc_ci95_country": [
+          0.5886420437991897,
+          0.6524729526979016
+        ],
+        "average_precision": 0.31469317158699184,
+        "n": 1059,
+        "n_positive": 265,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.5212464589235127,
+            "f1_macro": 0.509482589291832,
+            "f1_pos": 0.4335195530726257,
+            "precision_pos": 0.30793650793650795,
+            "recall_pos": 0.7320754716981132
+          },
+          "oracle": {
+            "accuracy": 0.5108593012275732,
+            "f1_macro": 0.5037218913070225,
+            "f1_pos": 0.44420600858369097,
+            "precision_pos": 0.3103448275862069,
+            "recall_pos": 0.7811320754716982
+          },
+          "prevalence_train": {
+            "accuracy": 0.67233238904627,
+            "f1_macro": 0.5548722359168792,
+            "f1_pos": 0.3262135922330097,
+            "precision_pos": 0.336,
+            "recall_pos": 0.3169811320754717
+          }
+        }
+      },
+      "RoBERTa_anti_elitism": {
+        "auroc": 0.5710351219048524,
+        "auroc_ci95_country": [
+          0.5304905425381283,
+          0.6038117931559175
+        ],
+        "average_precision": 0.3472811949625066,
+        "n": 1059,
+        "n_positive": 265,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.4126534466477809,
+            "f1_macro": 0.4112880737880738,
+            "f1_pos": 0.38293650793650796,
+            "precision_pos": 0.2597577388963661,
+            "recall_pos": 0.7283018867924528
+          },
+          "oracle": {
+            "accuracy": 0.43342776203966005,
+            "f1_macro": 0.42992592805259683,
+            "f1_pos": 0.38524590163934425,
+            "precision_pos": 0.26441631504922647,
+            "recall_pos": 0.7094339622641509
+          },
+          "prevalence_train": {
+            "accuracy": 0.6836638338054769,
+            "f1_macro": 0.5713933627073021,
+            "f1_pos": 0.3520309477756286,
+            "precision_pos": 0.3611111111111111,
+            "recall_pos": 0.3433962264150943
+          }
+        }
+      },
+      "RoBERTa_populist_total": {
+        "auroc": 0.568822774582957,
+        "auroc_ci95_country": [
+          0.5330431111207065,
+          0.5989122695032116
+        ],
+        "average_precision": 0.3339431327141285,
+        "n": 1059,
+        "n_positive": 265,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.42776203966005666,
+            "f1_macro": 0.4259803220035778,
+            "f1_pos": 0.394,
+            "precision_pos": 0.2680272108843537,
+            "recall_pos": 0.7433962264150943
+          },
+          "oracle": {
+            "accuracy": 0.42776203966005666,
+            "f1_macro": 0.4265342960288809,
+            "f1_pos": 0.4,
+            "precision_pos": 0.27114093959731544,
+            "recall_pos": 0.7622641509433963
+          },
+          "prevalence_train": {
+            "accuracy": 0.6685552407932012,
+            "f1_macro": 0.5497410801349412,
+            "f1_pos": 0.31844660194174756,
+            "precision_pos": 0.328,
+            "recall_pos": 0.30943396226415093
+          }
+        }
+      },
+      "XLMT_released_classifier": {
+        "auroc": 0.8077087590893968,
+        "auroc_ci95_country": [
+          0.7706837287478753,
+          0.8418981600251896
+        ],
+        "average_precision": 0.6318297955656869,
+        "n": 1059,
+        "n_positive": 265,
+        "thresholds": {
+          "f1opt_train": {
+            "accuracy": 0.8111425873465533,
+            "f1_macro": 0.7196395289732294,
+            "f1_pos": 0.5594713656387665,
+            "precision_pos": 0.671957671957672,
+            "recall_pos": 0.47924528301886793
+          },
+          "oracle": {
+            "accuracy": 0.8054768649669499,
+            "f1_macro": 0.7420908523436613,
+            "f1_pos": 0.6142322097378277,
+            "precision_pos": 0.6096654275092936,
+            "recall_pos": 0.6188679245283019
+          },
+          "prevalence_train": {
+            "accuracy": 0.8101983002832861,
+            "f1_macro": 0.7421594219576159,
+            "f1_pos": 0.6097087378640776,
+            "precision_pos": 0.628,
+            "recall_pos": 0.5924528301886792
+          }
+        }
+      }
+    }
+  },
+  "xlmt_reproduction_at_0.5": {
+    "accuracy_test": 0.8120868744098206,
+    "f1_macro_test": 0.7405769716068911,
+    "f1_pos_test": 0.6043737574552683,
+    "published_accuracy": 0.815,
+    "published_f1_macro": 0.745,
+    "published_f1_pos": 0.611,
+    "threshold": 0.5
+  }
+}

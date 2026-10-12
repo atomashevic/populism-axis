@@ -1,0 +1,40 @@
+{
+  "anchor_counts": {
+    "E__mainstream": 10,
+    "E__populist": 10,
+    "M__mainstream": 10,
+    "M__populist": 10,
+    "P__mainstream": 10,
+    "P__populist": 10
+  },
+  "anchors": [
+    "/home/aleksandar/work/populism-axis/results/v4/embeddings/me5-large-instruct/sentences/v3_proposition__ea98e5b2.npz"
+  ],
+  "axis_rule": "normalize(mean(unit populist) - mean(unit mainstream)); anchors not centered (V3 rule)",
+  "difference_parallelism": {
+    "E": 0.2473284724400365,
+    "M": 0.2352961680770191,
+    "P": 0.23417242966077842
+  },
+  "nuisance": null,
+  "per_dataset": {},
+  "transform": "v3",
+  "v3_rule_channel_axis_gram": {
+    "E": {
+      "E": 0.9999999999999999,
+      "M": 0.5323531744786107,
+      "P": 0.39476662255550243
+    },
+    "M": {
+      "E": 0.5323531744786107,
+      "M": 1.0000000000000004,
+      "P": 0.23649408825410687
+    },
+    "P": {
+      "E": 0.39476662255550243,
+      "M": 0.23649408825410687,
+      "P": 0.9999999999999998
+    }
+  },
+  "window_transform": "center on scored documents' window mean, then L2-normalize (V3 rule)"
+}

@@ -1,0 +1,36 @@
+{
+  "argv": [
+    "--reuse"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "encoders": "qwen3-emb-0.6b,qwen3-emb-0.6b-noinstr,me5-large-instruct,me5-large-instruct-noinstr,qwen3-emb-4b-noinstr,qwen3-emb-8b-noinstr",
+    "selected": null
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "b95ecfa58b10b44d7f09f161e6d305ea2693d854",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "carried": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/step4_windows_topk/carried_config.json",
+      "sha256": "9fcec1181c46d802f4942aeb32781080ef22770b1dee50e35eb9e638d0f9cfa2"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "60369c8749b7f6b3ffde8f09272765efb69e6b146bd651af375d8db709ebe3a0",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/sweep_encoders_v4.py",
+  "timestamp_utc": "2026-09-24T05:32:46Z"
+}

@@ -1,0 +1,174 @@
+{
+  "seed": 20260923,
+  "stages": {
+    "final": {
+      "script": "scripts/final_holdout.py",
+      "draws": 4000,
+      "files": {
+        "results/final/final_results.json": {
+          "softmax_replay_byte_identical": true,
+          "changed_leaves": 25,
+          "superseded_subtrees": [
+            "/configurations/RoBERTa_comparator",
+            "/eu_paper_protocol_macro_f1_loso/RoBERTa_comparator",
+            "/paired_english_holdout/B4_axis - RoBERTa_comparator",
+            "/paired_english_holdout/B6_axis_plus_nli - RoBERTa_comparator"
+          ]
+        },
+        "results/final/eu_paper_protocol.json": {
+          "softmax_replay_byte_identical": true,
+          "changed_leaves": 17,
+          "superseded_subtrees": [
+            "/ours/RoBERTa_comparator"
+          ]
+        },
+        "results/final/final_results.md": {
+          "softmax_replay_byte_identical": true,
+          "changed_rows": 3
+        }
+      }
+    },
+    "usgov": {
+      "script": "scripts/external/score_usgov.py",
+      "draws": 4000,
+      "files": {
+        "results/external/usgov/final_results.json": {
+          "softmax_replay_byte_identical": true,
+          "changed_leaves": 98,
+          "superseded_subtrees": [
+            "/paired_spearman/all_pooled/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+            "/paired_spearman/governors_2010_2018/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+            "/paired_spearman/governors_2018_2022/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+            "/paired_spearman/presidential_2016/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+            "/sentences/all_pooled/RoBERTa_populist_total_max",
+            "/sentences/governors_2010_2018/RoBERTa_populist_total_max",
+            "/sentences/presidential_2016/RoBERTa_populist_total_max",
+            "/speeches/all_pooled/RoBERTa_anti_elitism_top3",
+            "/speeches/all_pooled/RoBERTa_populist_total_max",
+            "/speeches/governors_2010_2018/RoBERTa_anti_elitism_top3",
+            "/speeches/governors_2010_2018/RoBERTa_populist_total_max",
+            "/speeches/governors_2018_2022/RoBERTa_anti_elitism_top3",
+            "/speeches/governors_2018_2022/RoBERTa_populist_total_max",
+            "/speeches/presidential_2016/RoBERTa_anti_elitism_top3",
+            "/speeches/presidential_2016/RoBERTa_populist_total_max"
+          ]
+        },
+        "results/external/usgov/final_results.md": {
+          "softmax_replay_byte_identical": true,
+          "changed_rows": 15
+        },
+        "results/external/usgov/final_scores_speeches.csv": {
+          "softmax_replay_byte_identical": true,
+          "changed_columns": [
+            "RoBERTa_anti_elitism_top3",
+            "RoBERTa_populist_total_max"
+          ]
+        },
+        "results/external/usgov/final_scores_sentences.csv": {
+          "softmax_replay_byte_identical": true,
+          "changed_columns": [
+            "RoBERTa_populist_total_max"
+          ]
+        }
+      }
+    },
+    "antielite_tweets": {
+      "script": "scripts/external/score_antielite_tweets.py",
+      "draws": 2000,
+      "files": {
+        "results/external/antielite_tweets/final_results.json": {
+          "softmax_replay_byte_identical": true,
+          "changed_leaves": 149,
+          "superseded_subtrees": [
+            "/all/y_any/RoBERTa_anti_elitism",
+            "/all/y_any/RoBERTa_populist_total",
+            "/all/y_general/RoBERTa_anti_elitism",
+            "/all/y_general/RoBERTa_populist_total",
+            "/paired_auroc_test/E_axis - RoBERTa_anti_elitism",
+            "/paired_auroc_test/E_axis_plus_nli - RoBERTa_anti_elitism",
+            "/paired_auroc_test/RoBERTa_anti_elitism - XLMT_released_classifier",
+            "/test/y_any/RoBERTa_anti_elitism",
+            "/test/y_any/RoBERTa_populist_total",
+            "/test/y_general/RoBERTa_anti_elitism",
+            "/test/y_general/RoBERTa_populist_total"
+          ]
+        },
+        "results/external/antielite_tweets/final_results.md": {
+          "softmax_replay_byte_identical": true,
+          "changed_rows": 11
+        },
+        "results/external/antielite_tweets/final_scores.csv": {
+          "softmax_replay_byte_identical": true,
+          "changed_columns": [
+            "RoBERTa_anti_elitism",
+            "RoBERTa_populist_total"
+          ]
+        }
+      }
+    },
+    "popbert_en": {
+      "script": "scripts/external/score_popbert_en.py",
+      "draws": 2000,
+      "files": {
+        "results/external/popbert_en/final_results.json": {
+          "softmax_replay_byte_identical": true,
+          "changed_leaves": 117,
+          "superseded_subtrees": [
+            "/paired_auroc_test/centr: P_axis_plus_nli - P_roberta",
+            "/paired_auroc_test/elite: E_axis_plus_nli - E_roberta",
+            "/test/centr/any_coder/P_roberta",
+            "/test/centr/any_coder/roberta_populist_total",
+            "/test/centr/majority/P_roberta",
+            "/test/centr/majority/roberta_populist_total",
+            "/test/elite/any_coder/E_roberta",
+            "/test/elite/any_coder/roberta_populist_total",
+            "/test/elite/majority/E_roberta",
+            "/test/elite/majority/roberta_populist_total"
+          ]
+        },
+        "results/external/popbert_en/final_results.md": {
+          "softmax_replay_byte_identical": true,
+          "changed_rows": 10
+        },
+        "results/external/popbert_en/final_scores.csv": {
+          "softmax_replay_byte_identical": true,
+          "changed_columns": [
+            "E_roberta",
+            "P_roberta",
+            "roberta_populist_total"
+          ]
+        }
+      }
+    },
+    "portugal": {
+      "script": "scripts/external/score_portugal.py",
+      "draws": 2000,
+      "files": {
+        "results/external/portugal/final_results.json": {
+          "softmax_replay_byte_identical": true,
+          "changed_leaves": 40,
+          "superseded_subtrees": [
+            "/paired_auroc/centr/P_axis_plus_nli - P_roberta",
+            "/paired_auroc/elite/E_axis_plus_nli - E_roberta",
+            "/primary/centr/PE_roberta_total",
+            "/primary/centr/P_roberta",
+            "/primary/elite/E_roberta",
+            "/primary/elite/PE_roberta_total"
+          ]
+        },
+        "results/external/portugal/final_results.md": {
+          "softmax_replay_byte_identical": true,
+          "changed_rows": 6
+        },
+        "results/external/portugal/final_scores.csv": {
+          "softmax_replay_byte_identical": true,
+          "changed_columns": [
+            "E_roberta",
+            "P_roberta",
+            "PE_roberta_total"
+          ]
+        }
+      }
+    }
+  }
+}

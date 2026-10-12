@@ -1,0 +1,49 @@
+{
+  "cleaning": "v4_clean_r1",
+  "datasets": {
+    "agora": {
+      "effective_max_length": 256,
+      "encode_seconds": 142.0,
+      "max_window_words": 172,
+      "n_documents": 5272,
+      "n_windows": 32498,
+      "windows_over_60_words": 9036,
+      "windows_per_doc_quantiles": {
+        "0.05": 1.0,
+        "0.5": 4.0,
+        "0.95": 19.0
+      },
+      "windows_truncated": 0,
+      "words_in_truncated_windows_share": 0.0
+    },
+    "english": {
+      "effective_max_length": 256,
+      "encode_seconds": 154.9,
+      "max_window_words": 178,
+      "n_documents": 258,
+      "n_windows": 33657,
+      "windows_over_60_words": 12854,
+      "windows_per_doc_quantiles": {
+        "0.05": 32.85,
+        "0.5": 99.0,
+        "0.95": 300.29999999999995
+      },
+      "windows_truncated": 148,
+      "words_in_truncated_windows_share": 0.009842948309305731
+    }
+  },
+  "encoder_spec": {
+    "batch_size": 32,
+    "dtype": "bfloat16",
+    "label": "qwen3-emb-0.6b-noinstr",
+    "max_length": 256,
+    "model_id": "Qwen/Qwen3-Embedding-0.6B",
+    "pooling": "last",
+    "template": "{text}",
+    "trust_remote_code": false
+  },
+  "gpu_name": "NVIDIA A30",
+  "peak_vram_mb": 2266.7,
+  "seconds_total": 308.7,
+  "setting": "spw3_cap60_clean"
+}

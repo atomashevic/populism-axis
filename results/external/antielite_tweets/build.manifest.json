@@ -1,0 +1,37 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "freeze_id": "pa_v4_external_antielite_tweets_r1"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "fcef337940295c8a9c88df2b64fdc0eeeef09505",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "labels": {
+      "path": "/home/aleksandar/work/populism-axis/data/external/licht_antielite/dawidskene_labelings_pooled_samples.tab",
+      "sha256": "ec7decd2a8da3e082e37ec045fa833ec26e6cc3a5319e2a6bf98d148e75a010d"
+    },
+    "training": {
+      "path": "/home/aleksandar/work/populism-axis/data/external/licht_antielite/training_data_pooled_samples.tab",
+      "sha256": "660045e17434e48e574dbd8f2e5741958277ac0e232033c8d6460e0fc6267e40"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "37aac988fd1bfe07fa7eb0d72558b9ad724aef1e144452ccf47a82df404c20d8",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/build_antielite_tweets_benchmark.py",
+  "timestamp_utc": "2026-09-24T08:25:57Z"
+}

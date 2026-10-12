@@ -1,0 +1,75 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "draws": 2000,
+    "reference_weight": 0.5,
+    "weights": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ]
+  },
+  "git": {
+    "branch": "tidy-main",
+    "commit": "b704a0505f598d277046dd814062cbc86785235a",
+    "dirty": true
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "carried_axis_english": {
+      "path": "/home/aleksandar/work/populism-axis/results/step4_windows_topk/grid/spw3_k8/scores_english.csv",
+      "sha256": "67af522cf63a4155607783e983c2b6444041bfde7bdb8dbeef9bf9d97e4bd52e"
+    },
+    "final_b4_english": {
+      "path": "/home/aleksandar/work/populism-axis/results/final/B4_axis/scores_english.csv",
+      "sha256": "7983c65b050da7abacd7c0940cad5e07af41358175d5d8feb0f72a9a5ab56a86"
+    },
+    "final_b6_eu": {
+      "path": "/home/aleksandar/work/populism-axis/results/final/B6_axis_plus_nli/scores_eu.csv",
+      "sha256": "67c48064efc9cd4dd87d8f7a48c78cba124313c06371d354c019331ad3f2a08c"
+    },
+    "nli_dev_english": {
+      "path": "/home/aleksandar/work/populism-axis/results/step6_nli/nli_only_k8/scores_english.csv",
+      "sha256": "334b975a33cfb555722e34368c9bd7c539e34b32562806284cae70a2e5fcc0f7"
+    },
+    "popbert": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/popbert_en/final_scores.csv",
+      "sha256": "5c25e93f7b04a1acc78a769152daa134da12f409d1a15da0be3a011eebb428be"
+    },
+    "portugal": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/portugal/final_scores.csv",
+      "sha256": "1603c213a9b69a0f858fa16aea9ccedbf387187f973ae2a7c3c7361a9f7393c9"
+    },
+    "tweets": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/antielite_tweets/final_scores.csv",
+      "sha256": "c65eb0cc282d058f00b3e4f3874a3a2884d458d2a0fddde121fe8f335fc57aa9"
+    },
+    "usgov": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/usgov/final_scores_speeches.csv",
+      "sha256": "9d7f8ac27135d114389f2d7d7499b1b01b5409c78ac07bcf351cb41cc75f17a1"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "b2d3510f60fe0c4ee7adebe6741b6cdae82d77bf8f3580ef2b1991f75133e461",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/sweep_fusion_weight.py",
+  "timestamp_utc": "2026-09-24T13:39:38Z"
+}

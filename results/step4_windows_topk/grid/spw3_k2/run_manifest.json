@@ -1,0 +1,61 @@
+{
+  "argv": [
+    "--label",
+    "spw3_k2",
+    "--embeddings-dir",
+    "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/spw3_cap60_clean",
+    "--dataset-dir",
+    "agora=/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/spw3_cap60_clean",
+    "--anchors",
+    "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+    "--out-dir",
+    "/home/aleksandar/work/populism-axis/results/v4/step4_windows_topk/grid/spw3_k2",
+    "--top-rule",
+    "k:2",
+    "--draws",
+    "2000"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "english_split": "dev",
+    "label": "spw3_k2"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "2be6215ab669024f82534a3455d2749b5df493c3",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "anchors_0": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+      "sha256": "322ed72f9360521a6dd34e7b8c89a3af3ccc19509e741afa8858c2a20e346f8f"
+    },
+    "embeddings_agora": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/spw3_cap60_clean/embeddings_agora.npz",
+      "sha256": "82c2e699428e08bc141401ff36961260c45ec3aaf69cd122123f3bba2b0c7d17"
+    },
+    "embeddings_english": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/spw3_cap60_clean/embeddings_english.npz",
+      "sha256": "dd10bc3ead6bdf8638977a033812a6522124b125a497055ec032220ee5338382"
+    },
+    "split": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_v4/english_split.csv",
+      "sha256": "fe6bea109fcba5946eb1cc9cbacb3d9cfd112954137f4f884c93653f4c7824cb"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "b79427364a1929263ebbf9095e52a836dab08e32dee72285e99f2ba9365544e1",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/run_config_v4.py",
+  "timestamp_utc": "2026-09-23T20:12:27Z"
+}

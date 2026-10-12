@@ -1,0 +1,459 @@
+{
+  "english_split": "dev",
+  "label": "pairs_v4",
+  "systems": {
+    "EM__frozen__soft": {
+      "agora": {
+        "high_vs_low_auroc": 0.7507123890939706,
+        "pooled_within_speaker_auroc": 0.7105375742921137,
+        "spearman": 0.32135983057799666,
+        "spearman_ci95": [
+          0.20447120357081547,
+          0.35605652247288
+        ],
+        "within_speaker_high_vs_low_auroc": [
+          {
+            "auroc": 0.8273045507584598,
+            "n": 861,
+            "n_positive": 4,
+            "speaker": "Androulakis"
+          },
+          {
+            "auroc": 0.6807407407407408,
+            "n": 679,
+            "n_positive": 4,
+            "speaker": "Koutsoumpas"
+          },
+          {
+            "auroc": 0.6442577030812324,
+            "n": 1559,
+            "n_positive": 12,
+            "speaker": "Tsipras"
+          },
+          {
+            "auroc": 0.8224070450097848,
+            "n": 515,
+            "n_positive": 4,
+            "speaker": "Varoufakis"
+          }
+        ]
+      },
+      "english": {
+        "extreme_ap": 0.6252204585537919,
+        "extreme_auroc": 0.9081632653061225,
+        "extreme_auroc_ci95": [
+          0.7396450511294261,
+          0.9899010711510712
+        ],
+        "leader_term_spearman": 0.31177680506434907,
+        "leader_term_spearman_ci95": [
+          0.06952621482970674,
+          0.5270869454606905
+        ],
+        "n_leader_terms": 74,
+        "spearman": 0.41371225112560933,
+        "spearman_ci95": [
+          0.26944800629391563,
+          0.5468384227250943
+        ]
+      }
+    },
+    "E__frozen__soft": {
+      "agora": {
+        "high_vs_low_auroc": 0.7967748202836604,
+        "pooled_within_speaker_auroc": 0.7648665764368524,
+        "spearman": 0.3455646566671561,
+        "spearman_ci95": [
+          0.2352840381773144,
+          0.37301574283366634
+        ],
+        "within_speaker_high_vs_low_auroc": [
+          {
+            "auroc": 0.9098599766627771,
+            "n": 861,
+            "n_positive": 4,
+            "speaker": "Androulakis"
+          },
+          {
+            "auroc": 0.7462962962962963,
+            "n": 679,
+            "n_positive": 4,
+            "speaker": "Koutsoumpas"
+          },
+          {
+            "auroc": 0.693923723335488,
+            "n": 1559,
+            "n_positive": 12,
+            "speaker": "Tsipras"
+          },
+          {
+            "auroc": 0.8512720156555773,
+            "n": 515,
+            "n_positive": 4,
+            "speaker": "Varoufakis"
+          }
+        ]
+      },
+      "english": {
+        "extreme_ap": 0.6865079365079365,
+        "extreme_auroc": 0.9331065759637188,
+        "extreme_auroc_ci95": [
+          0.8217286014315718,
+          0.9980647369274277
+        ],
+        "leader_term_spearman": 0.38480707633673766,
+        "leader_term_spearman_ci95": [
+          0.1411356682462855,
+          0.5985147728054093
+        ],
+        "n_leader_terms": 74,
+        "spearman": 0.43410657014734805,
+        "spearman_ci95": [
+          0.29243280629597,
+          0.568609152643516
+        ]
+      }
+    },
+    "M__frozen__soft": {
+      "agora": {
+        "high_vs_low_auroc": 0.711700990868467,
+        "pooled_within_speaker_auroc": 0.6651457166474948,
+        "spearman": 0.2929130150683774,
+        "spearman_ci95": [
+          0.1760372554243277,
+          0.3369949810240665
+        ],
+        "within_speaker_high_vs_low_auroc": [
+          {
+            "auroc": 0.7497082847141191,
+            "n": 861,
+            "n_positive": 4,
+            "speaker": "Androulakis"
+          },
+          {
+            "auroc": 0.6340740740740741,
+            "n": 679,
+            "n_positive": 4,
+            "speaker": "Koutsoumpas"
+          },
+          {
+            "auroc": 0.6030489118724413,
+            "n": 1559,
+            "n_positive": 12,
+            "speaker": "Tsipras"
+          },
+          {
+            "auroc": 0.797945205479452,
+            "n": 515,
+            "n_positive": 4,
+            "speaker": "Varoufakis"
+          }
+        ]
+      },
+      "english": {
+        "extreme_ap": 0.5014417167194944,
+        "extreme_auroc": 0.8741496598639455,
+        "extreme_auroc_ci95": [
+          0.6649054843857833,
+          0.9728284363390746
+        ],
+        "leader_term_spearman": 0.25313600426407445,
+        "leader_term_spearman_ci95": [
+          0.0008983831428764502,
+          0.46739248733590083
+        ],
+        "n_leader_terms": 74,
+        "spearman": 0.37426106209573634,
+        "spearman_ci95": [
+          0.2275735149586828,
+          0.5098347892583145
+        ]
+      }
+    },
+    "PEM__frozen__soft": {
+      "agora": {
+        "high_vs_low_auroc": 0.8163331390453987,
+        "pooled_within_speaker_auroc": 0.800517855055801,
+        "spearman": 0.33089610283176024,
+        "spearman_ci95": [
+          0.22821305283779153,
+          0.35031817389858527
+        ],
+        "within_speaker_high_vs_low_auroc": [
+          {
+            "auroc": 0.9180280046674446,
+            "n": 861,
+            "n_positive": 4,
+            "speaker": "Androulakis"
+          },
+          {
+            "auroc": 0.6559259259259259,
+            "n": 679,
+            "n_positive": 4,
+            "speaker": "Koutsoumpas"
+          },
+          {
+            "auroc": 0.7549558284852402,
+            "n": 1559,
+            "n_positive": 12,
+            "speaker": "Tsipras"
+          },
+          {
+            "auroc": 0.9642857142857142,
+            "n": 515,
+            "n_positive": 4,
+            "speaker": "Varoufakis"
+          }
+        ]
+      },
+      "english": {
+        "extreme_ap": 0.6204554704554706,
+        "extreme_auroc": 0.919501133786848,
+        "extreme_auroc_ci95": [
+          0.7879776865378216,
+          0.9867150853647478
+        ],
+        "leader_term_spearman": 0.34733511508667597,
+        "leader_term_spearman_ci95": [
+          0.11088442876159782,
+          0.5606473195787475
+        ],
+        "n_leader_terms": 74,
+        "spearman": 0.4369953698029029,
+        "spearman_ci95": [
+          0.2965046227918489,
+          0.5662526886237851
+        ]
+      }
+    },
+    "PE__frozen__hard": {
+      "agora": {
+        "high_vs_low_auroc": 0.8613350819247458,
+        "pooled_within_speaker_auroc": 0.8492764677239987,
+        "spearman": 0.33726959071597407,
+        "spearman_ci95": [
+          0.2523774196753304,
+          0.3520011355101649
+        ],
+        "within_speaker_high_vs_low_auroc": [
+          {
+            "auroc": 0.9413652275379231,
+            "n": 861,
+            "n_positive": 4,
+            "speaker": "Androulakis"
+          },
+          {
+            "auroc": 0.6651851851851852,
+            "n": 679,
+            "n_positive": 4,
+            "speaker": "Koutsoumpas"
+          },
+          {
+            "auroc": 0.8380198233139409,
+            "n": 1559,
+            "n_positive": 12,
+            "speaker": "Tsipras"
+          },
+          {
+            "auroc": 0.9750489236790607,
+            "n": 515,
+            "n_positive": 4,
+            "speaker": "Varoufakis"
+          }
+        ]
+      },
+      "english": {
+        "extreme_ap": 0.5096209346209346,
+        "extreme_auroc": 0.917233560090703,
+        "extreme_auroc_ci95": [
+          0.8234133376288659,
+          0.9796422558922558
+        ],
+        "leader_term_spearman": 0.38802616406091156,
+        "leader_term_spearman_ci95": [
+          0.14056588894759695,
+          0.6004609856229886
+        ],
+        "n_leader_terms": 74,
+        "spearman": 0.4438747712412519,
+        "spearman_ci95": [
+          0.3059424139037264,
+          0.5746967474899468
+        ]
+      }
+    },
+    "PE__frozen__soft": {
+      "agora": {
+        "high_vs_low_auroc": 0.8619503270513569,
+        "pooled_within_speaker_auroc": 0.8497500853480648,
+        "spearman": 0.34711244790306356,
+        "spearman_ci95": [
+          0.2579736603607692,
+          0.36201649111136147
+        ],
+        "within_speaker_high_vs_low_auroc": [
+          {
+            "auroc": 0.941073512252042,
+            "n": 861,
+            "n_positive": 4,
+            "speaker": "Androulakis"
+          },
+          {
+            "auroc": 0.6681481481481482,
+            "n": 679,
+            "n_positive": 4,
+            "speaker": "Koutsoumpas"
+          },
+          {
+            "auroc": 0.8377504848093082,
+            "n": 1559,
+            "n_positive": 12,
+            "speaker": "Tsipras"
+          },
+          {
+            "auroc": 0.976027397260274,
+            "n": 515,
+            "n_positive": 4,
+            "speaker": "Varoufakis"
+          }
+        ]
+      },
+      "english": {
+        "extreme_ap": 0.5096209346209346,
+        "extreme_auroc": 0.917233560090703,
+        "extreme_auroc_ci95": [
+          0.8234133376288659,
+          0.9796422558922558
+        ],
+        "leader_term_spearman": 0.3883970267019455,
+        "leader_term_spearman_ci95": [
+          0.14075790852673006,
+          0.6005695848271567
+        ],
+        "n_leader_terms": 74,
+        "spearman": 0.4436786479546323,
+        "spearman_ci95": [
+          0.3057878256323954,
+          0.575106320077359
+        ]
+      }
+    },
+    "PM__frozen__soft": {
+      "agora": {
+        "high_vs_low_auroc": 0.8198627031927984,
+        "pooled_within_speaker_auroc": 0.8058174502868217,
+        "spearman": 0.3143418332467173,
+        "spearman_ci95": [
+          0.22040070117005797,
+          0.3309254347367162
+        ],
+        "within_speaker_high_vs_low_auroc": [
+          {
+            "auroc": 0.8920653442240374,
+            "n": 861,
+            "n_positive": 4,
+            "speaker": "Androulakis"
+          },
+          {
+            "auroc": 0.6118518518518519,
+            "n": 679,
+            "n_positive": 4,
+            "speaker": "Koutsoumpas"
+          },
+          {
+            "auroc": 0.7820512820512822,
+            "n": 1559,
+            "n_positive": 12,
+            "speaker": "Tsipras"
+          },
+          {
+            "auroc": 0.9848336594911937,
+            "n": 515,
+            "n_positive": 4,
+            "speaker": "Varoufakis"
+          }
+        ]
+      },
+      "english": {
+        "extreme_ap": 0.5597797838107915,
+        "extreme_auroc": 0.9160997732426304,
+        "extreme_auroc_ci95": [
+          0.7911746550472041,
+          0.9810996601654847
+        ],
+        "leader_term_spearman": 0.32839145138266623,
+        "leader_term_spearman_ci95": [
+          0.0826981222419127,
+          0.5416737514205906
+        ],
+        "n_leader_terms": 74,
+        "spearman": 0.4286538441187937,
+        "spearman_ci95": [
+          0.2865160166871702,
+          0.5555223802028261
+        ]
+      }
+    },
+    "P__frozen__soft": {
+      "agora": {
+        "high_vs_low_auroc": 0.878400038857587,
+        "pooled_within_speaker_auroc": 0.868030879241735,
+        "spearman": 0.31085359479761854,
+        "spearman_ci95": [
+          0.25845560346472357,
+          0.32994712082710803
+        ],
+        "within_speaker_high_vs_low_auroc": [
+          {
+            "auroc": 0.8494749124854143,
+            "n": 861,
+            "n_positive": 4,
+            "speaker": "Androulakis"
+          },
+          {
+            "auroc": 0.6699999999999999,
+            "n": 679,
+            "n_positive": 4,
+            "speaker": "Koutsoumpas"
+          },
+          {
+            "auroc": 0.9037384184443007,
+            "n": 1559,
+            "n_positive": 12,
+            "speaker": "Tsipras"
+          },
+          {
+            "auroc": 0.9774951076320939,
+            "n": 515,
+            "n_positive": 4,
+            "speaker": "Varoufakis"
+          }
+        ]
+      },
+      "english": {
+        "extreme_ap": 0.33747049247049243,
+        "extreme_auroc": 0.873015873015873,
+        "extreme_auroc_ci95": [
+          0.7638779239766081,
+          0.9603335446604677
+        ],
+        "leader_term_spearman": 0.31793312490551123,
+        "leader_term_spearman_ci95": [
+          0.07074549855807782,
+          0.5484233036470063
+        ],
+        "n_leader_terms": 74,
+        "spearman": 0.44372264997406624,
+        "spearman_ci95": [
+          0.29060055671246937,
+          0.5854664513883474
+        ]
+      }
+    }
+  },
+  "top_k": 3,
+  "window_counts": {
+    "agora": 41912,
+    "english": 20632
+  }
+}

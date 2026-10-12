@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "final"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "stage": "final"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "aaa4efdc925dfe956c6765e0ea5abdfff97fcd67",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "axis": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/popbert_en/axis_scores.csv",
+      "sha256": "abc33765fd4fd080bbdab9becc507f92a9f0601af0b563f000f69d45d450a3d2"
+    },
+    "nli": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/popbert_en/nli_popbert_en__bart-large-mnli.npz",
+      "sha256": "44a98248a05f1e58d82877715213aba93c0bd87652d9ba708bdf6ee6d943999c"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "86e50ad0d5f756d16825097919d5cdc7d34482f6807a10a2f7a801001e008681",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/score_popbert_en_v4.py",
+  "timestamp_utc": "2026-09-24T09:21:53Z"
+}

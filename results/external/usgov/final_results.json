@@ -1,0 +1,1484 @@
+{
+  "nli_model": "bart-large-mnli",
+  "paired_spearman": {
+    "all_pooled": {
+      "B4_axis - B0_v3_config": {
+        "ci95": [
+          0.026433768289323152,
+          0.14353261009042612
+        ],
+        "delta_spearman": 0.0822207534781153,
+        "n_draws": 4000,
+        "p_two_sided": 0.0045
+      },
+      "B4_axis - SetFit_share_published": {
+        "ci95": [
+          -0.09179416325547139,
+          0.060950700153511755
+        ],
+        "delta_spearman": -0.014586059992461098,
+        "n_draws": 4000,
+        "p_two_sided": 0.695
+      },
+      "B6_axis_plus_nli - B0_v3_config": {
+        "ci95": [
+          0.05970593672508989,
+          0.2125343616417013
+        ],
+        "delta_spearman": 0.1332955969935985,
+        "n_draws": 4000,
+        "p_two_sided": 0.0005
+      },
+      "B6_axis_plus_nli - B4_axis": {
+        "ci95": [
+          0.022612026562376892,
+          0.08295787050963743
+        ],
+        "delta_spearman": 0.05107484351548319,
+        "n_draws": 4000,
+        "p_two_sided": 0.0
+      },
+      "B6_axis_plus_nli - RoBERTa_anti_elitism_top3": {
+        "ci95": [
+          0.043153413968663824,
+          0.23931227109074127
+        ],
+        "delta_spearman": 0.135686894849052,
+        "n_draws": 4000,
+        "p_two_sided": 0.001
+      },
+      "B6_axis_plus_nli - SetFit_share_published": {
+        "ci95": [
+          -0.044548021937044484,
+          0.10543727387794223
+        ],
+        "delta_spearman": 0.030769078761391566,
+        "n_draws": 4000,
+        "p_two_sided": 0.4275
+      }
+    },
+    "governors_2010_2018": {
+      "B4_axis - B0_v3_config": {
+        "ci95": [
+          0.038835469529440995,
+          0.1910620469795944
+        ],
+        "delta_spearman": 0.11327927034924062,
+        "n_draws": 4000,
+        "p_two_sided": 0.003
+      },
+      "B4_axis - SetFit_share_published": {
+        "ci95": [
+          -0.14095199065285377,
+          0.03380008676590944
+        ],
+        "delta_spearman": -0.05515393664235435,
+        "n_draws": 4000,
+        "p_two_sided": 0.224
+      },
+      "B6_axis_plus_nli - B0_v3_config": {
+        "ci95": [
+          0.0838243769914194,
+          0.28158093032819315
+        ],
+        "delta_spearman": 0.1812813844115752,
+        "n_draws": 4000,
+        "p_two_sided": 0.0005
+      },
+      "B6_axis_plus_nli - B4_axis": {
+        "ci95": [
+          0.030967396660643094,
+          0.1057144881471738
+        ],
+        "delta_spearman": 0.06800211406233458,
+        "n_draws": 4000,
+        "p_two_sided": 0.0005
+      },
+      "B6_axis_plus_nli - RoBERTa_anti_elitism_top3": {
+        "ci95": [
+          0.08573365069048267,
+          0.3178681213022624
+        ],
+        "delta_spearman": 0.2004237771709907,
+        "n_draws": 4000,
+        "p_two_sided": 0.0
+      },
+      "B6_axis_plus_nli - SetFit_share_published": {
+        "ci95": [
+          -0.07833708984238207,
+          0.09310927627232313
+        ],
+        "delta_spearman": 0.005878035023503481,
+        "n_draws": 4000,
+        "p_two_sided": 0.89
+      }
+    },
+    "governors_2018_2022": {
+      "B4_axis - B0_v3_config": {
+        "ci95": [
+          -0.2588606871806539,
+          0.13795597027081818
+        ],
+        "delta_spearman": 0.0045815372683434274,
+        "n_draws": 4000,
+        "p_two_sided": 0.9235
+      },
+      "B4_axis - SetFit_share_published": {
+        "ci95": [
+          -0.2027809079687679,
+          0.25385210754023263
+        ],
+        "delta_spearman": 0.02145818387991083,
+        "n_draws": 4000,
+        "p_two_sided": 0.873
+      },
+      "B6_axis_plus_nli - B0_v3_config": {
+        "ci95": [
+          -0.14812127119096866,
+          0.13809696309202746
+        ],
+        "delta_spearman": 0.024453916518802132,
+        "n_draws": 4000,
+        "p_two_sided": 0.709
+      },
+      "B6_axis_plus_nli - B4_axis": {
+        "ci95": [
+          -0.06269111418678339,
+          0.1637963313712069
+        ],
+        "delta_spearman": 0.019872379250458705,
+        "n_draws": 4000,
+        "p_two_sided": 0.5775
+      },
+      "B6_axis_plus_nli - RoBERTa_anti_elitism_top3": {
+        "ci95": [
+          -0.3293116778371592,
+          0.22162554662990813
+        ],
+        "delta_spearman": -0.10367082918534365,
+        "n_draws": 4000,
+        "p_two_sided": 0.5895
+      },
+      "B6_axis_plus_nli - SetFit_share_published": {
+        "ci95": [
+          -0.11911823274852462,
+          0.2585687410410247
+        ],
+        "delta_spearman": 0.041330563130369535,
+        "n_draws": 4000,
+        "p_two_sided": 0.582
+      }
+    },
+    "presidential_2016": {
+      "B4_axis - B0_v3_config": {
+        "ci95": [
+          -0.1703394272065794,
+          0.47315096249840494
+        ],
+        "delta_spearman": 0.1714044921033363,
+        "n_draws": 4000,
+        "p_two_sided": 0.441
+      },
+      "B4_axis - SetFit_share_published": {
+        "ci95": [
+          -0.4100744911707466,
+          0.241102207981421
+        ],
+        "delta_spearman": -0.1550959753277108,
+        "n_draws": 4000,
+        "p_two_sided": 0.294
+      },
+      "B6_axis_plus_nli - B0_v3_config": {
+        "ci95": [
+          0.05552623268937924,
+          0.5099681570697905
+        ],
+        "delta_spearman": 0.28879940233435797,
+        "n_draws": 4000,
+        "p_two_sided": 0.013
+      },
+      "B6_axis_plus_nli - B4_axis": {
+        "ci95": [
+          -0.07650040279072828,
+          0.3007288077166832
+        ],
+        "delta_spearman": 0.11739491023102167,
+        "n_draws": 4000,
+        "p_two_sided": 0.188
+      },
+      "B6_axis_plus_nli - RoBERTa_anti_elitism_top3": {
+        "ci95": [
+          -0.22855250957626463,
+          0.16797430191004156
+        ],
+        "delta_spearman": -0.010762300544238768,
+        "n_draws": 4000,
+        "p_two_sided": 0.4305
+      },
+      "B6_axis_plus_nli - SetFit_share_published": {
+        "ci95": [
+          -0.1887757130509939,
+          0.22700469664542697
+        ],
+        "delta_spearman": -0.037701065096689135,
+        "n_draws": 4000,
+        "p_two_sided": 0.566
+      }
+    }
+  },
+  "published": {
+    "notes": [
+      "Speech-level metrics use the share of sentences a SetFit classifier labels populist, thresholded at the F1-optimal cutoff chosen on the same data (in-sample).",
+      "The paper's 'AuROC' equals the balanced accuracy of the thresholded prediction ((recall + specificity)/2), not a ranking AUROC; for governors 2010-2018 the released continuous shares give a ranking AUROC of about .84.",
+      "One presidential speech (us.2016.Trump.6-22) is identical to GPD US_Trump_Campaign_1, which is in the V4 English holdout (GPD score .85).",
+      "The fine-tuned RoBERTa comparator (coastalcph) was trained on Trump 2016 campaign sentences, so it is in-domain for the presidential subset."
+    ],
+    "sentence_level_table1_setfit_75_25_split": {
+      "governors": {
+        "accuracy": 0.66,
+        "f1": 0.71,
+        "mcc": 0.5,
+        "precision": 0.73,
+        "recall": 0.69
+      },
+      "presidential": {
+        "accuracy": 0.7,
+        "f1": 0.75,
+        "mcc": 0.55,
+        "precision": 0.77,
+        "recall": 0.74
+      }
+    },
+    "speech_level_table2": {
+      "governors_2010_2018": {
+        "accuracy": 0.85,
+        "auroc_as_reported": 0.77,
+        "f1": 0.69,
+        "mcc": 0.7,
+        "n": 288,
+        "precision": 0.8,
+        "r2_share_vs_score": 0.39,
+        "recall": 0.6
+      },
+      "governors_2018_2022": {
+        "accuracy": 0.92,
+        "auroc_as_reported": 0.91,
+        "f1": 0.9,
+        "mcc": 0.85,
+        "n": 26,
+        "precision": 1.0,
+        "r2_share_vs_score": 0.49,
+        "recall": 0.82
+      },
+      "presidential_2016": {
+        "accuracy": 0.89,
+        "auroc_as_reported": 0.89,
+        "f1": 0.87,
+        "mcc": 0.77,
+        "n": 45,
+        "precision": 0.85,
+        "r2_share_vs_score": 0.58,
+        "recall": 0.89
+      }
+    }
+  },
+  "roberta_correction": {
+    "corrected_runs": [
+      "results/roberta-correction/rc-20261002T1415Z-sigmoid",
+      "results/roberta-correction/rc-20261002T1530Z-sigmoid-usgov-sentences"
+    ],
+    "date": "2026-10-02",
+    "note": "RoBERTa entries use the corrected comparator: independent sigmoid outputs of the multi-label checkpoint (coastalcph/roberta-large-ft-trump-populism@9b5badfa), same windows, pooling, splits and seeds. The softmax values first reported are kept under superseded_softmax_roberta. Axis and claim-check entries are unchanged.",
+    "refresh": "results/roberta-correction/rc-20261002T1600Z-refresh-result-files"
+  },
+  "sentences": {
+    "all_pooled": {
+      "B4_axis": {
+        "ap_populist_vs_rest": 0.6401468900869768,
+        "auroc_populist_vs_neutral": 0.7330931804600677,
+        "auroc_populist_vs_pluralist": 0.7308786847699467,
+        "auroc_populist_vs_rest": 0.7320247834165882,
+        "counts": {
+          "neutral": 1121,
+          "pluralist": 1045,
+          "populist": 1454
+        },
+        "n": 3620
+      },
+      "B6_axis_plus_nli": {
+        "ap_populist_vs_rest": 0.6588035965974179,
+        "auroc_populist_vs_neutral": 0.7381933869714971,
+        "auroc_populist_vs_pluralist": 0.7507808849371145,
+        "auroc_populist_vs_rest": 0.7442663026566635,
+        "counts": {
+          "neutral": 1121,
+          "pluralist": 1045,
+          "populist": 1454
+        },
+        "n": 3620
+      },
+      "E_only": {
+        "ap_populist_vs_rest": 0.6499457459363771,
+        "auroc_populist_vs_neutral": 0.7164201127162204,
+        "auroc_populist_vs_pluralist": 0.7268850819057147,
+        "auroc_populist_vs_rest": 0.7214690013602747,
+        "counts": {
+          "neutral": 1121,
+          "pluralist": 1045,
+          "populist": 1454
+        },
+        "n": 3620
+      },
+      "NLI_only": {
+        "ap_populist_vs_rest": 0.6251584584883728,
+        "auroc_populist_vs_neutral": 0.6776418554370912,
+        "auroc_populist_vs_pluralist": 0.7196270970034816,
+        "auroc_populist_vs_rest": 0.6978978930349111,
+        "counts": {
+          "neutral": 1121,
+          "pluralist": 1045,
+          "populist": 1454
+        },
+        "n": 3620
+      },
+      "P_only": {
+        "ap_populist_vs_rest": 0.5936552244826343,
+        "auroc_populist_vs_neutral": 0.7031674288652179,
+        "auroc_populist_vs_pluralist": 0.6915310346643149,
+        "auroc_populist_vs_rest": 0.6975533790314489,
+        "counts": {
+          "neutral": 1121,
+          "pluralist": 1045,
+          "populist": 1454
+        },
+        "n": 3620
+      },
+      "RoBERTa_populist_total_max": {
+        "ap_populist_vs_rest": 0.6017554287052975,
+        "auroc_populist_vs_neutral": 0.639131400412532,
+        "auroc_populist_vs_pluralist": 0.6212053204162086,
+        "auroc_populist_vs_rest": 0.6304828530458848,
+        "counts": {
+          "neutral": 1121,
+          "pluralist": 1045,
+          "populist": 1454
+        },
+        "n": 3620
+      }
+    },
+    "governors_2010_2018": {
+      "B4_axis": {
+        "ap_populist_vs_rest": 0.6286659290833039,
+        "auroc_populist_vs_neutral": 0.726067821706996,
+        "auroc_populist_vs_pluralist": 0.7361835296367543,
+        "auroc_populist_vs_rest": 0.7308594728316183,
+        "counts": {
+          "neutral": 1120,
+          "pluralist": 1008,
+          "populist": 1411
+        },
+        "n": 3539
+      },
+      "B6_axis_plus_nli": {
+        "ap_populist_vs_rest": 0.6500346035968216,
+        "auroc_populist_vs_neutral": 0.7310775665687961,
+        "auroc_populist_vs_pluralist": 0.7585481983958242,
+        "auroc_populist_vs_rest": 0.744089971118441,
+        "counts": {
+          "neutral": 1120,
+          "pluralist": 1008,
+          "populist": 1411
+        },
+        "n": 3539
+      },
+      "E_only": {
+        "ap_populist_vs_rest": 0.6376778701257771,
+        "auroc_populist_vs_neutral": 0.7091826338969323,
+        "auroc_populist_vs_pluralist": 0.7278638362975712,
+        "auroc_populist_vs_rest": 0.7180316245077611,
+        "counts": {
+          "neutral": 1120,
+          "pluralist": 1008,
+          "populist": 1411
+        },
+        "n": 3539
+      },
+      "NLI_only": {
+        "ap_populist_vs_rest": 0.6202008443795479,
+        "auroc_populist_vs_neutral": 0.6689964690695555,
+        "auroc_populist_vs_pluralist": 0.7262354741093224,
+        "auroc_populist_vs_rest": 0.6961096819831293,
+        "counts": {
+          "neutral": 1120,
+          "pluralist": 1008,
+          "populist": 1411
+        },
+        "n": 3539
+      },
+      "P_only": {
+        "ap_populist_vs_rest": 0.5839075033542609,
+        "auroc_populist_vs_neutral": 0.6956866330869698,
+        "auroc_populist_vs_pluralist": 0.6979725625189834,
+        "auroc_populist_vs_rest": 0.696769441765292,
+        "counts": {
+          "neutral": 1120,
+          "pluralist": 1008,
+          "populist": 1411
+        },
+        "n": 3539
+      },
+      "RoBERTa_populist_total_max": {
+        "ap_populist_vs_rest": 0.5951289767869761,
+        "auroc_populist_vs_neutral": 0.6298654702844992,
+        "auroc_populist_vs_pluralist": 0.6191889406364955,
+        "auroc_populist_vs_rest": 0.6248081667670238,
+        "counts": {
+          "neutral": 1120,
+          "pluralist": 1008,
+          "populist": 1411
+        },
+        "n": 3539
+      }
+    },
+    "presidential_2016": {
+      "B4_axis": {
+        "ap_populist_vs_rest": 0.9381992313904165,
+        "auroc_populist_vs_neutral": 0.6511627906976745,
+        "auroc_populist_vs_pluralist": 0.9283469516027655,
+        "auroc_populist_vs_rest": 0.9210526315789473,
+        "counts": {
+          "neutral": 1,
+          "pluralist": 37,
+          "populist": 43
+        },
+        "n": 81
+      },
+      "B6_axis_plus_nli": {
+        "ap_populist_vs_rest": 0.9497020625215663,
+        "auroc_populist_vs_neutral": 0.7441860465116279,
+        "auroc_populist_vs_pluralist": 0.9409176618478944,
+        "auroc_populist_vs_rest": 0.9357405140758873,
+        "counts": {
+          "neutral": 1,
+          "pluralist": 37,
+          "populist": 43
+        },
+        "n": 81
+      },
+      "E_only": {
+        "ap_populist_vs_rest": 0.9341875426814203,
+        "auroc_populist_vs_neutral": 0.4186046511627907,
+        "auroc_populist_vs_pluralist": 0.9340037712130735,
+        "auroc_populist_vs_rest": 0.9204406364749081,
+        "counts": {
+          "neutral": 1,
+          "pluralist": 37,
+          "populist": 43
+        },
+        "n": 81
+      },
+      "NLI_only": {
+        "ap_populist_vs_rest": 0.8578674088777403,
+        "auroc_populist_vs_neutral": 0.9767441860465116,
+        "auroc_populist_vs_pluralist": 0.8189817724701446,
+        "auroc_populist_vs_rest": 0.8231334149326806,
+        "counts": {
+          "neutral": 1,
+          "pluralist": 37,
+          "populist": 43
+        },
+        "n": 81
+      },
+      "P_only": {
+        "ap_populist_vs_rest": 0.8324800082924335,
+        "auroc_populist_vs_neutral": 0.6046511627906976,
+        "auroc_populist_vs_pluralist": 0.8189817724701446,
+        "auroc_populist_vs_rest": 0.8133414932680538,
+        "counts": {
+          "neutral": 1,
+          "pluralist": 37,
+          "populist": 43
+        },
+        "n": 81
+      },
+      "RoBERTa_populist_total_max": {
+        "ap_populist_vs_rest": 0.8260621915082095,
+        "auroc_populist_vs_neutral": 0.5116279069767442,
+        "auroc_populist_vs_pluralist": 0.8689503456945318,
+        "auroc_populist_vs_rest": 0.859547123623011,
+        "counts": {
+          "neutral": 1,
+          "pluralist": 37,
+          "populist": 43
+        },
+        "n": 81
+      }
+    }
+  },
+  "speeches": {
+    "all_pooled": {
+      "B0_v3_config": {
+        "auroc": 0.7396117306897976,
+        "average_precision": 0.5044492696713083,
+        "in_sample_cutoff": {
+          "accuracy": 0.6824512534818942,
+          "balanced_accuracy": 0.7067740603056588,
+          "f1": 0.544,
+          "precision": 0.425,
+          "recall": 0.7555555555555555
+        },
+        "n": 359,
+        "n_groups": 86,
+        "n_positive": 90,
+        "pearson_r2": 0.21568713736135,
+        "spearman": 0.4476452921448011,
+        "spearman_ci95": [
+          0.3192136320670521,
+          0.5673389957612421
+        ]
+      },
+      "B4_axis": {
+        "auroc": 0.7851301115241636,
+        "average_precision": 0.5455960463233301,
+        "in_sample_cutoff": {
+          "accuracy": 0.766016713091922,
+          "balanced_accuracy": 0.7440520446096655,
+          "f1": 0.6,
+          "precision": 0.525,
+          "recall": 0.7
+        },
+        "n": 359,
+        "n_groups": 86,
+        "n_positive": 90,
+        "pearson_r2": 0.2862212677124524,
+        "spearman": 0.5298660456229164,
+        "spearman_ci95": [
+          0.41821182854657035,
+          0.6255777309177982
+        ]
+      },
+      "B6_axis_plus_nli": {
+        "auroc": 0.8181330028913673,
+        "average_precision": 0.5968989772844687,
+        "in_sample_cutoff": {
+          "accuracy": 0.7353760445682451,
+          "balanced_accuracy": 0.7642709624122264,
+          "f1": 0.6090534979423868,
+          "precision": 0.48366013071895425,
+          "recall": 0.8222222222222222
+        },
+        "n": 359,
+        "n_groups": 86,
+        "n_positive": 90,
+        "pearson_r2": 0.2879034179902485,
+        "spearman": 0.5809408891383996,
+        "spearman_ci95": [
+          0.47901986392360973,
+          0.6693450893235494
+        ]
+      },
+      "E_only_k8": {
+        "auroc": 0.7700950020652624,
+        "average_precision": 0.5159743019556091,
+        "in_sample_cutoff": {
+          "accuracy": 0.7019498607242339,
+          "balanced_accuracy": 0.7049979347377118,
+          "f1": 0.5446808510638298,
+          "precision": 0.4413793103448276,
+          "recall": 0.7111111111111111
+        },
+        "n": 359,
+        "n_groups": 86,
+        "n_positive": 90,
+        "pearson_r2": 0.23276597865577417,
+        "spearman": 0.5079803433177684,
+        "spearman_ci95": [
+          0.39662821969703654,
+          0.6088951073023726
+        ]
+      },
+      "NLI_only": {
+        "auroc": 0.7386617100371746,
+        "average_precision": 0.5688345982943174,
+        "in_sample_cutoff": {
+          "accuracy": 0.7632311977715878,
+          "balanced_accuracy": 0.7089219330855019,
+          "f1": 0.5595854922279793,
+          "precision": 0.5242718446601942,
+          "recall": 0.6
+        },
+        "n": 359,
+        "n_groups": 86,
+        "n_positive": 90,
+        "pearson_r2": 0.1296593266389078,
+        "spearman": 0.44033679311966123,
+        "spearman_ci95": [
+          0.3157766917005161,
+          0.5466231493286741
+        ]
+      },
+      "P_only_k8": {
+        "auroc": 0.7465923172242874,
+        "average_precision": 0.5083936436707427,
+        "in_sample_cutoff": {
+          "accuracy": 0.6963788300835655,
+          "balanced_accuracy": 0.6827963651383726,
+          "f1": 0.5198237885462555,
+          "precision": 0.4306569343065693,
+          "recall": 0.6555555555555556
+        },
+        "n": 359,
+        "n_groups": 86,
+        "n_positive": 90,
+        "pearson_r2": 0.19408420046767388,
+        "spearman": 0.48055524851192344,
+        "spearman_ci95": [
+          0.3642802361159135,
+          0.5852161217437342
+        ]
+      },
+      "RoBERTa_anti_elitism_top3": {
+        "auroc": 0.7323833126807104,
+        "average_precision": 0.5615035873463005,
+        "in_sample_cutoff": {
+          "accuracy": 0.7353760445682451,
+          "balanced_accuracy": 0.6977282114828584,
+          "f1": 0.5410628019323671,
+          "precision": 0.47863247863247865,
+          "recall": 0.6222222222222222
+        },
+        "n": 359,
+        "n_groups": 86,
+        "n_positive": 90,
+        "pearson_r2": 0.23456609811749668,
+        "spearman": 0.4452539942893476,
+        "spearman_ci95": [
+          0.3029939486926661,
+          0.5767060010547352
+        ]
+      },
+      "RoBERTa_populist_total_max": {
+        "auroc": 0.7396943411813302,
+        "average_precision": 0.47679261589025096,
+        "in_sample_cutoff": {
+          "accuracy": 0.7186629526462396,
+          "balanced_accuracy": 0.716150351094589,
+          "f1": 0.5589519650655022,
+          "precision": 0.460431654676259,
+          "recall": 0.7111111111111111
+        },
+        "n": 359,
+        "n_groups": 86,
+        "n_positive": 90,
+        "pearson_r2": 0.13618625720491448,
+        "spearman": 0.46317697955801257,
+        "spearman_ci95": [
+          0.3422825990113941,
+          0.5722303951070891
+        ]
+      },
+      "SetFit_share_published": {
+        "auroc": 0.8651566849241268,
+        "average_precision": 0.6556828828422693,
+        "in_sample_cutoff": {
+          "accuracy": 0.8434782608695652,
+          "balanced_accuracy": 0.8219673161533627,
+          "f1": 0.7127659574468085,
+          "precision": 0.6568627450980392,
+          "recall": 0.7790697674418605
+        },
+        "n": 345,
+        "n_groups": 85,
+        "n_positive": 86,
+        "n_scored": 345,
+        "pearson_r2": 0.3715475117880347,
+        "spearman": 0.5478836138975983,
+        "spearman_ci95": [
+          0.4227724057377513,
+          0.6506403257932282
+        ]
+      }
+    },
+    "governors_2010_2018": {
+      "B0_v3_config": {
+        "auroc": 0.7008771929824562,
+        "average_precision": 0.43860655548883504,
+        "in_sample_cutoff": {
+          "accuracy": 0.7152777777777778,
+          "balanced_accuracy": 0.6912280701754385,
+          "f1": 0.4875,
+          "precision": 0.39,
+          "recall": 0.65
+        },
+        "n": 288,
+        "n_groups": 73,
+        "n_positive": 60,
+        "pearson_r2": 0.16325741288654017,
+        "spearman": 0.345140541684168,
+        "spearman_ci95": [
+          0.22888651417915845,
+          0.4563273408199508
+        ]
+      },
+      "B4_axis": {
+        "auroc": 0.7673245614035088,
+        "average_precision": 0.4598219240213412,
+        "in_sample_cutoff": {
+          "accuracy": 0.7951388888888888,
+          "balanced_accuracy": 0.7109649122807018,
+          "f1": 0.5354330708661418,
+          "precision": 0.5074626865671642,
+          "recall": 0.5666666666666667
+        },
+        "n": 288,
+        "n_groups": 73,
+        "n_positive": 60,
+        "pearson_r2": 0.23664236171914407,
+        "spearman": 0.45841981203340865,
+        "spearman_ci95": [
+          0.364915635869512,
+          0.5447713170358347
+        ]
+      },
+      "B6_axis_plus_nli": {
+        "auroc": 0.8131578947368422,
+        "average_precision": 0.48810130335411533,
+        "in_sample_cutoff": {
+          "accuracy": 0.7673611111111112,
+          "balanced_accuracy": 0.7609649122807017,
+          "f1": 0.5732484076433121,
+          "precision": 0.4639175257731959,
+          "recall": 0.75
+        },
+        "n": 288,
+        "n_groups": 73,
+        "n_positive": 60,
+        "pearson_r2": 0.2684649062192424,
+        "spearman": 0.5264219260957432,
+        "spearman_ci95": [
+          0.4379526787261189,
+          0.6050486474882485
+        ]
+      },
+      "E_only_k8": {
+        "auroc": 0.7464181286549707,
+        "average_precision": 0.42627301264975564,
+        "in_sample_cutoff": {
+          "accuracy": 0.7847222222222222,
+          "balanced_accuracy": 0.6614035087719299,
+          "f1": 0.46551724137931033,
+          "precision": 0.48214285714285715,
+          "recall": 0.45
+        },
+        "n": 288,
+        "n_groups": 73,
+        "n_positive": 60,
+        "pearson_r2": 0.17784683510356686,
+        "spearman": 0.4295849789960784,
+        "spearman_ci95": [
+          0.32849021730644545,
+          0.524638275412174
+        ]
+      },
+      "NLI_only": {
+        "auroc": 0.7283625730994152,
+        "average_precision": 0.4544727951022174,
+        "in_sample_cutoff": {
+          "accuracy": 0.7673611111111112,
+          "balanced_accuracy": 0.6995614035087719,
+          "f1": 0.5109489051094891,
+          "precision": 0.45454545454545453,
+          "recall": 0.5833333333333334
+        },
+        "n": 288,
+        "n_groups": 73,
+        "n_positive": 60,
+        "pearson_r2": 0.11834916948566611,
+        "spearman": 0.3986073509900971,
+        "spearman_ci95": [
+          0.2815090774092333,
+          0.5051849668917587
+        ]
+      },
+      "P_only_k8": {
+        "auroc": 0.7271929824561404,
+        "average_precision": 0.4428524717217519,
+        "in_sample_cutoff": {
+          "accuracy": 0.6354166666666666,
+          "balanced_accuracy": 0.6714912280701755,
+          "f1": 0.45595854922279794,
+          "precision": 0.3308270676691729,
+          "recall": 0.7333333333333333
+        },
+        "n": 288,
+        "n_groups": 73,
+        "n_positive": 60,
+        "pearson_r2": 0.1495738724736576,
+        "spearman": 0.4148769397508073,
+        "spearman_ci95": [
+          0.31665035935012137,
+          0.5075742515727106
+        ]
+      },
+      "RoBERTa_anti_elitism_top3": {
+        "auroc": 0.677923976608187,
+        "average_precision": 0.4547162557798708,
+        "in_sample_cutoff": {
+          "accuracy": 0.7118055555555556,
+          "balanced_accuracy": 0.6767543859649123,
+          "f1": 0.4713375796178344,
+          "precision": 0.38144329896907214,
+          "recall": 0.6166666666666667
+        },
+        "n": 288,
+        "n_groups": 73,
+        "n_positive": 60,
+        "pearson_r2": 0.14722450498995865,
+        "spearman": 0.32599814892475254,
+        "spearman_ci95": [
+          0.1970331115482086,
+          0.44743302565285764
+        ]
+      },
+      "RoBERTa_populist_total_max": {
+        "auroc": 0.6989035087719299,
+        "average_precision": 0.37606678219927303,
+        "in_sample_cutoff": {
+          "accuracy": 0.7256944444444444,
+          "balanced_accuracy": 0.6855263157894738,
+          "f1": 0.48366013071895425,
+          "precision": 0.3978494623655914,
+          "recall": 0.6166666666666667
+        },
+        "n": 288,
+        "n_groups": 73,
+        "n_positive": 60,
+        "pearson_r2": 0.10344887051990523,
+        "spearman": 0.36738851804761535,
+        "spearman_ci95": [
+          0.253949863734542,
+          0.4787743280369634
+        ]
+      },
+      "SetFit_share_published": {
+        "auroc": 0.839490498034076,
+        "average_precision": 0.5778595212726266,
+        "in_sample_cutoff": {
+          "accuracy": 0.8540145985401459,
+          "balanced_accuracy": 0.7689220183486238,
+          "f1": 0.6363636363636364,
+          "precision": 0.6481481481481481,
+          "recall": 0.625
+        },
+        "n": 274,
+        "n_groups": 72,
+        "n_positive": 56,
+        "n_scored": 274,
+        "pearson_r2": 0.325975941423233,
+        "spearman": 0.5139504348147595,
+        "spearman_ci95": [
+          0.4034623207582372,
+          0.613738156831467
+        ]
+      }
+    },
+    "governors_2018_2022": {
+      "B0_v3_config": {
+        "auroc": 0.8375,
+        "average_precision": 0.7965998329156223,
+        "in_sample_cutoff": {
+          "accuracy": 0.8076923076923077,
+          "balanced_accuracy": 0.7875,
+          "f1": 0.7368421052631579,
+          "precision": 0.7777777777777778,
+          "recall": 0.7
+        },
+        "n": 26,
+        "n_groups": 6,
+        "n_positive": 10,
+        "pearson_r2": 0.2617462951194236,
+        "spearman": 0.604115064422235,
+        "spearman_ci95": [
+          0.3438529509790344,
+          0.7781389935360944
+        ]
+      },
+      "B4_axis": {
+        "auroc": 0.85625,
+        "average_precision": 0.8110181923339818,
+        "in_sample_cutoff": {
+          "accuracy": 0.8076923076923077,
+          "balanced_accuracy": 0.825,
+          "f1": 0.782608695652174,
+          "precision": 0.6923076923076923,
+          "recall": 0.9
+        },
+        "n": 26,
+        "n_groups": 6,
+        "n_positive": 10,
+        "pearson_r2": 0.3764132936993942,
+        "spearman": 0.6086966016905784,
+        "spearman_ci95": [
+          0.19684260754469557,
+          0.8111409146799545
+        ]
+      },
+      "B6_axis_plus_nli": {
+        "auroc": 0.8625,
+        "average_precision": 0.8275766338924233,
+        "in_sample_cutoff": {
+          "accuracy": 0.8076923076923077,
+          "balanced_accuracy": 0.825,
+          "f1": 0.782608695652174,
+          "precision": 0.6923076923076923,
+          "recall": 0.9
+        },
+        "n": 26,
+        "n_groups": 6,
+        "n_positive": 10,
+        "pearson_r2": 0.3377340295583319,
+        "spearman": 0.6285689809410371,
+        "spearman_ci95": [
+          0.34241054907530105,
+          0.7893641891394764
+        ]
+      },
+      "E_only_k8": {
+        "auroc": 0.85,
+        "average_precision": 0.8259626403008755,
+        "in_sample_cutoff": {
+          "accuracy": 0.7307692307692307,
+          "balanced_accuracy": 0.78125,
+          "f1": 0.7407407407407407,
+          "precision": 0.5882352941176471,
+          "recall": 1.0
+        },
+        "n": 26,
+        "n_groups": 6,
+        "n_positive": 10,
+        "pearson_r2": 0.34309419548671366,
+        "spearman": 0.6111079634403429,
+        "spearman_ci95": [
+          0.2322211504938002,
+          0.7717842097935269
+        ]
+      },
+      "NLI_only": {
+        "auroc": 0.58125,
+        "average_precision": 0.5463079975579975,
+        "in_sample_cutoff": {
+          "accuracy": 0.5384615384615384,
+          "balanced_accuracy": 0.60625,
+          "f1": 0.6,
+          "precision": 0.45,
+          "recall": 0.9
+        },
+        "n": 26,
+        "n_groups": 6,
+        "n_positive": 10,
+        "pearson_r2": 0.02144832148877523,
+        "spearman": 0.2800145652082538,
+        "spearman_ci95": [
+          -0.03785615362450761,
+          0.6215238130059466
+        ]
+      },
+      "P_only_k8": {
+        "auroc": 0.825,
+        "average_precision": 0.7784920634920635,
+        "in_sample_cutoff": {
+          "accuracy": 0.8076923076923077,
+          "balanced_accuracy": 0.7875,
+          "f1": 0.7368421052631579,
+          "precision": 0.7777777777777778,
+          "recall": 0.7
+        },
+        "n": 26,
+        "n_groups": 6,
+        "n_positive": 10,
+        "pearson_r2": 0.25866926984318106,
+        "spearman": 0.5287771836983801,
+        "spearman_ci95": [
+          0.11251794115313217,
+          0.8315358367393099
+        ]
+      },
+      "RoBERTa_anti_elitism_top3": {
+        "auroc": 0.8374999999999999,
+        "average_precision": 0.8269930069930069,
+        "in_sample_cutoff": {
+          "accuracy": 0.7692307692307693,
+          "balanced_accuracy": 0.79375,
+          "f1": 0.75,
+          "precision": 0.6428571428571429,
+          "recall": 0.9
+        },
+        "n": 26,
+        "n_groups": 6,
+        "n_positive": 10,
+        "pearson_r2": 0.35170101885631816,
+        "spearman": 0.7322398101263807,
+        "spearman_ci95": [
+          0.32202278734358575,
+          0.8976302600981774
+        ]
+      },
+      "RoBERTa_populist_total_max": {
+        "auroc": 0.8156249999999999,
+        "average_precision": 0.8123351158645276,
+        "in_sample_cutoff": {
+          "accuracy": 0.8076923076923077,
+          "balanced_accuracy": 0.80625,
+          "f1": 0.7619047619047619,
+          "precision": 0.7272727272727273,
+          "recall": 0.8
+        },
+        "n": 26,
+        "n_groups": 6,
+        "n_positive": 10,
+        "pearson_r2": 0.24531728828775637,
+        "spearman": 0.6400443044375183,
+        "spearman_ci95": [
+          0.16616623568402886,
+          0.7898404060663103
+        ]
+      },
+      "SetFit_share_published": {
+        "auroc": 0.9375,
+        "average_precision": 0.8404365079365078,
+        "in_sample_cutoff": {
+          "accuracy": 0.9230769230769231,
+          "balanced_accuracy": 0.9375,
+          "f1": 0.9090909090909091,
+          "precision": 0.8333333333333334,
+          "recall": 1.0
+        },
+        "n": 26,
+        "n_groups": 6,
+        "n_positive": 10,
+        "pearson_r2": 0.44830522692294206,
+        "spearman": 0.5872384178106675,
+        "spearman_ci95": [
+          0.21361028466618895,
+          0.8347806510418174
+        ]
+      }
+    },
+    "presidential_2016": {
+      "B0_v3_config": {
+        "auroc": 0.6859999999999999,
+        "average_precision": 0.6090062063397976,
+        "in_sample_cutoff": {
+          "accuracy": 0.7111111111111111,
+          "balanced_accuracy": 0.71,
+          "f1": 0.6829268292682927,
+          "precision": 0.6666666666666666,
+          "recall": 0.7
+        },
+        "n": 45,
+        "n_groups": 7,
+        "n_positive": 20,
+        "pearson_r2": 0.15043986006349094,
+        "spearman": 0.39675253969528035,
+        "spearman_ci95": [
+          0.08875739644970415,
+          0.5929012184489881
+        ]
+      },
+      "B4_axis": {
+        "auroc": 0.746,
+        "average_precision": 0.698892168114826,
+        "in_sample_cutoff": {
+          "accuracy": 0.7333333333333333,
+          "balanced_accuracy": 0.745,
+          "f1": 0.7391304347826086,
+          "precision": 0.6538461538461539,
+          "recall": 0.85
+        },
+        "n": 45,
+        "n_groups": 7,
+        "n_positive": 20,
+        "pearson_r2": 0.26503829684248564,
+        "spearman": 0.5681570317986167,
+        "spearman_ci95": [
+          0.2869933644397733,
+          0.6572822268067118
+        ]
+      },
+      "B6_axis_plus_nli": {
+        "auroc": 0.846,
+        "average_precision": 0.8392961192574198,
+        "in_sample_cutoff": {
+          "accuracy": 0.8222222222222222,
+          "balanced_accuracy": 0.825,
+          "f1": 0.8095238095238095,
+          "precision": 0.7727272727272727,
+          "recall": 0.85
+        },
+        "n": 45,
+        "n_groups": 7,
+        "n_positive": 20,
+        "pearson_r2": 0.36585057973366036,
+        "spearman": 0.6855519420296383,
+        "spearman_ci95": [
+          0.3904593639575972,
+          0.7460216220600995
+        ]
+      },
+      "E_only_k8": {
+        "auroc": 0.668,
+        "average_precision": 0.6301149623600898,
+        "in_sample_cutoff": {
+          "accuracy": 0.5555555555555556,
+          "balanced_accuracy": 0.6,
+          "f1": 0.6666666666666666,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        "n": 45,
+        "n_groups": 7,
+        "n_positive": 20,
+        "pearson_r2": 0.15960385604382488,
+        "spearman": 0.4637032927741645,
+        "spearman_ci95": [
+          0.09355101674071335,
+          0.6970913191117843
+        ]
+      },
+      "NLI_only": {
+        "auroc": 0.848,
+        "average_precision": 0.8796613117274883,
+        "in_sample_cutoff": {
+          "accuracy": 0.8444444444444444,
+          "balanced_accuracy": 0.835,
+          "f1": 0.8108108108108109,
+          "precision": 0.8823529411764706,
+          "recall": 0.75
+        },
+        "n": 45,
+        "n_groups": 7,
+        "n_positive": 20,
+        "pearson_r2": 0.2623007807068923,
+        "spearman": 0.6106780229059159,
+        "spearman_ci95": [
+          0.19013422289010065,
+          0.7203046159446878
+        ]
+      },
+      "P_only_k8": {
+        "auroc": 0.724,
+        "average_precision": 0.6775597677814361,
+        "in_sample_cutoff": {
+          "accuracy": 0.7555555555555555,
+          "balanced_accuracy": 0.75,
+          "f1": 0.717948717948718,
+          "precision": 0.7368421052631579,
+          "recall": 0.7
+        },
+        "n": 45,
+        "n_groups": 7,
+        "n_positive": 20,
+        "pearson_r2": 0.18945650022480814,
+        "spearman": 0.480209888700911,
+        "spearman_ci95": [
+          0.2445762907604405,
+          0.5502111661045811
+        ]
+      },
+      "RoBERTa_anti_elitism_top3": {
+        "auroc": 0.8140000000000001,
+        "average_precision": 0.7674523946527667,
+        "in_sample_cutoff": {
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8049999999999999,
+          "f1": 0.7906976744186046,
+          "precision": 0.7391304347826086,
+          "recall": 0.85
+        },
+        "n": 45,
+        "n_groups": 7,
+        "n_positive": 20,
+        "pearson_r2": 0.33359638758535165,
+        "spearman": 0.6963142425738771,
+        "spearman_ci95": [
+          0.3974972225487531,
+          0.8029727559840649
+        ]
+      },
+      "RoBERTa_populist_total_max": {
+        "auroc": 0.719,
+        "average_precision": 0.5718150203769399,
+        "in_sample_cutoff": {
+          "accuracy": 0.7555555555555555,
+          "balanced_accuracy": 0.765,
+          "f1": 0.7555555555555555,
+          "precision": 0.68,
+          "recall": 0.85
+        },
+        "n": 45,
+        "n_groups": 7,
+        "n_positive": 20,
+        "pearson_r2": 0.07988453455032068,
+        "spearman": 0.5571233465574519,
+        "spearman_ci95": [
+          0.24622234765750345,
+          0.7895565971034705
+        ]
+      },
+      "SetFit_share_published": {
+        "auroc": 0.924,
+        "average_precision": 0.9084763854670177,
+        "in_sample_cutoff": {
+          "accuracy": 0.8888888888888888,
+          "balanced_accuracy": 0.89,
+          "f1": 0.8780487804878049,
+          "precision": 0.8571428571428571,
+          "recall": 0.9
+        },
+        "n": 45,
+        "n_groups": 7,
+        "n_positive": 20,
+        "pearson_r2": 0.5852247293163244,
+        "spearman": 0.7232530071263275,
+        "spearman_ci95": [
+          0.23815529259890014,
+          0.8016719911551521
+        ]
+      }
+    }
+  },
+  "superseded_softmax_roberta": {
+    "/paired_spearman/all_pooled/B6_axis_plus_nli - RoBERTa_anti_elitism_top3": {
+      "ci95": [
+        0.022525964520319332,
+        0.19748886649354233
+      ],
+      "delta_spearman": 0.10480297213255996,
+      "n_draws": 4000,
+      "p_two_sided": 0.014
+    },
+    "/paired_spearman/governors_2010_2018/B6_axis_plus_nli - RoBERTa_anti_elitism_top3": {
+      "ci95": [
+        0.0454578391422406,
+        0.2552054653053132
+      ],
+      "delta_spearman": 0.15039130940379392,
+      "n_draws": 4000,
+      "p_two_sided": 0.004
+    },
+    "/paired_spearman/governors_2018_2022/B6_axis_plus_nli - RoBERTa_anti_elitism_top3": {
+      "ci95": [
+        -0.3081863881391488,
+        0.41352987394376517
+      ],
+      "delta_spearman": -0.02169854564344398,
+      "n_draws": 4000,
+      "p_two_sided": 0.886
+    },
+    "/paired_spearman/presidential_2016/B6_axis_plus_nli - RoBERTa_anti_elitism_top3": {
+      "ci95": [
+        -0.1793562390297237,
+        0.15986832077309682
+      ],
+      "delta_spearman": -0.02066625810028666,
+      "n_draws": 4000,
+      "p_two_sided": 0.539
+    },
+    "/sentences/all_pooled/RoBERTa_populist_total_max": {
+      "ap_populist_vs_rest": 0.5981521362524739,
+      "auroc_populist_vs_neutral": 0.6420210879704332,
+      "auroc_populist_vs_pluralist": 0.6279687119511923,
+      "auroc_populist_vs_rest": 0.635241432873431,
+      "counts": {
+        "neutral": 1121,
+        "pluralist": 1045,
+        "populist": 1454
+      },
+      "n": 3620
+    },
+    "/sentences/governors_2010_2018/RoBERTa_populist_total_max": {
+      "ap_populist_vs_rest": 0.5914853522159824,
+      "auroc_populist_vs_neutral": 0.6328398678748608,
+      "auroc_populist_vs_pluralist": 0.6264817674057576,
+      "auroc_populist_vs_rest": 0.6298281360737066,
+      "counts": {
+        "neutral": 1120,
+        "pluralist": 1008,
+        "populist": 1411
+      },
+      "n": 3539
+    },
+    "/sentences/presidential_2016/RoBERTa_populist_total_max": {
+      "ap_populist_vs_rest": 0.8314491925640592,
+      "auroc_populist_vs_neutral": 0.5116279069767442,
+      "auroc_populist_vs_pluralist": 0.8727215587680703,
+      "auroc_populist_vs_rest": 0.863219094247246,
+      "counts": {
+        "neutral": 1,
+        "pluralist": 37,
+        "populist": 43
+      },
+      "n": 81
+    },
+    "/speeches/all_pooled/RoBERTa_anti_elitism_top3": {
+      "auroc": 0.750784799669558,
+      "average_precision": 0.5745790838866538,
+      "in_sample_cutoff": {
+        "accuracy": 0.713091922005571,
+        "balanced_accuracy": 0.6976456009913259,
+        "f1": 0.5381165919282511,
+        "precision": 0.45112781954887216,
+        "recall": 0.6666666666666666
+      },
+      "n": 359,
+      "n_groups": 86,
+      "n_positive": 90,
+      "pearson_r2": 0.2387869337259284,
+      "spearman": 0.47613791700583963,
+      "spearman_ci95": [
+        0.34120986257456115,
+        0.5964120191800857
+      ]
+    },
+    "/speeches/all_pooled/RoBERTa_populist_total_max": {
+      "auroc": 0.7446922759190417,
+      "average_precision": 0.49889589417802577,
+      "in_sample_cutoff": {
+        "accuracy": 0.7520891364902507,
+        "balanced_accuracy": 0.7125774473358116,
+        "f1": 0.5615763546798029,
+        "precision": 0.504424778761062,
+        "recall": 0.6333333333333333
+      },
+      "n": 359,
+      "n_groups": 86,
+      "n_positive": 90,
+      "pearson_r2": 0.1297531426272623,
+      "spearman": 0.4667150489382577,
+      "spearman_ci95": [
+        0.3425739682443085,
+        0.5778789057066048
+      ]
+    },
+    "/speeches/governors_2010_2018/RoBERTa_anti_elitism_top3": {
+      "auroc": 0.7092470760233918,
+      "average_precision": 0.4385072608600347,
+      "in_sample_cutoff": {
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6912280701754385,
+        "f1": 0.4782608695652174,
+        "precision": 0.3548387096774194,
+        "recall": 0.7333333333333333
+      },
+      "n": 288,
+      "n_groups": 73,
+      "n_positive": 60,
+      "pearson_r2": 0.14391567441499628,
+      "spearman": 0.3760306166919493,
+      "spearman_ci95": [
+        0.25243351199371966,
+        0.49034280387711465
+      ]
+    },
+    "/speeches/governors_2010_2018/RoBERTa_populist_total_max": {
+      "auroc": 0.7009137426900585,
+      "average_precision": 0.40833051775593854,
+      "in_sample_cutoff": {
+        "accuracy": 0.7569444444444444,
+        "balanced_accuracy": 0.6745614035087719,
+        "f1": 0.47761194029850745,
+        "precision": 0.43243243243243246,
+        "recall": 0.5333333333333333
+      },
+      "n": 288,
+      "n_groups": 73,
+      "n_positive": 60,
+      "pearson_r2": 0.09914079812134362,
+      "spearman": 0.36585151217198203,
+      "spearman_ci95": [
+        0.25239149818599965,
+        0.47956861724944017
+      ]
+    },
+    "/speeches/governors_2018_2022/RoBERTa_anti_elitism_top3": {
+      "auroc": 0.7875,
+      "average_precision": 0.7914332399626517,
+      "in_sample_cutoff": {
+        "accuracy": 0.8076923076923077,
+        "balanced_accuracy": 0.7875,
+        "f1": 0.7368421052631579,
+        "precision": 0.7777777777777778,
+        "recall": 0.7
+      },
+      "n": 26,
+      "n_groups": 6,
+      "n_positive": 10,
+      "pearson_r2": 0.37612893340579073,
+      "spearman": 0.6502675265844811,
+      "spearman_ci95": [
+        0.11170228347831238,
+        0.8931755193532732
+      ]
+    },
+    "/speeches/governors_2018_2022/RoBERTa_populist_total_max": {
+      "auroc": 0.8218749999999999,
+      "average_precision": 0.8201128936423054,
+      "in_sample_cutoff": {
+        "accuracy": 0.8076923076923077,
+        "balanced_accuracy": 0.80625,
+        "f1": 0.7619047619047619,
+        "precision": 0.7272727272727273,
+        "recall": 0.8
+      },
+      "n": 26,
+      "n_groups": 6,
+      "n_positive": 10,
+      "pearson_r2": 0.22411732065103554,
+      "spearman": 0.6532462677066522,
+      "spearman_ci95": [
+        0.21252340577702702,
+        0.8034268037748482
+      ]
+    },
+    "/speeches/presidential_2016/RoBERTa_anti_elitism_top3": {
+      "auroc": 0.848,
+      "average_precision": 0.7971315624749503,
+      "in_sample_cutoff": {
+        "accuracy": 0.8444444444444444,
+        "balanced_accuracy": 0.8500000000000001,
+        "f1": 0.8372093023255814,
+        "precision": 0.782608695652174,
+        "recall": 0.9
+      },
+      "n": 45,
+      "n_groups": 7,
+      "n_positive": 20,
+      "pearson_r2": 0.3551589382354414,
+      "spearman": 0.706218200129925,
+      "spearman_ci95": [
+        0.35904423159173326,
+        0.7782083083615818
+      ]
+    },
+    "/speeches/presidential_2016/RoBERTa_populist_total_max": {
+      "auroc": 0.75,
+      "average_precision": 0.6182808982959155,
+      "in_sample_cutoff": {
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.75,
+        "f1": 0.75,
+        "precision": 0.6428571428571429,
+        "recall": 0.9
+      },
+      "n": 45,
+      "n_groups": 7,
+      "n_positive": 20,
+      "pearson_r2": 0.06992812399721537,
+      "spearman": 0.6139793420912651,
+      "spearman_ci95": [
+        0.38607608690635414,
+        0.7882352941176473
+      ]
+    }
+  }
+}

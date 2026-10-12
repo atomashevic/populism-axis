@@ -1,0 +1,34 @@
+{
+  "cleaning": null,
+  "datasets": {
+    "eu": {
+      "effective_max_length": 256,
+      "encode_seconds": 1.9,
+      "max_window_words": 115,
+      "n_documents": 1762,
+      "n_windows": 1763,
+      "windows_over_60_words": 33,
+      "windows_per_doc_quantiles": {
+        "0.05": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0
+      },
+      "windows_truncated": 0,
+      "words_in_truncated_windows_share": 0.0
+    }
+  },
+  "encoder_spec": {
+    "batch_size": 64,
+    "dtype": "float16",
+    "label": "e5-large-v2",
+    "max_length": 256,
+    "model_id": "intfloat/e5-large-v2",
+    "pooling": "mean",
+    "template": "query: {text}",
+    "trust_remote_code": false
+  },
+  "gpu_name": "NVIDIA A30",
+  "peak_vram_mb": 862.7,
+  "seconds_total": 2.9,
+  "setting": "spw3_cap60"
+}

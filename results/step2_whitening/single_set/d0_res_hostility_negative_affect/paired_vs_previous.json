@@ -1,0 +1,47 @@
+{
+  "baseline_dir": "results/v4/step1b_text_cleaning/B1c_cap60_clean",
+  "candidate_dir": "results/v4/step2_whitening/single_set/d0_res_hostility_negative_affect",
+  "candidate_system": "PE__frozen__soft",
+  "decision": {
+    "checks": {
+      "primary_ci_not_entirely_below_0": true,
+      "primary_delta_at_least_+0.01": false,
+      "secondary_ci_not_entirely_below_0": true,
+      "secondary_delta_at_least_-0.01": false
+    },
+    "outcome": "KEEP PREVIOUS",
+    "rule": "standard",
+    "rule_passed": false
+  },
+  "draws": 4000,
+  "paired": {
+    "agora": {
+      "ci95": [
+        -0.050446763639122386,
+        0.007144818653384677
+      ],
+      "cluster": "politician",
+      "delta_spearman": -0.0246055545876539,
+      "n_clusters": 6,
+      "n_documents": 5272,
+      "n_draws": 4000,
+      "p_two_sided": 0.247,
+      "p_two_sided_raw_v3_formula": 0.247
+    },
+    "english": {
+      "ci95": [
+        -0.15886275047585216,
+        0.016392611546131763
+      ],
+      "cluster": "leader",
+      "delta_spearman": -0.0700396652071914,
+      "n_clusters": 57,
+      "n_documents": 174,
+      "n_draws": 4000,
+      "p_two_sided": 0.11,
+      "p_two_sided_raw_v3_formula": 0.11
+    }
+  },
+  "seed": 20260923,
+  "system": "PE__frozen__soft"
+}

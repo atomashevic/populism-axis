@@ -1,0 +1,152 @@
+{
+  "checks": {
+    "clean_checkout": {
+      "checkout": {
+        "branch": "HEAD",
+        "commit": "003f00caca7b92e8b6af82b714b94677c7c13b60",
+        "dirty": false
+      },
+      "passed": true,
+      "scored": {
+        "branch": "HEAD",
+        "commit": "003f00caca7b92e8b6af82b714b94677c7c13b60",
+        "dirty": false
+      }
+    },
+    "dev_metric_PE_axis": {
+      "fresh": 0.5165711361482499,
+      "max_shift": 0.005,
+      "passed": true,
+      "stored": 0.5165550867152585
+    },
+    "dev_metric_PE_axis_plus_nli": {
+      "fresh": 0.5375990726354256,
+      "max_shift": 0.01,
+      "passed": true,
+      "stored": 0.5367457391310595
+    },
+    "frozen_reference_mode": {
+      "passed": true,
+      "reference": "frozen",
+      "top_rule": "k:8"
+    },
+    "pinned_revisions": {
+      "passed": true,
+      "requested": {
+        "encoder": "f169b11e22de13617baa190a028a32f3493550b6",
+        "nli_model": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce"
+      },
+      "resolved": {
+        "encoder": "f169b11e22de13617baa190a028a32f3493550b6",
+        "nli_model": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce"
+      }
+    },
+    "score_agreement": {
+      "columns": {
+        "axis": {
+          "max_abs_diff": 0.1447380698953964,
+          "max_diff_sd": 0.0023359427243019593,
+          "max_rel_diff": 0.005650763554293138,
+          "passed": true,
+          "rank_agreement": 0.9999948745665644,
+          "rank_threshold": 0.999,
+          "share_needed": 1.0,
+          "share_within_tolerance": 1.0,
+          "stored_column": "PE_axis__frozen",
+          "tolerance_sd": 0.05
+        },
+        "axis_E": {
+          "max_abs_diff": 0.0013330033067463498,
+          "max_diff_sd": 0.0016592885994615532,
+          "max_rel_diff": 0.0070824237471020365,
+          "passed": true,
+          "rank_agreement": 0.9999994305075401,
+          "rank_threshold": 0.999,
+          "share_needed": 1.0,
+          "share_within_tolerance": 1.0,
+          "stored_column": "E_axis__frozen",
+          "tolerance_sd": 0.05
+        },
+        "axis_P": {
+          "max_abs_diff": 0.0016169450799159435,
+          "max_diff_sd": 0.002136567037002352,
+          "max_rel_diff": 0.005821956771370522,
+          "passed": true,
+          "rank_agreement": 0.9999994305075401,
+          "rank_threshold": 0.999,
+          "share_needed": 1.0,
+          "share_within_tolerance": 1.0,
+          "stored_column": "P_axis__frozen",
+          "tolerance_sd": 0.05
+        },
+        "claim_check": {
+          "max_abs_diff": 0.0002181070652904002,
+          "max_diff_sd": 0.03134718553717235,
+          "max_rel_diff": 0.0592070503432568,
+          "passed": true,
+          "rank_agreement": 0.9997579656358382,
+          "rank_threshold": 0.99,
+          "share_needed": 0.95,
+          "share_within_tolerance": 1.0,
+          "stored_column": "PE_nli__frozen",
+          "tolerance_sd": 0.05
+        },
+        "claim_check_E": {
+          "max_abs_diff": 0.0003129285905742996,
+          "max_diff_sd": 0.016868136469764306,
+          "max_rel_diff": 0.12267379855225316,
+          "passed": true,
+          "rank_agreement": 0.9996349552294995,
+          "rank_threshold": 0.99,
+          "share_needed": 0.95,
+          "share_within_tolerance": 1.0,
+          "stored_column": "E_nli__frozen",
+          "tolerance_sd": 0.05
+        },
+        "claim_check_P": {
+          "max_abs_diff": 0.0006658524362137003,
+          "max_diff_sd": 0.024286709651316473,
+          "max_rel_diff": 0.11898125621986926,
+          "passed": true,
+          "rank_agreement": 0.9997653689061405,
+          "rank_threshold": 0.99,
+          "share_needed": 0.95,
+          "share_within_tolerance": 1.0,
+          "stored_column": "P_nli__frozen",
+          "tolerance_sd": 0.05
+        },
+        "populism_axis_plus_claim_check": {
+          "max_abs_diff": 0.01563509957489928,
+          "max_diff_sd": 0.01764098582417077,
+          "max_rel_diff": 0.2147780375592722,
+          "passed": true,
+          "rank_agreement": 0.9999607050092483,
+          "rank_threshold": 0.99,
+          "share_needed": 0.95,
+          "share_within_tolerance": 1.0,
+          "stored_column": "PE_axis_plus_nli__frozen",
+          "tolerance_sd": 0.05
+        }
+      },
+      "passed": true
+    },
+    "window_count": {
+      "expected": 20284,
+      "n_windows": 20284,
+      "passed": true
+    }
+  },
+  "hostname": "pvgpu2",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "passed": true,
+  "scored_commit": "003f00caca7b92e8b6af82b714b94677c7c13b60",
+  "scored_run_hash": "52acef1602e61396d46cc221cf98abe3938e763ec28608a6e28d914c0e5c3f1f"
+}

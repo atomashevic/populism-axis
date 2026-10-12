@@ -1,0 +1,48 @@
+{
+  "argv": [
+    "axis"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "stage": "axis",
+    "windows": {
+      "sentences": 4226,
+      "speeches_spw1": 51000,
+      "speeches_spw3": 51787
+    }
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "04253b30e209bf73e2808d1f25f7f6d0ea45dd15",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "anchors": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+      "sha256": "322ed72f9360521a6dd34e7b8c89a3af3ccc19509e741afa8858c2a20e346f8f"
+    },
+    "sentences": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_usgov/sentences.csv",
+      "sha256": "2280a1182d4fcdf5a0a3b4fb45489fb72b52084f4d72886db8bb8f66fc4bc3a7"
+    },
+    "speeches": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_usgov/speeches.csv",
+      "sha256": "dbfec54d17a62712aa19b1af4b1949c48b64075c69e24bb47d8710eee5d57b7c"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "e928d0f832e3fb797dd099e96a13940916c15682209515ffcf0edb3b3d45a9f4",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/score_usgov_v4.py",
+  "timestamp_utc": "2026-09-24T08:03:35Z"
+}

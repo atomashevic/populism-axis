@@ -1,0 +1,41 @@
+{
+  "argv": [
+    "dev"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "candidates": {
+      "DeBERTa-v3-base-mnli-fever-anli": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+      "nli-deberta-v3-small": "cross-encoder/nli-deberta-v3-small",
+      "nli-deberta-v3-xsmall": "cross-encoder/nli-deberta-v3-xsmall"
+    },
+    "passing": [],
+    "stage": "dev"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "f6a84eda6923a45a8f0d86bb5df5856dcf380f01",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/step6_nli/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "fedd2e51d68dd14ca5bd678a259f1f62bfd87b1e04e5ee06098cb1023d9d1e27",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/evaluate_nli_replication_v4.py",
+  "timestamp_utc": "2026-09-24T13:06:11Z"
+}

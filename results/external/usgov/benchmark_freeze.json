@@ -1,0 +1,111 @@
+{
+  "binary_cut": 0.499,
+  "canonical_sha256": "eabbd1c48e2a172f91f76f8450fce39ba50df6e61bd32eb7cca704b349ba5d08",
+  "cleaning": {
+    "extra": "dataset-specific metadata keys in first 8 lines; presidential title/byline lead-ins",
+    "v4": "v4_clean_r1"
+  },
+  "files": {
+    "comparator_predictions.csv": "cd89e3c2739e5b422c6b923b3ec906172e91761f87a2abb2f3684701cc5f09d0",
+    "sentences.csv": "2280a1182d4fcdf5a0a3b4fb45489fb72b52084f4d72886db8bb8f66fc4bc3a7",
+    "speeches.csv": "dbfec54d17a62712aa19b1af4b1949c48b64075c69e24bb47d8710eee5d57b7c"
+  },
+  "freeze_id": "pa_v4_external_usgov_r1",
+  "published_results": {
+    "notes": [
+      "Speech-level metrics use the share of sentences a SetFit classifier labels populist, thresholded at the F1-optimal cutoff chosen on the same data (in-sample).",
+      "The paper's 'AuROC' equals the balanced accuracy of the thresholded prediction ((recall + specificity)/2), not a ranking AUROC; for governors 2010-2018 the released continuous shares give a ranking AUROC of about .84.",
+      "One presidential speech (us.2016.Trump.6-22) is identical to GPD US_Trump_Campaign_1, which is in the V4 English holdout (GPD score .85).",
+      "The fine-tuned RoBERTa comparator (coastalcph) was trained on Trump 2016 campaign sentences, so it is in-domain for the presidential subset."
+    ],
+    "sentence_level_table1_setfit_75_25_split": {
+      "governors": {
+        "accuracy": 0.66,
+        "f1": 0.71,
+        "mcc": 0.5,
+        "precision": 0.73,
+        "recall": 0.69
+      },
+      "presidential": {
+        "accuracy": 0.7,
+        "f1": 0.75,
+        "mcc": 0.55,
+        "precision": 0.77,
+        "recall": 0.74
+      }
+    },
+    "speech_level_table2": {
+      "governors_2010_2018": {
+        "accuracy": 0.85,
+        "auroc_as_reported": 0.77,
+        "f1": 0.69,
+        "mcc": 0.7,
+        "n": 288,
+        "precision": 0.8,
+        "r2_share_vs_score": 0.39,
+        "recall": 0.6
+      },
+      "governors_2018_2022": {
+        "accuracy": 0.92,
+        "auroc_as_reported": 0.91,
+        "f1": 0.9,
+        "mcc": 0.85,
+        "n": 26,
+        "precision": 1.0,
+        "r2_share_vs_score": 0.49,
+        "recall": 0.82
+      },
+      "presidential_2016": {
+        "accuracy": 0.89,
+        "auroc_as_reported": 0.89,
+        "f1": 0.87,
+        "mcc": 0.77,
+        "n": 45,
+        "precision": 0.85,
+        "r2_share_vs_score": 0.58,
+        "recall": 0.89
+      }
+    }
+  },
+  "schema": "populism_axis.v4.external_benchmark_freeze.v1",
+  "sentences": {
+    "governors_2010_2018|neutral": 1120,
+    "governors_2010_2018|pluralist": 1008,
+    "governors_2010_2018|populist": 1411,
+    "presidential_2016|neutral": 1,
+    "presidential_2016|pluralist": 37,
+    "presidential_2016|populist": 43
+  },
+  "source": {
+    "dataverse": "doi:10.7910/DVN/ZOHMVO",
+    "license": "CC0-1.0",
+    "package_file_id": 13676815,
+    "paper": "van der Veen, Dzebo, Littvay, Hawkins & Dar (2024), arXiv:2408.15213"
+  },
+  "subsets": {
+    "governors_2010_2018": {
+      "median_words": 1794.0,
+      "n_binary_populist": 60,
+      "n_groups": 73,
+      "n_speeches": 288,
+      "score_mean": 0.30347222222222225,
+      "text_from_csv_fallback": 46
+    },
+    "governors_2018_2022": {
+      "median_words": 2659.0,
+      "n_binary_populist": 10,
+      "n_groups": 6,
+      "n_speeches": 26,
+      "score_mean": 0.5134615384615384,
+      "text_from_csv_fallback": 0
+    },
+    "presidential_2016": {
+      "median_words": 2965.0,
+      "n_binary_populist": 20,
+      "n_groups": 7,
+      "n_speeches": 45,
+      "score_mean": 0.6290740740740741,
+      "text_from_csv_fallback": 0
+    }
+  }
+}

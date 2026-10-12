@@ -1,0 +1,47 @@
+{
+  "argv": [
+    "--csv",
+    "data/external/licht_antielite/tweets_text.csv",
+    "--text-column",
+    "text_en_clean",
+    "--name",
+    "antielite_tweets",
+    "--out-dir",
+    "results/v4/external/antielite_tweets/roberta"
+  ],
+  "encoder_id": "coastalcph/roberta-large-ft-trump-populism",
+  "extra": {
+    "id2label": {
+      "0": "(a) No populism",
+      "1": "(b) Anti-elitism populism",
+      "2": "(c) People-centrism populism"
+    },
+    "name": "antielite_tweets"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "3ccfb0d9c85f3308efd2e761177bab1a64c1d361",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "csv": {
+      "path": "/home/atomasevic/populism-axis/data/external/licht_antielite/tweets_text.csv",
+      "sha256": "dc54af58cb5a41930d8b211c9a10533a2b4f3fbf640e266b1c7688f62d6e3b9f"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "9bc3538f35d813af41424df0d88260f426617cfe5d1034beaafabd870de0a738",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/encode_roberta_custom.py",
+  "timestamp_utc": "2026-09-24T08:27:54Z"
+}

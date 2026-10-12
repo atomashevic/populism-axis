@@ -1,0 +1,954 @@
+{
+  "popbert": {
+    "sigmoid": {
+      "centr_any_coder": {
+        "auroc": 0.63907,
+        "auroc_ci95": [
+          0.605065,
+          0.673208
+        ],
+        "average_precision": 0.306901,
+        "f1_test_oracle": {
+          "f1": 0.369771,
+          "precision": 0.326969,
+          "recall": 0.425466,
+          "threshold": 0.000525
+        },
+        "f1_train_optimal": {
+          "f1": 0.352188,
+          "precision": 0.268293,
+          "recall": 0.512422,
+          "threshold": 0.000486
+        },
+        "f1_train_prevalence": {
+          "f1": 0.360248,
+          "precision": 0.360248,
+          "recall": 0.360248,
+          "threshold": 0.000563
+        },
+        "n": 1759,
+        "n_positive": 322
+      },
+      "centr_majority": {
+        "auroc": 0.689852,
+        "auroc_ci95": [
+          0.61735,
+          0.757284
+        ],
+        "average_precision": 0.077228,
+        "f1_test_oracle": {
+          "f1": 0.157895,
+          "precision": 0.130435,
+          "recall": 0.2,
+          "threshold": 0.002924
+        },
+        "f1_train_optimal": {
+          "f1": 0.136905,
+          "precision": 0.083333,
+          "recall": 0.383333,
+          "threshold": 0.000598
+        },
+        "f1_train_prevalence": {
+          "f1": 0.103448,
+          "precision": 0.107143,
+          "recall": 0.1,
+          "threshold": 0.143723
+        },
+        "n": 1759,
+        "n_positive": 60
+      },
+      "elite_any_coder": {
+        "auroc": 0.636791,
+        "auroc_ci95": [
+          0.607416,
+          0.665181
+        ],
+        "average_precision": 0.547528,
+        "f1_test_oracle": {
+          "f1": 0.546561,
+          "precision": 0.39221,
+          "recall": 0.901235,
+          "threshold": 0.000667
+        },
+        "f1_train_optimal": {
+          "f1": 0.532508,
+          "precision": 0.4,
+          "recall": 0.796296,
+          "threshold": 0.000715
+        },
+        "f1_train_prevalence": {
+          "f1": 0.501919,
+          "precision": 0.499237,
+          "recall": 0.50463,
+          "threshold": 0.000876
+        },
+        "n": 1759,
+        "n_positive": 648
+      },
+      "elite_majority": {
+        "auroc": 0.66885,
+        "auroc_ci95": [
+          0.631583,
+          0.703975
+        ],
+        "average_precision": 0.331861,
+        "f1_test_oracle": {
+          "f1": 0.37182,
+          "precision": 0.407725,
+          "recall": 0.341727,
+          "threshold": 0.001394
+        },
+        "f1_train_optimal": {
+          "f1": 0.360465,
+          "precision": 0.302439,
+          "recall": 0.446043,
+          "threshold": 0.000993
+        },
+        "f1_train_prevalence": {
+          "f1": 0.356618,
+          "precision": 0.364662,
+          "recall": 0.348921,
+          "threshold": 0.001273
+        },
+        "n": 1759,
+        "n_positive": 278
+      }
+    },
+    "softmax": {
+      "centr_any_coder": {
+        "auroc": 0.613353,
+        "auroc_ci95": [
+          0.577428,
+          0.647883
+        ],
+        "average_precision": 0.292904,
+        "f1_test_oracle": {
+          "f1": 0.345494,
+          "precision": 0.263934,
+          "recall": 0.5,
+          "threshold": 0.0
+        },
+        "f1_train_optimal": {
+          "f1": 0.341969,
+          "precision": 0.25661,
+          "recall": 0.512422,
+          "threshold": 0.0
+        },
+        "f1_train_prevalence": {
+          "f1": 0.298137,
+          "precision": 0.298137,
+          "recall": 0.298137,
+          "threshold": 0.0
+        },
+        "n": 1759,
+        "n_positive": 322
+      },
+      "centr_majority": {
+        "auroc": 0.642829,
+        "auroc_ci95": [
+          0.566048,
+          0.713362
+        ],
+        "average_precision": 0.06243,
+        "f1_test_oracle": {
+          "f1": 0.142857,
+          "precision": 0.102941,
+          "recall": 0.233333,
+          "threshold": 1.8e-05
+        },
+        "f1_train_optimal": {
+          "f1": 0.111369,
+          "precision": 0.06469,
+          "recall": 0.4,
+          "threshold": 0.0
+        },
+        "f1_train_prevalence": {
+          "f1": 0.103448,
+          "precision": 0.107143,
+          "recall": 0.1,
+          "threshold": 0.007985
+        },
+        "n": 1759,
+        "n_positive": 60
+      },
+      "elite_any_coder": {
+        "auroc": 0.619742,
+        "auroc_ci95": [
+          0.591927,
+          0.648722
+        ],
+        "average_precision": 0.538068,
+        "f1_test_oracle": {
+          "f1": 0.540424,
+          "precision": 0.375375,
+          "recall": 0.964506,
+          "threshold": 0.0
+        },
+        "f1_train_optimal": {
+          "f1": 0.514532,
+          "precision": 0.395041,
+          "recall": 0.737654,
+          "threshold": 0.0
+        },
+        "f1_train_prevalence": {
+          "f1": 0.492664,
+          "precision": 0.493045,
+          "recall": 0.492284,
+          "threshold": 1e-06
+        },
+        "n": 1759,
+        "n_positive": 648
+      },
+      "elite_majority": {
+        "auroc": 0.649715,
+        "auroc_ci95": [
+          0.613196,
+          0.686141
+        ],
+        "average_precision": 0.324905,
+        "f1_test_oracle": {
+          "f1": 0.353383,
+          "precision": 0.271154,
+          "recall": 0.507194,
+          "threshold": 1e-06
+        },
+        "f1_train_optimal": {
+          "f1": 0.328267,
+          "precision": 0.284211,
+          "recall": 0.388489,
+          "threshold": 1e-06
+        },
+        "f1_train_prevalence": {
+          "f1": 0.341912,
+          "precision": 0.349624,
+          "recall": 0.334532,
+          "threshold": 2e-06
+        },
+        "n": 1759,
+        "n_positive": 278
+      }
+    }
+  },
+  "portugal": {
+    "sigmoid": {
+      "breakdowns": {
+        "issue_auroc": {
+          "banking_finance": 0.835036,
+          "corruption": 0.701949,
+          "law_order": 0.863888,
+          "political_system": 0.902538
+        },
+        "positives_in_top_k": {
+          "both": 9,
+          "k": 116,
+          "ours": 24,
+          "roberta": 29
+        },
+        "spearman_with_E_axis_plus_nli": 0.172682
+      },
+      "centr": {
+        "P_roberta": {
+          "auroc": 0.582465,
+          "auroc_ci95": [
+            0.523256,
+            0.634921
+          ],
+          "average_precision": 0.093727,
+          "f1_oracle_cut": {
+            "f1": 0.154728,
+            "precision": 0.108725,
+            "recall": 0.268212,
+            "threshold": 0.000683
+          },
+          "f1_prevalence_cut": {
+            "f1": 0.129139,
+            "precision": 0.129139,
+            "recall": 0.129139,
+            "threshold": 0.001285
+          },
+          "n": 6214,
+          "n_clusters": 144,
+          "n_positive": 302
+        }
+      },
+      "elite": {
+        "E_roberta": {
+          "auroc": 0.867248,
+          "auroc_ci95": [
+            0.817848,
+            0.918246
+          ],
+          "average_precision": 0.173441,
+          "f1_oracle_cut": {
+            "f1": 0.28013,
+            "precision": 0.225131,
+            "recall": 0.37069,
+            "threshold": 0.010368
+          },
+          "f1_prevalence_cut": {
+            "f1": 0.25,
+            "precision": 0.25,
+            "recall": 0.25,
+            "threshold": 0.246879
+          },
+          "n": 6214,
+          "n_clusters": 144,
+          "n_positive": 116
+        },
+        "PE_roberta_total": {
+          "auroc": 0.840966,
+          "auroc_ci95": [
+            0.801251,
+            0.888289
+          ],
+          "average_precision": 0.141652,
+          "f1_oracle_cut": {
+            "f1": 0.2397,
+            "precision": 0.211921,
+            "recall": 0.275862,
+            "threshold": 0.566798
+          },
+          "f1_prevalence_cut": {
+            "f1": 0.224138,
+            "precision": 0.224138,
+            "recall": 0.224138,
+            "threshold": 0.859038
+          },
+          "n": 6214,
+          "n_clusters": 144,
+          "n_positive": 116
+        }
+      }
+    },
+    "softmax": {
+      "breakdowns": {
+        "issue_auroc": {
+          "banking_finance": 0.84307,
+          "corruption": 0.673723,
+          "law_order": 0.891162,
+          "political_system": 0.896555
+        },
+        "positives_in_top_k": {
+          "both": 8,
+          "k": 116,
+          "ours": 24,
+          "roberta": 29
+        },
+        "spearman_with_E_axis_plus_nli": 0.216187
+      },
+      "centr": {
+        "P_roberta": {
+          "auroc": 0.60356,
+          "auroc_ci95": [
+            0.560203,
+            0.64191
+          ],
+          "average_precision": 0.091889,
+          "f1_oracle_cut": {
+            "f1": 0.148248,
+            "precision": 0.125,
+            "recall": 0.182119,
+            "threshold": 2e-06
+          },
+          "f1_prevalence_cut": {
+            "f1": 0.13245,
+            "precision": 0.13245,
+            "recall": 0.13245,
+            "threshold": 5e-06
+          },
+          "n": 6214,
+          "n_clusters": 144,
+          "n_positive": 302
+        }
+      },
+      "elite": {
+        "E_roberta": {
+          "auroc": 0.867615,
+          "auroc_ci95": [
+            0.829178,
+            0.912145
+          ],
+          "average_precision": 0.172205,
+          "f1_oracle_cut": {
+            "f1": 0.271318,
+            "precision": 0.246479,
+            "recall": 0.301724,
+            "threshold": 0.004281
+          },
+          "f1_prevalence_cut": {
+            "f1": 0.25,
+            "precision": 0.25,
+            "recall": 0.25,
+            "threshold": 0.028471
+          },
+          "n": 6214,
+          "n_clusters": 144,
+          "n_positive": 116
+        },
+        "PE_roberta_total": {
+          "auroc": 0.849286,
+          "auroc_ci95": [
+            0.813991,
+            0.891319
+          ],
+          "average_precision": 0.143675,
+          "f1_oracle_cut": {
+            "f1": 0.2397,
+            "precision": 0.211921,
+            "recall": 0.275862,
+            "threshold": 0.680371
+          },
+          "f1_prevalence_cut": {
+            "f1": 0.224138,
+            "precision": 0.224138,
+            "recall": 0.224138,
+            "threshold": 0.979244
+          },
+          "n": 6214,
+          "n_clusters": 144,
+          "n_positive": 116
+        }
+      }
+    }
+  },
+  "tweets": {
+    "sigmoid": {
+      "by_country_auroc": {
+        "AUS": 0.639456,
+        "AUT": 0.369231,
+        "BEL": 0.515079,
+        "CAN": 0.707792,
+        "CHE": 0.406566,
+        "DEU": 0.7625,
+        "DNK": 0.559172,
+        "ESP": 0.583091,
+        "FIN": 0.479121,
+        "FRA": 0.67,
+        "GBR": 0.569063,
+        "GRC": 0.409314,
+        "IRL": 0.663946,
+        "ITA": 0.539474,
+        "LUX": 0.333333,
+        "NLD": 0.632094,
+        "NOR": 0.556818,
+        "NZL": 0.455,
+        "PRT": 0.554054,
+        "SWE": 0.61943
+      },
+      "evaluate": {
+        "y_any": {
+          "auroc": 0.555961,
+          "auroc_ci95_country": [
+            0.52097,
+            0.583101
+          ],
+          "average_precision": 0.476228,
+          "n": 1059,
+          "n_positive": 416,
+          "thresholds": {
+            "f1opt_train": {
+              "accuracy": 0.474032,
+              "f1_macro": 0.468295,
+              "f1_pos": 0.523524,
+              "precision_pos": 0.406375,
+              "recall_pos": 0.735577
+            },
+            "oracle": {
+              "accuracy": 0.477809,
+              "f1_macro": 0.473111,
+              "f1_pos": 0.522865,
+              "precision_pos": 0.407806,
+              "recall_pos": 0.728365
+            },
+            "prevalence_train": {
+              "accuracy": 0.563739,
+              "f1_macro": 0.539492,
+              "f1_pos": 0.433824,
+              "precision_pos": 0.4425,
+              "recall_pos": 0.425481
+            }
+          }
+        },
+        "y_general": {
+          "auroc": 0.571035,
+          "auroc_ci95_country": [
+            0.530491,
+            0.603812
+          ],
+          "average_precision": 0.347281,
+          "n": 1059,
+          "n_positive": 265,
+          "thresholds": {
+            "f1opt_train": {
+              "accuracy": 0.412653,
+              "f1_macro": 0.411288,
+              "f1_pos": 0.382937,
+              "precision_pos": 0.259758,
+              "recall_pos": 0.728302
+            },
+            "oracle": {
+              "accuracy": 0.433428,
+              "f1_macro": 0.429926,
+              "f1_pos": 0.385246,
+              "precision_pos": 0.264416,
+              "recall_pos": 0.709434
+            },
+            "prevalence_train": {
+              "accuracy": 0.683664,
+              "f1_macro": 0.571393,
+              "f1_pos": 0.352031,
+              "precision_pos": 0.361111,
+              "recall_pos": 0.343396
+            }
+          }
+        }
+      },
+      "paired": {
+        "E_axis - RoBERTa_anti_elitism": {
+          "ci95": [
+            0.122338,
+            0.25342
+          ],
+          "delta": 0.183102,
+          "p_two_sided": 0.0
+        },
+        "E_axis_plus_nli - E_axis": {
+          "ci95": [
+            -0.00682,
+            0.010029
+          ],
+          "delta": 0.001521,
+          "p_two_sided": 0.699
+        },
+        "E_axis_plus_nli - PE_axis_plus_nli": {
+          "ci95": [
+            0.036923,
+            0.103928
+          ],
+          "delta": 0.068305,
+          "p_two_sided": 0.0
+        },
+        "E_axis_plus_nli - RoBERTa_anti_elitism": {
+          "ci95": [
+            0.121806,
+            0.25692
+          ],
+          "delta": 0.184623,
+          "p_two_sided": 0.0
+        },
+        "E_axis_plus_nli - XLMT_released_classifier": {
+          "ci95": [
+            -0.102038,
+            0.001712
+          ],
+          "delta": -0.052051,
+          "p_two_sided": 0.056
+        },
+        "RoBERTa_anti_elitism - XLMT_released_classifier": {
+          "ci95": [
+            -0.288721,
+            -0.185483
+          ],
+          "delta": -0.236674,
+          "p_two_sided": 0.0
+        }
+      }
+    },
+    "softmax": {
+      "by_country_auroc": {
+        "AUS": 0.655005,
+        "AUT": 0.369231,
+        "BEL": 0.574603,
+        "CAN": 0.50974,
+        "CHE": 0.461279,
+        "DEU": 0.808333,
+        "DNK": 0.546351,
+        "ESP": 0.588897,
+        "FIN": 0.562637,
+        "FRA": 0.624286,
+        "GBR": 0.52875,
+        "GRC": 0.318627,
+        "IRL": 0.629932,
+        "ITA": 0.496711,
+        "LUX": 0.222222,
+        "NLD": 0.616765,
+        "NOR": 0.604545,
+        "NZL": 0.405,
+        "PRT": 0.562162,
+        "SWE": 0.627451
+      },
+      "evaluate": {
+        "y_any": {
+          "auroc": 0.557539,
+          "auroc_ci95_country": [
+            0.530573,
+            0.582311
+          ],
+          "average_precision": 0.475133,
+          "n": 1059,
+          "n_positive": 416,
+          "thresholds": {
+            "f1opt_train": {
+              "accuracy": 0.475921,
+              "f1_macro": 0.472602,
+              "f1_pos": 0.514436,
+              "precision_pos": 0.404402,
+              "recall_pos": 0.706731
+            },
+            "oracle": {
+              "accuracy": 0.477809,
+              "f1_macro": 0.473299,
+              "f1_pos": 0.52204,
+              "precision_pos": 0.407557,
+              "recall_pos": 0.725962
+            },
+            "prevalence_train": {
+              "accuracy": 0.559018,
+              "f1_macro": 0.534721,
+              "f1_pos": 0.428397,
+              "precision_pos": 0.436409,
+              "recall_pos": 0.420673
+            }
+          }
+        },
+        "y_general": {
+          "auroc": 0.57281,
+          "auroc_ci95_country": [
+            0.536467,
+            0.602737
+          ],
+          "average_precision": 0.351641,
+          "n": 1059,
+          "n_positive": 265,
+          "thresholds": {
+            "f1opt_train": {
+              "accuracy": 0.435316,
+              "f1_macro": 0.431655,
+              "f1_pos": 0.386037,
+              "precision_pos": 0.265162,
+              "recall_pos": 0.709434
+            },
+            "oracle": {
+              "accuracy": 0.418319,
+              "f1_macro": 0.416859,
+              "f1_pos": 0.387674,
+              "precision_pos": 0.263158,
+              "recall_pos": 0.735849
+            },
+            "prevalence_train": {
+              "accuracy": 0.681775,
+              "f1_macro": 0.5677,
+              "f1_pos": 0.345631,
+              "precision_pos": 0.356,
+              "recall_pos": 0.335849
+            }
+          }
+        }
+      },
+      "paired": {
+        "E_axis - RoBERTa_anti_elitism": {
+          "ci95": [
+            0.126938,
+            0.24619
+          ],
+          "delta": 0.181327,
+          "p_two_sided": 0.0
+        },
+        "E_axis_plus_nli - E_axis": {
+          "ci95": [
+            -0.00682,
+            0.010029
+          ],
+          "delta": 0.001521,
+          "p_two_sided": 0.699
+        },
+        "E_axis_plus_nli - PE_axis_plus_nli": {
+          "ci95": [
+            0.036923,
+            0.103928
+          ],
+          "delta": 0.068305,
+          "p_two_sided": 0.0
+        },
+        "E_axis_plus_nli - RoBERTa_anti_elitism": {
+          "ci95": [
+            0.127626,
+            0.247281
+          ],
+          "delta": 0.182848,
+          "p_two_sided": 0.0
+        },
+        "E_axis_plus_nli - XLMT_released_classifier": {
+          "ci95": [
+            -0.102038,
+            0.001712
+          ],
+          "delta": -0.052051,
+          "p_two_sided": 0.056
+        },
+        "RoBERTa_anti_elitism - XLMT_released_classifier": {
+          "ci95": [
+            -0.280913,
+            -0.189042
+          ],
+          "delta": -0.234899,
+          "p_two_sided": 0.0
+        }
+      }
+    }
+  },
+  "usgov": {
+    "sigmoid": {
+      "all_pooled": {
+        "B6_minus_RoBERTa": {
+          "ci95": [
+            0.043153,
+            0.239312
+          ],
+          "delta_spearman": 0.135687,
+          "n_draws": 4000,
+          "p_two_sided": 0.001
+        },
+        "metrics": {
+          "auroc": 0.732383,
+          "average_precision": 0.561504,
+          "in_sample_cutoff": {
+            "accuracy": 0.735376,
+            "balanced_accuracy": 0.697728,
+            "f1": 0.541063,
+            "precision": 0.478632,
+            "recall": 0.622222
+          },
+          "n": 359,
+          "n_groups": 86,
+          "n_positive": 90,
+          "pearson_r2": 0.234566,
+          "spearman": 0.445254,
+          "spearman_ci95": [
+            0.302994,
+            0.576706
+          ]
+        }
+      },
+      "governors_2010_2018": {
+        "B6_minus_RoBERTa": {
+          "ci95": [
+            0.085734,
+            0.317868
+          ],
+          "delta_spearman": 0.200424,
+          "n_draws": 4000,
+          "p_two_sided": 0.0
+        },
+        "metrics": {
+          "auroc": 0.677924,
+          "average_precision": 0.454716,
+          "in_sample_cutoff": {
+            "accuracy": 0.711806,
+            "balanced_accuracy": 0.676754,
+            "f1": 0.471338,
+            "precision": 0.381443,
+            "recall": 0.616667
+          },
+          "n": 288,
+          "n_groups": 73,
+          "n_positive": 60,
+          "pearson_r2": 0.147225,
+          "spearman": 0.325998,
+          "spearman_ci95": [
+            0.197033,
+            0.447433
+          ]
+        }
+      },
+      "governors_2018_2022": {
+        "B6_minus_RoBERTa": {
+          "ci95": [
+            -0.329312,
+            0.221626
+          ],
+          "delta_spearman": -0.103671,
+          "n_draws": 4000,
+          "p_two_sided": 0.5895
+        },
+        "metrics": {
+          "auroc": 0.8375,
+          "average_precision": 0.826993,
+          "in_sample_cutoff": {
+            "accuracy": 0.769231,
+            "balanced_accuracy": 0.79375,
+            "f1": 0.75,
+            "precision": 0.642857,
+            "recall": 0.9
+          },
+          "n": 26,
+          "n_groups": 6,
+          "n_positive": 10,
+          "pearson_r2": 0.351701,
+          "spearman": 0.73224,
+          "spearman_ci95": [
+            0.322023,
+            0.89763
+          ]
+        }
+      },
+      "presidential_2016": {
+        "B6_minus_RoBERTa": {
+          "ci95": [
+            -0.228553,
+            0.167974
+          ],
+          "delta_spearman": -0.010762,
+          "n_draws": 4000,
+          "p_two_sided": 0.4305
+        },
+        "metrics": {
+          "auroc": 0.814,
+          "average_precision": 0.767452,
+          "in_sample_cutoff": {
+            "accuracy": 0.8,
+            "balanced_accuracy": 0.805,
+            "f1": 0.790698,
+            "precision": 0.73913,
+            "recall": 0.85
+          },
+          "n": 45,
+          "n_groups": 7,
+          "n_positive": 20,
+          "pearson_r2": 0.333596,
+          "spearman": 0.696314,
+          "spearman_ci95": [
+            0.397497,
+            0.802973
+          ]
+        }
+      }
+    },
+    "softmax": {
+      "all_pooled": {
+        "B6_minus_RoBERTa": {
+          "ci95": [
+            0.022526,
+            0.197489
+          ],
+          "delta_spearman": 0.104803,
+          "n_draws": 4000,
+          "p_two_sided": 0.014
+        },
+        "metrics": {
+          "auroc": 0.750785,
+          "average_precision": 0.574579,
+          "in_sample_cutoff": {
+            "accuracy": 0.713092,
+            "balanced_accuracy": 0.697646,
+            "f1": 0.538117,
+            "precision": 0.451128,
+            "recall": 0.666667
+          },
+          "n": 359,
+          "n_groups": 86,
+          "n_positive": 90,
+          "pearson_r2": 0.238787,
+          "spearman": 0.476138,
+          "spearman_ci95": [
+            0.34121,
+            0.596412
+          ]
+        }
+      },
+      "governors_2010_2018": {
+        "B6_minus_RoBERTa": {
+          "ci95": [
+            0.045458,
+            0.255205
+          ],
+          "delta_spearman": 0.150391,
+          "n_draws": 4000,
+          "p_two_sided": 0.004
+        },
+        "metrics": {
+          "auroc": 0.709247,
+          "average_precision": 0.438507,
+          "in_sample_cutoff": {
+            "accuracy": 0.666667,
+            "balanced_accuracy": 0.691228,
+            "f1": 0.478261,
+            "precision": 0.354839,
+            "recall": 0.733333
+          },
+          "n": 288,
+          "n_groups": 73,
+          "n_positive": 60,
+          "pearson_r2": 0.143916,
+          "spearman": 0.376031,
+          "spearman_ci95": [
+            0.252434,
+            0.490343
+          ]
+        }
+      },
+      "governors_2018_2022": {
+        "B6_minus_RoBERTa": {
+          "ci95": [
+            -0.308186,
+            0.41353
+          ],
+          "delta_spearman": -0.021699,
+          "n_draws": 4000,
+          "p_two_sided": 0.886
+        },
+        "metrics": {
+          "auroc": 0.7875,
+          "average_precision": 0.791433,
+          "in_sample_cutoff": {
+            "accuracy": 0.807692,
+            "balanced_accuracy": 0.7875,
+            "f1": 0.736842,
+            "precision": 0.777778,
+            "recall": 0.7
+          },
+          "n": 26,
+          "n_groups": 6,
+          "n_positive": 10,
+          "pearson_r2": 0.376129,
+          "spearman": 0.650268,
+          "spearman_ci95": [
+            0.111702,
+            0.893176
+          ]
+        }
+      },
+      "presidential_2016": {
+        "B6_minus_RoBERTa": {
+          "ci95": [
+            -0.179356,
+            0.159868
+          ],
+          "delta_spearman": -0.020666,
+          "n_draws": 4000,
+          "p_two_sided": 0.539
+        },
+        "metrics": {
+          "auroc": 0.848,
+          "average_precision": 0.797132,
+          "in_sample_cutoff": {
+            "accuracy": 0.844444,
+            "balanced_accuracy": 0.85,
+            "f1": 0.837209,
+            "precision": 0.782609,
+            "recall": 0.9
+          },
+          "n": 45,
+          "n_groups": 7,
+          "n_positive": 20,
+          "pearson_r2": 0.355159,
+          "spearman": 0.706218,
+          "spearman_ci95": [
+            0.359044,
+            0.778208
+          ]
+        }
+      }
+    }
+  }
+}

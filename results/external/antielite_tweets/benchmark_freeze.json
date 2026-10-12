@@ -1,0 +1,125 @@
+{
+  "canonical_sha256": "94dd23e13a498dac10b47092f8b95c06f5024d560ba4b5e01d91a968fb94177d",
+  "counts": {
+    "test": {
+      "countries": 20,
+      "english_source_share": 0.26912181303116145,
+      "n": 1059,
+      "parties": 172,
+      "y_any": 416,
+      "y_general": 265
+    },
+    "train": {
+      "countries": 20,
+      "english_source_share": 0.28903730999539384,
+      "n": 4342,
+      "parties": 177,
+      "y_any": 1641,
+      "y_general": 1024
+    }
+  },
+  "duplicate_rows_kept": 48,
+  "freeze_id": "pa_v4_external_antielite_tweets_r1",
+  "labels_file_sha256": "5d0a0686d2a9aea54dcd8d9436d7ce993256e16406464aea46d736a59488fe04",
+  "notes": [
+    "The paper's classifier is XLM-T (cardiffnlp/twitter-xlm-roberta-base) fine-tuned on the original-language text of the 4,342 training tweets; its test metrics are on the fixed 1,059-tweet test split.",
+    "The fine-tuned classifier is released in the package (data/fits/xlmt-elitecriticism-classifier) and is re-run here on the same test tweets for per-tweet comparison.",
+    "V4 is scored on the English translations; 28.5% of tweets are from English-language countries and untranslated."
+  ],
+  "positive_class": "yes-general (general elite criticism), as in the paper; yes-specific and no are negatives. y_any = yes-general or yes-specific.",
+  "published_results": {
+    "other_best_test": {
+      "bow/per/macro avg": {
+        "f1": 0.6113265354971515,
+        "precision": 0.6080979047379349,
+        "recall": 0.630640178698731
+      },
+      "bow/per/micro avg": {
+        "f1": 0.6742209631728046,
+        "precision": 0.6742209631728046,
+        "recall": 0.6742209631728046
+      },
+      "bow/per/neg": {
+        "f1": 0.7676767676767676,
+        "precision": 0.8248914616497829,
+        "recall": 0.7178841309823678
+      },
+      "bow/per/pos": {
+        "f1": 0.4549763033175355,
+        "precision": 0.391304347826087,
+        "recall": 0.5433962264150943
+      },
+      "mse/per/macro avg": {
+        "f1": 0.6853738297781388,
+        "precision": 0.6763916595421298,
+        "recall": 0.7118007699253838
+      },
+      "mse/per/micro avg": {
+        "f1": 0.7374881964117092,
+        "precision": 0.7374881964117092,
+        "recall": 0.7374881964117092
+      },
+      "mse/per/neg": {
+        "f1": 0.8134228187919463,
+        "precision": 0.8706896551724138,
+        "recall": 0.7632241813602015
+      },
+      "mse/per/pos": {
+        "f1": 0.5573248407643312,
+        "precision": 0.4820936639118457,
+        "recall": 0.660377358490566
+      },
+      "transformer/nan/macro avg": {
+        "f1": 0.7448368442792235,
+        "precision": 0.7544928053883049,
+        "recall": 0.7370395893731286
+      },
+      "transformer/nan/micro avg": {
+        "f1": 0.8149197355996223,
+        "precision": 0.8149197355996223,
+        "recall": 0.8149197355996223
+      },
+      "transformer/nan/neg": {
+        "f1": 0.8785625774473359,
+        "precision": 0.8646341463414634,
+        "recall": 0.8929471032745592
+      },
+      "transformer/nan/pos": {
+        "f1": 0.611111111111111,
+        "precision": 0.6443514644351465,
+        "recall": 0.5811320754716981
+      }
+    },
+    "xlmt_test": {
+      "macro avg": {
+        "f1-score": 0.7448368442792235,
+        "precision": 0.7544928053883049,
+        "recall": 0.7370395893731286
+      },
+      "neg": {
+        "f1-score": 0.8785625774473359,
+        "precision": 0.8646341463414634,
+        "recall": 0.8929471032745592
+      },
+      "pos": {
+        "f1-score": 0.611111111111111,
+        "precision": 0.6443514644351465,
+        "recall": 0.5811320754716981
+      }
+    }
+  },
+  "schema": "populism_axis.v4.external_benchmark_freeze.v1",
+  "source": {
+    "dataverse": "doi:10.7910/DVN/T0UKCN",
+    "files": [
+      "training_data_pooled_samples.tab",
+      "dawidskene_labelings_pooled_samples.tab",
+      "xlmt_test_results.tab",
+      "best_classifier_results.tab"
+    ],
+    "license": "CC0-1.0",
+    "paper": "Licht, Abou-Chadi, Barber\u00e1 & Hua (2025), Journal of Politics, doi:10.1086/730711"
+  },
+  "text_file_sha256_local_only": "dc54af58cb5a41930d8b211c9a10533a2b4f3fbf640e266b1c7688f62d6e3b9f",
+  "text_used": "text_en (the package's English machine translation), URLs removed, @handles -> @user"
+}

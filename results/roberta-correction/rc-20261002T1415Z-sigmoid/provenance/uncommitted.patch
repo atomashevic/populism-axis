@@ -1,0 +1,547 @@
+diff --git c/.gitignore w/.gitignore
+index 322782d..ca26e0b 100644
+--- c/.gitignore
++++ w/.gitignore
+@@ -45,6 +45,8 @@ results/embeddings_eu/
+ results/embeddings_external/
+ results/**/*.npz
+ results/**/*.npy
++# Required frozen-scorer runtime asset (4 KB), not a rebuildable cache.
++!results/frozen_reference/reference_mean_embedding.npy
+ results/**/*.parquet
+ results/**/scores_agora.csv
+ results/popbert/**/*.npz
+diff --git c/AGENTS.md w/AGENTS.md
+index 7b7edf9..b630ff5 100644
+--- c/AGENTS.md
++++ w/AGENTS.md
+@@ -3,7 +3,7 @@
+ ## Project shape
+ - This repository holds the populism axis: a training-free measure of populist rhetoric built from proposition anchors in a frozen sentence-embedding space, with an NLI claim check as a second stage. Method: `docs/method.md`. Headline numbers: `README.md`.
+ - Main payload: `src/populism_axis/` (axis, geometry, encoders, text cleaning, split, manifests), `scripts/` (scoring, encoding, evaluation, external benchmarks), `anchors/` (the written construct), `data/benchmarks*/` (frozen benchmark tables), `results/` (compact evidence), `research/development-log/` (the stage reports that produced every number), `tests/`.
+-- Do not commit embedding caches, entailment-probability files, window text, raw external corpora, virtual environments, logs or scored outputs; `.gitignore` covers them.
++- Do not commit embedding caches, entailment-probability files, window text, raw external corpora, virtual environments, logs or scored outputs; `.gitignore` covers them. The small `results/frozen_reference/reference_mean_embedding.npy` is a required runtime asset and a deliberate exception. Preserve its verified bytes; check the runtime package with `python3 scripts/verify_frozen_assets.py`, without regenerating assets.
+ 
+ ## Frozen configuration
+ - Axis: e5-large-v2, `anchors/proposition_anchors.json`, three-sentence windows capped at 60 words per sentence, PE soft conjunction, mean of the top 8 windows (top window for sentences and tweets).
+@@ -11,8 +11,8 @@
+ - The English holdout and EU-OOD are spent: no configuration choice may be made on them. The external benchmarks have each been scored once. Selection happens on English-dev and Agora only, under `docs/development-protocol.md`.
+ 
+ ## Environments
+-- Local (no GPU): `uv run --extra cpu ...`. GPU host: `uv run --extra cu126 ...` through `scripts/remote_job.sh`. See `docs/environment.md`. A bare `uv run` removes torch.
+-- Every script writes `run_manifest.json`; results cited in a report must come from a clean tree.
++- Local (no GPU): `uv run --extra cpu ...`. Launch from the actively connected computer (verify `hostname` and its SSH configuration) to `pvgpu2`; run `uv run --extra cu126 ...` through `scripts/remote_job.sh` inside the GPU checkout. See `docs/environment.md`. A bare `uv run` removes torch.
++- Result-producing scripts write `run_manifest.json`; read-only asset checks do not write outputs. Results cited in a report must come from a clean tree.
+ 
+ ## Verification
+ - Tests: `uv run --extra cpu python -m unittest discover -s tests`.
+diff --git c/README.md w/README.md
+index ef35a64..8155c6b 100644
+--- c/README.md
++++ w/README.md
+@@ -40,6 +40,7 @@ PopBERT and Portuguese texts were read in English translation (GPT-4o and Marian
+ ## Score your own texts
+ 
+ ```bash
++python3 scripts/verify_frozen_assets.py
+ uv sync --extra cpu
+ uv run --extra cpu python scripts/score_texts.py --input my_texts.csv --text-column text --id-column id \
+     --unit speech --reference frozen --device cpu --out-dir scored/my_run
+@@ -50,11 +51,13 @@ uv run --extra cpu python scripts/score_texts.py --input my_texts.csv --text-col
+ - `--clean` applies the speech-file cleaner (metadata headers, URL lines). `--no-claim-check` gives the axis alone. `--device cuda` uses a GPU.
+ - Outputs: `scores.csv` (axis, claim check, combined score, and per-channel columns), `evidence.json` (each text's top windows with P and E projections and the best-matching claims with their entailment probabilities), `run_manifest.json`.
+ 
++The asset check uses only the Python standard library and verifies the included reference files and scorer source; it does not check installed dependencies, download models or run inference. See [the frozen-scorer quickstart](docs/frozen-scorer.md) for offline cache verification, exact observed checkpoint hashes and release limitations.
++
+ The two models (about 3 GB) are downloaded from the Hugging Face Hub on first use. On a laptop CPU expect one to two minutes per speech and a few seconds per sentence; on a GPU a few seconds per speech.
+ 
+ ## Reproducing the benchmarks
+ 
+-Encoding and the claim check run on a GPU host (`docs/environment.md`); everything else is CPU work over the stored embeddings and entailment probabilities under `results/`.
++Encoding and the claim check run on `pvgpu2`, launched from whichever computer is currently connected (check `hostname` and the local SSH configuration; see `docs/environment.md`). Run the GPU commands below inside its verified repository checkout. Everything else is CPU work over the stored embeddings and entailment probabilities under `results/`.
+ 
+ ```bash
+ # GPU host: windows and anchors
+diff --git c/docs/environment.md w/docs/environment.md
+index a212ce9..35cc774 100644
+--- c/docs/environment.md
++++ w/docs/environment.md
+@@ -1,40 +1,70 @@
+ # Environment
+ 
+-## Two machines
++## Active launch host and GPU host
+ 
+ | Role | Machine | Environment |
+ |---|---|---|
+-| Code, tests, axis building, evaluation, reports, commits | local workstation (no GPU) | `uv sync --extra cpu` |
+-| Encoding and NLI only | pvgpu1 (NVIDIA A30 24 GB, driver 560.35, CUDA 12.6; shared) | `uv sync --extra cu126` |
++| Code, tests, axis building, evaluation, reports, commits | Actively connected workstation (currently `laptop-omarchy`, no GPU) | `uv sync --extra cpu` |
++| Encoding and NLI only | `pvgpu2` (shared GPU host) | `uv sync --extra cu126` |
++
++Before planning remote work, check `hostname` on the computer attached to the
++current task and inspect that computer's existing SSH configuration for `pvgpu2`.
++Use the active computer as the launch host; do not assume an SCL launch host.
++The current laptop's user SSH configuration resolves `pvgpu2` to
++`pvgpu2.ipb.ac.rs` via `gw-proxy` (`gw.ipb.ac.rs`). Keep that configuration intact;
++another attached computer may have a different existing route. A configured
++alias alone does not establish working remote access.
++
++The helpers run **inside the GPU repository checkout** and resolve the repository
++from their own location under `scripts/`, regardless of the caller's directory.
++They do not connect over SSH or choose a launch host. Verify the GPU checkout path,
++current branch, driver and available resources before an authorized job; the
++`~/populism-axis` path below is an example, not a verified path on `pvgpu2`.
+ 
+ torch is not a base dependency. It comes from exactly one extra, and both
+ extras pin the same release (`torch==2.14.0`) from the PyTorch indexes
+-(`/whl/cpu`, `/whl/cu126`). The PyPI torch 2.11 wheel is built for CUDA 13 and
+-does not run on the pvgpu1 driver, which is why the earlier lockfile had
+-`torch.cuda.is_available() == False` there.
++(`/whl/cpu`, `/whl/cu126`). The CUDA 12.6 extra was selected for the earlier
++pvgpu1 environment; check compatibility on the current GPU host before use.
+ 
+ Always pass the extra. A bare `uv run` re-syncs the environment without it and
+ removes torch:
+ 
+ ```bash
+-uv run --extra cpu python -m unittest discover -s tests          # local
+-uv run --extra cu126 python scripts/encode_sentences.py ...   # pvgpu1
++uv run --extra cpu python -m unittest discover -s tests       # active workstation
++uv run --extra cu126 python scripts/encode_sentences.py ...  # inside GPU checkout
+ ```
+ 
+ ## Remote flow
+ 
+-1. Local: commit and `git push`.
+-2. `ssh pvgpu1 'cd ~/populism-axis && scripts/remote_pull.sh && uv sync --extra cu126'` (the helper removes untracked result files that the branch now tracks, which GPU jobs leave behind and a plain `git pull` refuses to overwrite)
+-3. `ssh pvgpu1 'cd ~/populism-axis && scripts/remote_job.sh <job> -- python scripts/<script>.py ...'`
+-4. Watch `logs/<job>.log` on pvgpu1.
+-5. Pull results back with tar over ssh (pvgpu1 has no `rsync`):
+-   `ssh pvgpu1 'cd ~/populism-axis && tar cf - results/<path>' | tar xf -`
++These commands describe separately authorized remote work, not an instruction to
++launch a job whenever the repository is opened.
+ 
+-pvgpu1 never commits; the local repository is the only git writer.
++1. On the active workstation, review and preserve local work. Publish code with a
++   commit and push only when authorized.
++2. After verifying the remote checkout path and branch, update it safely:
++   `ssh pvgpu2 'cd ~/populism-axis && scripts/remote_pull.sh && uv sync --extra cu126'`.
++3. Launch the authorized job:
++   `ssh pvgpu2 'cd ~/populism-axis && scripts/remote_job.sh <job> -- python scripts/<script>.py ...'`.
++4. Watch `logs/<job>.log` in that GPU checkout.
++5. Copy outputs to a new staging directory on the active workstation, inspect
++   them, and reconcile them before replacing any local research files. For example,
++   stream a tar archive into a newly created staging directory:
++   `ssh pvgpu2 'cd ~/populism-axis && tar cf - results/<path>' | tar xf - -C <new-staging-directory>`.
+ 
+-## Resource etiquette on pvgpu1
++`remote_pull.sh` refuses staged or unstaged tracked changes before fetching. It
++fetches the current branch and permits only a fast-forward, with Git's
++`--no-overwrite-ignore` protection. Conflicting untracked files, ignored files,
++branch divergence and detached HEAD stop the update. Unrelated local files remain
++in place. Inspect `git status` and the reported error, preserve affected outputs
++in a separate backup/staging location, and resolve the conflict manually before
++retrying. The helper never deletes conflicting files or resets tracked edits.
+ 
+-pvgpu1 is shared. `scripts/remote_job.sh` enforces:
++The active workstation remains the code/history writer; GPU jobs produce outputs
++for review and preservation. Do not use checkout updates as artifact cleanup.
++
++## Resource etiquette on the GPU host
++
++`pvgpu2` is shared. `scripts/remote_job.sh` enforces:
+ 
+ - one job at a time (pid files under `logs/`); chained steps run sequentially inside one job;
+ - no launch if the GPU already has more than 4 GB in use or the 1-minute load exceeds 2.5;
+@@ -42,10 +72,24 @@ pvgpu1 is shared. `scripts/remote_job.sh` enforces:
+ - offline Hugging Face mode by default, so no model is downloaded without a deliberate `HF_HUB_OFFLINE=0`;
+ - the process exits and frees GPU memory when done.
+ 
+-Batch sizes: 64 for encoders up to ~400M parameters, 32 for Qwen3-Embedding-0.6B, 12 for Qwen3-Embedding-4B. No 7B encoder is run unless the card is idle and the download is approved.
++Historical batch sizes: 64 for encoders up to ~400M parameters, 32 for
++Qwen3-Embedding-0.6B, 12 for Qwen3-Embedding-4B. Confirm they fit the current GPU.
++No 7B encoder is run unless the card is idle and the download is approved.
+ 
+-## Known pre-existing issue
++## Lightweight helper regression tests
+ 
+-`tests/test_adapted_anchor_screening.py::test_benchmark_loader_appends_extra_variants`
+-fails on the local workstation because `alternative-pairs/benchmark_large_samples.py`
+-hard-codes `ROOT = Path("/home/atomasevic/populism-axis")`. It predates the development protocol.
++`tests/test_remote_helpers.py` uses temporary local Git repositories and a fake GPU
++status command. It checks repository-root resolution and preservation of staged,
++unstaged, untracked and ignored work, plus safe refusal of divergence and detached
++HEAD. It does not connect to SSH, run GPU inference or modify the research checkout.
++
++```bash
++uv run --extra cpu python -m unittest discover -s tests -p 'test_remote_helpers.py'
++```
++
++## Frozen scorer runtime package
++
++Check the small source/reference package before installing dependencies with
++`python3 scripts/verify_frozen_assets.py`. See [frozen-scorer.md](frozen-scorer.md)
++for model downloads, optional offline cache verification and the limits of a
++fresh checkout. The check does not require scientific caches or model inference.
+diff --git c/docs/results-index.md w/docs/results-index.md
+index 86aa3d4..8a77ab7 100644
+--- c/docs/results-index.md
++++ w/docs/results-index.md
+@@ -1,6 +1,6 @@
+ # Results index
+ 
+-What is under `results/`, where it came from, and which development-log report reads it. Embeddings, projections, entailment probabilities and window text are rebuildable caches and are not tracked.
++What is under `results/`, where it came from, and which development-log report reads it. Embeddings, projections, entailment probabilities and window text are rebuildable caches and are not tracked. The small `results/frozen_reference/reference_mean_embedding.npy` is instead a required frozen-scorer runtime asset. Its existing bytes, `reference_stats.json`, anchors and scorer source are covered by `runtime_manifest.json` and `SHA256SUMS`; verify with `python3 scripts/verify_frozen_assets.py`. See `docs/frozen-scorer.md`.
+ 
+ ## Development stages (development data only: English-dev and Agora)
+ 
+diff --git c/scripts/external/encode_roberta_custom.py w/scripts/external/encode_roberta_custom.py
+index ccd67c4..3f23470 100644
+--- c/scripts/external/encode_roberta_custom.py
++++ w/scripts/external/encode_roberta_custom.py
+@@ -1,15 +1,14 @@
+ #!/usr/bin/env python3
+-"""Score the fine-tuned RoBERTa populism comparator on a custom CSV (GPU, pvgpu1).
++"""Encode corrected independent-label RoBERTa scores on existing one-sentence windows.
+ 
+-Same model, windows and outputs as scripts/encode_roberta_comparator_v3.py
+-(coastalcph/roberta-large-ft-trump-populism; one-sentence windows, no cap),
+-so the comparator is scored exactly as in the initial evaluation and the final step. Writes
+-`probabilities_<name>.npz` with `doc_index` and `probabilities` (neutral,
+-anti-elitism, people-centrism) and a run manifest.
++Requires pinned model/tokenizer revisions. Creates sigmoid_<name>.npz with raw
++logits, independent probabilities and versioned metadata; retains legacy caches.
++No change to the historical splitter, token limit or label mapping.
+ """
+ from __future__ import annotations
+ 
+ import argparse
++import hashlib
+ import sys
+ from pathlib import Path
+ 
+@@ -21,17 +20,38 @@ sys.path.insert(0, str(ROOT / "src"))
+ 
+ from populism_axis.contextual_axis import split_windows  # noqa: E402
+ from populism_axis.run_manifest import write_run_manifest  # noqa: E402
++from populism_axis.roberta_comparator import pinned_revision, validate_config, save_scores  # noqa: E402
+ 
+ MODEL_ID = "coastalcph/roberta-large-ft-trump-populism"
+ TOKENIZER_ID = "FacebookAI/roberta-large"
+ 
+ 
++def load_texts(csv: Path, text_column: str, text_path_column: str | None) -> tuple[list[str], dict[str, Path]]:
++    frame = pd.read_csv(csv)
++    inputs = {"csv": csv}
++    if text_path_column is None:
++        return frame[text_column].astype(str).tolist(), inputs
++    # Same path resolution and decoding as scripts/benchmarks.py for English.
++    texts = []
++    for index, row in frame.iterrows():
++        raw = str(row[text_path_column])
++        path = ROOT / raw if raw.startswith("data") else ROOT / "data" / raw
++        if not path.exists():
++            path = ROOT / "data" / "speeches_20251120" / str(row["merging_variable"])
++        texts.append(path.read_text(encoding="utf-8", errors="ignore"))
++        inputs[f"text_{index:05d}"] = path
++    return texts, inputs
++
++
+ def main() -> None:
+     parser = argparse.ArgumentParser(description=__doc__)
+     parser.add_argument("--csv", type=Path, required=True)
+     parser.add_argument("--name", required=True)
+     parser.add_argument("--text-column", default="text")
++    parser.add_argument("--text-path-column", help="English benchmark column containing speech file paths")
+     parser.add_argument("--out-dir", type=Path, required=True)
++    parser.add_argument("--model-revision", type=pinned_revision, required=True)
++    parser.add_argument("--tokenizer-revision", type=pinned_revision, required=True)
+     parser.add_argument("--batch-size", type=int, default=64)
+     parser.add_argument("--max-length", type=int, default=128)
+     parser.add_argument("--device", default="cuda")
+@@ -41,17 +61,26 @@ def main() -> None:
+         if not value.is_absolute():
+             setattr(args, attr, Path.cwd() / value)
+ 
++    if not args.name or Path(args.name).name != args.name or args.name in (".", ".."):
++        parser.error("--name must be a single filename component")
++    cache_path = args.out_dir / f"sigmoid_{args.name}.npz"
++    manifest_name = f"roberta_sigmoid_{args.name}.manifest.json"
++    if cache_path.exists() or (args.out_dir / manifest_name).exists():
++        parser.error("Corrected output already exists; choose a new run directory")
++
++    texts, input_files = load_texts(args.csv, args.text_column, args.text_path_column)
++
+     import torch
+     from transformers import AutoModelForSequenceClassification, AutoTokenizer
+ 
+     torch.set_num_threads(2)
+     args.out_dir.mkdir(parents=True, exist_ok=True)
+-    tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_ID)
+-    model = AutoModelForSequenceClassification.from_pretrained(MODEL_ID).eval().to(args.device)
++    tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_ID, revision=args.tokenizer_revision)
++    model = AutoModelForSequenceClassification.from_pretrained(MODEL_ID, revision=args.model_revision).eval().to(args.device)
++    validate_config(model.config)
+     if args.device.startswith("cuda"):
+         model = model.half()
+ 
+-    texts = pd.read_csv(args.csv)[args.text_column].astype(str).tolist()
+     windows: list[str] = []
+     doc_index: list[int] = []
+     for index, text in enumerate(texts):
+@@ -60,17 +89,29 @@ def main() -> None:
+         doc_index.extend([index] * len(parts))
+     print(f"[roberta] {args.name}: {len(texts)} docs -> {len(windows)} windows", flush=True)
+ 
+-    probabilities = np.zeros((len(windows), model.config.num_labels), dtype=np.float32)
++    logits = np.zeros((len(windows), model.config.num_labels), dtype=np.float32)
+     with torch.no_grad():
+         for start in range(0, len(windows), args.batch_size):
+             chunk = windows[start: start + args.batch_size]
+             batch = tokenizer(chunk, padding=True, truncation=True, max_length=args.max_length, return_tensors="pt").to(args.device)
+-            probabilities[start: start + len(chunk)] = torch.softmax(model(**batch).logits.float(), dim=-1).cpu().numpy()
+-    np.savez_compressed(args.out_dir / f"probabilities_{args.name}.npz",
+-                        doc_index=np.asarray(doc_index, dtype=np.int32), probabilities=probabilities)
+-    write_run_manifest(args.out_dir, script="scripts/external/encode_roberta_custom.py", inputs={"csv": args.csv},
+-                       encoder_id=MODEL_ID, extra={"name": args.name, "id2label": {str(k): v for k, v in model.config.id2label.items()}},
+-                       filename=f"roberta_{args.name}.manifest.json")
++            logits[start: start + len(chunk)] = model(**batch).logits.float().cpu().numpy()
++    window_hash = hashlib.sha256()
++    for index, text in zip(doc_index, windows):
++        raw = text.encode("utf-8")
++        window_hash.update(f"{index}:{len(raw)}:".encode("ascii"))
++        window_hash.update(raw)
++    metadata = {"name": args.name, "model_id": MODEL_ID, "model_revision": args.model_revision,
++                "tokenizer_id": TOKENIZER_ID, "tokenizer_revision": args.tokenizer_revision,
++                "resolved_model_revision": getattr(model.config, "_commit_hash", None),
++                "max_length": args.max_length, "sentences_per_window": 1, "max_words": 0,
++                "text_column": args.text_column, "text_path_column": args.text_path_column, "ordered_windows_sha256": window_hash.hexdigest(),
++                "n_documents": len(texts), "n_windows": len(windows)}
++    save_scores(cache_path, np.asarray(doc_index, dtype=np.int32), logits, metadata)
++    write_run_manifest(args.out_dir, script="scripts/external/encode_roberta_custom.py",
++                       inputs=dict(input_files, scores=cache_path), encoder_id=MODEL_ID,
++                       extra=dict(metadata, activation="sigmoid", schema="populism_axis.roberta.sigmoid.v1",
++                                  id2label={str(k): v for k, v in model.config.id2label.items()}),
++                       filename=manifest_name)
+     print(f"[roberta] {args.name}: wrote probabilities", flush=True)
+ 
+ 
+diff --git c/scripts/external/score_antielite_tweets.py w/scripts/external/score_antielite_tweets.py
+index 8bf4fa0..0ef0635 100644
+--- c/scripts/external/score_antielite_tweets.py
++++ w/scripts/external/score_antielite_tweets.py
+@@ -35,6 +35,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
+ 
+ from populism_axis.contextual_axis import CHANNELS, WindowProjections, aggregate_from_window_scores, window_conjunction_scores  # noqa: E402
+ from populism_axis.run_manifest import write_run_manifest  # noqa: E402
++from populism_axis.roberta_comparator import load_scores  # noqa: E402
+ from populism_axis.geometry import center_normalize, pole_mean_axes  # noqa: E402
+ from evaluate_benchmarks import _auroc_metric, cluster_bootstrap  # noqa: E402
+ from run_config import load_anchor_groups, load_embeddings  # noqa: E402
+@@ -125,7 +126,7 @@ def stage_final(model_label: str, draws: int, seed: int) -> None:
+         raise SystemExit("axis scores and labels disagree on order")
+     n = len(frame)
+     nli = nli_channel_scores(model_label, n)
+-    rob = np.load(OUT / "roberta" / f"probabilities_{NAME}.npz")
++    rob = load_scores(OUT / "roberta" / f"sigmoid_{NAME}.npz")
+     rob_ae = aggregate_from_window_scores(rob["probabilities"][:, 1].astype(float), rob["doc_index"].astype(int), n, "k:1")
+     rob_total = aggregate_from_window_scores(1.0 - rob["probabilities"][:, 0].astype(float), rob["doc_index"].astype(int), n, "k:1")
+     systems = {
+diff --git c/scripts/external/score_popbert_en.py w/scripts/external/score_popbert_en.py
+index dc1de27..91aec96 100644
+--- c/scripts/external/score_popbert_en.py
++++ w/scripts/external/score_popbert_en.py
+@@ -30,6 +30,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
+ 
+ from populism_axis.contextual_axis import CHANNELS, WindowProjections, aggregate_from_window_scores, window_conjunction_scores  # noqa: E402
+ from populism_axis.run_manifest import write_run_manifest  # noqa: E402
++from populism_axis.roberta_comparator import load_scores  # noqa: E402
+ from populism_axis.geometry import center_normalize, pole_mean_axes  # noqa: E402
+ from run_config import load_anchor_groups, load_embeddings  # noqa: E402
+ from evaluate_nli import zscore  # noqa: E402
+@@ -102,7 +103,7 @@ def nli_scores(model_label: str, n: int) -> dict[str, np.ndarray]:
+ def roberta_scores(n_by_split: dict[str, int], component: int) -> np.ndarray:
+     parts = []
+     for split in ("train", "test"):
+-        payload = np.load(OUT / "roberta" / f"probabilities_popbert_en_{split}.npz")
++        payload = load_scores(OUT / "roberta" / f"sigmoid_popbert_en_{split}.npz")
+         values = payload["probabilities"][:, component].astype(float) if component >= 0 else 1.0 - payload["probabilities"][:, 0].astype(float)
+         parts.append(aggregate_from_window_scores(values, payload["doc_index"].astype(int), n_by_split[split], "k:1"))
+     return np.concatenate(parts)
+diff --git c/scripts/external/score_portugal.py w/scripts/external/score_portugal.py
+index 847509d..9cce27b 100644
+--- c/scripts/external/score_portugal.py
++++ w/scripts/external/score_portugal.py
+@@ -36,6 +36,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
+ 
+ from populism_axis.contextual_axis import CHANNELS, WindowProjections, aggregate_from_window_scores, window_conjunction_scores  # noqa: E402
+ from populism_axis.run_manifest import write_run_manifest  # noqa: E402
++from populism_axis.roberta_comparator import load_scores  # noqa: E402
+ from populism_axis.geometry import center_normalize, pole_mean_axes  # noqa: E402
+ from run_config import load_anchor_groups, load_embeddings  # noqa: E402
+ from evaluate_nli import zscore  # noqa: E402
+@@ -113,7 +114,7 @@ def nli_channel_scores(model_label: str, n: int) -> dict[str, np.ndarray]:
+ 
+ 
+ def roberta_scores(n: int) -> dict[str, np.ndarray]:
+-    payload = np.load(OUT / "roberta" / "probabilities_portugal_en.npz")
++    payload = load_scores(OUT / "roberta" / "sigmoid_portugal_en.npz")
+     probs, doc_index = payload["probabilities"].astype(float), payload["doc_index"].astype(int)
+     return {"E_roberta": aggregate_from_window_scores(probs[:, 1], doc_index, n, "k:1"),
+             "P_roberta": aggregate_from_window_scores(probs[:, 2], doc_index, n, "k:1"),
+@@ -229,7 +230,7 @@ def stage_final(model_label: str, draws: int, seed: int) -> None:
+     (OUT / "final_results.json").write_text(json.dumps(results, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+     write_run_manifest(OUT, script="scripts/external/score_portugal.py",
+                        inputs={"axis": OUT / "axis_scores.csv", "nli": OUT / f"nli_portugal__{model_label}.npz",
+-                               "roberta": OUT / "roberta" / "probabilities_portugal_en.npz"},
++                               "roberta": OUT / "roberta" / "sigmoid_portugal_en.npz"},
+                        extra={"stage": "final", "draws": draws, "seed": seed}, filename="final.manifest.json")
+ 
+     lines = []
+diff --git c/scripts/external/score_usgov.py w/scripts/external/score_usgov.py
+index 3efb759..d58e2fe 100644
+--- c/scripts/external/score_usgov.py
++++ w/scripts/external/score_usgov.py
+@@ -36,6 +36,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
+ 
+ from populism_axis.contextual_axis import CHANNELS, WindowProjections, aggregate_from_window_scores, window_conjunction_scores  # noqa: E402
+ from populism_axis.run_manifest import write_run_manifest  # noqa: E402
++from populism_axis.roberta_comparator import load_scores  # noqa: E402
+ from populism_axis.geometry import center_normalize, pole_mean_axes  # noqa: E402
+ from evaluate_benchmarks import _spearman_metric, cluster_bootstrap  # noqa: E402
+ from paired_comparison import paired_delta  # noqa: E402
+@@ -124,7 +125,7 @@ def nli_scores(name: str, n_docs: int, k: int, model_label: str) -> np.ndarray:
+ 
+ 
+ def roberta_scores(name: str, n_docs: int, rule: str, component: int) -> np.ndarray:
+-    payload = np.load(OUT / "roberta" / f"probabilities_{name}.npz")
++    payload = load_scores(OUT / "roberta" / f"sigmoid_{name}.npz")
+     doc_index, probs = payload["doc_index"].astype(int), payload["probabilities"].astype(float)
+     values = 1.0 - probs[:, 0] if component < 0 else probs[:, component]
+     return aggregate_from_window_scores(values, doc_index, n_docs, rule)
+@@ -178,6 +179,9 @@ def sentence_metrics(values: np.ndarray, frame: pd.DataFrame) -> dict:
+ 
+ 
+ def stage_final(model_label: str, draws: int, seed: int) -> None:
++    # Both caches must be corrected before any speech/sentence result write.
++    for name in ("usgov_speeches", "usgov_sentences"):
++        load_scores(OUT / "roberta" / f"sigmoid_{name}.npz")
+     speeches = pd.read_csv(DATA / "speeches.csv")
+     axis = pd.read_csv(OUT / "axis_scores_speeches.csv")
+     comparator = pd.read_csv(DATA / "comparator_predictions.csv").set_index("id")["setfit_pop_share"]
+@@ -250,7 +254,7 @@ def stage_final(model_label: str, draws: int, seed: int) -> None:
+     (OUT / "final_results.json").write_text(json.dumps(results, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+     write_run_manifest(OUT, script="scripts/external/score_usgov.py",
+                        inputs={"axis_scores": OUT / "axis_scores_speeches.csv", "nli_speeches": OUT / f"nli_usgov_speeches__{model_label}.npz",
+-                               "roberta_speeches": OUT / "roberta" / "probabilities_usgov_speeches.npz", "comparator": DATA / "comparator_predictions.csv"},
++                               "roberta_speeches": OUT / "roberta" / "sigmoid_usgov_speeches.npz", "comparator": DATA / "comparator_predictions.csv"},
+                        extra={"stage": "final"}, filename="final.manifest.json")
+ 
+     lines = []
+diff --git c/scripts/final_holdout.py w/scripts/final_holdout.py
+index ce6996f..e441958 100644
+--- c/scripts/final_holdout.py
++++ w/scripts/final_holdout.py
+@@ -30,6 +30,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
+ sys.path.insert(0, str(ROOT / "scripts"))
+ 
+ from populism_axis.run_manifest import write_run_manifest  # noqa: E402
++from populism_axis.roberta_comparator import load_scores  # noqa: E402
+ from evaluate_benchmarks import evaluate_english, evaluate_eu  # noqa: E402
+ from evaluate_eu_paper_protocol import PAPER_EU_OOD, SURNAME, best_f1_threshold, macro_f1, prevalence_threshold, window_max  # noqa: E402
+ from paired_comparison import paired_delta  # noqa: E402
+@@ -106,6 +107,9 @@ def main() -> None:
+     parser.add_argument("--draws", type=int, default=4000)
+     parser.add_argument("--seed", type=int, default=20260923)
+     args = parser.parse_args()
++    # Refuse historical softmax caches before any axis subprocess or result write.
++    for dataset in ("english", "eu"):
++        load_scores(FINAL / "roberta" / f"sigmoid_{dataset}.npz")
+     FINAL.mkdir(parents=True, exist_ok=True)
+ 
+     b0 = run_axis("B0_v3_config", EMB / "spw1_cap0", EMB_EU / "spw1_cap0", None)
+@@ -141,7 +145,7 @@ def main() -> None:
+     rob = {}
+     split_all = english["id"].map(split).to_numpy()
+     for dataset in ("english", "eu"):
+-        payload = np.load(roberta_dir / f"probabilities_{dataset}.npz")
++        payload = load_scores(roberta_dir / f"sigmoid_{dataset}.npz")
+         doc_index, probs = payload["doc_index"].astype(int), payload["probabilities"].astype(float)
+         n = len(english) if dataset == "english" else len(eu)
+         if dataset == "english":
+diff --git c/scripts/remote_job.sh w/scripts/remote_job.sh
+index 2903d09..12c9303 100755
+--- c/scripts/remote_job.sh
++++ w/scripts/remote_job.sh
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env bash
+-# Launch one GPU job on the shared pvgpu1 host, politely.
++# Launch one GPU job on the shared GPU host, politely.
+ #
+-# Usage (run inside the repo on pvgpu1):
++# Usage (run inside the repo on the GPU host):
+ #   scripts/remote_job.sh <job-name> -- <command> [args...]
+ # Example:
+ #   scripts/remote_job.sh step1_encode -- python scripts/encode_sentences.py --sentences ... --set-id ...
+@@ -22,7 +22,7 @@ if [[ $# -lt 3 || "$2" != "--" ]]; then
+ fi
+ name="$1"; shift 2
+ 
+-repo="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
++repo="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ cd "$repo"
+ mkdir -p logs
+ 
+diff --git c/scripts/remote_pull.sh w/scripts/remote_pull.sh
+index 9474e23..21aa78e 100755
+--- c/scripts/remote_pull.sh
++++ w/scripts/remote_pull.sh
+@@ -1,26 +1,25 @@
+ #!/usr/bin/env bash
+-# Update the pvgpu1 checkout from origin without manual conflict handling.
+-#
+-# pvgpu1 never commits. GPU jobs write manifests and stats into tracked result
+-# folders there; once those files are pulled back and committed locally, the next
+-# `git pull` refuses to overwrite the untracked copies. Every such file has already
+-# been copied to the local repository (that is where the commit came from), so this
+-# helper deletes untracked files that the remote branch now tracks, discards local
+-# modifications to tracked files, and fast-forwards.
++# Fast-forward the GPU checkout without discarding local work.
++# Run inside the GPU checkout; local launch-host selection belongs to SSH.
++# Tracked edits and conflicting untracked/ignored files require manual review.
+ set -euo pipefail
+-repo="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
++repo="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ cd "$repo"
+-branch="$(git rev-parse --abbrev-ref HEAD)"
+-git fetch -q origin "$branch"
+-removed=0
+-while IFS= read -r path; do
+-  if [[ -e "$path" ]] && ! git ls-files --error-unmatch -- "$path" >/dev/null 2>&1; then
+-    rm -f -- "$path"; removed=$((removed + 1))
+-  fi
+-done < <(git diff --name-only --diff-filter=A HEAD "origin/$branch")
+-modified="$(git status --porcelain --untracked-files=no | wc -l)"
+-if (( modified > 0 )); then
+-  git checkout -q -- .
++
++if ! branch="$(git symbolic-ref --quiet --short HEAD)"; then
++  echo "cannot update a detached HEAD; inspect git status and select the intended branch manually" >&2
++  exit 1
+ fi
+-git pull -q --ff-only origin "$branch"
+-echo "pulled $(git rev-parse --short HEAD) on $branch; removed ${removed} conflicting untracked file(s), reset ${modified} modified file(s)"
++
++if [[ -n "$(git status --porcelain --untracked-files=no)" ]]; then
++  echo "cannot update: tracked files have local changes; preserve them and review git status before retrying" >&2
++  git status --short --untracked-files=no >&2
++  exit 1
++fi
++
++git fetch -q origin "$branch"
++if ! git merge --ff-only --no-overwrite-ignore FETCH_HEAD; then
++  echo "update stopped; local work was not discarded. Inspect git status and the Git error above; back up conflicting local files or resolve branch divergence manually before retrying" >&2
++  exit 1
++fi
++echo "updated $(git rev-parse --short HEAD) on $branch; local files preserved"

@@ -1,0 +1,41 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "cleaning_version": "v4_clean_r1"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "d5fee31bb3288cc2a6dd66cc3ce7c8e011829a9a",
+    "dirty": true
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "cleaner": {
+      "path": "/home/aleksandar/work/populism-axis/src/populism_axis/v4_text.py",
+      "sha256": "7fe57070fb17795edd501af33a218c87c1064ac1f7e5ae5a6fba09ac0152e682"
+    },
+    "english": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_v3/english_gpd_speeches.csv",
+      "sha256": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7"
+    },
+    "split": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_v4/english_split.csv",
+      "sha256": "fe6bea109fcba5946eb1cc9cbacb3d9cfd112954137f4f884c93653f4c7824cb"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "85ef4ec8352304ce69da6a336c25714dfd49fadfdc4baa8cfe1cd70beafd547c",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/audit_text_cleaning_v4.py",
+  "timestamp_utc": "2026-09-23T18:39:30Z"
+}

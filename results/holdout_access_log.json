@@ -1,0 +1,53 @@
+[
+  {
+    "timestamp_utc": "2026-09-23T17:33:29Z",
+    "label": "B0_v3_repro_all258",
+    "datasets": [
+      "english",
+      "agora"
+    ],
+    "english_split": "all",
+    "final": false,
+    "reason": "declared V3 reproduction check (docs/v4-protocol.md); informs no decision",
+    "out_dir": "results/v4/step1_splitter/B0_v3_repro_all258",
+    "manifest": "results/v4/step1_splitter/B0_v3_repro_all258/run_manifest.json"
+  },
+  {
+    "timestamp_utc": "2026-09-24T06:05:38Z",
+    "label": "B0_v3_config",
+    "datasets": [
+      "english",
+      "eu"
+    ],
+    "english_split": "holdout",
+    "final": true,
+    "reason": "V4 final one-time scoring of English holdout and EU-OOD (pre-declared B0, B4, B6)",
+    "out_dir": "/home/aleksandar/work/populism-axis/results/v4/final/B0_v3_config",
+    "manifest": "/home/aleksandar/work/populism-axis/results/v4/final/B0_v3_config/run_manifest.json"
+  },
+  {
+    "timestamp_utc": "2026-09-24T06:06:21Z",
+    "label": "B4_axis",
+    "datasets": [
+      "english",
+      "eu"
+    ],
+    "english_split": "holdout",
+    "final": true,
+    "reason": "V4 final one-time scoring of English holdout and EU-OOD (pre-declared B0, B4, B6)",
+    "out_dir": "/home/aleksandar/work/populism-axis/results/v4/final/B4_axis",
+    "manifest": "/home/aleksandar/work/populism-axis/results/v4/final/B4_axis/run_manifest.json"
+  },
+  {
+    "timestamp_utc": "2026-09-24T06:06:21Z",
+    "label": "B6_axis_plus_nli",
+    "datasets": [
+      "english",
+      "eu"
+    ],
+    "english_split": "holdout",
+    "final": true,
+    "reason": "V4 final one-time scoring of English holdout and EU-OOD (pre-declared B0, B4, B6)",
+    "out_dir": "results/v4/final/B6_axis_plus_nli"
+  }
+]

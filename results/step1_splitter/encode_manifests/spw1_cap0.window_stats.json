@@ -1,0 +1,46 @@
+{
+  "datasets": {
+    "agora": {
+      "encode_seconds": 44.5,
+      "max_window_words": 185,
+      "n_documents": 5272,
+      "n_windows": 41308,
+      "windows_over_60_words": 567,
+      "windows_per_doc_quantiles": {
+        "0.05": 1.0,
+        "0.5": 6.0,
+        "0.95": 21.0
+      },
+      "windows_truncated": 177,
+      "words_in_truncated_windows_share": 0.022815239304529913
+    },
+    "english": {
+      "encode_seconds": 36.6,
+      "max_window_words": 1210,
+      "n_documents": 258,
+      "n_windows": 33549,
+      "windows_over_60_words": 516,
+      "windows_per_doc_quantiles": {
+        "0.05": 31.0,
+        "0.5": 99.5,
+        "0.95": 299.0
+      },
+      "windows_truncated": 352,
+      "words_in_truncated_windows_share": 0.052519857044715984
+    }
+  },
+  "encoder_spec": {
+    "batch_size": 64,
+    "dtype": "float16",
+    "label": "e5-large-v2",
+    "max_length": 96,
+    "model_id": "intfloat/e5-large-v2",
+    "pooling": "mean",
+    "template": "query: {text}",
+    "trust_remote_code": false
+  },
+  "gpu_name": "NVIDIA A30",
+  "peak_vram_mb": 793.6,
+  "seconds_total": 87.8,
+  "setting": "spw1_cap0"
+}

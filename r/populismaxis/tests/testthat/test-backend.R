@@ -1,0 +1,38 @@
+test_that("requirements use verified local wheel and separate CPU/CUDA pins", {
+  req <- python_requirements()
+  expect_match(req[1], "^populism-axis @ file://.*#sha256=[a-f0-9]{64}$")
+  expect_match(req[2], "^torch @ https://.*#sha256=[a-f0-9]{64}$")
+  expect_false(any(grepl("extra-", req, fixed = TRUE)))
+  expect_false(any(grepl("^nvidia-", req)))
+  expect_error(python_requirements(NA), "TRUE or FALSE")
+  platform <- .pa_test_internal(".pa_platform")
+  expect_identical(platform("Windows", "AMD64"), "Windows-x86_64")
+  expect_identical(platform("Darwin", "arm64"), "Darwin-aarch64")
+  if (platform() %in% c("Linux-x86_64", "Linux-aarch64", "Windows-x86_64")) {
+    gpu <- python_requirements(TRUE)
+    expect_match(gpu[2], "cu126")
+    expect_identical(gpu[1], req[1])
+    expect_true(any(grepl("^nvidia-", gpu)))
+  }
+})
+
+test_that("invalid fixed interpreters fail before selecting Python", {
+  expect_error(configure_python(tempdir()), "executable path")
+  expect_error(configure_python(NA_character_), "executable path")
+  expect_error(configure_python(c("a", "b")), "executable path")
+  vars <- c("POPULISM_AXIS_PYTHON", "RETICULATE_PYTHON", "RETICULATE_PYTHON_ENV")
+  old <- Sys.getenv(vars, unset = NA_character_)
+  on.exit({
+    Sys.unsetenv(vars)
+    present <- !is.na(old)
+    if (any(present)) do.call(Sys.setenv, as.list(old[present]))
+  }, add = TRUE)
+  Sys.unsetenv(vars)
+  Sys.setenv(POPULISM_AXIS_PYTHON = tempdir())
+  expect_error(.pa_test_internal(".pa_fixed_python")(), "does not exist")
+  Sys.setenv(RETICULATE_PYTHON_ENV = "chosen-environment")
+  expect_error(.pa_test_internal(".pa_fixed_python")(), "already selects")
+  Sys.unsetenv("RETICULATE_PYTHON_ENV")
+  Sys.setenv(RETICULATE_PYTHON = "managed")
+  expect_error(.pa_test_internal(".pa_fixed_python")(), "conflicts")
+})

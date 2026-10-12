@@ -1,0 +1,65 @@
+{
+  "run_id": "rc-20261002T1530Z-sigmoid-usgov-sentences",
+  "purpose": "Comparator-only RoBERTa activation correction for the US-governor/candidate sentence diagnostic left out of rc-20261002T1415Z-sigmoid; no axis, claim-check, dataset or configuration change",
+  "code": {
+    "commit": "4655a38595c89faac81a65513b27f18e6df0924a",
+    "branch": "claude/project-thread-0qdnjl (equal to origin/main at launch)",
+    "working_tree_dirty": false,
+    "executed_checkout": "git clone of a git bundle of that commit, pvgpu2:~/populism-axis-roberta-correction/rc-20261002T1530Z-sigmoid-usgov-sentences/code; a real checkout, so the remote_job.sh header 'dirty=no' and the manifest git block are valid",
+    "bundle_sha256": "ada0621e9c7cc2c87a67d2469dfa0165f45fb59ee2a94e9dd393d1b85005d7a2",
+    "key_files_sha256": {
+      "scripts/external/encode_roberta_custom.py": "bfff0732991a0407cfa16d3e18869b99465cc1783e26f2770fdb8e41cd6062cc",
+      "src/populism_axis/roberta_comparator.py": "147f20f848e60e01f3f4bf0840e02eb1fbe0173cc20c4313adc6daada402a0d8",
+      "src/populism_axis/contextual_axis.py": "322b1c56904f48defd33add1670ef166cc18ec5df4ff47cabc66f0dc240fa6c6",
+      "scripts/remote_job.sh": "6437623a43b9ff6f35c67fdd9325684bc1bc98abe472404b02fb833101029a57"
+    },
+    "same_as_rc-20261002T1415Z-sigmoid": "all four key files byte-identical to that run's key_files_sha256",
+    "job_driver": "provenance/run_encode.sh",
+    "job_driver_sha256": "4abbdc6f55eb5a851c5f309a31f570c78328173c53887d384a2702830d7b217a"
+  },
+  "checkpoint": {
+    "model_id": "coastalcph/roberta-large-ft-trump-populism",
+    "model_revision": "9b5badfaab879d33fb69a9a22615175bc9b7e6c8",
+    "tokenizer_id": "FacebookAI/roberta-large",
+    "tokenizer_revision": "722cf37b1afa9454edce342e7895e588b6ff1d59",
+    "source": "existing pvgpu2 Hugging Face cache, HF_HUB_OFFLINE=1, nothing downloaded"
+  },
+  "parameters": {
+    "batch_size": 64,
+    "max_length": 128,
+    "precision": "fp16 on GPU, logits cast to float32",
+    "sentences_per_window": 1,
+    "max_words": 0,
+    "text_column": "text",
+    "activation": "independent sigmoid per label; raw logits retained"
+  },
+  "environment": {
+    "launch_host": "laptop-omarchy (existing ~/.ssh/config, BatchMode)",
+    "gpu_host": "pvgpu2, NVIDIA A30",
+    "gpu_before": "1 MiB used, load 0.16, no other jobs",
+    "venv": "reused pvgpu2:~/populism-axis/.venv via UV_PROJECT_ENVIRONMENT with UV_NO_SYNC=1; python 3.11.11, torch 2.14.0+cu126, transformers 5.6.2",
+    "resource_limits": "scripts/remote_job.sh: one job, nice 10, 2 CPU threads, CUDA_VISIBLE_DEVICES=0, HF offline"
+  },
+  "execution": {
+    "job_start_utc": "2026-10-02T15:28:48Z",
+    "encode_start": "2026-10-02T15:29:25.613Z",
+    "encode_end": "2026-10-02T15:30:02.691Z",
+    "log": "provenance/roberta_sigmoid_usgov_sentences.log (local only, *.log is gitignored; header quoted in REPORT.md)"
+  },
+  "inputs": {
+    "data/benchmark_usgov/sentences.csv": "2280a1182d4fcdf5a0a3b4fb45489fb72b52084f4d72886db8bb8f66fc4bc3a7 (same sha256 as the legacy encode, results/external/usgov/roberta/roberta_usgov_sentences.manifest.json)"
+  },
+  "outputs_sha256": {
+    "sigmoid_usgov_sentences.npz": "f1473ca4c0dc71cabafe3766e3a974eda33bb5a7a9011d93e8c739811130506d (local only, gitignored; remote copy in the executed checkout)",
+    "roberta_sigmoid_usgov_sentences.manifest.json": "cacfae5892a11f83e38fae793a51f524596a5a6af47c5cea1068cdc8e6452ffa"
+  },
+  "checks": {
+    "documents": 3620,
+    "windows": 4359,
+    "ordered_windows_sha256": "5008c557df1e225fdd75a006d6828689c699d8ab84dd50de417e335f36815f64",
+    "doc_index_equal_to_legacy": true,
+    "max_abs_softmax_of_new_logits_minus_legacy_probabilities": 1.18e-07,
+    "max_abs_sigmoid_of_logits_minus_stored_probabilities": 1.13e-07,
+    "load_scores_contract": "passed"
+  }
+}

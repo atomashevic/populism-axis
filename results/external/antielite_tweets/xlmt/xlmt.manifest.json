@@ -1,0 +1,50 @@
+{
+  "argv": [
+    "--csv",
+    "data/external/licht_antielite/tweets_text.csv",
+    "--model-dir",
+    "/home/atomasevic/models/xlmt-elitecriticism-classifier",
+    "--out-dir",
+    "results/v4/external/antielite_tweets/xlmt"
+  ],
+  "encoder_id": "/home/atomasevic/models/xlmt-elitecriticism-classifier",
+  "extra": {
+    "example_input": "$640 million for Veterans Pensions - Vote Palmer United",
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "n": 5401,
+    "positive_index": 1
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "3ccfb0d9c85f3308efd2e761177bab1a64c1d361",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "config": {
+      "path": "/home/atomasevic/models/xlmt-elitecriticism-classifier/config.json",
+      "sha256": "3a3b6007a865c1eae40981cec1420d42a6901107d1ebd5e34e1b5f3c24982f56"
+    },
+    "csv": {
+      "path": "/home/atomasevic/populism-axis/data/external/licht_antielite/tweets_text.csv",
+      "sha256": "dc54af58cb5a41930d8b211c9a10533a2b4f3fbf640e266b1c7688f62d6e3b9f"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "1e1a49e45ef4acffce5eab2becbd066b32c6328b5b9d5b3931ceae9b1574c988",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/score_xlmt_classifier.py",
+  "timestamp_utc": "2026-09-24T08:38:41Z"
+}

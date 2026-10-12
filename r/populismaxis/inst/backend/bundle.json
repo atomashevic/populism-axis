@@ -1,0 +1,53 @@
+{
+  "build_command": "uv run --extra cpu python scripts/build_r_backend.py",
+  "engine_files": {
+    "__init__.py": "b4032ebff04e02ef915e60f02126d446978a2de473e458f0851fd5b844b56942",
+    "assets.py": "42a97476b9383ae5b2d622e60f90e38498d022219f963d5022acf09ca8f7880e",
+    "cli.py": "404955c1056246e6abdbc2d412f72a6588acf8b4ad794f7eb072e250bc0ba25c",
+    "contextual_axis.py": "322b1c56904f48defd33add1670ef166cc18ec5df4ff47cabc66f0dc240fa6c6",
+    "definitions.py": "bceaffda481a5286cd717e1a678712d324b2a53ee553ad4bc2ed58d50d476694",
+    "encoders.py": "426f297a0d1f0030fedee61f5a86ca9820acb1d7b33bc3b3820c27aae4715554",
+    "geometry.py": "7c2145a924be461a5fa28b237d2b11df29a74666d9debc26b0c4cedc5c6b7c33",
+    "io.py": "2241d21ed9fcbaabbdd6c8b7bc8305215ce16a7292a0eae398975d09cba95d22",
+    "model_revisions.py": "e1748f924a1d60eca26c7fa112d316ccfdf1fcbfe39f52a4d0f26c3c3175786b",
+    "nli.py": "76de2ea46904a430fc3f5c595b696a48627c91df917bc3720f7e4ecdc57014fc",
+    "preset.py": "c95e5beeb91399fac03f07243856d1c88d4ab2a7c35bb359cf2d7fb9b3931a75",
+    "reference.py": "1b4163afa019c809d125f9186f43f03b0699c60f8d5de880438ab997a25551c6",
+    "resources/claim_hypotheses.json": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047",
+    "resources/proposition_anchors.json": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6",
+    "resources/reference_mean_embedding.npy": "c33becef7eb45a3bfeb2c46658106654d38b4b24d75c2c43a64466239d822cfa",
+    "resources/reference_stats.json": "a0ce613937153caf7b15ec7097a805272ebaed13bfa200391b2d6db3a9d6d8e6",
+    "roberta_comparator.py": "3f761c058206c33e466b78ddb3bec2913bff68203d98e9d1091e12dcc6025ff4",
+    "run_manifest.py": "c79269dd3cbce77bf5847501dae8121dd4731e2c97e0b84c253f22229e42e940",
+    "scoring.py": "6c780bee32b691dd3f173a4e73a95662db4038033d9097a6331e5df789f3da77",
+    "sentences.py": "239deb7f47229d7a7e8b4752acf04726949d236a00cee98d1a24b94e50d5880d",
+    "split.py": "b0e63da40ce47ddff8e7b92a453643d97fa1424616d20235c86f1750c0463017",
+    "text.py": "53b32f6676454bd9db9d0e0f0d62dab4eafeb27d612323df9451727d0765fddf"
+  },
+  "package_version": "0.1.0",
+  "python_version": ">=3.12,<3.13",
+  "requirements_sha256": {
+    "cpu": "760a01ab67c73e9c125fb5985efd7ecb72d1d902f3a24882285cf31ffbae73f5",
+    "cu126": "467468ac92f5ee00a06120f5d0dc224724569bb1c3151ffa6c74204f9de061ea"
+  },
+  "schema": "populismaxis.backend.v1",
+  "source_base_commit": "e5772cb065af41d3b1f76d371d9e41801bd9ce34",
+  "source_lock_sha256": "0f1003abd54ee13d5e72c55a031c880695d6c68b8a6e5196db577a57798efccd",
+  "torch_version": "2.14.0",
+  "torch_wheels": {
+    "cpu": {
+      "Darwin-aarch64": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0-cp312-cp312-macosx_14_0_arm64.whl#sha256=ab7e226c18d3cbc134dfa952d18ab1df202055dd33446837c8fd050ad449e6f5",
+      "Linux-aarch64": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_aarch64.whl#sha256=da8140c3d4a41500d29710e35bf8e66a4295ec31026487c69f54a3f583310f8d",
+      "Linux-x86_64": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260",
+      "Windows-aarch64": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-win_arm64.whl#sha256=420e7dbed969bbd045b34105fa90d1ccf3e5c09c4e9b0d0a5f9df25df9d02d2e",
+      "Windows-x86_64": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-win_amd64.whl#sha256=738cd9237bf63443a5e5f9652e5115f7b0510b089636a43d4011e9fccede714f"
+    },
+    "cu126": {
+      "Linux-aarch64": "https://download-r2.pytorch.org/whl/cu126/torch-2.14.0%2Bcu126-cp312-cp312-manylinux_2_28_aarch64.whl#sha256=b5723fa3dddd9cf548273eae0503ef9c47d0cce475edbf648ccab62224021fc7",
+      "Linux-x86_64": "https://download-r2.pytorch.org/whl/cu126/torch-2.14.0%2Bcu126-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=e9922441cb2ed269742a46246840c53634ca963f8b0a38d30182c28b4e8388da",
+      "Windows-x86_64": "https://download-r2.pytorch.org/whl/cu126/torch-2.14.0%2Bcu126-cp312-cp312-win_amd64.whl#sha256=11a492e40dfd18597fdb8271879a3a09496a23140deb81a6b5a005d9cff7312b"
+    }
+  },
+  "wheel": "b079fe80789bf070/populism_axis-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "b079fe80789bf07022340963693163cdf4efc2a7c4f5787e02af5b4f65586abd"
+}

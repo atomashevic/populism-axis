@@ -1,0 +1,76 @@
+{
+  "argv": [
+    "--name",
+    "antielite_tweets",
+    "--out-dir",
+    "results/roberta-correction/rc-20261002T1415Z-sigmoid",
+    "--model-revision",
+    "9b5badfaab879d33fb69a9a22615175bc9b7e6c8",
+    "--tokenizer-revision",
+    "722cf37b1afa9454edce342e7895e588b6ff1d59",
+    "--batch-size",
+    "64",
+    "--max-length",
+    "128",
+    "--device",
+    "cuda",
+    "--csv",
+    "data/external/licht_antielite/tweets_text.csv",
+    "--text-column",
+    "text_en_clean"
+  ],
+  "encoder_id": "coastalcph/roberta-large-ft-trump-populism",
+  "extra": {
+    "activation": "sigmoid",
+    "id2label": {
+      "0": "(a) No populism",
+      "1": "(b) Anti-elitism populism",
+      "2": "(c) People-centrism populism"
+    },
+    "max_length": 128,
+    "max_words": 0,
+    "model_id": "coastalcph/roberta-large-ft-trump-populism",
+    "model_revision": "9b5badfaab879d33fb69a9a22615175bc9b7e6c8",
+    "n_documents": 5401,
+    "n_windows": 9635,
+    "name": "antielite_tweets",
+    "ordered_windows_sha256": "6ee6e62fcf06ea237279986b4f1f9e5763eee3c3986a542a0a3e5ec947bffad0",
+    "resolved_model_revision": "9b5badfaab879d33fb69a9a22615175bc9b7e6c8",
+    "schema": "populism_axis.roberta.sigmoid.v1",
+    "sentences_per_window": 1,
+    "text_column": "text_en_clean",
+    "text_path_column": null,
+    "tokenizer_id": "FacebookAI/roberta-large",
+    "tokenizer_revision": "722cf37b1afa9454edce342e7895e588b6ff1d59"
+  },
+  "git": {
+    "branch": null,
+    "commit": null,
+    "dirty": null
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "csv": {
+      "path": "/home/atomasevic/populism-axis-roberta-correction/rc-20261002T1415Z-sigmoid/code/data/external/licht_antielite/tweets_text.csv",
+      "sha256": "dc54af58cb5a41930d8b211c9a10533a2b4f3fbf640e266b1c7688f62d6e3b9f"
+    },
+    "scores": {
+      "path": "/home/atomasevic/populism-axis-roberta-correction/rc-20261002T1415Z-sigmoid/code/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_antielite_tweets.npz",
+      "sha256": "4e4ec886ee8d2618bbe6799321d34dfc66b33cdb65782782fd81a37181367a63"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "632cd5342f722ab0ad5e97d0980cb64dcf4a0522d7d9c7b60d00604636b080f8",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/external/encode_roberta_custom.py",
+  "timestamp_utc": "2026-10-02T14:11:04Z"
+}

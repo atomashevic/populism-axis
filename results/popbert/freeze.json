@@ -1,0 +1,108 @@
+{
+  "canonical_sha256": "fab8c3a674bf7ce16e6a41eb5e2f936bf6900753909c33161caf819acb17a704",
+  "dimension_to_channel": {
+    "centr": "P",
+    "elite": "E"
+  },
+  "freeze_id": "pa_popbert_benchmark_freeze_r1",
+  "gold_rule": "majority vote of 5 coders per sentence (>=50%)",
+  "human_ceiling": {
+    "centr": {
+      "coder_vs_loo_majority_f1_mean": 0.3272114670316459,
+      "fleiss_kappa_published": 0.244,
+      "pairwise_f1_max": 0.42435424354243545,
+      "pairwise_f1_mean": 0.2617822162553983,
+      "pairwise_f1_min": 0.1553398058252427
+    },
+    "elite": {
+      "coder_vs_loo_majority_f1_mean": 0.5762887881754317,
+      "fleiss_kappa_published": 0.41,
+      "pairwise_f1_max": 0.6782963298595378,
+      "pairwise_f1_mean": 0.4962053824226655,
+      "pairwise_f1_min": 0.3054003724394786
+    },
+    "left": {
+      "coder_vs_loo_majority_f1_mean": 0.4600451537624043,
+      "fleiss_kappa_published": 0.355,
+      "pairwise_f1_max": 0.569362261669954,
+      "pairwise_f1_mean": 0.37785141711768194,
+      "pairwise_f1_min": 0.25411334552102377
+    },
+    "right": {
+      "coder_vs_loo_majority_f1_mean": 0.429432444440289,
+      "fleiss_kappa_published": 0.364,
+      "pairwise_f1_max": 0.5647773279352226,
+      "pairwise_f1_mean": 0.3825650986520719,
+      "pairwise_f1_min": 0.26571428571428574
+    }
+  },
+  "n_coders": 5,
+  "popbert_published": {
+    "centr": {
+      "f1": 0.696,
+      "precision": 0.67,
+      "recall": 0.725
+    },
+    "elite": {
+      "f1": 0.847,
+      "precision": 0.812,
+      "recall": 0.885
+    },
+    "left": {
+      "f1": 0.713,
+      "precision": 0.664,
+      "recall": 0.771
+    },
+    "macro_avg": {
+      "f1": 0.733,
+      "precision": 0.7,
+      "recall": 0.77
+    },
+    "micro_avg": {
+      "f1": 0.767,
+      "precision": 0.732,
+      "recall": 0.805
+    },
+    "right": {
+      "f1": 0.674,
+      "precision": 0.654,
+      "recall": 0.698
+    }
+  },
+  "reporting_rules": [
+    "Report per-dimension F1 against majority-vote gold, alongside the coder-vs-loo-majority ceiling. PopBERT's .847 exceeds any single coder and is not a human-level figure.",
+    "Thresholds may be fit on train only; the label-free prevalence variant is reported alongside.",
+    "Anchors stay in English. Transfer to German is the claim under test."
+  ],
+  "schema": "populism_axis.popbert.benchmark_freeze.v1",
+  "source": {
+    "data": "github.com/luerhard/PopBERT/data/labeled_data (MIT)",
+    "language": "de",
+    "paper": "Erhard et al. 2025, Political Analysis, doi:10.1017/pan.2024.12",
+    "replication_package": "doi:10.7910/DVN/HZMSUR"
+  },
+  "splits": {
+    "test": {
+      "n_sentences": 1759,
+      "path": "/home/atomasevic/populism-axis/data/benchmark_popbert/test.csv",
+      "positive_rate": {
+        "centr": 0.03411028993746447,
+        "elite": 0.1580443433769187,
+        "left": 0.041500852757248435,
+        "right": 0.018760659465605456
+      },
+      "sha256": "5e2634e13e506b666277404abb897cef66922bc8b1d006f5c05a2d8204cf0e39"
+    },
+    "train": {
+      "n_sentences": 7036,
+      "path": "/home/atomasevic/populism-axis/data/benchmark_popbert/train.csv",
+      "positive_rate": {
+        "centr": 0.03140989198408187,
+        "elite": 0.15093803297328026,
+        "left": 0.04420125071063104,
+        "right": 0.019897669130187607
+      },
+      "sha256": "8b12222cb4fb2672de6b6e0d9e5b57991c8e7ba592760b30da0f53eef12c73e8"
+    }
+  }
+}

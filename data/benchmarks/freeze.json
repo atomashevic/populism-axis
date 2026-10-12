@@ -1,0 +1,135 @@
+{
+  "canonical_sha256": "7921c585fd4717a6b4a9955307faa5c7b91397ac666418ee3835e3337a37691b",
+  "datasets": {
+    "agora_paragraphs": {
+      "group_column": "politician",
+      "n_rows": 5272,
+      "path": "data/benchmark_v3/agora_paragraphs.csv",
+      "primary_task": "continuous populism_human Spearman, politician-grouped",
+      "sha256": "d5e0568c10f7f556cf1084727273b87e3c9ce86e63866f9b8aeb682ca9f0f122"
+    },
+    "english_gpd": {
+      "extreme_counts": {
+        "excluded_middle": 100,
+        "negative": 145,
+        "positive": 13
+      },
+      "group_column": "leader",
+      "n_countries": 38,
+      "n_leader_terms": 111,
+      "n_leaders": 84,
+      "n_rows": 258,
+      "path": "data/benchmark_v3/english_gpd_speeches.csv",
+      "primary_task": "continuous rubric (source_score) Spearman, leader-clustered bootstrap",
+      "secondary_task": "extreme AUROC, averagerubric>=1.0 vs ==0.0",
+      "sha256": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7"
+    },
+    "english_leader_terms": {
+      "group_column": "leader",
+      "n_rows": 111,
+      "path": "data/benchmark_v3/english_leader_terms.csv",
+      "primary_task": "continuous totalaverage Spearman at GPD's native unit",
+      "sha256": "d093278f44a8af9f104eacd5439186b7e872d8e0c10b1437545c09a3ae9d0e4d"
+    },
+    "eu_sentences": {
+      "group_column": "speaker",
+      "n_rows": 1762,
+      "path": "data/benchmark_v3/eu_sentences.csv",
+      "primary_task": "pop_code 3 vs 0 AUROC, reported against the speaker-only null",
+      "sha256": "6c8dfa374a513c9fed2efb623edfc4ce006e2ff680cb751c3ecc3131550e1475"
+    }
+  },
+  "eligibility": {
+    "english_dedupe": "collapse *.N.txt variants to one canonical speech",
+    "english_langdetect_threshold": 0.9,
+    "english_word_min": 300,
+    "extreme_high_cut": 1.0,
+    "extreme_zero_cut": 0.0
+  },
+  "freeze_id": "pa_v3_benchmark_freeze_r1",
+  "null_baselines": {
+    "agora_paragraphs": {
+      "class_counts": {
+        "high": 24,
+        "low": 5147,
+        "medium": 101
+      },
+      "high_vs_low_n": 5171,
+      "high_vs_low_positive": 24,
+      "n_politicians": 6,
+      "n_rows": 5272,
+      "speaker_only_continuous_spearman": 0.2337509019620844,
+      "speaker_only_high_vs_low_auroc": 0.6870021371672819
+    },
+    "english_gpd": {
+      "confound_baselines": {
+        "country_mean_rubric": {
+          "extreme_auroc": 0.9498673740053051,
+          "spearman": 0.5507536356411598,
+          "spearman_ci95": [
+            0.4149445212402579,
+            0.6660268402824778
+          ]
+        },
+        "leader_mean_rubric_in_sample": {
+          "extreme_auroc": 0.9838196286472148,
+          "spearman": 0.6733640813004973,
+          "spearman_ci95": [
+            0.5754959798947508,
+            0.7560081911896884
+          ]
+        },
+        "speechtype_mean_rubric": {
+          "extreme_auroc": 0.8111405835543767,
+          "spearman": 0.3186717862613336,
+          "spearman_ci95": [
+            0.1958034007587825,
+            0.4330722501102108
+          ]
+        },
+        "word_count": {
+          "extreme_auroc": 0.7445623342175066,
+          "spearman": 0.2466388159868661,
+          "spearman_ci95": [
+            0.1185891069819255,
+            0.3789500523496362
+          ]
+        }
+      },
+      "human_ceiling_spearman": 0.7161464700189699,
+      "human_coder_pairs": [
+        {
+          "coder_a": 1,
+          "coder_b": 2,
+          "n": 211,
+          "pearson": 0.8019016614344179,
+          "spearman": 0.7161464700189699
+        }
+      ]
+    },
+    "eu_sentences": {
+      "n_positive": 31,
+      "n_rows": 1597,
+      "n_speakers": 5,
+      "n_speeches": 6,
+      "positive_rate_by_speaker": {
+        "Alexis Tsipras": 0.07407407407407407,
+        "Alice Weidel": 0.0,
+        "Eric Zemmour": 0.002242152466367713,
+        "Herbert Kickl": 0.005649717514124294,
+        "Marine Le Pen": 0.023622047244094488
+      },
+      "speaker_only_auroc": 0.8367630700778643,
+      "task": "pop_code 3 vs 0"
+    }
+  },
+  "rationale": "V1/V2.1 reported English performance on 62 documents with 8 positives, which cannot resolve a 0.10 AUROC difference. V3 promotes the full English GPD pool scored as a continuous rubric task with leader-clustered inference, and records a speaker-identity null for every dataset.",
+  "reporting_rules": [
+    "Any English claim must report the leader-clustered 95% CI, not a naive bootstrap.",
+    "Any EU claim must be reported next to speaker_only_auroc; a score below that null is not evidence.",
+    "Any Agora claim must be reported next to speaker_only_continuous_spearman.",
+    "Supervised cross-fitting must use grouped folds on group_column to avoid speaker memorization."
+  ],
+  "schema": "populism_axis.v3.benchmark_freeze.v1",
+  "seed": 20260727
+}

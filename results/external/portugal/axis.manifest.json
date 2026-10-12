@@ -1,0 +1,41 @@
+{
+  "argv": [
+    "axis"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "stage": "axis",
+    "top_rule": "k:8",
+    "windows": {
+      "e5_en": 9535,
+      "me5_instr": 9458,
+      "me5_plain": 9458
+    }
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "244c25eca4955ef407f5b8498ef18628a1c9151b",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "paragraphs_en": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_portugal/paragraphs_en.csv",
+      "sha256": "3682cde9ad17c7e05dd31b803664d83972566ac4a72cb5650abf28eb989b3acd"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "c93a66997ce62541605b3999a3809f747e01c3020b526952103d84cbd288459b",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/score_portugal_v4.py",
+  "timestamp_utc": "2026-09-24T09:35:31Z"
+}

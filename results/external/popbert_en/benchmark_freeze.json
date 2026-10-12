@@ -1,0 +1,54 @@
+{
+  "canonical_sha256": "262178eb9e83d1ff930f119c27168f3e7481c13579a36a60314604f8b3cc0033",
+  "freeze_id": "pa_v4_external_popbert_en_r1",
+  "published": {
+    "human_coder_vs_loo_majority_f1": {
+      "centr": 0.327,
+      "elite": 0.576,
+      "source": "results/popbert/freeze.json"
+    },
+    "popbert_gbert_5fold_cv_f1": {
+      "centr": 0.696,
+      "elite": 0.847,
+      "macro4": 0.733
+    },
+    "sound_of_populism_roberta_large_on_gpt_translations_f1": {
+      "centr": 0.71,
+      "elite": 0.85,
+      "left": 0.72,
+      "macro4": 0.75,
+      "note": "own split; not the frozen split used here (see README/notebook notes in the report)",
+      "right": 0.7
+    },
+    "v3_multilingual_e5_axis_on_german": {
+      "centr_auroc": 0.756,
+      "centr_f1_train_threshold": 0.204,
+      "elite_auroc": 0.794,
+      "elite_f1_train_threshold": 0.431,
+      "source": "results/popbert/evaluation.json"
+    }
+  },
+  "schema": "populism_axis.v4.external_benchmark_freeze.v1",
+  "source": {
+    "sentences_and_labels": "PopBERT (Erhard et al. 2025), frozen split pa_popbert_benchmark_freeze_r1 in data/benchmark_popbert/",
+    "translations": "Wang et al. (2026), The Sound of Populism, doi:10.7910/DVN/VJGS7H (CC0), gpt_translations.csv (GPT-4o)"
+  },
+  "splits": {
+    "test": {
+      "centr_pos": 60,
+      "elite_pos": 278,
+      "frozen_source_sha256": "5e2634e13e506b666277404abb897cef66922bc8b1d006f5c05a2d8204cf0e39",
+      "n": 1759,
+      "sha256": "cb754ea57b1bdc7b8b80cb274a0e897ff23b7241b6e9d0b7957883ef3f149519",
+      "text_en_median_words": 21.0
+    },
+    "train": {
+      "centr_pos": 221,
+      "elite_pos": 1062,
+      "frozen_source_sha256": "8b12222cb4fb2672de6b6e0d9e5b57991c8e7ba592760b30da0f53eef12c73e8",
+      "n": 7036,
+      "sha256": "ca4f83390bcc7766b004964709362d13066a0de3255b278e510616f5aa47a187",
+      "text_en_median_words": 21.0
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "baseline_dir": "/home/aleksandar/work/populism-axis/results/v4/step1b_text_cleaning/B1c_cap60_clean",
+  "candidate_dir": "/home/aleksandar/work/populism-axis/results/v4/step4_windows_topk/grid/spw2_k1",
+  "candidate_system": "PE__frozen__soft",
+  "decision": {
+    "checks": {
+      "primary_ci_not_entirely_below_0": false,
+      "primary_delta_at_least_+0.01": false,
+      "secondary_ci_not_entirely_below_0": true,
+      "secondary_delta_at_least_-0.01": true
+    },
+    "outcome": "KEEP PREVIOUS",
+    "rule": "standard",
+    "rule_passed": false
+  },
+  "draws": 4000,
+  "paired": {
+    "agora": {
+      "ci95": [
+        -0.028002816572698597,
+        0.0033675751062739283
+      ],
+      "cluster": "politician",
+      "delta_spearman": -0.005967697357273982,
+      "n_clusters": 6,
+      "n_documents": 5272,
+      "n_draws": 4000,
+      "p_two_sided": 0.2505,
+      "p_two_sided_raw_v3_formula": 0.2505
+    },
+    "english": {
+      "ci95": [
+        -0.1345183049163844,
+        -0.010604040931927875
+      ],
+      "cluster": "leader",
+      "delta_spearman": -0.06999314876015633,
+      "n_clusters": 57,
+      "n_documents": 174,
+      "n_draws": 4000,
+      "p_two_sided": 0.0185,
+      "p_two_sided_raw_v3_formula": 0.0185
+    }
+  },
+  "seed": 20260923,
+  "system": "PE__frozen__soft"
+}

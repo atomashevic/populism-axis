@@ -1,0 +1,45 @@
+{
+  "argv": [
+    "final"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "draws": 2000,
+    "seed": 20260923,
+    "stage": "final"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "244c25eca4955ef407f5b8498ef18628a1c9151b",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "axis": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/portugal/axis_scores.csv",
+      "sha256": "4f3303268fdf5e485b5f047a4246aeefee2a33b022bd9f97e4c0f974e90c1d5c"
+    },
+    "nli": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/portugal/nli_portugal__bart-large-mnli.npz",
+      "sha256": "180120d9ed8882cfcea7024a1b4d31463dc7d57f5c700c04eaf632d137ba970c"
+    },
+    "roberta": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/external/portugal/roberta/probabilities_portugal_en.npz",
+      "sha256": "760d2aeaf344689761feb237d68977f0c01750208599a26e81fcf57abb2ba2bf"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "fad8839c774248c61de86a43d2106044bdcd942f26cf51bd557ac246922e8460",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/score_portugal_v4.py",
+  "timestamp_utc": "2026-09-24T09:46:02Z"
+}

@@ -1,0 +1,33 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "n_paragraphs": 6214
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "82856f438a078df31fd09cff4edd1fd56715c80f",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "source": {
+      "path": "/home/aleksandar/work/populism-axis/data/external/moniz_portugal/Dataset_Populist_Rhetoric_Portugal_Covid19.csv",
+      "sha256": "f0cb310fcde95bf55a5ab44f5c4b513359a8701cee533108cf1811a1647009fc"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "2fca537daf1b7b141588657b82321a50e86b66797a6c8c16d5585fa19bbf67f3",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/build_portugal_benchmark.py",
+  "timestamp_utc": "2026-09-24T09:28:17Z"
+}

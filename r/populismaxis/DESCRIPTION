@@ -1,0 +1,15 @@
+Package: populismaxis
+Title: Proposition-Defined Continuous Text Scales
+Version: 0.1.0
+Authors@R: person("Aleksandar", "Tomašević", email = "atomashevic@gmail.com", role = c("aut", "cre"))
+Description: Define proposition-based continuous text scales, fit reusable
+    references and apply explicit threshold labels. Provides an R interface
+    to the matching Python engine through reticulate, preserving the frozen
+    populism preset and durable JSON objects. Python dependencies are managed
+    on first use; model downloads require explicit permission.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: reticulate (>= 1.45.0), jsonlite, digest
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -1,0 +1,53 @@
+{
+  "argv": [
+    "--in-dir",
+    "results/v4/external/antielite_tweets",
+    "--names",
+    "antielite_tweets",
+    "--model",
+    "facebook/bart-large-mnli",
+    "--batch-size",
+    "64"
+  ],
+  "encoder_id": "facebook/bart-large-mnli",
+  "extra": {
+    "antielite_tweets": {
+      "output": "nli_antielite_tweets__bart-large-mnli.npz",
+      "pairs": 54010,
+      "seconds": 46.1
+    },
+    "id2label": {
+      "0": "contradiction",
+      "1": "neutral",
+      "2": "entailment"
+    },
+    "model": "facebook/bart-large-mnli",
+    "peak_vram_mb": 1620.5
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "3ccfb0d9c85f3308efd2e761177bab1a64c1d361",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis/results/v4/external/antielite_tweets/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "b4bac9d6fdb8261b309fba5aff3d26490082b4f0b6f8fd84a0c305dd604c889e",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/nli_stage_v4.py",
+  "timestamp_utc": "2026-09-24T08:29:18Z"
+}

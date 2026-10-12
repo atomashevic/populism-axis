@@ -1,0 +1,56 @@
+{
+  "channel_mapping": {
+    "centr": "P",
+    "elite": "E"
+  },
+  "date_range": [
+    "2019-10-30",
+    "2021-04-25"
+  ],
+  "freeze_id": "pa_v4_external_portugal_r1",
+  "krippendorff_alpha_published": {
+    "centr": 0.66,
+    "elite": 0.77,
+    "exclusion": 0.73,
+    "sovereignty": 0.8
+  },
+  "n_actors": 144,
+  "n_duplicate_texts": 16,
+  "n_paragraphs": 6214,
+  "n_sessions": 58,
+  "note": "The codebook lists 2/1 and 1/2 codings for anti-elitism and popular sovereignty; the released file uses 0/1 for all four dimensions.",
+  "output_sha256": "0150875a6aa5e158a6fe6f370fdda448fddb717a15049e0b77ff4d50db7970aa",
+  "party_counts": {
+    "BE": 870,
+    "CDS-PP": 645,
+    "CH": 373,
+    "IL": 239,
+    "PAN": 655,
+    "PCP": 706,
+    "PEV": 394,
+    "PS": 1344,
+    "PSD": 958,
+    "unknown": 30
+  },
+  "positives": {
+    "centr": 302,
+    "elite": 116,
+    "exclusion": 50,
+    "sovereignty": 23
+  },
+  "published_model_baseline": null,
+  "schema": "populism_axis.v4.external_benchmark_freeze.v1",
+  "source": {
+    "dataset": "Moniz et al. (2025), Zenodo doi:10.5281/zenodo.14626861, CC BY 4.0",
+    "file": "Dataset_Populist_Rhetoric_Portugal_Covid19.csv",
+    "language": "pt",
+    "paper": "Moniz, Br\u00e1s, Santana Pereira & Belchior (2024), An\u00e1lise Social, doi:10.31447/2022112",
+    "sha256": "f0cb310fcde95bf55a5ab44f5c4b513359a8701cee533108cf1811a1647009fc",
+    "unit": "paragraph"
+  },
+  "words_pt_quantiles": {
+    "0.05": 26.0,
+    "0.5": 59.0,
+    "0.95": 124.0
+  }
+}

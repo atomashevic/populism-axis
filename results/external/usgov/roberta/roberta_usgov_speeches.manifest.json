@@ -1,0 +1,45 @@
+{
+  "argv": [
+    "--csv",
+    "data/benchmark_usgov/speeches.csv",
+    "--name",
+    "usgov_speeches",
+    "--out-dir",
+    "results/v4/external/usgov/roberta"
+  ],
+  "encoder_id": "coastalcph/roberta-large-ft-trump-populism",
+  "extra": {
+    "id2label": {
+      "0": "(a) No populism",
+      "1": "(b) Anti-elitism populism",
+      "2": "(c) People-centrism populism"
+    },
+    "name": "usgov_speeches"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "dd9e07331c8dbe23d3ebafb1ac21c64eec2c580d",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "csv": {
+      "path": "/home/atomasevic/populism-axis/data/benchmark_usgov/speeches.csv",
+      "sha256": "dbfec54d17a62712aa19b1af4b1949c48b64075c69e24bb47d8710eee5d57b7c"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "e3aaa6d5528528362b3afd25a2a0184f08fc877e1598d4848f063a25c56fa5c9",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/encode_roberta_custom.py",
+  "timestamp_utc": "2026-09-24T08:02:31Z"
+}

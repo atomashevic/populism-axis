@@ -1,0 +1,47 @@
+{
+  "baseline_dir": "results/v4/step1b_text_cleaning/B1c_cap60_clean",
+  "candidate_dir": "results/v4/step2_whitening/single_set/d0_res_partisan_attack_on_opposition",
+  "candidate_system": "PE__frozen__soft",
+  "decision": {
+    "checks": {
+      "primary_ci_not_entirely_below_0": true,
+      "primary_delta_at_least_+0.01": false,
+      "secondary_ci_not_entirely_below_0": true,
+      "secondary_delta_at_least_-0.01": true
+    },
+    "outcome": "KEEP PREVIOUS",
+    "rule": "standard",
+    "rule_passed": false
+  },
+  "draws": 4000,
+  "paired": {
+    "agora": {
+      "ci95": [
+        -0.007571875274750728,
+        0.026770005327814983
+      ],
+      "cluster": "politician",
+      "delta_spearman": 0.009773862376699138,
+      "n_clusters": 6,
+      "n_documents": 5272,
+      "n_draws": 4000,
+      "p_two_sided": 0.352,
+      "p_two_sided_raw_v3_formula": 0.352
+    },
+    "english": {
+      "ci95": [
+        -0.047197824599103114,
+        0.0490499435230441
+      ],
+      "cluster": "leader",
+      "delta_spearman": 0.0019439079790797842,
+      "n_clusters": 57,
+      "n_documents": 174,
+      "n_draws": 4000,
+      "p_two_sided": 0.896,
+      "p_two_sided_raw_v3_formula": 0.896
+    }
+  },
+  "seed": 20260923,
+  "system": "PE__frozen__soft"
+}

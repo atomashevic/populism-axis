@@ -1,0 +1,65 @@
+{
+  "argv": [
+    "--label",
+    "B0_v3_config",
+    "--embeddings-dir",
+    "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/spw1_cap0",
+    "--dataset-dir",
+    "eu=/home/aleksandar/work/populism-axis/results/v4/embeddings_eu/e5-large-v2/spw1_cap0",
+    "--anchors",
+    "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+    "--out-dir",
+    "/home/aleksandar/work/populism-axis/results/v4/final/B0_v3_config",
+    "--datasets",
+    "english,eu",
+    "--english-split",
+    "holdout",
+    "--final",
+    "--access-reason",
+    "V4 final one-time scoring of English holdout and EU-OOD (pre-declared B0, B4, B6)",
+    "--save-projections"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "english_split": "holdout",
+    "label": "B0_v3_config"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "8f95b3c24c4e076bd71115fd129d3f7c7338a923",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "anchors_0": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+      "sha256": "322ed72f9360521a6dd34e7b8c89a3af3ccc19509e741afa8858c2a20e346f8f"
+    },
+    "embeddings_english": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/embeddings/e5-large-v2/spw1_cap0/embeddings_english.npz",
+      "sha256": "3ab533944ace3afc37b8567fd181244c0005e0a1f10d89fe090b9b7e01748552"
+    },
+    "embeddings_eu": {
+      "path": "/home/aleksandar/work/populism-axis/results/v4/embeddings_eu/e5-large-v2/spw1_cap0/embeddings_eu.npz",
+      "sha256": "45cd636e28a293d6813bda503b108a339c4ed064b1be0e221490db39405585da"
+    },
+    "split": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_v4/english_split.csv",
+      "sha256": "fe6bea109fcba5946eb1cc9cbacb3d9cfd112954137f4f884c93653f4c7824cb"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "2852c8f5cbe5d5c3f1d6cf693d7e0b05dd75aa78763a378989c2afc8aa8e85ca",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/run_config_v4.py",
+  "timestamp_utc": "2026-09-24T06:05:38Z"
+}

@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Unit test / coverage reports
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# Environments
+.env
+.envrc
+.venv/
+venv/
+
+# Editor / OS noise
+.DS_Store
+.idea/
+.vscode/
+
+# Logs. A short job log cited as run evidence is committed under results/ as
+# *_job_log.txt (AGENTS.md); everything else stays out.
+*.log
+logs/
+
+# Local scratch and preserved local-only archives
+.codex
+archive/local_noise_*/
+
+# Raw external sources that are rebuilt from the documented downloads
+data/external/
+data/popbert/*.zip
+
+# Rebuildable caches: window embeddings, projections, entailment probabilities,
+# window text and the large per-paragraph Agora score tables.
+results/embeddings/
+results/embeddings_eu/
+results/embeddings_external/
+results/**/*.npz
+results/**/*.npy
+# Required frozen-scorer runtime asset (4 KB), not a rebuildable cache.
+!results/frozen_reference/reference_mean_embedding.npy
+results/**/*.parquet
+results/**/scores_agora.csv
+# Compact AgoraSpeech table (ids and five score columns) read by scripts/reproduce_table.py.
+!results/final/scores_agora.csv
+results/popbert/**/*.npz
+
+# Score tables written by scripts/score_texts.py for local inputs
+scored/
+# Window text written by scripts/score_texts.py, wherever its output is copied
+results/**/evidence.json

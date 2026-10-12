@@ -1,0 +1,19 @@
+include README.md LICENSE pyproject.toml
+recursive-include src/populism_axis *.py
+include src/populism_axis/resources/proposition_anchors.json
+include src/populism_axis/resources/claim_hypotheses.json
+include src/populism_axis/resources/reference_stats.json
+include src/populism_axis/resources/reference_mean_embedding.npy
+prune anchors
+prune data
+prune results
+prune scored
+prune research
+prune scripts
+prune tests
+prune docs
+prune .venv
+global-exclude *.pyc
+include docs/custom-scales.md
+include examples/custom-scale-reference.csv
+include examples/custom-scale-texts.csv

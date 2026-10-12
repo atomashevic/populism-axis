@@ -1,0 +1,41 @@
+{
+  "argv": [
+    "prepare",
+    "/home/atomasevic/populism-axis-freshcheck/003f00ca/scored/fresh_check_rerun"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "n_documents": 174,
+    "step": "prepare"
+  },
+  "git": {
+    "branch": "HEAD",
+    "commit": "003f00caca7b92e8b6af82b714b94677c7c13b60",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "speeches": {
+      "path": "/home/atomasevic/populism-axis-freshcheck/003f00ca/data/benchmarks/english_gpd_speeches.csv",
+      "sha256": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7"
+    },
+    "split": {
+      "path": "/home/atomasevic/populism-axis-freshcheck/003f00ca/data/benchmarks/english_split.csv",
+      "sha256": "fe6bea109fcba5946eb1cc9cbacb3d9cfd112954137f4f884c93653f4c7824cb"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "4e79317ef8419156a78a0f9b735da486e5528ec9179323143963636b91794ea3",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/check_fresh_inference.py",
+  "timestamp_utc": "2026-10-02T17:16:05Z"
+}

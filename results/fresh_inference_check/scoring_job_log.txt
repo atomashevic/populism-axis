@@ -1,0 +1,10 @@
+# job fresh_check_rerun started 2026-10-02T17:16:07Z on pvgpu2
+# commit 003f00caca7b92e8b6af82b714b94677c7c13b60 dirty=no
+# gpu before: 1 MiB used, load 0.15
+# command: python scripts/score_texts.py --input scored/fresh_check_rerun/english_dev_input.csv --text-column text --id-column id --unit speech --reference frozen --clean --device cuda --threads 2 --nli-batch-size 64 --out-dir scored/fresh_check_rerun/scored
+174 documents -> 20284 windows
+
+encoded 20284 windows in 32 s
+
+claim check: 13920 pairs in 24 s
+wrote scored/fresh_check_rerun/scored/scores.csv (174 documents) in 67 s total

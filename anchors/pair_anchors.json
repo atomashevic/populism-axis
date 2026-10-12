@@ -1,0 +1,871 @@
+{
+  "schema": "populism_axis.v4.pair_anchors.v1",
+  "anchor_set_id": "pa_v4_pair_anchors_r1",
+  "status": "reviewed",
+  "outcome_labels_used": false,
+  "construct_source": "Ideational definition of populism: people-centrism (P), anti-elitism (E), Manichean moral antagonism (M). Sub-frame tags follow alternative-pairs/v3/subframe_anchors.json.",
+  "drafting_note": "Minimal pairs: each mainstream member keeps the populist member's topic, actors, grammatical person and approximate length, and replaces only the construct-bearing claim. For E the mainstream member is usually a bounded, specific criticism of the same actor, so negative affect is matched rather than contrasted. M contrasts moralized antagonism with ordinary disagreement and is expected to differ in sentiment by construction. Drafted from theory before any step-3 result; no benchmark label was consulted.",
+  "review": {
+    "reviewer": "Aleksandar Tomasevic (project lead)",
+    "date": "2026-09-23",
+    "outcome": "approved",
+    "changes": "none"
+  },
+  "channels": {
+    "P": {
+      "label": "people sovereignty",
+      "pairs": [
+        {
+          "pair_id": "P01",
+          "subframe": "popular_sovereignty",
+          "topic": "referendum",
+          "populist": "On this question the people must have the final word, not the politicians.",
+          "matched_mainstream": "On this question parliament will have the final vote, after a full debate."
+        },
+        {
+          "pair_id": "P02",
+          "subframe": "popular_sovereignty",
+          "topic": "election",
+          "populist": "This election is about giving power back to the people who own this country.",
+          "matched_mainstream": "This election is about choosing the government that will lead this country."
+        },
+        {
+          "pair_id": "P03",
+          "subframe": "popular_sovereignty",
+          "topic": "courts",
+          "populist": "No judge should be able to overrule what the people have clearly decided.",
+          "matched_mainstream": "No law should be passed without the courts being able to review it."
+        },
+        {
+          "pair_id": "P04",
+          "subframe": "virtuous_common_people",
+          "topic": "budget",
+          "populist": "The people know what this country needs far better than any committee.",
+          "matched_mainstream": "The committee has studied what this country needs and published a report."
+        },
+        {
+          "pair_id": "P05",
+          "subframe": "virtuous_common_people",
+          "topic": "workers",
+          "populist": "Ordinary working people are the backbone and the conscience of this nation.",
+          "matched_mainstream": "Working people in many sectors contribute to the economy of this nation."
+        },
+        {
+          "pair_id": "P06",
+          "subframe": "popular_sovereignty",
+          "topic": "european union",
+          "populist": "Our people alone must decide our laws, not anyone in a distant capital.",
+          "matched_mainstream": "Our parliament will adopt these laws, in cooperation with our partners abroad."
+        },
+        {
+          "pair_id": "P07",
+          "subframe": "popular_sovereignty",
+          "topic": "pensions",
+          "populist": "We will do what the people want on pensions, because they are the boss.",
+          "matched_mainstream": "We will reform pensions gradually, because they must remain balanced over time."
+        },
+        {
+          "pair_id": "P08",
+          "subframe": "virtuous_common_people",
+          "topic": "representation",
+          "populist": "This movement is the true voice of the common people of this land.",
+          "matched_mainstream": "This party is one voice among many in the politics of this land."
+        },
+        {
+          "pair_id": "P09",
+          "subframe": "popular_sovereignty",
+          "topic": "government",
+          "populist": "Every decision in this government will come from the will of the people.",
+          "matched_mainstream": "Every decision in this government will follow review by the relevant ministry."
+        },
+        {
+          "pair_id": "P10",
+          "subframe": "popular_sovereignty",
+          "topic": "democracy",
+          "populist": "Real democracy means the people rule directly and their word is law.",
+          "matched_mainstream": "Real democracy means elected representatives decide and they answer to voters."
+        },
+        {
+          "pair_id": "P11",
+          "subframe": "popular_sovereignty",
+          "topic": "immigration",
+          "populist": "On immigration the people have spoken and their will must be respected.",
+          "matched_mainstream": "On immigration the parliament has legislated and their rules are being applied."
+        },
+        {
+          "pair_id": "P12",
+          "subframe": "virtuous_common_people",
+          "topic": "families",
+          "populist": "The decent hardworking families of this country deserve to be in charge.",
+          "matched_mainstream": "The many different families of this country deserve good public services."
+        },
+        {
+          "pair_id": "P13",
+          "subframe": "popular_sovereignty",
+          "topic": "constitution",
+          "populist": "Sovereignty belongs to the people and no institution can take it from them.",
+          "matched_mainstream": "Sovereignty is exercised through institutions, and the constitution establishes them."
+        },
+        {
+          "pair_id": "P14",
+          "subframe": "popular_sovereignty",
+          "topic": "energy",
+          "populist": "The people should decide our energy future, not unelected experts.",
+          "matched_mainstream": "The energy agency should advise on our future, and parliament decides."
+        },
+        {
+          "pair_id": "P15",
+          "subframe": "popular_sovereignty",
+          "topic": "mobilization",
+          "populist": "We are the people and together we will take this country back.",
+          "matched_mainstream": "We are a coalition and together we will govern this country responsibly."
+        },
+        {
+          "pair_id": "P16",
+          "subframe": "virtuous_common_people",
+          "topic": "health",
+          "populist": "Our people built this health service and they must be the ones who run it.",
+          "matched_mainstream": "Our staff run this health service and they report to the board that oversees it."
+        },
+        {
+          "pair_id": "P17",
+          "subframe": "popular_sovereignty",
+          "topic": "treaty",
+          "populist": "Any treaty must be put to the people, because only they can approve it.",
+          "matched_mainstream": "Any treaty must be ratified by parliament, because only they can approve it."
+        },
+        {
+          "pair_id": "P18",
+          "subframe": "virtuous_common_people",
+          "topic": "expertise",
+          "populist": "The common sense of ordinary people is worth more than all the reports.",
+          "matched_mainstream": "The analysis in these reports will inform the decision taken next month."
+        },
+        {
+          "pair_id": "P19",
+          "subframe": "popular_sovereignty",
+          "topic": "mandate",
+          "populist": "The people gave us a mandate and nothing can stand in the way of it.",
+          "matched_mainstream": "The voters gave us a majority and we will work with the other parties."
+        },
+        {
+          "pair_id": "P20",
+          "subframe": "popular_sovereignty",
+          "topic": "decentralisation",
+          "populist": "Power must be taken from the offices and handed back to the people.",
+          "matched_mainstream": "Powers will be shared between the national offices and local councils."
+        },
+        {
+          "pair_id": "P21",
+          "subframe": "virtuous_common_people",
+          "topic": "unity",
+          "populist": "There is one people with one will, and we are here to carry it out.",
+          "matched_mainstream": "There are many views in this country, and we are here to balance those views."
+        },
+        {
+          "pair_id": "P22",
+          "subframe": "popular_sovereignty",
+          "topic": "taxes",
+          "populist": "It is the people's money and the people alone should say how it is spent.",
+          "matched_mainstream": "It is public money and parliament should scrutinise how it is spent."
+        },
+        {
+          "pair_id": "P23",
+          "subframe": "virtuous_common_people",
+          "topic": "heartland",
+          "populist": "The real people of this country live in its towns, farms and factories.",
+          "matched_mainstream": "The people of this country live in its cities, towns and rural areas."
+        },
+        {
+          "pair_id": "P24",
+          "subframe": "popular_sovereignty",
+          "topic": "referendum result",
+          "populist": "When the people vote, that is the end of the argument for everyone.",
+          "matched_mainstream": "When the people vote, the result is implemented according to the law."
+        },
+        {
+          "pair_id": "P25",
+          "subframe": "popular_sovereignty",
+          "topic": "governing style",
+          "populist": "I will govern by listening to the people and to nobody else.",
+          "matched_mainstream": "I will govern by consulting experts, parties and the public."
+        },
+        {
+          "pair_id": "P26",
+          "subframe": "popular_sovereignty",
+          "topic": "schools",
+          "populist": "Parents, not bureaucrats, must decide what our children learn.",
+          "matched_mainstream": "Parents and teachers, with the ministry, shape what our children learn."
+        },
+        {
+          "pair_id": "P27",
+          "subframe": "virtuous_common_people",
+          "topic": "justice",
+          "populist": "Justice must serve the ordinary people first and always.",
+          "matched_mainstream": "Justice must be applied equally and impartially to all."
+        },
+        {
+          "pair_id": "P28",
+          "subframe": "popular_sovereignty",
+          "topic": "nation",
+          "populist": "The nation belongs to its people and their will is sacred.",
+          "matched_mainstream": "The nation is governed by its laws and their rule is binding."
+        },
+        {
+          "pair_id": "P29",
+          "subframe": "virtuous_common_people",
+          "topic": "direction",
+          "populist": "The workers of this country are the ones who must decide its direction.",
+          "matched_mainstream": "The government of this country will set out its direction in a programme."
+        },
+        {
+          "pair_id": "P30",
+          "subframe": "popular_sovereignty",
+          "topic": "protest",
+          "populist": "When the people fill the streets, the government must simply obey them.",
+          "matched_mainstream": "When citizens protest peacefully, the government should listen to them."
+        },
+        {
+          "pair_id": "P31",
+          "subframe": "popular_sovereignty",
+          "topic": "consultation",
+          "populist": "We do not need more consultations, we need to do what the people say.",
+          "matched_mainstream": "We will hold further consultations before deciding what we should do."
+        },
+        {
+          "pair_id": "P32",
+          "subframe": "virtuous_common_people",
+          "topic": "wisdom",
+          "populist": "Simple people have more wisdom than all the professors in the capital.",
+          "matched_mainstream": "Many people have useful views, and the professors add expertise to the debate."
+        },
+        {
+          "pair_id": "P33",
+          "subframe": "popular_sovereignty",
+          "topic": "majority",
+          "populist": "The majority is the people and the people's will must always prevail.",
+          "matched_mainstream": "The majority governs but minority rights must always be protected."
+        },
+        {
+          "pair_id": "P34",
+          "subframe": "popular_sovereignty",
+          "topic": "authority",
+          "populist": "No authority on earth stands above the free people of this nation.",
+          "matched_mainstream": "Every authority in this nation is bound by the constitution and courts."
+        },
+        {
+          "pair_id": "P35",
+          "subframe": "virtuous_common_people",
+          "topic": "future",
+          "populist": "The future of this country will be written by its ordinary citizens.",
+          "matched_mainstream": "The future of this country will be shaped by many policy choices."
+        },
+        {
+          "pair_id": "P36",
+          "subframe": "virtuous_common_people",
+          "topic": "ownership",
+          "populist": "Our farmers and workers are the true owners of this republic.",
+          "matched_mainstream": "Our farmers and workers are important sectors of this economy."
+        },
+        {
+          "pair_id": "P37",
+          "subframe": "popular_sovereignty",
+          "topic": "decision",
+          "populist": "Let the people decide, and whatever they choose, that is final.",
+          "matched_mainstream": "Let the committee report, and whatever they recommend, the chamber decides."
+        },
+        {
+          "pair_id": "P38",
+          "subframe": "popular_sovereignty",
+          "topic": "accountability",
+          "populist": "My only master is the people and I answer to no one else.",
+          "matched_mainstream": "My ministry answers to parliament and to the auditor general."
+        },
+        {
+          "pair_id": "P39",
+          "subframe": "popular_sovereignty",
+          "topic": "restoration",
+          "populist": "We will restore government of the people, by the people, for the people.",
+          "matched_mainstream": "We will restore good government that is efficient, fair and accountable."
+        },
+        {
+          "pair_id": "P40",
+          "subframe": "virtuous_common_people",
+          "topic": "heart of the country",
+          "populist": "Ordinary men and women are the heart and soul of this country.",
+          "matched_mainstream": "Businesses, charities and public bodies all contribute to this country."
+        }
+      ]
+    },
+    "E": {
+      "label": "elite obstruction",
+      "pairs": [
+        {
+          "pair_id": "E01",
+          "subframe": "institutional_capture",
+          "topic": "courts",
+          "populist": "A corrupt clique has captured the courts and uses them against ordinary people.",
+          "matched_mainstream": "A backlog of cases has slowed the courts, and they now serve ordinary people late."
+        },
+        {
+          "pair_id": "E02",
+          "subframe": "institutional_capture",
+          "topic": "elections",
+          "populist": "The system is rigged by insiders so that ordinary voters can never win.",
+          "matched_mainstream": "The system has flaws in districting so that some votes carry less weight."
+        },
+        {
+          "pair_id": "E03",
+          "subframe": "institutional_capture",
+          "topic": "bureaucracy",
+          "populist": "Unelected bureaucrats run this country and ignore everything the public wants.",
+          "matched_mainstream": "Civil servants administer this programme and report on it to parliament each year."
+        },
+        {
+          "pair_id": "E04",
+          "subframe": "corruption_self_enrichment",
+          "topic": "contracts",
+          "populist": "They hand every contract to their cronies and you pay the bill.",
+          "matched_mainstream": "They awarded the contract after a review, and you will see the costs published."
+        },
+        {
+          "pair_id": "E05",
+          "subframe": "corruption_self_enrichment",
+          "topic": "salaries",
+          "populist": "The politicians fill their pockets while the people are told to tighten their belts.",
+          "matched_mainstream": "The politicians approved their pay rise, and the public debate about it continues."
+        },
+        {
+          "pair_id": "E06",
+          "subframe": "betrayal_of_the_nation",
+          "topic": "factory",
+          "populist": "The elites in the capital sold out our workers to line their own pockets.",
+          "matched_mainstream": "The government in the capital did not protect our workers, and their plant closed."
+        },
+        {
+          "pair_id": "E07",
+          "subframe": "closed_political_caste",
+          "topic": "political class",
+          "populist": "The political class is a closed caste that lives by its own rules.",
+          "matched_mainstream": "The political parties are recruiting candidates from different backgrounds."
+        },
+        {
+          "pair_id": "E08",
+          "subframe": "closed_political_caste",
+          "topic": "voting",
+          "populist": "It makes no difference who you vote for, the same elite always wins.",
+          "matched_mainstream": "It makes a difference who you vote for, the parties offer real choices."
+        },
+        {
+          "pair_id": "E09",
+          "subframe": "media_establishment",
+          "topic": "press",
+          "populist": "The establishment media lie to protect the powerful and deceive the people.",
+          "matched_mainstream": "The newspaper made an error in its report and has since corrected it."
+        },
+        {
+          "pair_id": "E10",
+          "subframe": "media_establishment",
+          "topic": "broadcasters",
+          "populist": "The big broadcasters are mouthpieces of the establishment against the public.",
+          "matched_mainstream": "The public broadcaster is independent and its coverage is regularly reviewed."
+        },
+        {
+          "pair_id": "E11",
+          "subframe": "supranational_technocracy",
+          "topic": "brussels",
+          "populist": "Faceless technocrats in Brussels dictate to our people and answer to no one.",
+          "matched_mainstream": "The commission in Brussels proposed new rules and our ministers will negotiate."
+        },
+        {
+          "pair_id": "E12",
+          "subframe": "financial_economic_elite",
+          "topic": "imf",
+          "populist": "The bankers and the IMF have enslaved our people with their debt.",
+          "matched_mainstream": "Our loan from the IMF comes with their conditions, which will be difficult."
+        },
+        {
+          "pair_id": "E13",
+          "subframe": "financial_economic_elite",
+          "topic": "wall street",
+          "populist": "Wall Street owns Washington and the system works only for the rich.",
+          "matched_mainstream": "Wall Street is regulated by Washington and the rules need updating."
+        },
+        {
+          "pair_id": "E14",
+          "subframe": "institutional_capture",
+          "topic": "lobbying",
+          "populist": "Lobbyists and donors have bought the government and silenced the voters.",
+          "matched_mainstream": "Lobbyists and donors must register, and the disclosure rules are now tighter."
+        },
+        {
+          "pair_id": "E15",
+          "subframe": "financial_economic_elite",
+          "topic": "bailout",
+          "populist": "The banks were rescued while ordinary families were thrown out of their homes.",
+          "matched_mainstream": "The banks were recapitalised and a scheme helped families keep their homes."
+        },
+        {
+          "pair_id": "E16",
+          "subframe": "institutional_capture",
+          "topic": "regulators",
+          "populist": "The regulators are in the pocket of the corporations they are meant to police.",
+          "matched_mainstream": "The regulators missed warning signs at the corporations they are meant to supervise."
+        },
+        {
+          "pair_id": "E17",
+          "subframe": "financial_economic_elite",
+          "topic": "oligarchs",
+          "populist": "A handful of oligarchs own this country and treat the people as servants.",
+          "matched_mainstream": "A handful of firms dominate this market and the competition law will apply."
+        },
+        {
+          "pair_id": "E18",
+          "subframe": "closed_political_caste",
+          "topic": "cartel parties",
+          "populist": "The old parties are one cartel that shares power and robs the nation.",
+          "matched_mainstream": "The old parties have formed a coalition and will share the ministries."
+        },
+        {
+          "pair_id": "E19",
+          "subframe": "institutional_capture",
+          "topic": "experts",
+          "populist": "The so-called experts serve the powerful and despise ordinary people.",
+          "matched_mainstream": "The advisory experts reached a conclusion that many people dispute."
+        },
+        {
+          "pair_id": "E20",
+          "subframe": "corruption_self_enrichment",
+          "topic": "energy prices",
+          "populist": "The energy giants and their friends in government are fleecing you.",
+          "matched_mainstream": "The energy companies raised your tariffs and the regulator is reviewing their pricing."
+        },
+        {
+          "pair_id": "E21",
+          "subframe": "closed_political_caste",
+          "topic": "privileges",
+          "populist": "The ruling elite protects its privileges and cares nothing for the people.",
+          "matched_mainstream": "The ruling coalition has kept its promises on some issues but not others."
+        },
+        {
+          "pair_id": "E22",
+          "subframe": "institutional_capture",
+          "topic": "secrecy",
+          "populist": "Behind closed doors a small circle decides everything against your interests.",
+          "matched_mainstream": "In committee meetings a small group prepares the bills that affect your interests."
+        },
+        {
+          "pair_id": "E23",
+          "subframe": "betrayal_of_the_nation",
+          "topic": "neglect",
+          "populist": "The people in the capital have forgotten you and work only for themselves.",
+          "matched_mainstream": "The ministries in the capital have delayed your regional projects and they must explain why."
+        },
+        {
+          "pair_id": "E24",
+          "subframe": "corruption_self_enrichment",
+          "topic": "corruption",
+          "populist": "Corruption is not an accident here, it is how the elite rules the people.",
+          "matched_mainstream": "Corruption cases here are prosecuted, and the new law adds tougher penalties."
+        },
+        {
+          "pair_id": "E25",
+          "subframe": "financial_economic_elite",
+          "topic": "globalisation",
+          "populist": "Global elites are tearing down our nation for their own profit.",
+          "matched_mainstream": "Global markets are changing our industries and their effects are uneven."
+        },
+        {
+          "pair_id": "E26",
+          "subframe": "institutional_capture",
+          "topic": "judges",
+          "populist": "Activist judges and their friends overturn the will of the voters.",
+          "matched_mainstream": "The judges reviewed the law and their ruling found parts unconstitutional."
+        },
+        {
+          "pair_id": "E27",
+          "subframe": "institutional_capture",
+          "topic": "reform",
+          "populist": "The deep state blocks every reform that would help ordinary families.",
+          "matched_mainstream": "The administration delayed the reform, and the timetable has slipped."
+        },
+        {
+          "pair_id": "E28",
+          "subframe": "corruption_self_enrichment",
+          "topic": "pension fund",
+          "populist": "The elite raided your pension fund to pay for their own mistakes.",
+          "matched_mainstream": "The government used your pension reserve to cover their budget deficit."
+        },
+        {
+          "pair_id": "E29",
+          "subframe": "closed_political_caste",
+          "topic": "party bosses",
+          "populist": "The party bosses decide everything and treat the members like fools.",
+          "matched_mainstream": "The party executive sets the agenda and the members vote on motions."
+        },
+        {
+          "pair_id": "E30",
+          "subframe": "corruption_self_enrichment",
+          "topic": "health bonuses",
+          "populist": "The health bosses pay themselves bonuses while patients die in corridors.",
+          "matched_mainstream": "The health board paid their managers bonuses last year while waiting times grew."
+        },
+        {
+          "pair_id": "E31",
+          "subframe": "media_establishment",
+          "topic": "media owners",
+          "populist": "A few billionaires own the press and tell you what to think.",
+          "matched_mainstream": "A few companies own most of the newspapers you read, and the market is concentrated."
+        },
+        {
+          "pair_id": "E32",
+          "subframe": "betrayal_of_the_nation",
+          "topic": "betrayal",
+          "populist": "The people in power have betrayed everyone who ever trusted them.",
+          "matched_mainstream": "The people in power have missed several targets they set themselves."
+        },
+        {
+          "pair_id": "E33",
+          "subframe": "closed_political_caste",
+          "topic": "contempt",
+          "populist": "They look down on you and think you are too stupid to decide.",
+          "matched_mainstream": "They disagree with you and think the policy needs more work."
+        },
+        {
+          "pair_id": "E34",
+          "subframe": "institutional_capture",
+          "topic": "institutions",
+          "populist": "Every institution has been taken over by the same corrupt network.",
+          "matched_mainstream": "Several institutions have been reorganised under the new legal framework."
+        },
+        {
+          "pair_id": "E35",
+          "subframe": "financial_economic_elite",
+          "topic": "tax",
+          "populist": "The rich and powerful write the tax laws so that only you pay.",
+          "matched_mainstream": "The tax code has loopholes, so you pay more than some large firms."
+        },
+        {
+          "pair_id": "E36",
+          "subframe": "supranational_technocracy",
+          "topic": "eu budget",
+          "populist": "Brussels bureaucrats take our money and use it against our nation.",
+          "matched_mainstream": "The European budget includes our contribution and funds our regions."
+        },
+        {
+          "pair_id": "E37",
+          "subframe": "corruption_self_enrichment",
+          "topic": "revolving door",
+          "populist": "Ministers retire into the boardrooms that paid for their favours.",
+          "matched_mainstream": "Ministers who retire must wait two years before they join companies."
+        },
+        {
+          "pair_id": "E38",
+          "subframe": "institutional_capture",
+          "topic": "campaign finance",
+          "populist": "Big money has captured our democracy and the voters are for sale.",
+          "matched_mainstream": "Campaign spending in our elections has risen and the limits should be reviewed."
+        },
+        {
+          "pair_id": "E39",
+          "subframe": "corruption_self_enrichment",
+          "topic": "public office",
+          "populist": "The officials treat public office as their own private property.",
+          "matched_mainstream": "The officials manage public office according to their service code."
+        },
+        {
+          "pair_id": "E40",
+          "subframe": "betrayal_of_the_nation",
+          "topic": "crisis",
+          "populist": "They created this crisis to enrich themselves at your expense.",
+          "matched_mainstream": "They mishandled this crisis, and the inquiry will tell you why."
+        }
+      ]
+    },
+    "M": {
+      "label": "moralized antagonism",
+      "pairs": [
+        {
+          "pair_id": "M01",
+          "subframe": "moral_condemnation",
+          "topic": "framing",
+          "populist": "This is a battle between good and evil, and they are on the side of evil.",
+          "matched_mainstream": "This is a debate between two approaches, and they favour the other one."
+        },
+        {
+          "pair_id": "M02",
+          "subframe": "deception_and_lies",
+          "topic": "opponents",
+          "populist": "Our opponents are liars and cheats who have no shame at all.",
+          "matched_mainstream": "Our opponents are mistaken on this point and we will say why."
+        },
+        {
+          "pair_id": "M03",
+          "subframe": "moral_condemnation",
+          "topic": "treaty",
+          "populist": "They are traitors to this nation and history will judge them harshly.",
+          "matched_mainstream": "They are wrong on this treaty and the vote will decide the matter."
+        },
+        {
+          "pair_id": "M04",
+          "subframe": "moral_condemnation",
+          "topic": "compromise",
+          "populist": "There can be no compromise with people who are this dishonest.",
+          "matched_mainstream": "There can be a compromise with people who hold this view."
+        },
+        {
+          "pair_id": "M05",
+          "subframe": "moral_condemnation",
+          "topic": "character",
+          "populist": "They are rotten to the core and everything they touch is poisoned.",
+          "matched_mainstream": "They are new to this policy and some of their ideas are untested."
+        },
+        {
+          "pair_id": "M06",
+          "subframe": "deception_and_lies",
+          "topic": "trust",
+          "populist": "Their lies have destroyed trust and they must be driven from office.",
+          "matched_mainstream": "Their figures are disputed and they should publish the full data."
+        },
+        {
+          "pair_id": "M07",
+          "subframe": "moral_condemnation",
+          "topic": "us and them",
+          "populist": "We are the honest ones and they are the parasites feeding on us.",
+          "matched_mainstream": "We have one plan and they have another that also has supporters."
+        },
+        {
+          "pair_id": "M08",
+          "subframe": "moral_condemnation",
+          "topic": "intent",
+          "populist": "These people are not mistaken, they are wicked.",
+          "matched_mainstream": "These people are not our allies, but they are sincere."
+        },
+        {
+          "pair_id": "M09",
+          "subframe": "deception_and_lies",
+          "topic": "claims",
+          "populist": "Every word they say is a deliberate deception.",
+          "matched_mainstream": "Several claims they make are open to question."
+        },
+        {
+          "pair_id": "M10",
+          "subframe": "moral_condemnation",
+          "topic": "morals",
+          "populist": "They have no morals and would sell their own mothers for power.",
+          "matched_mainstream": "They have other priorities and would spend the money elsewhere."
+        },
+        {
+          "pair_id": "M11",
+          "subframe": "moral_condemnation",
+          "topic": "struggle",
+          "populist": "This is a struggle of decent citizens against a criminal gang.",
+          "matched_mainstream": "This is a disagreement between colleagues about the right priorities."
+        },
+        {
+          "pair_id": "M12",
+          "subframe": "moral_condemnation",
+          "topic": "ruin",
+          "populist": "Their greed and their treachery have brought this country to ruin.",
+          "matched_mainstream": "Their policy and their timing have brought this country some problems."
+        },
+        {
+          "pair_id": "M13",
+          "subframe": "moral_condemnation",
+          "topic": "enemies",
+          "populist": "They are enemies of the people and they must be stopped.",
+          "matched_mainstream": "They are members of the opposition and they will be answered."
+        },
+        {
+          "pair_id": "M14",
+          "subframe": "moral_condemnation",
+          "topic": "plan",
+          "populist": "Only villains could defend such a monstrous plan.",
+          "matched_mainstream": "Only a few members could support such an expensive plan."
+        },
+        {
+          "pair_id": "M15",
+          "subframe": "moral_condemnation",
+          "topic": "right and wrong",
+          "populist": "The other side is evil and we are fighting for what is right.",
+          "matched_mainstream": "The other side is honest and we simply see the issue differently."
+        },
+        {
+          "pair_id": "M16",
+          "subframe": "deception_and_lies",
+          "topic": "hypocrisy",
+          "populist": "They are hypocrites who preach virtue and practise vice.",
+          "matched_mainstream": "They are colleagues who argue their case and vote their conscience."
+        },
+        {
+          "pair_id": "M17",
+          "subframe": "moral_condemnation",
+          "topic": "nature",
+          "populist": "Their corruption is not an accident, it is who they are.",
+          "matched_mainstream": "Their proposal is not a surprise, it is what they promised."
+        },
+        {
+          "pair_id": "M18",
+          "subframe": "moral_condemnation",
+          "topic": "cooperation",
+          "populist": "We will never shake hands with these scoundrels.",
+          "matched_mainstream": "We will always work with the members opposite."
+        },
+        {
+          "pair_id": "M19",
+          "subframe": "moral_condemnation",
+          "topic": "deals",
+          "populist": "Shame on them for their cowardice and their filthy deals.",
+          "matched_mainstream": "Credit to them for their effort, though we disagree on the deal."
+        },
+        {
+          "pair_id": "M20",
+          "subframe": "moral_condemnation",
+          "topic": "dishonour",
+          "populist": "Their hands are stained with dishonour and they know it.",
+          "matched_mainstream": "Their plan is based on assumptions and they know that too."
+        },
+        {
+          "pair_id": "M21",
+          "subframe": "deception_and_lies",
+          "topic": "politics as war",
+          "populist": "This is not politics, it is a war between truth and lies.",
+          "matched_mainstream": "This is ordinary politics, a contest between different programmes."
+        },
+        {
+          "pair_id": "M22",
+          "subframe": "deception_and_lies",
+          "topic": "decades",
+          "populist": "Those crooks have been lying to your face for decades.",
+          "matched_mainstream": "Those ministers have been working on this issue for years."
+        },
+        {
+          "pair_id": "M23",
+          "subframe": "moral_condemnation",
+          "topic": "fitness",
+          "populist": "They are morally bankrupt and unfit to lead anyone.",
+          "matched_mainstream": "They are experienced ministers and able to lead a department."
+        },
+        {
+          "pair_id": "M24",
+          "subframe": "deception_and_lies",
+          "topic": "honesty",
+          "populist": "Nothing they do is honest, everything is a trick.",
+          "matched_mainstream": "Some of what they do is sensible, some needs change."
+        },
+        {
+          "pair_id": "M25",
+          "subframe": "deception_and_lies",
+          "topic": "reform",
+          "populist": "Their so-called reform is theft dressed up as progress.",
+          "matched_mainstream": "Their proposed reform is costly but it has some merits."
+        },
+        {
+          "pair_id": "M26",
+          "subframe": "moral_condemnation",
+          "topic": "majority",
+          "populist": "The decent majority is being held hostage by a gang of frauds.",
+          "matched_mainstream": "The governing majority is being challenged by a strong opposition."
+        },
+        {
+          "pair_id": "M27",
+          "subframe": "moral_condemnation",
+          "topic": "history",
+          "populist": "They spit on everything our grandparents fought for.",
+          "matched_mainstream": "They see our history differently from how we see it."
+        },
+        {
+          "pair_id": "M28",
+          "subframe": "moral_condemnation",
+          "topic": "adversaries",
+          "populist": "Those who oppose us are not opponents, they are enemies.",
+          "matched_mainstream": "Those who oppose us are not enemies, they are opponents."
+        },
+        {
+          "pair_id": "M29",
+          "subframe": "moral_condemnation",
+          "topic": "families",
+          "populist": "They are vultures circling over the suffering of families.",
+          "matched_mainstream": "They are critics raising concerns about support for families."
+        },
+        {
+          "pair_id": "M30",
+          "subframe": "deception_and_lies",
+          "topic": "conscience",
+          "populist": "Any person of conscience must reject these liars completely.",
+          "matched_mainstream": "Any person of good will can accept parts of this proposal."
+        },
+        {
+          "pair_id": "M31",
+          "subframe": "deception_and_lies",
+          "topic": "campaign",
+          "populist": "Their dirty tricks show how low and corrupt they really are.",
+          "matched_mainstream": "Their campaign tactics show how hard they are competing for votes."
+        },
+        {
+          "pair_id": "M32",
+          "subframe": "moral_condemnation",
+          "topic": "responsibility",
+          "populist": "They have blood on their hands and no apology can wash it off.",
+          "matched_mainstream": "They made a mistake on this and they have apologised for it."
+        },
+        {
+          "pair_id": "M33",
+          "subframe": "moral_condemnation",
+          "topic": "sin",
+          "populist": "It is a sin what they have done to the people of this land.",
+          "matched_mainstream": "It is a pity what happened in the negotiations this week."
+        },
+        {
+          "pair_id": "M34",
+          "subframe": "moral_condemnation",
+          "topic": "purity",
+          "populist": "We are pure and they are poison, and the voters know it.",
+          "matched_mainstream": "We are ready and they are ready, and the voters will choose."
+        },
+        {
+          "pair_id": "M35",
+          "subframe": "moral_condemnation",
+          "topic": "agenda",
+          "populist": "Their evil agenda must be defeated once and for all.",
+          "matched_mainstream": "Their policy agenda must be debated and put to a vote."
+        },
+        {
+          "pair_id": "M36",
+          "subframe": "deception_and_lies",
+          "topic": "sincerity",
+          "populist": "They are cynical frauds pretending to care about you.",
+          "matched_mainstream": "They are serious people who care about this issue too."
+        },
+        {
+          "pair_id": "M37",
+          "subframe": "deception_and_lies",
+          "topic": "credibility",
+          "populist": "No decent person could trust a single word from these cheats.",
+          "matched_mainstream": "Most reasonable people would weigh the arguments from both sides."
+        },
+        {
+          "pair_id": "M38",
+          "subframe": "deception_and_lies",
+          "topic": "hatred",
+          "populist": "They have poisoned our politics with lies and hatred.",
+          "matched_mainstream": "They have changed our politics with new ideas and methods."
+        },
+        {
+          "pair_id": "M39",
+          "subframe": "moral_condemnation",
+          "topic": "choice",
+          "populist": "Honest citizens against a rotten establishment, that is the choice.",
+          "matched_mainstream": "Two credible parties with different programmes, that is the choice."
+        },
+        {
+          "pair_id": "M40",
+          "subframe": "deception_and_lies",
+          "topic": "public life",
+          "populist": "They are the most dishonest people I have ever met in public life.",
+          "matched_mainstream": "They are the most determined people I have ever met in public life."
+        }
+      ]
+    }
+  }
+}

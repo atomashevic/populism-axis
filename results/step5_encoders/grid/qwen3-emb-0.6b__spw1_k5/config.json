@@ -1,0 +1,25 @@
+{
+  "access_reason": "",
+  "anchors": [
+    "/home/aleksandar/work/populism-axis/results/v4/embeddings/qwen3-emb-0.6b/sentences/v3_proposition__ea98e5b2.npz"
+  ],
+  "dataset_dir": [
+    "agora=/home/aleksandar/work/populism-axis/results/v4/embeddings/qwen3-emb-0.6b/spw1_cap60_clean"
+  ],
+  "datasets": "english,agora",
+  "draws": 2000,
+  "embeddings_dir": "/home/aleksandar/work/populism-axis/results/v4/embeddings/qwen3-emb-0.6b/spw1_cap60_clean",
+  "english_split": "dev",
+  "final": false,
+  "label": "qwen3-emb-0.6b__spw1_k5",
+  "n_pcs": 0,
+  "nuisance": null,
+  "nuisance_sets": "",
+  "out_dir": "/home/aleksandar/work/populism-axis/results/v4/step5_encoders/grid/qwen3-emb-0.6b__spw1_k5",
+  "save_projections": false,
+  "seed": 20260923,
+  "top_k": 3,
+  "top_rule": "k:5",
+  "transform": "v3",
+  "whiten_shrinkage": null
+}

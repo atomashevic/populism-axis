@@ -1,0 +1,30 @@
+{
+  "spw1_cap0|english": {
+    "windows": 33549,
+    "truncated": 352,
+    "tokens_total": 952917,
+    "tokens_lost": 39824,
+    "lost_share": 0.041791677554288566
+  },
+  "spw1_cap0|agora": {
+    "windows": 41308,
+    "truncated": 177,
+    "tokens_total": 1050954,
+    "tokens_lost": 3794,
+    "lost_share": 0.003610053342011163
+  },
+  "spw1_cap60|english": {
+    "windows": 34237,
+    "truncated": 197,
+    "tokens_total": 955669,
+    "tokens_lost": 24170,
+    "lost_share": 0.025291183453685324
+  },
+  "spw1_cap60|agora": {
+    "windows": 41912,
+    "truncated": 0,
+    "tokens_total": 1053370,
+    "tokens_lost": 0,
+    "lost_share": 0.0
+  }
+}

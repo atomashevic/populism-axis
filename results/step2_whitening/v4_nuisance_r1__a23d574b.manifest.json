@@ -1,0 +1,77 @@
+{
+  "argv": [
+    "--encoder",
+    "e5-large-v2",
+    "--sentences",
+    "alternative-pairs/v4/nuisance_sentences.json",
+    "--set-id",
+    "v4_nuisance_r1",
+    "--repeat",
+    "2"
+  ],
+  "encoder_id": "intfloat/e5-large-v2",
+  "extra": {
+    "device": "cuda",
+    "encoder_spec": {
+      "batch_size": 64,
+      "dtype": "float16",
+      "label": "e5-large-v2",
+      "max_length": 96,
+      "model_id": "intfloat/e5-large-v2",
+      "pooling": "mean",
+      "template": "query: {text}",
+      "trust_remote_code": false
+    },
+    "example_rendered_input": "query: I am furious that these floods destroyed so many homes again this year.",
+    "gpu_name": "NVIDIA A30",
+    "groups": {
+      "foreign_enemy__neutral": 10,
+      "foreign_enemy__nuisance": 10,
+      "generic_grievance__neutral": 10,
+      "generic_grievance__nuisance": 10,
+      "hostility_negative_affect__neutral": 10,
+      "hostility_negative_affect__nuisance": 10,
+      "incivility__neutral": 10,
+      "incivility__nuisance": 10,
+      "partisan_attack_on_opposition__neutral": 10,
+      "partisan_attack_on_opposition__nuisance": 10
+    },
+    "n_sentences": 100,
+    "output": "results/v4/embeddings/e5-large-v2/sentences/v4_nuisance_r1__a23d574b.npz",
+    "peak_vram_mb": 680.3,
+    "repeat": 2,
+    "repeat_byte_identical": true,
+    "schema": "populism_axis.v4.nuisance_sets.v1",
+    "seconds": 8.41,
+    "set_id": "v4_nuisance_r1",
+    "task": null,
+    "torch_cuda": "12.6",
+    "torch_version": "2.14.0+cu126"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "b1d7e0661014ffa15454e7ba55d73b59460bb328",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "sentences": {
+      "path": "/home/atomasevic/populism-axis/alternative-pairs/v4/nuisance_sentences.json",
+      "sha256": "a23d574baa3778db7c9383540a44c0470c9f758feb64b36b8487147c0d3c54e9"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "93bbc8ab12413993b94be5f5de19877672e3a877b8768cfd2db9f269d241ca48",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/encode_sentences_v4.py",
+  "timestamp_utc": "2026-09-23T19:01:34Z"
+}

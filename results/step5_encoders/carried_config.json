@@ -1,0 +1,24 @@
+{
+  "step": 5,
+  "label": "B4_spw3_k8",
+  "result_dir": "results/step4_windows_topk/grid/spw3_k8",
+  "encoder": "e5-large-v2",
+  "window_setting": "spw3 stride 1, cap 60 words per sentence, 256 tokens (English cleaned v4_clean_r1)",
+  "embeddings_dirs": {
+    "english": "results/embeddings/e5-large-v2/spw3_cap60_clean",
+    "agora": "results/embeddings/e5-large-v2/spw3_cap60_clean"
+  },
+  "anchors": "results/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+  "anchor_file": "anchors/proposition_anchors.json",
+  "anchor_sha256": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6",
+  "text_cleaning": "v4_clean_r1 (src/populism_axis/v4_text.py), English only",
+  "transform": "v3",
+  "top_k": 8,
+  "system": "PE__frozen__soft",
+  "dev_english_spearman": 0.5165550867152585,
+  "agora_spearman": 0.3588332643197715,
+  "decision": "no encoder passes the adoption rule; e5-large-v2 carried. Qwen3-8B plain: English-dev .502 (-.014), Agora .392 (+.033 significant).",
+  "grid": "results/step2_whitening/grid.json",
+  "top_rule": "k:8",
+  "encoder_grid": "results/step5_encoders/grid.json"
+}

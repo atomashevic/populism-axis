@@ -1,0 +1,93 @@
+{
+  "argv": [
+    "--input",
+    "scored/fresh_check_rerun/english_dev_input.csv",
+    "--text-column",
+    "text",
+    "--id-column",
+    "id",
+    "--unit",
+    "speech",
+    "--reference",
+    "frozen",
+    "--clean",
+    "--device",
+    "cuda",
+    "--threads",
+    "2",
+    "--nli-batch-size",
+    "64",
+    "--out-dir",
+    "scored/fresh_check_rerun/scored"
+  ],
+  "encoder_id": "intfloat/e5-large-v2",
+  "extra": {
+    "device": "cuda",
+    "encode_seconds": 32.0,
+    "encoder_revision": "f169b11e22de13617baa190a028a32f3493550b6",
+    "n_documents": 174,
+    "n_windows": 20284,
+    "nli_model": "facebook/bart-large-mnli",
+    "nli_revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+    "nli_seconds": 24.3,
+    "reference": "frozen",
+    "resolved_revisions": {
+      "encoder": "f169b11e22de13617baa190a028a32f3493550b6",
+      "nli_model": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce"
+    },
+    "seconds_total": 67.2,
+    "standardization": {
+      "act": {
+        "E": 0.3109701042065637,
+        "P": 0.49462659227415506
+      },
+      "proj": {
+        "E": [
+          -0.0028587593178337157,
+          0.11759952416671197
+        ],
+        "P": [
+          -0.000654460513103516,
+          0.10364815130874797
+        ]
+      }
+    },
+    "threads": 2,
+    "top_rule": "k:8",
+    "unit": "speech"
+  },
+  "git": {
+    "branch": "HEAD",
+    "commit": "003f00caca7b92e8b6af82b714b94677c7c13b60",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "anchors": {
+      "path": "/home/atomasevic/populism-axis-freshcheck/003f00ca/anchors/proposition_anchors.json",
+      "sha256": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6"
+    },
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis-freshcheck/003f00ca/anchors/claim_hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    },
+    "input": {
+      "path": "scored/fresh_check_rerun/english_dev_input.csv",
+      "sha256": "dc6e1e1ff865e7db4e114879cef4b50ad9b7adc647234f324b4749dc2b483a4b"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "52acef1602e61396d46cc221cf98abe3938e763ec28608a6e28d914c0e5c3f1f",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/score_texts.py",
+  "timestamp_utc": "2026-10-02T17:17:16Z"
+}

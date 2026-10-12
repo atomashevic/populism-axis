@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or the populism axis measure, please cite it as below."
+type: software
+title: "populism-axis: a training-free measure of populist rhetoric"
+abstract: >-
+  Python and R software for the populism axis, a training-free measure of populist
+  rhetoric built from written anchor propositions in a pretrained sentence-embedding
+  space, with an entailment-based claim check. Also defines continuous text scales
+  from user-written propositions.
+authors:
+  - family-names: "Tomašević"
+    given-names: "Aleksandar"
+    email: "atomashevic@gmail.com"
+version: "0.1.0"
+license: MIT
+repository-code: "https://github.com/atomashevic/populism-axis"
+keywords:
+  - populism
+  - political communication
+  - text as data
+  - sentence embeddings
+  - natural language inference

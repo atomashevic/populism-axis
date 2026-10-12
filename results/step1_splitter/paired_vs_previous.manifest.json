@@ -1,0 +1,44 @@
+{
+  "argv": [
+    "--baseline-dir",
+    "results/v4/step1_splitter/B0_v3_splitter",
+    "--candidate-dir",
+    "results/v4/step1_splitter/B1_cap60",
+    "--rule",
+    "defect_fix",
+    "--out",
+    "results/v4/step1_splitter/paired_vs_previous.json"
+  ],
+  "encoder_id": null,
+  "extra": {},
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "ff9af06d99bb7e6a7158535bb438ca8062e592b5",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "baseline_english": {
+      "path": "results/v4/step1_splitter/B0_v3_splitter/scores_english.csv",
+      "sha256": "28925c1557f378936902736472d567f5226a1c126b2e18d07a7da350fff04473"
+    },
+    "candidate_english": {
+      "path": "results/v4/step1_splitter/B1_cap60/scores_english.csv",
+      "sha256": "8f6f7cde4af93b654bb641560b63a887ee0298b6faa11320abcbc127b6285c79"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "c7c6e1c738462a3809430c04580fb02acfa89034503dce090d756d782f0a4920",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/compare_steps_v4.py",
+  "timestamp_utc": "2026-09-23T17:36:34Z"
+}

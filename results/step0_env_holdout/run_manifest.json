@@ -1,0 +1,52 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "rule": {
+      "holdout_share_max": 0.33,
+      "holdout_share_min": 0.27,
+      "inclusion_probability": 0.3,
+      "min_dev_extreme_pos": 8,
+      "min_holdout_extreme_pos": 4,
+      "min_holdout_leaders": 20,
+      "min_holdout_nonzero": 20,
+      "n_candidates": 5000,
+      "seed": 20260923
+    },
+    "split_sha256": "fe6bea109fcba5946eb1cc9cbacb3d9cfd112954137f4f884c93653f4c7824cb"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "83fb14f8c476daff5569a70bd9531eb462eeb1e7",
+    "dirty": true
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "english": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_v3/english_gpd_speeches.csv",
+      "sha256": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7"
+    },
+    "gpd_csv": {
+      "path": "/home/aleksandar/work/populism-axis/data/gpd_v2_20220427.csv",
+      "sha256": "7301ba66ae8e6eb2f90def9130afcf2f38bd512a79e96e00f758160d5c917c88"
+    },
+    "v3_freeze": {
+      "path": "/home/aleksandar/work/populism-axis/results/v3/benchmark_v3_freeze.json",
+      "sha256": "309f7e685c746db74b0a97c5669b97e95a67d57b01afa415647d75472c7975a4"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "db601c68ac06a336e3141b2f8e4c5296bfb628ec303a86f936128abcbc278d79",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/freeze_holdout_v4.py",
+  "timestamp_utc": "2026-09-23T16:56:01Z"
+}

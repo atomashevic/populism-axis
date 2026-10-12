@@ -1,0 +1,542 @@
+{
+  "agora_seed": 20260727,
+  "axis_plus_claim_check_stored": {
+    "agora": 0.3823007058125725,
+    "english_holdout": 0.518292351477985,
+    "eu_auroc_3v0": 0.9415193836773369,
+    "eu_loso_macro_f1": 0.5453892555922258,
+    "popbert_centr": 0.7711987443594271,
+    "popbert_elite": 0.8061682996614187,
+    "portugal_centr": 0.6953421148141842,
+    "portugal_elite": 0.7983821716560546,
+    "tweets": 0.7556580010455777,
+    "usgov": 0.5264219260957432
+  },
+  "reproduction_checks": {
+    "english_b6_recomputed_vs_stored": 0.0,
+    "english_paired_softmax_vs_stored": 0.0,
+    "english_softmax_vs_stored": 0.0,
+    "eu_loso_softmax_vs_stored": 0.0,
+    "eu_softmax_vs_stored": 0.0,
+    "popbert_centr_softmax_vs_stored_column": 1.1102230246251565e-16,
+    "popbert_elite_softmax_vs_stored_column": 1.1102230246251565e-16,
+    "portugal_centr_softmax_vs_stored_column": 1.1102230246251565e-16,
+    "portugal_elite_softmax_vs_stored_column": 1.1102230246251565e-16,
+    "tweets_softmax_vs_stored_column": 1.1102230246251565e-16,
+    "usgov_softmax_vs_stored_column": 1.1102230246251565e-16
+  },
+  "rows": {
+    "agora": {
+      "sigmoid": {
+        "ci95": [
+          0.2874073368428233,
+          0.38992870921090517
+        ],
+        "metric": 0.3716083026010186,
+        "paired_supplementary_not_previously_reported": {
+          "combined - RoBERTa": {
+            "ci95": [
+              -0.03585346251828492,
+              0.06730101245697634
+            ],
+            "delta_spearman": 0.010692403211553902,
+            "n_draws": 4000,
+            "p_two_sided": 0.745
+          }
+        }
+      },
+      "softmax": {
+        "ci95": [
+          0.27920470632925803,
+          0.3868831349911919
+        ],
+        "metric": 0.36743456489878384,
+        "paired_supplementary_not_previously_reported": {
+          "combined - RoBERTa": {
+            "ci95": [
+              -0.03390217547513208,
+              0.07572360651315013
+            ],
+            "delta_spearman": 0.014866140913788684,
+            "n_draws": 4000,
+            "p_two_sided": 0.665
+          }
+        }
+      }
+    },
+    "english_holdout": {
+      "sigmoid": {
+        "ci95": [
+          0.1419367808182539,
+          0.6778126935858455
+        ],
+        "metric": 0.43960516574647834,
+        "paired": {
+          "B4_axis - RoBERTa": {
+            "ci95": [
+              -0.17500448406946398,
+              0.1299730472364342
+            ],
+            "delta_spearman": -0.022734934072427715,
+            "n_draws": 4000,
+            "p_two_sided": 0.7365
+          },
+          "B6_axis_plus_nli - RoBERTa": {
+            "ci95": [
+              -0.08046131580797018,
+              0.25085881930925397
+            ],
+            "delta_spearman": 0.07868718573150668,
+            "n_draws": 4000,
+            "p_two_sided": 0.3455
+          }
+        },
+        "secondary": {
+          "extreme_auroc": 0.8829787234042553,
+          "leader_term_spearman": 0.060337806281173405
+        }
+      },
+      "softmax": {
+        "ci95": [
+          0.23840355509769062,
+          0.6695365595296563
+        ],
+        "metric": 0.46368624439683853,
+        "paired": {
+          "B4_axis - RoBERTa": {
+            "ci95": [
+              -0.2027788835981292,
+              0.08129598061457646
+            ],
+            "delta_spearman": -0.0468160127227879,
+            "n_draws": 4000,
+            "p_two_sided": 0.492
+          },
+          "B6_axis_plus_nli - RoBERTa": {
+            "ci95": [
+              -0.09436658642493519,
+              0.20512575792063623
+            ],
+            "delta_spearman": 0.05460610708114649,
+            "n_draws": 4000,
+            "p_two_sided": 0.4855
+          }
+        },
+        "secondary": {
+          "extreme_auroc": 0.8563829787234042,
+          "leader_term_spearman": 0.14650019365068903
+        }
+      }
+    },
+    "eu_auroc_3v0": {
+      "sigmoid": {
+        "ci95": [
+          0.7293639053254438,
+          0.9784438588786415
+        ],
+        "metric": 0.9000535574506654,
+        "secondary": {
+          "pooled_within_speaker_auroc": 0.8538298138820185
+        }
+      },
+      "softmax": {
+        "ci95": [
+          0.6254101049868767,
+          0.9784438588786415
+        ],
+        "metric": 0.902092860379846,
+        "secondary": {
+          "pooled_within_speaker_auroc": 0.8623115702028412
+        }
+      }
+    },
+    "eu_loso_macro_f1": {
+      "sigmoid": {
+        "ci95": null,
+        "metric": 0.5552144719758512,
+        "secondary": {
+          "loso_overall": {
+            "AE": 0.3319838056680162,
+            "N": 0.9236177692553531,
+            "PC": 0.4100418410041841,
+            "macro": 0.5552144719758512
+          },
+          "prevalence_macro_f1": 0.5525852646191085
+        }
+      },
+      "softmax": {
+        "ci95": null,
+        "metric": 0.5116198395781418,
+        "secondary": {
+          "loso_overall": {
+            "AE": 0.2948207171314741,
+            "N": 0.9284810126582278,
+            "PC": 0.31155778894472363,
+            "macro": 0.5116198395781418
+          },
+          "prevalence_macro_f1": 0.537693327711892
+        }
+      }
+    },
+    "popbert_centr": {
+      "sigmoid": {
+        "ci95": [
+          0.6173502217278359,
+          0.7572837742387837
+        ],
+        "metric": 0.6898518736511674,
+        "paired": {
+          "P_axis_plus_nli - P_roberta": {
+            "ci95": [
+              0.005039478053903726,
+              0.1512601836345737
+            ],
+            "delta": 0.08134687070825974,
+            "p_two_sided": 0.03
+          }
+        },
+        "secondary": {
+          "f1_train_optimal": 0.13690476190476192
+        }
+      },
+      "softmax": {
+        "ci95": [
+          0.5660475847260744,
+          0.7133620709158814
+        ],
+        "metric": 0.6428291151657839,
+        "paired": {
+          "P_axis_plus_nli - P_roberta": {
+            "ci95": [
+              0.05171436141150235,
+              0.20645569749199955
+            ],
+            "delta": 0.12836962919364325,
+            "p_two_sided": 0.001
+          }
+        },
+        "secondary": {
+          "f1_train_optimal": 0.11136890951276102
+        }
+      }
+    },
+    "popbert_elite": {
+      "sigmoid": {
+        "ci95": [
+          0.6315826549339245,
+          0.7039750187108519
+        ],
+        "metric": 0.6688497952482039,
+        "paired": {
+          "E_axis_plus_nli - E_roberta": {
+            "ci95": [
+              0.09548976622312227,
+              0.1808974608290066
+            ],
+            "delta": 0.1373185044132148,
+            "p_two_sided": 0.0
+          }
+        },
+        "secondary": {
+          "f1_train_optimal": 0.36046511627906974
+        }
+      },
+      "softmax": {
+        "ci95": [
+          0.6131956539232126,
+          0.6861407601210521
+        ],
+        "metric": 0.6497153391398968,
+        "paired": {
+          "E_axis_plus_nli - E_roberta": {
+            "ci95": [
+              0.11416718365308474,
+              0.19925347694040144
+            ],
+            "delta": 0.1564529605215219,
+            "p_two_sided": 0.0
+          }
+        },
+        "secondary": {
+          "f1_train_optimal": 0.3282674772036474
+        }
+      }
+    },
+    "portugal_centr": {
+      "sigmoid": {
+        "ci95": [
+          0.5232564933848265,
+          0.6349214312751797
+        ],
+        "metric": 0.5824652855568201,
+        "paired": {
+          "P_axis_plus_nli - P_roberta": {
+            "ci95": [
+              0.06352010212838123,
+              0.1430327307816248
+            ],
+            "delta": 0.11287682925736409,
+            "p_two_sided": 0.001
+          }
+        }
+      },
+      "softmax": {
+        "ci95": [
+          0.5602032573472632,
+          0.6419098596653672
+        ],
+        "metric": 0.6035597146672164,
+        "paired": {
+          "P_axis_plus_nli - P_roberta": {
+            "ci95": [
+              0.044701824004345844,
+              0.12645065861727978
+            ],
+            "delta": 0.09178240014696781,
+            "p_two_sided": 0.001
+          }
+        }
+      }
+    },
+    "portugal_elite": {
+      "sigmoid": {
+        "ci95": [
+          0.8178475213796276,
+          0.9182457982015063
+        ],
+        "metric": 0.8672480236595379,
+        "paired": {
+          "E_axis_plus_nli - E_roberta": {
+            "ci95": [
+              -0.11628727170848546,
+              -0.016317216742143408
+            ],
+            "delta": -0.06886585200348327,
+            "p_two_sided": 0.016
+          }
+        }
+      },
+      "softmax": {
+        "ci95": [
+          0.8291779477727451,
+          0.9121445375477217
+        ],
+        "metric": 0.8676148765564742,
+        "paired": {
+          "E_axis_plus_nli - E_roberta": {
+            "ci95": [
+              -0.1098582431356144,
+              -0.012112716122263487
+            ],
+            "delta": -0.06923270490041955,
+            "p_two_sided": 0.02
+          }
+        }
+      }
+    },
+    "tweets": {
+      "sigmoid": {
+        "ci95": [
+          0.5304905425381283,
+          0.6038117931559175
+        ],
+        "metric": 0.5710351219048524,
+        "paired": {
+          "E_axis - RoBERTa_anti_elitism": {
+            "ci95": [
+              0.12233810423811109,
+              0.2534196417555847
+            ],
+            "delta": 0.18310203887647947,
+            "p_two_sided": 0.0
+          },
+          "E_axis_plus_nli - RoBERTa_anti_elitism": {
+            "ci95": [
+              0.12180579370952938,
+              0.25691957872341276
+            ],
+            "delta": 0.18462287914072528,
+            "p_two_sided": 0.0
+          }
+        },
+        "secondary": {
+          "f1opt_train_f1_pos": 0.38293650793650796
+        }
+      },
+      "softmax": {
+        "ci95": [
+          0.5364670641343933,
+          0.602737173952107
+        ],
+        "metric": 0.572810227650777,
+        "paired": {
+          "E_axis - RoBERTa_anti_elitism": {
+            "ci95": [
+              0.12693817956701617,
+              0.2461900988647053
+            ],
+            "delta": 0.1813269331305548,
+            "p_two_sided": 0.0
+          },
+          "E_axis_plus_nli - RoBERTa_anti_elitism": {
+            "ci95": [
+              0.12762567161939442,
+              0.24728050618213174
+            ],
+            "delta": 0.18284777339480063,
+            "p_two_sided": 0.0
+          }
+        },
+        "secondary": {
+          "f1opt_train_f1_pos": 0.3860369609856263
+        }
+      }
+    },
+    "usgov_2010_2018": {
+      "sigmoid": {
+        "ci95": [
+          0.1970331115482086,
+          0.44743302565285764
+        ],
+        "metric": 0.32599814892475254,
+        "paired": {
+          "B6_axis_plus_nli - RoBERTa": {
+            "ci95": [
+              0.08573365069048267,
+              0.3178681213022624
+            ],
+            "delta_spearman": 0.2004237771709907,
+            "n_draws": 4000,
+            "p_two_sided": 0.0
+          }
+        }
+      },
+      "softmax": {
+        "ci95": [
+          0.25243351199371966,
+          0.49034280387711465
+        ],
+        "metric": 0.3760306166919493,
+        "paired": {
+          "B6_axis_plus_nli - RoBERTa": {
+            "ci95": [
+              0.0454578391422406,
+              0.2552054653053132
+            ],
+            "delta_spearman": 0.15039130940379392,
+            "n_draws": 4000,
+            "p_two_sided": 0.004
+          }
+        }
+      }
+    }
+  },
+  "run_dir": "results/roberta-correction/rc-20261002T1415Z-sigmoid",
+  "seed": 20260923,
+  "summary": [
+    {
+      "axis_plus_claim_check": 0.518292351477985,
+      "label": "GPD English holdout, Spearman",
+      "ours_better_sigmoid": true,
+      "ours_better_softmax": true,
+      "roberta_sigmoid": 0.43960516574647834,
+      "roberta_softmax": 0.46368624439683853,
+      "row": "english_holdout",
+      "sigmoid_minus_softmax": -0.024081078650360188
+    },
+    {
+      "axis_plus_claim_check": 0.9415193836773369,
+      "label": "EU-OOD AUROC 3-vs-0",
+      "ours_better_sigmoid": true,
+      "ours_better_softmax": true,
+      "roberta_sigmoid": 0.9000535574506654,
+      "roberta_softmax": 0.902092860379846,
+      "row": "eu_auroc_3v0",
+      "sigmoid_minus_softmax": -0.002039302929180642
+    },
+    {
+      "axis_plus_claim_check": 0.5453892555922258,
+      "label": "EU-OOD LOSO macro-F1",
+      "ours_better_sigmoid": false,
+      "ours_better_softmax": true,
+      "roberta_sigmoid": 0.5552144719758512,
+      "roberta_softmax": 0.5116198395781418,
+      "row": "eu_loso_macro_f1",
+      "sigmoid_minus_softmax": 0.04359463239770933
+    },
+    {
+      "axis_plus_claim_check": 0.3823007058125725,
+      "label": "Agora paragraphs, Spearman",
+      "ours_better_sigmoid": true,
+      "ours_better_softmax": true,
+      "roberta_sigmoid": 0.3716083026010186,
+      "roberta_softmax": 0.36743456489878384,
+      "row": "agora",
+      "sigmoid_minus_softmax": 0.004173737702234781
+    },
+    {
+      "axis_plus_claim_check": 0.5264219260957432,
+      "label": "US governors 2010-18, Spearman",
+      "ours_better_sigmoid": true,
+      "ours_better_softmax": true,
+      "roberta_sigmoid": 0.32599814892475254,
+      "roberta_softmax": 0.3760306166919493,
+      "row": "usgov_2010_2018",
+      "sigmoid_minus_softmax": -0.050032467767196775
+    },
+    {
+      "axis_plus_claim_check": 0.7556580010455777,
+      "label": "Anti-elite tweets AUROC (E)",
+      "ours_better_sigmoid": true,
+      "ours_better_softmax": true,
+      "roberta_sigmoid": 0.5710351219048524,
+      "roberta_softmax": 0.572810227650777,
+      "row": "tweets",
+      "sigmoid_minus_softmax": -0.0017751057459246544
+    },
+    {
+      "axis_plus_claim_check": 0.8061682996614187,
+      "label": "PopBERT anti-elitism AUROC (E)",
+      "ours_better_sigmoid": true,
+      "ours_better_softmax": true,
+      "roberta_sigmoid": 0.6688497952482039,
+      "roberta_softmax": 0.6497153391398968,
+      "row": "popbert_elite",
+      "sigmoid_minus_softmax": 0.019134456108307107
+    },
+    {
+      "axis_plus_claim_check": 0.7711987443594271,
+      "label": "PopBERT people-centrism AUROC (P)",
+      "ours_better_sigmoid": true,
+      "ours_better_softmax": true,
+      "roberta_sigmoid": 0.6898518736511674,
+      "roberta_softmax": 0.6428291151657839,
+      "row": "popbert_centr",
+      "sigmoid_minus_softmax": 0.04702275848538351
+    },
+    {
+      "axis_plus_claim_check": 0.7983821716560546,
+      "label": "Portugal anti-elitism AUROC (E)",
+      "ours_better_sigmoid": false,
+      "ours_better_softmax": false,
+      "roberta_sigmoid": 0.8672480236595379,
+      "roberta_softmax": 0.8676148765564742,
+      "row": "portugal_elite",
+      "sigmoid_minus_softmax": -0.0003668528969362761
+    },
+    {
+      "axis_plus_claim_check": 0.6953421148141842,
+      "label": "Portugal people-centrism AUROC (P)",
+      "ours_better_sigmoid": true,
+      "ours_better_softmax": true,
+      "roberta_sigmoid": 0.5824652855568201,
+      "roberta_softmax": 0.6035597146672164,
+      "row": "portugal_centr",
+      "sigmoid_minus_softmax": -0.021094429110396273
+    }
+  ],
+  "wins": {
+    "sigmoid": 8,
+    "softmax": 9
+  }
+}

@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.git$
+^\.DS_Store$
+^.*\.Rcheck$
+^.*\.tar\.gz$
+^inst/python/__pycache__$

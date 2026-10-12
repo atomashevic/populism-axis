@@ -1,0 +1,42 @@
+{
+  "argv": [
+    "--baseline-dir",
+    "results/v4/step1b_text_cleaning/B1c_cap60_clean",
+    "--candidate-dir",
+    "results/v4/step2_whitening/single_set/d0_res_partisan_attack_on_opposition",
+    "--out",
+    "results/v4/step2_whitening/single_set/d0_res_partisan_attack_on_opposition/paired_vs_previous.json"
+  ],
+  "encoder_id": null,
+  "extra": {},
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "c59709fb41fdfb8fd2b085258d02bfa52bd52ad5",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "baseline_english": {
+      "path": "results/v4/step1b_text_cleaning/B1c_cap60_clean/scores_english.csv",
+      "sha256": "701b8801913be8e1a50b2920bcedfadd1a13318f59317e5a9043ed9383a9d47a"
+    },
+    "candidate_english": {
+      "path": "results/v4/step2_whitening/single_set/d0_res_partisan_attack_on_opposition/scores_english.csv",
+      "sha256": "41d8704963f464dd3a76c317e7754a8cfd7a894bbd9b3699bd92c42db5707e74"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "6cf3fe87b7e5e69cdf837863c9db626065f13eb5ed4a16474e00ce05b799d45d",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/compare_steps_v4.py",
+  "timestamp_utc": "2026-09-23T19:23:44Z"
+}

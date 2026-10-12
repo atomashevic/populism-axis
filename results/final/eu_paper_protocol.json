@@ -1,0 +1,206 @@
+{
+  "paper_reference": {
+    "RoBERTa (paper)": {
+      "Le Pen": 0.487,
+      "Weidel": 0.329,
+      "Zemmour": 0.388,
+      "Kickl": 0.408,
+      "Tsipras": 0.55,
+      "Overall": 0.508
+    },
+    "Qwen3-14B (paper)": {
+      "Le Pen": 0.609,
+      "Weidel": 0.437,
+      "Zemmour": 0.583,
+      "Kickl": 0.473,
+      "Tsipras": 0.658,
+      "Overall": 0.613
+    },
+    "Gemini 2.5 Flash (paper)": {
+      "Le Pen": 0.65,
+      "Weidel": 0.314,
+      "Zemmour": 0.554,
+      "Kickl": 0.558,
+      "Tsipras": 0.586,
+      "Overall": 0.59
+    }
+  },
+  "ours": {
+    "B0_v3_config": {
+      "loso_f1": {
+        "overall": {
+          "N": 0.9174429810472213,
+          "AE": 0.26046511627906976,
+          "PC": 0.4048582995951417,
+          "macro": 0.527588798973811
+        },
+        "per_speaker": {
+          "Le Pen": 0.4177792993267146,
+          "Weidel": 0.32225579053373615,
+          "Zemmour": 0.4845430107526882,
+          "Kickl": 0.46825564926575775,
+          "Tsipras": 0.5512850270297078
+        }
+      },
+      "prevalence": {
+        "overall": {
+          "N": 0.9310344827586207,
+          "AE": 0.2871287128712871,
+          "PC": 0.3516483516483517,
+          "macro": 0.5232705157594199
+        }
+      },
+      "average_precision": {
+        "AE": 0.19742257247388212,
+        "PC": 0.3522743748371546
+      },
+      "auroc": {
+        "AE": 0.792395896197948,
+        "PC": 0.8338564574170332
+      }
+    },
+    "B4_axis": {
+      "loso_f1": {
+        "overall": {
+          "N": 0.9077274209325074,
+          "AE": 0.2835820895522388,
+          "PC": 0.4063745019920319,
+          "macro": 0.5325613374922594
+        },
+        "per_speaker": {
+          "Le Pen": 0.4280712593965606,
+          "Weidel": 0.3200815494393476,
+          "Zemmour": 0.4845430107526882,
+          "Kickl": 0.4596054208589981,
+          "Tsipras": 0.5625516609292647
+        }
+      },
+      "prevalence": {
+        "overall": {
+          "N": 0.9304075235109718,
+          "AE": 0.27722772277227725,
+          "PC": 0.3516483516483517,
+          "macro": 0.5197611993105337
+        }
+      },
+      "average_precision": {
+        "AE": 0.1956753162586999,
+        "PC": 0.3521463281866494
+      },
+      "auroc": {
+        "AE": 0.7905049285857977,
+        "PC": 0.831827269092363
+      }
+    },
+    "B6_axis_plus_nli": {
+      "loso_f1": {
+        "overall": {
+          "N": 0.896,
+          "AE": 0.2847222222222222,
+          "PC": 0.45544554455445546,
+          "macro": 0.5453892555922258
+        },
+        "per_speaker": {
+          "Le Pen": 0.4811609155871451,
+          "Weidel": 0.3146997929606625,
+          "Zemmour": 0.4682854623330814,
+          "Kickl": 0.5242165242165243,
+          "Tsipras": 0.5936570142049047
+        }
+      },
+      "prevalence": {
+        "overall": {
+          "N": 0.9327467001885607,
+          "AE": 0.3069306930693069,
+          "PC": 0.34065934065934067,
+          "macro": 0.5267789113057361
+        }
+      },
+      "average_precision": {
+        "AE": 0.2913272198515873,
+        "PC": 0.38439307576357207
+      },
+      "auroc": {
+        "AE": 0.8284507285110785,
+        "PC": 0.8628648540583765
+      }
+    },
+    "RoBERTa_comparator": {
+      "loso_f1": {
+        "overall": {
+          "N": 0.9236177692553531,
+          "AE": 0.3319838056680162,
+          "PC": 0.4100418410041841,
+          "macro": 0.5552144719758512
+        },
+        "per_speaker": {
+          "Le Pen": 0.5223637842233667,
+          "Weidel": 0.3283582089552239,
+          "Zemmour": 0.4028596792578702,
+          "Kickl": 0.5795971410006497,
+          "Tsipras": 0.6016653655997918
+        }
+      },
+      "prevalence": {
+        "overall": {
+          "N": 0.9379482382288743,
+          "AE": 0.3681592039800995,
+          "PC": 0.3516483516483517,
+          "macro": 0.5525852646191085
+        }
+      },
+      "average_precision": {
+        "AE": 0.3174738385349147,
+        "PC": 0.34701121789403366
+      },
+      "auroc": {
+        "AE": 0.8347271316492801,
+        "PC": 0.7873025789684127
+      }
+    }
+  },
+  "roberta_correction": {
+    "note": "RoBERTa entries use the corrected comparator: independent sigmoid outputs of the multi-label checkpoint (coastalcph/roberta-large-ft-trump-populism@9b5badfa), same windows, pooling, splits and seeds. The softmax values first reported are kept under superseded_softmax_roberta. Axis and claim-check entries are unchanged.",
+    "corrected_runs": [
+      "results/roberta-correction/rc-20261002T1415Z-sigmoid",
+      "results/roberta-correction/rc-20261002T1530Z-sigmoid-usgov-sentences"
+    ],
+    "refresh": "results/roberta-correction/rc-20261002T1600Z-refresh-result-files",
+    "date": "2026-10-02"
+  },
+  "superseded_softmax_roberta": {
+    "/ours/RoBERTa_comparator": {
+      "loso_f1": {
+        "overall": {
+          "N": 0.9284810126582278,
+          "AE": 0.2948207171314741,
+          "PC": 0.31155778894472363,
+          "macro": 0.5116198395781418
+        },
+        "per_speaker": {
+          "Le Pen": 0.5245071208560051,
+          "Weidel": 0.3303834808259587,
+          "Zemmour": 0.3788039900754469,
+          "Kickl": 0.5430185945903038,
+          "Tsipras": 0.5323425488697743
+        }
+      },
+      "prevalence": {
+        "overall": {
+          "N": 0.936875,
+          "AE": 0.3465346534653465,
+          "PC": 0.32967032967032966,
+          "macro": 0.537693327711892
+        }
+      },
+      "average_precision": {
+        "AE": 0.2838708003306046,
+        "PC": 0.32865274309553044
+      },
+      "auroc": {
+        "AE": 0.8483432479811478,
+        "PC": 0.8271691323470612
+      }
+    }
+  }
+}

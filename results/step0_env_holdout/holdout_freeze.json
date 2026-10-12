@@ -1,0 +1,160 @@
+{
+  "access_policy": [
+    "V4 development decisions use English dev rows and Agora only.",
+    "English holdout rows and EU-OOD are scored exactly once, after V4 step 6, via --final.",
+    "Every holdout or EU access is appended to results/v4/holdout_access_log.json.",
+    "The holdout was visible to V3 configuration choices (V3 used all 258 speeches for development); it is unseen by V4 decisions only."
+  ],
+  "balance_distance": 0.03505747126436777,
+  "canonical_sha256": "f66766cc770c7c8e7137354f119fcef283b11db1720d65e40b6e4618b5eec2fa",
+  "freeze_id": "pa_v4_english_holdout_r1",
+  "holdout_countries": [
+    "Armenia",
+    "Croatia",
+    "El Salvador",
+    "Georgia",
+    "Guatemala",
+    "India",
+    "Indonesia",
+    "Italy",
+    "Lithuania",
+    "Malaysia",
+    "Netherlands",
+    "Singapore",
+    "Sweden",
+    "United States"
+  ],
+  "n_candidates_passed": 306,
+  "n_candidates_unique": 5000,
+  "rule": {
+    "holdout_share_max": 0.33,
+    "holdout_share_min": 0.27,
+    "inclusion_probability": 0.3,
+    "min_dev_extreme_pos": 8,
+    "min_holdout_extreme_pos": 4,
+    "min_holdout_leaders": 20,
+    "min_holdout_nonzero": 20,
+    "n_candidates": 5000,
+    "seed": 20260923
+  },
+  "schema": "populism_axis.v4.holdout_freeze.v1",
+  "selection": "Sample country subsets (each country included with the rule's probability), keep those meeting every constraint, choose the one minimizing |mean score dev - holdout| + KS distance. Labels are used only for balance, never for method choice.",
+  "source_dataset": {
+    "file_sha256": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7",
+    "path": "data/benchmark_v3/english_gpd_speeches.csv",
+    "v3_frame_sha256": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7",
+    "v3_freeze_canonical_sha256": "7921c585fd4717a6b4a9955307faa5c7b91397ac666418ee3835e3337a37691b"
+  },
+  "split_file": {
+    "path": "data/benchmark_v4/english_split.csv",
+    "sha256": "fe6bea109fcba5946eb1cc9cbacb3d9cfd112954137f4f884c93653f4c7824cb"
+  },
+  "splits": {
+    "dev": {
+      "countries": [
+        "Albania",
+        "Australia",
+        "Austria",
+        "Belarus",
+        "Canada",
+        "Costa Rica",
+        "Estonia",
+        "Finland",
+        "Germany",
+        "Iran",
+        "Ireland",
+        "Moldova",
+        "Mongolia",
+        "Myanmar",
+        "Norway",
+        "Philippines",
+        "Serbia",
+        "Slovakia",
+        "Slovenia",
+        "South Africa",
+        "Switzerland",
+        "Taiwan",
+        "Turkmenistan",
+        "UK"
+      ],
+      "extreme_negative": 98,
+      "extreme_positive": 9,
+      "human_ceiling_spearman": 0.6985428438017905,
+      "human_coder_pairs": [
+        {
+          "coder_a": 1,
+          "coder_b": 2,
+          "n": 135,
+          "pearson": 0.7649286330002492,
+          "spearman": 0.6985428438017905
+        }
+      ],
+      "mean_score": 0.16460727969348662,
+      "median_score": 0.0,
+      "n_countries": 24,
+      "n_leader_terms": 74,
+      "n_leaders": 57,
+      "n_speeches": 174,
+      "nonzero_score": 76,
+      "speechtype_counts": {
+        "Campaign": 30,
+        "Famous": 38,
+        "International": 70,
+        "Ribbon cutting": 36
+      },
+      "word_count_spearman": 0.2364131066635227,
+      "word_count_spearman_ci95": [
+        0.08325020856000923,
+        0.38303031362067236
+      ]
+    },
+    "holdout": {
+      "countries": [
+        "Armenia",
+        "Croatia",
+        "El Salvador",
+        "Georgia",
+        "Guatemala",
+        "India",
+        "Indonesia",
+        "Italy",
+        "Lithuania",
+        "Malaysia",
+        "Netherlands",
+        "Singapore",
+        "Sweden",
+        "United States"
+      ],
+      "extreme_negative": 47,
+      "extreme_positive": 4,
+      "human_ceiling_spearman": 0.7479367844235132,
+      "human_coder_pairs": [
+        {
+          "coder_a": 1,
+          "coder_b": 2,
+          "n": 76,
+          "pearson": 0.8621845287957813,
+          "spearman": 0.7479367844235132
+        }
+      ],
+      "mean_score": 0.16805555555555554,
+      "median_score": 0.0,
+      "n_countries": 14,
+      "n_leader_terms": 37,
+      "n_leaders": 27,
+      "n_speeches": 84,
+      "nonzero_score": 37,
+      "speechtype_counts": {
+        "Campaign": 13,
+        "Famous": 18,
+        "International": 35,
+        "Ribbon cutting": 18
+      },
+      "word_count_spearman": 0.26134069922644704,
+      "word_count_spearman_ci95": [
+        0.025068920028757442,
+        0.5059408476073556
+      ]
+    }
+  }
+}

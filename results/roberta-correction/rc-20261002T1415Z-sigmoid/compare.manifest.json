@@ -1,0 +1,98 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "agora_seed": 20260727,
+    "seed": 20260923,
+    "wins": {
+      "sigmoid": 8,
+      "softmax": 9
+    }
+  },
+  "git": {
+    "branch": "tidy-main",
+    "commit": "bd58ecc3bc8b4b711ac4f89809c81895841ec1b1",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "legacy_agora": {
+      "path": "/home/aleksandar/work/populism-axis/results/final/roberta/probabilities_agora.npz",
+      "sha256": "936d8ef3586497c739c2bfc26ca70612c17a2dd2451b7fd578541aa1dd7d33e7"
+    },
+    "legacy_antielite_tweets": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/antielite_tweets/roberta/probabilities_antielite_tweets.npz",
+      "sha256": "0306d46c90cbe98a961f2b03820a46b512a878fd47005e8db4aafef38d455f67"
+    },
+    "legacy_english": {
+      "path": "/home/aleksandar/work/populism-axis/results/final/roberta/probabilities_english.npz",
+      "sha256": "d22ccd6a93febbe18c64017eae6bbd41c139859023284cd41bd434a78c666c9c"
+    },
+    "legacy_eu": {
+      "path": "/home/aleksandar/work/populism-axis/results/final/roberta/probabilities_eu.npz",
+      "sha256": "1ccaadac41f1f3f51630dd58ed67905f4b8ae49f951860f9986801a85134be21"
+    },
+    "legacy_popbert_en_test": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/popbert_en/roberta/probabilities_popbert_en_test.npz",
+      "sha256": "40e8bf9bd09ddaf4ee84cd68229a14fc818e4c8c9d3ed5fa73d24bcb88d8216b"
+    },
+    "legacy_popbert_en_train": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/popbert_en/roberta/probabilities_popbert_en_train.npz",
+      "sha256": "245eee5b6d37d5eaa2f50405a6fe333c5403ab31eaaff26d4af8baf97804f800"
+    },
+    "legacy_portugal_en": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/portugal/roberta/probabilities_portugal_en.npz",
+      "sha256": "760d2aeaf344689761feb237d68977f0c01750208599a26e81fcf57abb2ba2bf"
+    },
+    "legacy_usgov_speeches": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/usgov/roberta/probabilities_usgov_speeches.npz",
+      "sha256": "77837463d63ad0fbdcdeb803c537ff081cf4a66affe0162b8fb7ce6649906fef"
+    },
+    "sigmoid_agora": {
+      "path": "/home/aleksandar/work/populism-axis/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_agora.npz",
+      "sha256": "4b32931b21c13db72995f71e1067b99eabc4da48b764d0070b7614114dc4abd0"
+    },
+    "sigmoid_antielite_tweets": {
+      "path": "/home/aleksandar/work/populism-axis/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_antielite_tweets.npz",
+      "sha256": "4e4ec886ee8d2618bbe6799321d34dfc66b33cdb65782782fd81a37181367a63"
+    },
+    "sigmoid_english": {
+      "path": "/home/aleksandar/work/populism-axis/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_english.npz",
+      "sha256": "0293266a182123f09cdeea88dd60f05a447b5766b96e9d8f9b50f4ff56b02e15"
+    },
+    "sigmoid_eu": {
+      "path": "/home/aleksandar/work/populism-axis/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_eu.npz",
+      "sha256": "7513f7912da9eb0980548bff39bb10a0794f90734982f0b565767a7e1ef5ab38"
+    },
+    "sigmoid_popbert_en_test": {
+      "path": "/home/aleksandar/work/populism-axis/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_popbert_en_test.npz",
+      "sha256": "6c67204dd3167199d16a5f21a2868a808508f4821ef63712aa6ab3b273a958e3"
+    },
+    "sigmoid_popbert_en_train": {
+      "path": "/home/aleksandar/work/populism-axis/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_popbert_en_train.npz",
+      "sha256": "14da5f1a3365096c20961b7b20bdaa342204a6ff7b1972f0b56c57e5399bd0ea"
+    },
+    "sigmoid_portugal_en": {
+      "path": "/home/aleksandar/work/populism-axis/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_portugal_en.npz",
+      "sha256": "6fe9fbac97281544126bee5ae65d5afc5cb972753f849badc8ff4bc54d462e10"
+    },
+    "sigmoid_usgov_speeches": {
+      "path": "/home/aleksandar/work/populism-axis/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_usgov_speeches.npz",
+      "sha256": "e815366549ee7a9340f56288b2a5a463ddd03ec090b84532ac297c798ada8fd0"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "23633f95e2a0393fae8ecdab78a4c822139ffe7363b2fbabf2fa9fec3ea898ba",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "results/roberta-correction/rc-20261002T1415Z-sigmoid/compare_roberta.py",
+  "timestamp_utc": "2026-10-02T14:45:26Z"
+}

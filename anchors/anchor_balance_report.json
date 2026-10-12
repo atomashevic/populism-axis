@@ -1,0 +1,683 @@
+[
+  {
+    "file": "alternative-pairs/v3/proposition_anchors.json",
+    "kind": "anchors",
+    "schema": "populism_axis.v3.proposition_anchors.v1",
+    "groups": {
+      "P": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 12.7,
+          "vader": 0.12124000000000001,
+          "neg": 0.012,
+          "they": 0.2,
+          "we": 0.2,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 9.6,
+          "vader": 0.09605,
+          "neg": 0.0,
+          "they": 0.1,
+          "we": 0.4,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 3.0999999999999996,
+          "vader": 0.025190000000000018,
+          "neg": 0.012,
+          "they": 0.1,
+          "we": -0.2,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": false,
+          "vader": true,
+          "pronoun_they": true,
+          "pronoun_we": false,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [],
+        "near_duplicates_left": []
+      },
+      "E": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 11.2,
+          "vader": 0.060050000000000006,
+          "neg": 0.0663,
+          "they": 0.3,
+          "we": 0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 9.7,
+          "vader": 0.077,
+          "neg": 0.0217,
+          "they": 0.1,
+          "we": 0.2,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 1.5,
+          "vader": -0.016949999999999993,
+          "neg": 0.0446,
+          "they": 0.19999999999999998,
+          "we": -0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": true,
+          "vader": true,
+          "pronoun_they": false,
+          "pronoun_we": true,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [],
+        "near_duplicates_left": []
+      },
+      "M": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 11.3,
+          "vader": -0.22703,
+          "neg": 0.19580000000000003,
+          "they": 0.7,
+          "we": 0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 10.7,
+          "vader": 0.31443000000000004,
+          "neg": 0.0923,
+          "they": 0.2,
+          "we": 0.4,
+          "you": 0.0,
+          "i": 0.3
+        },
+        "gaps": {
+          "words": 0.6000000000000014,
+          "vader": -0.54146,
+          "neg": 0.10350000000000004,
+          "they": 0.49999999999999994,
+          "we": -0.30000000000000004,
+          "you": 0.1,
+          "i": -0.3
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [],
+        "near_duplicates_left": []
+      }
+    },
+    "gates_passed": false
+  },
+  {
+    "file": "alternative-pairs/v4/pair_anchors.json",
+    "kind": "anchors",
+    "schema": "populism_axis.v4.pair_anchors.v1",
+    "groups": {
+      "P": {
+        "left_name": "populist",
+        "right_name": "matched_mainstream",
+        "left": {
+          "n": 40,
+          "words": 12.55,
+          "vader": 0.0963725,
+          "neg": 0.0243,
+          "they": 0.225,
+          "we": 0.275,
+          "you": 0.0,
+          "i": 0.05
+        },
+        "right": {
+          "n": 40,
+          "words": 11.75,
+          "vader": 0.15442,
+          "neg": 0.0076,
+          "they": 0.225,
+          "we": 0.275,
+          "you": 0.0,
+          "i": 0.05
+        },
+        "gaps": {
+          "words": 0.8000000000000007,
+          "vader": -0.0580475,
+          "neg": 0.0167,
+          "they": 0.0,
+          "we": 0.0,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": true,
+          "vader": true,
+          "pronoun_they": true,
+          "pronoun_we": true,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [
+          {
+            "pair_id": "P03",
+            "flags": [
+              "vader +0.13 vs -0.30"
+            ]
+          },
+          {
+            "pair_id": "P04",
+            "flags": [
+              "vader +0.44 vs +0.00"
+            ]
+          },
+          {
+            "pair_id": "P06",
+            "flags": [
+              "vader -0.25 vs +0.18"
+            ]
+          },
+          {
+            "pair_id": "P11",
+            "flags": [
+              "vader +0.48 vs +0.00"
+            ]
+          },
+          {
+            "pair_id": "P12",
+            "flags": [
+              "vader +0.00 vs +0.44"
+            ]
+          },
+          {
+            "pair_id": "P19",
+            "flags": [
+              "vader +0.00 vs +0.40"
+            ]
+          },
+          {
+            "pair_id": "P25",
+            "flags": [
+              "vader +0.00 vs +0.40"
+            ]
+          },
+          {
+            "pair_id": "P33",
+            "flags": [
+              "vader +0.00 vs +0.59"
+            ]
+          },
+          {
+            "pair_id": "P39",
+            "flags": [
+              "vader +0.30 vs +0.85"
+            ]
+          }
+        ],
+        "near_duplicates_left": []
+      },
+      "E": {
+        "left_name": "populist",
+        "right_name": "matched_mainstream",
+        "left": {
+          "n": 40,
+          "words": 11.95,
+          "vader": 0.10013999999999998,
+          "neg": 0.09230000000000001,
+          "they": 0.45,
+          "we": 0.15,
+          "you": 0.25,
+          "i": 0.0
+        },
+        "right": {
+          "n": 40,
+          "words": 12.125,
+          "vader": -0.01109,
+          "neg": 0.06865000000000002,
+          "they": 0.45,
+          "we": 0.15,
+          "you": 0.25,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": -0.1750000000000007,
+          "vader": 0.11122999999999998,
+          "neg": 0.02364999999999999,
+          "they": 0.0,
+          "we": 0.0,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": true,
+          "vader": true,
+          "pronoun_they": true,
+          "pronoun_we": true,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [
+          {
+            "pair_id": "E02",
+            "flags": [
+              "vader -0.68 vs +0.00"
+            ]
+          },
+          {
+            "pair_id": "E07",
+            "flags": [
+              "vader +0.00 vs +0.40"
+            ]
+          },
+          {
+            "pair_id": "E09",
+            "flags": [
+              "vader +0.40 vs -0.40"
+            ]
+          },
+          {
+            "pair_id": "E13",
+            "flags": [
+              "vader +0.56 vs +0.00"
+            ]
+          },
+          {
+            "pair_id": "E15",
+            "flags": [
+              "vader +0.42 vs +0.00"
+            ]
+          },
+          {
+            "pair_id": "E16",
+            "flags": [
+              "vader +0.00 vs -0.56"
+            ]
+          },
+          {
+            "pair_id": "E17",
+            "flags": [
+              "vader +0.40 vs -0.13"
+            ]
+          },
+          {
+            "pair_id": "E19",
+            "flags": [
+              "vader +0.10 vs -0.32"
+            ]
+          },
+          {
+            "pair_id": "E21",
+            "flags": [
+              "vader +0.78 vs +0.20"
+            ]
+          },
+          {
+            "pair_id": "E24",
+            "flags": [
+              "vader +0.37 vs -0.23"
+            ]
+          },
+          {
+            "pair_id": "E25",
+            "flags": [
+              "vader +0.44 vs +0.00"
+            ]
+          },
+          {
+            "pair_id": "E26",
+            "flags": [
+              "vader +0.48 vs +0.00"
+            ]
+          },
+          {
+            "pair_id": "E27",
+            "flags": [
+              "vader +0.20 vs -0.23"
+            ]
+          },
+          {
+            "pair_id": "E30",
+            "flags": [
+              "vader -0.18 vs +0.56"
+            ]
+          },
+          {
+            "pair_id": "E35",
+            "flags": [
+              "vader +0.72 vs -0.17"
+            ]
+          },
+          {
+            "pair_id": "E39",
+            "flags": [
+              "vader +0.40 vs +0.00"
+            ]
+          }
+        ],
+        "near_duplicates_left": []
+      },
+      "M": {
+        "left_name": "populist",
+        "right_name": "matched_mainstream",
+        "left": {
+          "n": 40,
+          "words": 10.675,
+          "vader": -0.37813,
+          "neg": 0.271225,
+          "they": 0.7,
+          "we": 0.2,
+          "you": 0.05,
+          "i": 0.025
+        },
+        "right": {
+          "n": 40,
+          "words": 10.725,
+          "vader": 0.08010500000000001,
+          "neg": 0.06787499999999999,
+          "they": 0.675,
+          "we": 0.25,
+          "you": 0.0,
+          "i": 0.025
+        },
+        "gaps": {
+          "words": -0.049999999999998934,
+          "vader": -0.45823500000000006,
+          "neg": 0.20335,
+          "they": 0.02499999999999991,
+          "we": -0.04999999999999999,
+          "you": 0.05,
+          "i": 0.0
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [
+          {
+            "pair_id": "M08",
+            "flags": [
+              "pronoun we"
+            ]
+          },
+          {
+            "pair_id": "M19",
+            "flags": [
+              "pronoun we"
+            ]
+          },
+          {
+            "pair_id": "M22",
+            "flags": [
+              "pronoun you"
+            ]
+          },
+          {
+            "pair_id": "M33",
+            "flags": [
+              "pronoun they"
+            ]
+          },
+          {
+            "pair_id": "M36",
+            "flags": [
+              "pronoun you"
+            ]
+          }
+        ],
+        "near_duplicates_left": []
+      }
+    },
+    "gates_passed": true
+  },
+  {
+    "file": "alternative-pairs/v4/nuisance_sentences.json",
+    "kind": "nuisance",
+    "schema": "populism_axis.v4.nuisance_sets.v1",
+    "groups": {
+      "hostility_negative_affect": {
+        "left_name": "nuisance",
+        "right_name": "neutral",
+        "left": {
+          "n": 10,
+          "words": 12.8,
+          "vader": -0.83094,
+          "neg": 0.4891,
+          "they": 0.0,
+          "we": 0.3,
+          "you": 0.0,
+          "i": 0.6
+        },
+        "right": {
+          "n": 10,
+          "words": 12.8,
+          "vader": -0.07124,
+          "neg": 0.057499999999999996,
+          "they": 0.0,
+          "we": 0.4,
+          "you": 0.0,
+          "i": 0.5
+        },
+        "gaps": {
+          "words": 0.0,
+          "vader": -0.7597,
+          "neg": 0.4316,
+          "they": 0.0,
+          "we": -0.10000000000000003,
+          "you": 0.0,
+          "i": 0.09999999999999998
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [
+          {
+            "pair_id": "hos06",
+            "flags": [
+              "pronoun we"
+            ]
+          },
+          {
+            "pair_id": "hos09",
+            "flags": [
+              "pronoun i"
+            ]
+          }
+        ],
+        "near_duplicates_left": []
+      },
+      "partisan_attack_on_opposition": {
+        "left_name": "nuisance",
+        "right_name": "neutral",
+        "left": {
+          "n": 10,
+          "words": 11.6,
+          "vader": -0.35435000000000005,
+          "neg": 0.27190000000000003,
+          "they": 0.0,
+          "we": 0.3,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 11.5,
+          "vader": 0.04955,
+          "neg": 0.0458,
+          "they": 0.1,
+          "we": 0.5,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 0.09999999999999964,
+          "vader": -0.40390000000000004,
+          "neg": 0.22610000000000002,
+          "they": -0.1,
+          "we": -0.2,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [
+          {
+            "pair_id": "par02",
+            "flags": [
+              "pronoun we"
+            ]
+          },
+          {
+            "pair_id": "par05",
+            "flags": [
+              "pronoun we"
+            ]
+          },
+          {
+            "pair_id": "par08",
+            "flags": [
+              "pronoun they"
+            ]
+          }
+        ],
+        "near_duplicates_left": []
+      },
+      "foreign_enemy": {
+        "left_name": "nuisance",
+        "right_name": "neutral",
+        "left": {
+          "n": 10,
+          "words": 11.5,
+          "vader": -0.56269,
+          "neg": 0.3323,
+          "they": 0.4,
+          "we": 0.9,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 11.0,
+          "vader": 0.012130000000000002,
+          "neg": 0.0213,
+          "they": 0.3,
+          "we": 0.9,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 0.5,
+          "vader": -0.57482,
+          "neg": 0.311,
+          "they": 0.10000000000000003,
+          "we": 0.0,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [
+          {
+            "pair_id": "for10",
+            "flags": [
+              "pronoun they"
+            ]
+          }
+        ],
+        "near_duplicates_left": []
+      },
+      "generic_grievance": {
+        "left_name": "nuisance",
+        "right_name": "neutral",
+        "left": {
+          "n": 10,
+          "words": 11.0,
+          "vader": -0.3189,
+          "neg": 0.2493,
+          "they": 0.3,
+          "we": 0.3,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 10.8,
+          "vader": 0.14117000000000002,
+          "neg": 0.0,
+          "they": 0.3,
+          "we": 0.3,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 0.1999999999999993,
+          "vader": -0.46007000000000003,
+          "neg": 0.2493,
+          "they": 0.0,
+          "we": 0.0,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [],
+        "near_duplicates_left": []
+      },
+      "incivility": {
+        "left_name": "nuisance",
+        "right_name": "neutral",
+        "left": {
+          "n": 10,
+          "words": 11.4,
+          "vader": -0.6624300000000001,
+          "neg": 0.3861,
+          "they": 0.1,
+          "we": 0.0,
+          "you": 0.1,
+          "i": 0.2
+        },
+        "right": {
+          "n": 10,
+          "words": 11.2,
+          "vader": 0.0645,
+          "neg": 0.0172,
+          "they": 0.1,
+          "we": 0.0,
+          "you": 0.1,
+          "i": 0.2
+        },
+        "gaps": {
+          "words": 0.20000000000000107,
+          "vader": -0.7269300000000001,
+          "neg": 0.3689,
+          "they": 0.0,
+          "we": 0.0,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [],
+        "near_duplicates_left": []
+      }
+    },
+    "gates_passed": true
+  }
+]

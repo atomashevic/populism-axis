@@ -1,0 +1,20 @@
+id,split,gpd,share_words_in_over60,windows_v3,windows_cap,dev_pct_rank_B0,dev_pct_rank_B1
+UK_Brown_Famous_1,dev,0.1,1.0,1,10,0.132,0.431
+Canada_Harper_Ribbon_2,dev,0.25,1.0,1,21,0.029,0.241
+Canada_Harper_Campaign_2,dev,0.3,1.0,1,10,0.08,0.19
+Canada_Trudeau_Ribbon_1,dev,0.0,0.882,4,19,0.023,0.109
+Canada_Chretien_Famous_3,dev,0.1,0.832,35,71,0.155,0.701
+Australia_Howard_Ribbon_3,dev,0.0,0.71,26,39,0.057,0.046
+Ireland_Kenny_Famous_1,dev,0.4,0.662,31,45,0.534,0.552
+Ireland_Cowen_Famous_1,dev,0.0,0.628,58,93,0.115,0.201
+UK_Brown_Campaign_1,dev,0.0,0.602,138,202,0.96,0.96
+El Salvador_Saca_Famous_1,holdout,1.0,0.59,83,119,,
+UK_Brown_Ribbon_1,dev,0.0,0.356,54,63,0.138,0.115
+Canada_Harper_Famous_2,dev,0.15,0.329,22,25,0.914,0.914
+South Africa_Mbeki_Ribbon_2,dev,0.1,0.281,49,55,0.592,0.724
+Australia_Gillard_Famous_1,dev,0.3,0.252,84,92,0.546,0.529
+Australia_Howard_International_1,dev,0.0,0.227,98,107,0.293,0.282
+Italy_Conte_International_1,holdout,0.4,0.227,31,34,,
+South Africa_Mbeki_International_2,dev,0.5,0.217,76,84,0.644,0.621
+Australia_Howard_Campaign_4,dev,0.25,0.204,151,163,0.816,0.81
+Albania_Berisha_International_2,dev,0.0,0.204,47,51,0.414,0.402

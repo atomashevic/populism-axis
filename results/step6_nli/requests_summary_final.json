@@ -1,0 +1,8 @@
+{
+  "eu": {
+    "documents": 1762,
+    "requests": 1763,
+    "pairs": 17630,
+    "premise_words_median": 13.0
+  }
+}

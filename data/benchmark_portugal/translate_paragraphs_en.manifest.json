@@ -1,0 +1,48 @@
+{
+  "argv": [
+    "--csv",
+    "data/benchmark_portugal/paragraphs.csv",
+    "--text-column",
+    "text_pt",
+    "--out-csv",
+    "data/benchmark_portugal/paragraphs_en.csv",
+    "--batch-size",
+    "48"
+  ],
+  "encoder_id": "Helsinki-NLP/opus-mt-ROMANCE-en",
+  "extra": {
+    "n_paragraphs": 6214,
+    "n_sentences": 13951,
+    "n_truncated_inputs": 0,
+    "num_beams": 4,
+    "output": "paragraphs_en.csv",
+    "peak_vram_mb": 1399.41015625,
+    "seconds": 143.5
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "244c25eca4955ef407f5b8498ef18628a1c9151b",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "csv": {
+      "path": "/home/atomasevic/populism-axis/data/benchmark_portugal/paragraphs.csv",
+      "sha256": "0150875a6aa5e158a6fe6f370fdda448fddb717a15049e0b77ff4d50db7970aa"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "345f5c14dcf2127e69a7239945b1e73167b39682aed1a28a92dee6da5b548414",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/external/translate_marian_v4.py",
+  "timestamp_utc": "2026-09-24T09:32:43Z"
+}

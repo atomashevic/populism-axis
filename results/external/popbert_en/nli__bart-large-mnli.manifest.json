@@ -1,0 +1,53 @@
+{
+  "argv": [
+    "--in-dir",
+    "results/v4/external/popbert_en",
+    "--names",
+    "popbert_en",
+    "--model",
+    "facebook/bart-large-mnli",
+    "--batch-size",
+    "64"
+  ],
+  "encoder_id": "facebook/bart-large-mnli",
+  "extra": {
+    "id2label": {
+      "0": "contradiction",
+      "1": "neutral",
+      "2": "entailment"
+    },
+    "model": "facebook/bart-large-mnli",
+    "peak_vram_mb": 2059.2,
+    "popbert_en": {
+      "output": "nli_popbert_en__bart-large-mnli.npz",
+      "pairs": 87950,
+      "seconds": 71.4
+    }
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "aaa4efdc925dfe956c6765e0ea5abdfff97fcd67",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis/results/v4/external/popbert_en/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "9f48aa7c8cf5c5fa03f792012f91c80c3c94e0383a20501ad428365074da6cbf",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/nli_stage_v4.py",
+  "timestamp_utc": "2026-09-24T09:15:25Z"
+}

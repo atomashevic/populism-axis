@@ -1,0 +1,360 @@
+id,subset,file_name,setfit_pop_share,n_runs
+governors_2010_2018__000,governors_2010_2018,Jerry Brown 1ST term campaign,0.125,2
+governors_2010_2018__001,governors_2010_2018,Jerry Brown 1st term ribbon cutting,0.0585106382978723,2
+governors_2010_2018__002,governors_2010_2018,Jerry Brown First term famous,0.0673076923076923,2
+governors_2010_2018__003,governors_2010_2018,Jerry Brown First Term SoS Address,0.0465116279069767,2
+governors_2010_2018__004,governors_2010_2018,Jerry Brown 2nd term campaign,0.045610211706102105,2
+governors_2010_2018__005,governors_2010_2018,Jerry Brown 2nd term famous,0.29090389016018303,2
+governors_2010_2018__006,governors_2010_2018,Jerry Brown 2nd term ribbon cutting,0.12381756756756754,2
+governors_2010_2018__007,governors_2010_2018,Jerry Brown 2nd Term SoS Address,0.1706730769230769,2
+governors_2010_2018__008,governors_2010_2018,Bobby Jindal - Ribbon-cutting,0.1621621621621621,2
+governors_2010_2018__009,governors_2010_2018,Bobby Jindal - State of the State,0.1698113207547169,2
+governors_2010_2018__010,governors_2010_2018,Bobby Jindal -- Campaign,0.6232876712328768,2
+governors_2010_2018__011,governors_2010_2018,Bobby Jindal -- Famous,0.4603960396039604,2
+governors_2010_2018__012,governors_2010_2018,John Bel Edwards - Campaign,0.4952380952380952,2
+governors_2010_2018__013,governors_2010_2018,John Bel Edwards - Famous,0.0952380952380952,2
+governors_2010_2018__014,governors_2010_2018,John Bel Edwards - Ribbon-cutting,0.0416666666666666,2
+governors_2010_2018__015,governors_2010_2018,John Bel Edwards - State of the State,0.1396396396396396,2
+governors_2010_2018__016,governors_2010_2018,Matt Mead 1st term campaign,0.31810631229235875,2
+governors_2010_2018__017,governors_2010_2018,Matt Mead 1st term famous,0.3153701084394154,2
+governors_2010_2018__018,governors_2010_2018,Matt Mead 1st Term Ribbon Cutting,0.0636123928806855,2
+governors_2010_2018__019,governors_2010_2018,Matt Mead 1st term SoS Address,0.11881954523463956,2
+governors_2010_2018__020,governors_2010_2018,Matt Mead - Campaign Speech 2,0.097837646224743,2
+governors_2010_2018__021,governors_2010_2018,Matt Mead - Ribbon-cutting 2,0.033370411568409294,2
+governors_2010_2018__022,governors_2010_2018,Matt Mead - State of the State Address 2,0.07464032316099575,2
+governors_2010_2018__023,governors_2010_2018,Matt Mead -- Famous Speech 2,0.07679976683182746,2
+governors_2010_2018__024,governors_2010_2018,John Kasich Campaign Speech,0.8333333333333334,2
+governors_2010_2018__025,governors_2010_2018,John Kasich Popular Speech,0.5,2
+governors_2010_2018__026,governors_2010_2018,John Kasich Ribbon Cutting,0.125,2
+governors_2010_2018__027,governors_2010_2018,John Kasich State of the State,0.3142329020332717,2
+governors_2010_2018__028,governors_2010_2018,John Kasich Campaign Speech,0.3819951338199513,2
+governors_2010_2018__029,governors_2010_2018,John Kasich Popular Speech,0.3333333333333333,2
+governors_2010_2018__030,governors_2010_2018,John Kasich Ribbon Cutting,0.4137931034482758,2
+governors_2010_2018__031,governors_2010_2018,John Kasich State of the State,0.284375,2
+governors_2010_2018__032,governors_2010_2018,Fallin_Campaign_2010,0.0625,2
+governors_2010_2018__033,governors_2010_2018,Fallin_Famous_Popular_2011,0.2083333333333333,2
+governors_2010_2018__034,governors_2010_2018,Fallin_RibbonCutting_2014,0.1666666666666666,2
+governors_2010_2018__035,governors_2010_2018,Fallin_Campaign_2014,0.04791666666666665,2
+governors_2010_2018__036,governors_2010_2018,Fallin_Famous_Popular_2016,0.3483193277310924,2
+governors_2010_2018__037,governors_2010_2018,Fallin_Ribbon_Cutting_2017,0.12727272727272726,2
+governors_2010_2018__038,governors_2010_2018,Chafee_Campaign_2010,0.1276595744680851,2
+governors_2010_2018__039,governors_2010_2018,Chafee_ribbon_cutting_2015,0.2222222222222222,2
+governors_2010_2018__040,governors_2010_2018,Chafee_State_of_the_State_Address_2011,0.0535714285714285,2
+governors_2010_2018__041,governors_2010_2018,Chaffe_Famous_2012,0.3181818181818182,2
+governors_2010_2018__042,governors_2010_2018,Gina Raimondo Campaign Speech,0.0,2
+governors_2010_2018__043,governors_2010_2018,Gina Raimondo Popular Speech,0.2131147540983606,2
+governors_2010_2018__044,governors_2010_2018,Gina Raimondo Ribbon Cutting,0.1304347826086956,2
+governors_2010_2018__045,governors_2010_2018,Gina Raimondo State of State Speech ,0.0705128205128205,2
+governors_2010_2018__046,governors_2010_2018,Connecticut.Malloy.2010.Campaign.Polina,0.19374504361617761,2
+governors_2010_2018__047,governors_2010_2018,Connecticut.Malloy.2012.Ribbon-cutting.Polina,0.02843137254901955,2
+governors_2010_2018__048,governors_2010_2018,Connecticut_Malloy_FaousTerm 1_Maria,0.2677436440677966,2
+governors_2010_2018__049,governors_2010_2018,Connecticut_Malloy_State of the State_Term 1_Maria,0.1237254901960784,2
+governors_2010_2018__050,governors_2010_2018,Connecticut.Malloy.2016.Ribbon-cutting.Polina,0.0923076923076923,2
+governors_2010_2018__051,governors_2010_2018,Connecticut.Malloy.2017.Famous.Polina,0.0476190476190476,2
+governors_2010_2018__052,governors_2010_2018,Connecticut_Malloy_Campaign_Term 2_Maria,0.125,2
+governors_2010_2018__053,governors_2010_2018,Connecticut_Malloy_State of the State_Term 2_Maria,0.1055276381909547,2
+governors_2010_2018__054,governors_2010_2018,Maine_Campaign_Term 1_Maria,0.1176470588235294,2
+governors_2010_2018__055,governors_2010_2018,Maine_Famous_Term 1_Maria,0.1714285714285714,2
+governors_2010_2018__056,governors_2010_2018,Maine_Ribbon_Term 1_Maria,0.0476190476190476,2
+governors_2010_2018__057,governors_2010_2018,Maine_State of the State_Term 1_Maria,0.2102803738317757,2
+governors_2010_2018__058,governors_2010_2018,Maine_Campaign_Term 2_Maria,0.3356777493606138,2
+governors_2010_2018__059,governors_2010_2018,Maine_Famous_Term 2_Maria,0.5882352941176471,2
+governors_2010_2018__060,governors_2010_2018,Maine_Ribbon_Term 2_Maria,0.0,2
+governors_2010_2018__061,governors_2010_2018,Maine_State of the State_Term 2_Maria,0.42456541048090346,2
+governors_2010_2018__062,governors_2010_2018,NorthCarolina.McCrory.2012.Campaign.Polina,0.3666666666666667,2
+governors_2010_2018__063,governors_2010_2018,NorthCarolina.McCrory.2013.Famous (inagural). Polina,0.12876907519764655,2
+governors_2010_2018__064,governors_2010_2018,NorthCarolina.McCrory.2016.Ribbon-cutting.Polina,0.14395645645645644,2
+governors_2010_2018__065,governors_2010_2018,NorthCarolina.McRoy.2013.StateoftheState.Polina,0.18036519586170305,2
+governors_2010_2018__066,governors_2010_2018,NorthCarolina.Cooper.2016.Campaign.Polina,0.4,2
+governors_2010_2018__067,governors_2010_2018,NorthCarolina.Cooper.2017.Famous (inagural). Polina,0.0666666666666666,2
+governors_2010_2018__068,governors_2010_2018,NorthCarolina.Cooper.2017.Ribbon-cutting.Polina,,0
+governors_2010_2018__069,governors_2010_2018,NorthCarolina.Cooper.2017.StateoftheState.Polina,0.0795454545454545,2
+governors_2010_2018__070,governors_2010_2018,Arizona.Jan Brewer.Campaign.MiklosSzabo,0.0,2
+governors_2010_2018__071,governors_2010_2018,Arizona.JanBrewer.Famous.MiklosSzabo,0.173076923076923,2
+governors_2010_2018__072,governors_2010_2018,Arizona.JanBrewer.Ribbon.MiklosSzabo,0.0517241379310344,2
+governors_2010_2018__073,governors_2010_2018,Arizona.JanBrewer.SoS.MiklosSzabo,0.1212121212121212,2
+governors_2010_2018__074,governors_2010_2018,Arizona.DougDucey.Campaign.MiklosSzabo,0.22916666666666666,2
+governors_2010_2018__075,governors_2010_2018,Arizona.DougDucey.Famous.MiklosSzabo,0.22790148448043185,2
+governors_2010_2018__076,governors_2010_2018,Arizona.DougDucey.Ribbon.MiklosSzabo,0.5,2
+governors_2010_2018__077,governors_2010_2018,Arizona.DougDucey.SoS.MiklosSzabo,0.2785190615835777,2
+governors_2010_2018__078,governors_2010_2018,Jay Nixon (Campaign) 2012 Speech,0.1686046511627907,2
+governors_2010_2018__079,governors_2010_2018,Jay Nixon (Famous) 2012 election night speech,0.2115384615384615,2
+governors_2010_2018__080,governors_2010_2018,Jay Nixon (Ribbon) 2015 Missouri Beef Speech,0.1451612903225806,2
+governors_2010_2018__081,governors_2010_2018,Jay Nixon 2016 State of the State Address,0.1363636363636363,2
+governors_2010_2018__082,governors_2010_2018,Eric Greitens 2016 (Campaign) Speech,0.4415584415584415,2
+governors_2010_2018__083,governors_2010_2018,Eric Greitens 2017 (Famous) Inauguration Speech,0.3823529411764705,2
+governors_2010_2018__084,governors_2010_2018,Eric Greitens 2017 (Ribbon) Speech,0.2058823529411764,2
+governors_2010_2018__085,governors_2010_2018,Eric Greitens 2017 State of the State Address,0.3441860465116279,2
+governors_2010_2018__086,governors_2010_2018,Nebraska.DaveHeineman.Famous.MiklosSzabo.pdf,0.0378787878787878,2
+governors_2010_2018__087,governors_2010_2018,Nebraska.DaveHeineman.Ribbon.MiklosSzabo,0.0,2
+governors_2010_2018__088,governors_2010_2018,Nebraska.DaveHeineman.SOS.MiklosSzabo,0.0884955752212389,2
+governors_2010_2018__089,governors_2010_2018,Pete Ricketts (Famous) 2018 NRA Convention Speech,0.2608695652173913,2
+governors_2010_2018__090,governors_2010_2018,Pete Ricketts 2014 Campaign Speech,0.2,2
+governors_2010_2018__091,governors_2010_2018,Pete Ricketts 2015 (Ribbon) Commencement Address,0.2519685039370078,2
+governors_2010_2018__092,governors_2010_2018,Pete Ricketts 2017 State of the State Address,0.1538461538461538,2
+governors_2010_2018__093,governors_2010_2018,"Campaign, Acceptance Speech - 2014 Primary",0.2845744680851064,2
+governors_2010_2018__094,governors_2010_2018,Dayton 2018 State of the State.pdf,0.1155015197568389,2
+governors_2010_2018__095,governors_2010_2018,"Famous, FULL_ Governor Mark Dayton - Democratic National Convention",0.7307692307692307,2
+governors_2010_2018__096,governors_2010_2018,"Ribbon Cutting, Governor_s Water Summit",0.1351351351351351,2
+governors_2010_2018__097,governors_2010_2018,Michigan-campaign-Term1,0.1311475409836065,2
+governors_2010_2018__098,governors_2010_2018,Michigan-Ribbon cutting-Term1,0.0434782608695652,2
+governors_2010_2018__099,governors_2010_2018,Michigan_Term1_Most Famous,0.1041666666666666,2
+governors_2010_2018__100,governors_2010_2018,Michigan_Term1_State of the State,0.0373134328358208,2
+governors_2010_2018__101,governors_2010_2018,Michigan-Most famous-Term2,0.1415094339622641,2
+governors_2010_2018__102,governors_2010_2018,Michigan_Campaign Speech-Term2,0.1044776119402985,2
+governors_2010_2018__103,governors_2010_2018,Michigan_Term2_Ribbon-Cutting,0.0952380952380952,2
+governors_2010_2018__104,governors_2010_2018,Michigan_Term2_State of the State,0.0865603644646924,2
+governors_2010_2018__105,governors_2010_2018,New Mexico_Campaign Speech_Term1,0.2976190476190476,2
+governors_2010_2018__106,governors_2010_2018,New Mexico_Ribbon cutting_Term1,0.1351351351351351,2
+governors_2010_2018__107,governors_2010_2018,New Mexico_Term1_Most Famous,0.1612903225806451,2
+governors_2010_2018__108,governors_2010_2018,New Mexico_Term1_State of the State,0.2129629629629629,2
+governors_2010_2018__109,governors_2010_2018,New Mexico_Campaign Speech_Term2,0.108695652173913,2
+governors_2010_2018__110,governors_2010_2018,New Mexico_Most famous_ Term2,0.1536585365853658,2
+governors_2010_2018__111,governors_2010_2018,New Mexico_Ribbon Cutting_Term2,0.078125,2
+governors_2010_2018__112,governors_2010_2018,New Mexico_Term2_State of the State,0.1269841269841269,2
+governors_2010_2018__113,governors_2010_2018,Wisconsin-capaign-Term1,0.261038961038961,2
+governors_2010_2018__114,governors_2010_2018,Wisconsin_ Term1_Most Famous,0.35689668232086047,2
+governors_2010_2018__115,governors_2010_2018,Wisconsin_Term1_Ribbon-Cutting,0.11985815602836875,2
+governors_2010_2018__116,governors_2010_2018,Wisconsin_Term1_State of the State,0.1168602983362019,2
+governors_2010_2018__117,governors_2010_2018,Wisconsin_Campaign speech_Term2,0.18319491939423538,2
+governors_2010_2018__118,governors_2010_2018,Wisconsin_famous speech_Term2,0.2540322580645161,2
+governors_2010_2018__119,governors_2010_2018,Wisconsin_Term2_Ribbon-Cutting,0.061171032357472996,2
+governors_2010_2018__120,governors_2010_2018,Wisconsin_Term2_State of the State,0.0649841619611623,2
+governors_2010_2018__121,governors_2010_2018,John Kitzhaber Campaign Speech,0.051150895140664954,2
+governors_2010_2018__122,governors_2010_2018,Kate Brown Campaign Speech,0.11616161616161616,2
+governors_2010_2018__123,governors_2010_2018,Kitzhaber Famous Speech,0.1965529886321965,2
+governors_2010_2018__124,governors_2010_2018,Tom Corbett Campaign Speech,0.3777777777777777,2
+governors_2010_2018__125,governors_2010_2018,Tom Corbett Famous Speech,0.273972602739726,2
+governors_2010_2018__126,governors_2010_2018,Tom Wolf Campaign Speech,0.1860465116279069,2
+governors_2010_2018__127,governors_2010_2018,Tom Wolf Famous Speech,0.174757281553398,2
+governors_2010_2018__128,governors_2010_2018,Dennis Daugaard Campaign Speech,0.1515151515151515,4
+governors_2010_2018__129,governors_2010_2018,Dennis Daugaard Famous Speech,0.2636363636363636,4
+governors_2010_2018__130,governors_2010_2018,Kristi Noem Campaign Speech-2,0.5291666666666667,2
+governors_2010_2018__131,governors_2010_2018,Kristi Noem Famous Speech,0.13913043478260867,4
+governors_2010_2018__132,governors_2010_2018,Ribbon-Cutting - Term I (Kitzhaber),0.0,2
+governors_2010_2018__133,governors_2010_2018,Ribbon-Cutting - Term II (Brown),0.0,2
+governors_2010_2018__134,governors_2010_2018,State of the State - Term I (Kitzhaber),0.0714285714285714,2
+governors_2010_2018__135,governors_2010_2018,State of the State - Term II (Brown),0.0778443113772455,2
+governors_2010_2018__136,governors_2010_2018,Ribbon-Cutting - Term I (Corbett),0.0967741935483871,2
+governors_2010_2018__137,governors_2010_2018,Ribbon-Cutting - Term II (Wolf),0.3636363636363636,2
+governors_2010_2018__138,governors_2010_2018,State of the State - Term I (Corbett),0.2762237762237762,2
+governors_2010_2018__139,governors_2010_2018,State of the State - Term II (Wolf),0.1543624161073825,2
+governors_2010_2018__140,governors_2010_2018,Campaign - Term I (Daugaard),0.1515151515151515,4
+governors_2010_2018__141,governors_2010_2018,Campaign - Term II (Noem),0.549718574108818,2
+governors_2010_2018__142,governors_2010_2018,Famous - Term I (Daugaard),0.2636363636363636,4
+governors_2010_2018__143,governors_2010_2018,Famous - Term II (Noem),0.13913043478260867,4
+governors_2010_2018__144,governors_2010_2018,Ribbon-Cutting - Term I (Daugaard),0.0917874396135265,2
+governors_2010_2018__145,governors_2010_2018,Ribbon-Cutting - Term II (Noem),0.1111111111111111,2
+governors_2010_2018__146,governors_2010_2018,State of the State - Term I (Daugaard),0.0636042402826855,2
+governors_2010_2018__147,governors_2010_2018,State of the State - Term II (Noem),0.07471305339702,2
+governors_2010_2018__148,governors_2010_2018,Alabama.Bentley.International1,0.2185672514619883,2
+governors_2010_2018__149,governors_2010_2018,2019 Famous Speech_Kay Ivey,0.1666666666666666,2
+governors_2010_2018__150,governors_2010_2018,Campaign Speech_Kay Ivey,0.1851851851851851,2
+governors_2010_2018__151,governors_2010_2018,Ribbon Cutting_Kay Ivey,0.0,2
+governors_2010_2018__152,governors_2010_2018,Indiana.Holcomb.Campaign2,0.2427184466019417,2
+governors_2010_2018__153,governors_2010_2018,Indiana.Holcomb.Famous2.pdf,0.0763358778625954,2
+governors_2010_2018__154,governors_2010_2018,Indiana.Holcomb.International2.pdf,0.0737704918032786,2
+governors_2010_2018__155,governors_2010_2018,Indiana.Holcomb.Ribbon_Cutting2,0.0816326530612244,2
+governors_2010_2018__156,governors_2010_2018,Indiana.Pence.Campaign1,0.32291666666666663,2
+governors_2010_2018__157,governors_2010_2018,Indiana.Pence.Famous1,0.3546474358974359,2
+governors_2010_2018__158,governors_2010_2018,Indiana.Pence.International1,0.1208356860530773,2
+governors_2010_2018__159,governors_2010_2018,Indiana.Pence.Ribbon_Cutting1.pdf,0.09850863422291985,2
+governors_2010_2018__160,governors_2010_2018,Perry_Campaign Speech,0.4489795918367347,2
+governors_2010_2018__161,governors_2010_2018,Perry_Famous.pdf,0.0,2
+governors_2010_2018__162,governors_2010_2018,Perry_Ribbon.pdf,0.0204081632653061,2
+governors_2010_2018__163,governors_2010_2018,Perry_SoS.pdf,0.1330275229357798,2
+governors_2010_2018__164,governors_2010_2018,Abbott_Campaign.pdf,0.3262605042016806,2
+governors_2010_2018__165,governors_2010_2018,Abbott_Famous_2017.pdf,0.0542436287117138,2
+governors_2010_2018__166,governors_2010_2018,Abbott_Ribbon_2017.pdf,0.09182259182259175,2
+governors_2010_2018__167,governors_2010_2018,Abbott_SoS_2017.pdf,0.19264777131782945,2
+governors_2010_2018__168,governors_2010_2018,Andrew Cuomo – Term 1 – Famous Speech ,0.0,2
+governors_2010_2018__169,governors_2010_2018,Andrew Cuomo – Term 1 – Ribbon-cutting Speech ,0.0,2
+governors_2010_2018__170,governors_2010_2018,Andrew Cuomo – Term 1 – SoS Address ,0.0962025316455696,2
+governors_2010_2018__171,governors_2010_2018,Andrew Cuomo-Term1-Campaign,0.2682926829268293,2
+governors_2010_2018__172,governors_2010_2018,Andrew Cuomo – Term 2 - Ribbon-cutting Speech ,0.1951219512195122,2
+governors_2010_2018__173,governors_2010_2018,Andrew Cuomo – Term 2 – Famous Speech ,0.5454545454545454,2
+governors_2010_2018__174,governors_2010_2018,Andrew Cuomo – Term 2 – SoS Address ,0.2462562396006655,2
+governors_2010_2018__175,governors_2010_2018,Andrew Cuomo-Term2 - Campaign Speech,0.328125,2
+governors_2010_2018__176,governors_2010_2018,Doug Burgam- Term 2- Ribbon Cutting (2),0.0,2
+governors_2010_2018__177,governors_2010_2018,Doug Burgum- Term 2-  Famous Speech,0.0,2
+governors_2010_2018__178,governors_2010_2018,Doug Burgum- Term 2- Campaign Speech,0.0,2
+governors_2010_2018__179,governors_2010_2018,Doug Burgum- Term 2- State of the State,0.0339622641509433,2
+governors_2010_2018__180,governors_2010_2018,Jack Dalrymple- Term 1- Campaign,0.0853658536585365,2
+governors_2010_2018__181,governors_2010_2018,Jack Dalrymple- Term 1- Famous,0.2222222222222222,2
+governors_2010_2018__182,governors_2010_2018,Jack Dalrymple- Term 1- Ribbon Cutting,0.0,2
+governors_2010_2018__183,governors_2010_2018,Jack Dalrymple- Term 1- State of the State Address,0.010204081632653,2
+governors_2010_2018__184,governors_2010_2018,Henry McMaster- Term 2- Campaign Speech,0.3424657534246575,2
+governors_2010_2018__185,governors_2010_2018,Henry McMaster- Term 2- Famous Speech,0.1801801801801801,2
+governors_2010_2018__186,governors_2010_2018,Henry McMaster- Term 2- Ribbon Cutting,,0
+governors_2010_2018__187,governors_2010_2018,Henry McMaster- Term 2- State of the State,,0
+governors_2010_2018__188,governors_2010_2018,Nikki Haley- Term 1- Campaign Speech,,0
+governors_2010_2018__189,governors_2010_2018,Nikki Haley- Term 1- Famous Speech ,,0
+governors_2010_2018__190,governors_2010_2018,Nikki Haley- Term 1- Ribbon-Cutting,,0
+governors_2010_2018__191,governors_2010_2018,Nikki Haley- Term 1- State-of-the-State,,0
+governors_2010_2018__192,governors_2010_2018,Abercrombie_Term 1_State of the State,,0
+governors_2010_2018__193,governors_2010_2018,Abercrombie_Term1_Campaign (2014),,0
+governors_2010_2018__194,governors_2010_2018,Abercrombie_Term1_Famous (2010),0.1607142857142857,2
+governors_2010_2018__195,governors_2010_2018,Abercrombie_Term1_Ribbon (2013),0.0634920634920634,2
+governors_2010_2018__196,governors_2010_2018,Ige_Term 2_Campaign,0.2608695652173913,2
+governors_2010_2018__197,governors_2010_2018,Ige_Term 2_Famous.pdf,0.101010101010101,2
+governors_2010_2018__198,governors_2010_2018,Ige_Term 2_Ribbon Cutting,0.0869565217391304,2
+governors_2010_2018__199,governors_2010_2018,Ige_Term 2_State of the State.pdf,0.0326086956521739,2
+governors_2010_2018__200,governors_2010_2018,Christie_Term 1_Campaign,0.4387755102040816,2
+governors_2010_2018__201,governors_2010_2018,Christie_Term 1_Famous,0.6137931034482759,2
+governors_2010_2018__202,governors_2010_2018,Christie_Term 1_Ribbon Cutting,0.0517241379310344,2
+governors_2010_2018__203,governors_2010_2018,Christie_Term 1_State of the State,0.0950413223140495,2
+governors_2010_2018__204,governors_2010_2018,Christie_Term 2_Campaign,0.5192307692307693,2
+governors_2010_2018__205,governors_2010_2018,Christie_Term 2_Famous,0.8297872340425532,2
+governors_2010_2018__206,governors_2010_2018,Christie_Term 2_Ribbon Cutting,0.0982142857142857,2
+governors_2010_2018__207,governors_2010_2018,Christie_Term 2_State of the State,0.113953488372093,2
+governors_2010_2018__208,governors_2010_2018,UtahCampaign1_Gary Herbert_Pre2016 (2010),0.3829787234042553,2
+governors_2010_2018__209,governors_2010_2018,UtahCampaign2_Gary Herbert(2016),0.060049019607843104,2
+governors_2010_2018__210,governors_2010_2018,UtahFamous1_Gary Herbert_Pre2016 (2011),0.1375,2
+governors_2010_2018__211,governors_2010_2018,UtahFamous2_Gary Herbert_Post2016 (2017),0.12499999999999994,2
+governors_2010_2018__212,governors_2010_2018,UtahRibbonCutting1_GaryHerbert_Pre2016 (2012),0.0625,2
+governors_2010_2018__213,governors_2010_2018,UtahRibbonCutting2_GaryHerbert_Pre2016 (2018),0.03773920783266575,2
+governors_2010_2018__214,governors_2010_2018,UtahState of the State 1_Gary Herbert_Pre2016 (2015),0.1231884057971014,2
+governors_2010_2018__215,governors_2010_2018,UtahState of the State 2_Gary Herbert_Post2016 (2017),0.04593253968253965,2
+governors_2010_2018__216,governors_2010_2018,Steve Bullock State of the state 2015 (1).pdf,0.11962430671714054,2
+governors_2010_2018__217,governors_2010_2018,Butch Otter (campaign),0.0888888888888888,2
+governors_2010_2018__218,governors_2010_2018,Butch Otter (Famous),0.3111111111111111,2
+governors_2010_2018__219,governors_2010_2018,Butch Otter (ribbon-cutting),0.0192307692307692,2
+governors_2010_2018__220,governors_2010_2018,Butch Otter (State of the State) ,0.0393258426966292,2
+governors_2010_2018__221,governors_2010_2018,Campaign speech,,0
+governors_2010_2018__222,governors_2010_2018,Famous speech_ottter,0.2717391304347826,2
+governors_2010_2018__223,governors_2010_2018,Ribbon-Cutting,0.14583333333333331,2
+governors_2010_2018__224,governors_2010_2018,State_of_the_state_2018,0.09432234432234425,2
+governors_2010_2018__225,governors_2010_2018,O_Malley (Campaign),0.2133333333333333,2
+governors_2010_2018__226,governors_2010_2018,O_Malley (Famous),0.0754716981132075,2
+governors_2010_2018__227,governors_2010_2018,O_Malley (State of the State),0.0785340314136125,2
+governors_2010_2018__228,governors_2010_2018,Larry Hogan (Campaign),0.5753424657534246,2
+governors_2010_2018__229,governors_2010_2018,Larry Hogan (famous),0.1509433962264151,2
+governors_2010_2018__230,governors_2010_2018,Larry Hogan (ribbon-cutting),0.3125,2
+governors_2010_2018__231,governors_2010_2018,Larry Hogan (State of the State),0.1030927835051546,2
+governors_2010_2018__232,governors_2010_2018,Campaign_speech_McDonnell_2010-14,0.15193704600484254,2
+governors_2010_2018__233,governors_2010_2018,Famous speech,0.18106149627888754,2
+governors_2010_2018__234,governors_2010_2018,Ribbon_cutting,0.0567460317460317,2
+governors_2010_2018__235,governors_2010_2018,State of the state_2014,0.10431556021618124,2
+governors_2010_2018__236,governors_2010_2018,campaign_speech,0.2832054663150323,2
+governors_2010_2018__237,governors_2010_2018,Famous speech,0.4763190693809721,2
+governors_2010_2018__238,governors_2010_2018,Ribbon-Cutting,0.0872160184828648,2
+governors_2010_2018__239,governors_2010_2018,State of the state_2018,0.1119487908961593,2
+governors_2010_2018__240,governors_2010_2018,Parnel-state,0.2408759124087591,2
+governors_2010_2018__241,governors_2010_2018,Parnell-campaign,0.0909090909090909,2
+governors_2010_2018__242,governors_2010_2018,Parnell-cutting,0.2222222222222222,2
+governors_2010_2018__243,governors_2010_2018,Parnell-famous,0.3333333333333333,2
+governors_2010_2018__244,governors_2010_2018,Walker campaign,0.0,2
+governors_2010_2018__245,governors_2010_2018,Walker famous,0.0863787375415282,2
+governors_2010_2018__246,governors_2010_2018,Walker Ribboncutting,0.0,2
+governors_2010_2018__247,governors_2010_2018,Walker state,0.100250626566416,2
+governors_2010_2018__248,governors_2010_2018,Scott1-campaign,,0
+governors_2010_2018__249,governors_2010_2018,Scott1-cutting,,0
+governors_2010_2018__250,governors_2010_2018,Scott1-famous,0.2330827067669172,2
+governors_2010_2018__251,governors_2010_2018,Scott1-state,,0
+governors_2010_2018__252,governors_2010_2018,Scott2-campaign,,0
+governors_2010_2018__253,governors_2010_2018,Scott2-cutting,0.0,2
+governors_2010_2018__254,governors_2010_2018,Scott2-famous,0.0693069306930693,2
+governors_2010_2018__255,governors_2010_2018,Scott2-state,0.0994475138121546,2
+governors_2010_2018__256,governors_2010_2018,Steve Beshear campaign,0.0833333333333333,2
+governors_2010_2018__257,governors_2010_2018,Steve Beshear famous inaugural,0.2101449275362318,2
+governors_2010_2018__258,governors_2010_2018,Steve Beshear riboncutting,0.0,2
+governors_2010_2018__259,governors_2010_2018,Steve Beshear state 2012,0.0783410138248847,2
+governors_2010_2018__260,governors_2010_2018,Bevin campaign,0.1666666666666666,2
+governors_2010_2018__261,governors_2010_2018,Bevin famous,0.0,2
+governors_2010_2018__262,governors_2010_2018,Bevin ribbon cutting,0.0779220779220779,2
+governors_2010_2018__263,governors_2010_2018,Bevin state 2017,0.2267343485617597,2
+governors_2010_2018__264,governors_2010_2018,Branstad_ribbon-cutting speech,0.0,2
+governors_2010_2018__265,governors_2010_2018,Iowa_Branstad.2010_Term1_Campaign_1001w,0.0,2
+governors_2010_2018__266,governors_2010_2018,Iowa_Branstad.2012_Term1_Famous_860w,0.5,2
+governors_2010_2018__267,governors_2010_2018,Iowa_Branstad.2012_Term1_StateOfState,0.0657894736842105,2
+governors_2010_2018__268,governors_2010_2018,Iowa_Reynolds.2018_Term2_RibbonCutting_834w,0.0,2
+governors_2010_2018__269,governors_2010_2018,Iowa_Reynolds.2018_Term2_StateOfState,0.15541527969473085,2
+governors_2010_2018__270,governors_2010_2018,Iowa_Reynolds.2019_Term2_Famous.pdf,0.341485986250661,2
+governors_2010_2018__271,governors_2010_2018,Reynolds_campaign speech_Iowa,0.21052631578947364,2
+governors_2010_2018__272,governors_2010_2018,2014_StateOfTheStateAddress_Inslee.pdf,0.074040404040404,2
+governors_2010_2018__273,governors_2010_2018,Campaign speech1_Jay Inslee,0.2504530412858493,2
+governors_2010_2018__274,governors_2010_2018,Famous1_Inslee.pdf,0.0794025157232704,2
+governors_2010_2018__275,governors_2010_2018,Ribbon Cutting 1_Inslee,0.03310276679841895,2
+governors_2010_2018__276,governors_2010_2018,2018 State of the State_Inslee,0.11348427168904021,2
+governors_2010_2018__277,governors_2010_2018,Campaign2_Inslee,0.1524491213076224,2
+governors_2010_2018__278,governors_2010_2018,"Famous2_Inslee_Stay Home, Stay Healthy.pdf",0.13028413028413025,2
+governors_2010_2018__279,governors_2010_2018,Ribbon Cutting 2_Inslee,0.2267316017316017,2
+governors_2010_2018__280,governors_2010_2018,Ribbon cutting1_Tomblin,0.07658157602663705,2
+governors_2010_2018__281,governors_2010_2018,West Virginia State of the State Address 2013,0.08199948367109845,2
+governors_2010_2018__282,governors_2010_2018,WestVirginia_Tomblin.2011_Term1_Famous,0.14650406504065036,2
+governors_2010_2018__283,governors_2010_2018,WestVirginia_Tomblin.2012_Term1_Campaign,0.1341091912989671,2
+governors_2010_2018__284,governors_2010_2018,2017 State of the State Address_Justice,0.5147949948847093,2
+governors_2010_2018__285,governors_2010_2018,Campaign2_Jim Justice,0.4882269503546099,2
+governors_2010_2018__286,governors_2010_2018,Ribbon cutting2_Jim Justice,0.20493911201875797,2
+governors_2010_2018__287,governors_2010_2018,WestVirginia_Justice.2020_Term2_Famous,0.3214285714285714,2
+governors_2018_2022__000,governors_2018_2022,Cox Utah 3 campaign,0.16590561738822765,30
+governors_2018_2022__001,governors_2018_2022,Cox Utah 3 famous,0.3088930306592965,30
+governors_2018_2022__002,governors_2018_2022,Cox Utah 3 ribbon-cutting,0.11105020333940471,30
+governors_2018_2022__003,governors_2018_2022,Cox Utah 3 SoS,0.21151487703688907,30
+governors_2018_2022__004,governors_2018_2022,DeSantis Florida 3 Campaign,0.3973639118582436,30
+governors_2018_2022__005,governors_2018_2022,DeSantis Florida 3 Famous(1),0.4428399240996941,30
+governors_2018_2022__006,governors_2018_2022,DeSantis Florida 3 Famous,0.5614624531609136,30
+governors_2018_2022__007,governors_2018_2022,DeSantis Florida 3 Ribbon-cutting,0.1736831668174597,30
+governors_2018_2022__008,governors_2018_2022,DeSantis Florida 3 SoS,0.2594188142509173,30
+governors_2018_2022__009,governors_2018_2022,Inslee Washington 3 Campaign,0.3219427352708151,30
+governors_2018_2022__010,governors_2018_2022,Inslee Washington 3 Famous,0.24606797236614394,30
+governors_2018_2022__011,governors_2018_2022,Inslee Washington 3 Ribbon-cutting,0.01037037037037037,30
+governors_2018_2022__012,governors_2018_2022,Inslee Washington 3 SoS,0.11856883686227788,30
+governors_2018_2022__013,governors_2018_2022,Newsom California 3 Campaign,0.518124503482104,30
+governors_2018_2022__014,governors_2018_2022,Newsom California 3 Famous,0.0662517002359004,30
+governors_2018_2022__015,governors_2018_2022,Newsom California 3 ribbon-cutting,0.38515732751888715,30
+governors_2018_2022__016,governors_2018_2022,Newsom California 3 SoS,0.14301130167705808,30
+governors_2018_2022__017,governors_2018_2022,Noem South Dakota 3 campaign,0.1358118347085838,30
+governors_2018_2022__018,governors_2018_2022,Noem South Dakota 3 famous,0.3457547024957243,30
+governors_2018_2022__019,governors_2018_2022,Noem South Dakota 3 ribbon-cutting ,0.3775197936259298,30
+governors_2018_2022__020,governors_2018_2022,Noem South Dakota 3 sos,0.18412411189887967,30
+governors_2018_2022__021,governors_2018_2022,Pritzker Illinois 3 campaign,0.4101924012950711,30
+governors_2018_2022__022,governors_2018_2022,Pritzker Illinois 3 ceremony,0.18517521621938007,30
+governors_2018_2022__023,governors_2018_2022,Pritzker Illinois 3 famous,0.3139309473491047,30
+governors_2018_2022__024,governors_2018_2022,Pritzker Illinois 3 ribbon-cutting ,0.20352027874128195,30
+governors_2018_2022__025,governors_2018_2022,Pritzker Illinois 3 sos ,0.16347944459678693,30
+presidential_2016__000,presidential_2016,us.2016.Carson.Announcement.5-4,0.2666666666666666,1
+presidential_2016__001,presidential_2016,us.2016.Clinton.10-22,0.03954802259887,1
+presidential_2016__002,presidential_2016,us.2016.Clinton.10-3,0.1722222222222222,1
+presidential_2016__003,presidential_2016,us.2016.Clinton.11-3,0.0350877192982456,1
+presidential_2016__004,presidential_2016,us.2016.Clinton.11-9,0.0,1
+presidential_2016__005,presidential_2016,us.2016.Clinton.2-1,0.0357142857142857,1
+presidential_2016__006,presidential_2016,us.2016.Clinton.2-20,0.1914893617021276,1
+presidential_2016__007,presidential_2016,us.2016.Clinton.3-1,0.1296296296296296,1
+presidential_2016__008,presidential_2016,us.2016.Clinton.6-22,0.0843373493975903,1
+presidential_2016__009,presidential_2016,us.2016.Clinton.7-13,0.0884955752212389,1
+presidential_2016__010,presidential_2016,us.2016.Clinton.7-28,0.0829268292682926,1
+presidential_2016__011,presidential_2016,us.2016.Clinton.8-11,0.0867052023121387,1
+presidential_2016__012,presidential_2016,us.2016.Clinton.8-25,0.2022471910112359,1
+presidential_2016__013,presidential_2016,us.2016.Clinton.8-31,0.031055900621118,1
+presidential_2016__014,presidential_2016,us.2016.Clinton.9-9,0.0285714285714285,1
+presidential_2016__015,presidential_2016,us.2016.Clinton.Announcement.6-13,0.0621761658031088,1
+presidential_2016__016,presidential_2016,us.2016.Cruz.2-1,0.2743362831858407,1
+presidential_2016__017,presidential_2016,us.2016.Cruz.2-20,0.2653061224489796,1
+presidential_2016__018,presidential_2016,us.2016.Cruz.Announcement.3-23,0.140625,1
+presidential_2016__019,presidential_2016,us.2016.Kasich.3-15,0.1975308641975308,1
+presidential_2016__020,presidential_2016,us.2016.Kasich.Announcement.7-21,0.1049562682215743,1
+presidential_2016__021,presidential_2016,us.2016.Rubio.2-1,0.1595744680851064,1
+presidential_2016__022,presidential_2016,us.2016.Rubio.2-20,0.12,1
+presidential_2016__023,presidential_2016,us.2016.Rubio.Announcement.4-13,0.18,1
+presidential_2016__024,presidential_2016,us.2016.Sanders.2-10,0.2637362637362637,1
+presidential_2016__025,presidential_2016,us.2016.Sanders.2-20,0.2972972972972973,1
+presidential_2016__026,presidential_2016,us.2016.Sanders.3-1,0.25,1
+presidential_2016__027,presidential_2016,us.2016.Sanders.Announcement.5-26,0.2649572649572649,1
+presidential_2016__028,presidential_2016,us.2016.Trump.10-13,0.7094017094017094,1
+presidential_2016__029,presidential_2016,us.2016.Trump.10-14,0.4006734006734007,1
+presidential_2016__030,presidential_2016,us.2016.Trump.10-29(1),0.4946236559139785,1
+presidential_2016__031,presidential_2016,us.2016.Trump.10-3,0.182844243792325,1
+presidential_2016__032,presidential_2016,us.2016.Trump.11-8 (1),0.320754716981132,1
+presidential_2016__033,presidential_2016,us.2016.Trump.11-8,0.0232558139534883,1
+presidential_2016__034,presidential_2016,us.2016.Trump.2-20,0.1437125748502994,1
+presidential_2016__035,presidential_2016,us.2016.Trump.2-9,0.2,1
+presidential_2016__036,presidential_2016,us.2016.Trump.3-1,0.1777777777777777,1
+presidential_2016__037,presidential_2016,us.2016.Trump.6-22,0.5131578947368421,1
+presidential_2016__038,presidential_2016,us.2016.Trump.7-11,0.3153153153153153,1
+presidential_2016__039,presidential_2016,us.2016.Trump.7-21,0.4146341463414634,1
+presidential_2016__040,presidential_2016,us.2016.Trump.8-19,0.3410852713178294,1
+presidential_2016__041,presidential_2016,us.2016.Trump.8-20,0.4186046511627907,1
+presidential_2016__042,presidential_2016,us.2016.Trump.8-8,0.4397590361445783,1
+presidential_2016__043,presidential_2016,us.2016.Trump.9-1,0.3120879120879121,1
+presidential_2016__044,presidential_2016,us.2016.Trump.Announcement.6-16,0.2827004219409282,1

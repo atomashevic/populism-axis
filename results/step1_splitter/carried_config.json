@@ -1,0 +1,16 @@
+{
+  "step": 1,
+  "label": "B1_cap60",
+  "result_dir": "results/step1_splitter/B1_cap60",
+  "encoder": "e5-large-v2",
+  "window_setting": "spw1_cap60",
+  "embeddings_dir": "results/embeddings/e5-large-v2/spw1_cap60",
+  "anchors": "results/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+  "anchor_file": "anchors/proposition_anchors.json",
+  "anchor_sha256": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6",
+  "transform": "v3",
+  "top_k": 3,
+  "system": "PE__frozen__soft",
+  "dev_english_spearman": 0.4828,
+  "agora_spearman": 0.3591
+}

@@ -1,0 +1,55 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "agora_system": "PE__frozen__soft"
+  },
+  "git": {
+    "branch": "claude/project-thread-dukfbg",
+    "commit": "2dae0ff9f61b6673b959918083a9ea2ba770690e",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "agora_axis": {
+      "path": "/home/aleksandar/work/populism-axis-release-2026-10-12/results/step4_windows_topk/grid/spw3_k8/scores_agora.csv",
+      "sha256": "ca7620a704f8194ea9eda8e260d8f54facb7331b45e7550d9d6bc9b7e7c822b2"
+    },
+    "agora_claim_check": {
+      "path": "/home/aleksandar/work/populism-axis-release-2026-10-12/results/step6_nli/nli_only_k8/scores_agora.csv",
+      "sha256": "542a578961ba6c7506477a83c5baa7bebc333c19e3f1cba03741ff268479ac4a"
+    },
+    "agora_combined": {
+      "path": "/home/aleksandar/work/populism-axis-release-2026-10-12/results/step6_nli/combined_k8/scores_agora.csv",
+      "sha256": "6a30356a614aaa9cff88295f29aeb50afa3edb3ab3d1576f5884db668b65c355"
+    },
+    "sigmoid_agora": {
+      "path": "/home/aleksandar/work/populism-axis-release-2026-10-12/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_agora.npz",
+      "sha256": "4b32931b21c13db72995f71e1067b99eabc4da48b764d0070b7614114dc4abd0"
+    },
+    "sigmoid_english": {
+      "path": "/home/aleksandar/work/populism-axis-release-2026-10-12/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_english.npz",
+      "sha256": "0293266a182123f09cdeea88dd60f05a447b5766b96e9d8f9b50f4ff56b02e15"
+    },
+    "sigmoid_eu": {
+      "path": "/home/aleksandar/work/populism-axis-release-2026-10-12/results/roberta-correction/rc-20261002T1415Z-sigmoid/sigmoid_eu.npz",
+      "sha256": "7513f7912da9eb0980548bff39bb10a0794f90734982f0b565767a7e1ef5ab38"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.13.14",
+  "run_hash": "0018e698c20fcc6c6163f22df2c0216b86e5855bb19ec58ce916726c721488b9",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/export_comparator_scores.py",
+  "timestamp_utc": "2026-10-12T10:45:31Z"
+}

@@ -1,0 +1,1428 @@
+[
+  {
+    "name": "english",
+    "csv": "data/benchmarks/english_gpd_speeches.csv",
+    "text_column": "text",
+    "text_path_column": "path",
+    "documents": 258,
+    "windows": 33549,
+    "doc_index_matches_legacy": true,
+    "ordered_windows_sha256": "955638c8645c57af547dd178571e0add1676615f831e75bbd38ea084fd8a3deb",
+    "inputs": [
+      {
+        "path": "data/benchmarks/english_gpd_speeches.csv",
+        "bytes": 63212,
+        "sha256": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7"
+      },
+      {
+        "path": "data/speeches_20251120/Albania_Berisha_International_2.txt",
+        "bytes": 8251,
+        "sha256": "ab69817b23a1717c5658ed74adba457fa7ea6e9600f32ea1de087911fea69161"
+      },
+      {
+        "path": "data/speeches_20251120/Albania_Rama_International_1.txt",
+        "bytes": 24816,
+        "sha256": "e6dbbd43bbf46dce7a86351195b6e7447b852df9a059cdab4d894329c0a9046f"
+      },
+      {
+        "path": "data/speeches_20251120/Armenia_Kocharyan_Campaign_2.txt",
+        "bytes": 12887,
+        "sha256": "7187a287de5ee7c05b650d6e03f6f0c80386f8249cfd65c8a549d06924732a74"
+      },
+      {
+        "path": "data/speeches_20251120/Armenia_Kocharyan_Famous_1.txt",
+        "bytes": 9354,
+        "sha256": "7521c0e02cdaa52cdc5e3b746110a222dc396b53ba0c9756db91e8fa96e6e2a1"
+      },
+      {
+        "path": "data/speeches_20251120/Armenia_Kocharyan_International_1.txt",
+        "bytes": 4858,
+        "sha256": "3e119de503d0f8cf6172b49842f795f3ee12431f94afafa5110b2a0a3551ffc6"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Abbott_Campaign_1.txt",
+        "bytes": 17459,
+        "sha256": "e8a56539cb4a2254d1d29ef25c0ebf807b0d14c4ad18419ae959474abf3b02a3"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Abbott_Famous_1.txt",
+        "bytes": 4619,
+        "sha256": "458bbade4c3331fb832bc73402ad31775b5430c633bde94fdea368cb2142a87f"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Abbott_International_1.txt",
+        "bytes": 9118,
+        "sha256": "a13b5d17889e4053349b67062027510e3817ac430c2322bb4c75b75bbbe3a668"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Abbott_Ribbon_1.txt",
+        "bytes": 5408,
+        "sha256": "e035aa5d0b86e928dcaa9e03c974d996c64a51bb4ad6fd02597f3c088963f33e"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Gillard_Campaign_1.txt",
+        "bytes": 30602,
+        "sha256": "127bf1ad58fda41514e9f501a274109d784390097df818af45208b57456594e7"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Gillard_Famous_1.txt",
+        "bytes": 13071,
+        "sha256": "15463997151a28e47363651eb1b0e25e8b7aa14ef23f4075b3f167a3f96434bc"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Gillard_International_1.txt",
+        "bytes": 11941,
+        "sha256": "9757739dd2785bbb9bec1aa8f53a70c44db93da4e2ae2181a83ff65cac65e631"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Gillard_Ribbon_1.txt",
+        "bytes": 7649,
+        "sha256": "a1bb785e01f9cec56fc4d67e4ee5fed4c4845971932428064b54f60a98bf3a7f"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_Campaign_1.txt",
+        "bytes": 26546,
+        "sha256": "127dda8ffe823a62da82b4c8f2d5ae148e31f07ee7c684a81f43d194af57a821"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_Campaign_3.txt",
+        "bytes": 38795,
+        "sha256": "e9f5b89b55c0c7be8061d1f39d68a8b2c89d51b11acf5f7ee94ee2d5c2722d63"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_Campaign_4.txt",
+        "bytes": 25831,
+        "sha256": "61af63f860b4cb12c0c544c571c2e59f417d376ba36b5e1baa3cce6f479a4ec8"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_Famous_1.txt",
+        "bytes": 41831,
+        "sha256": "ad3698694268089d3b242b849bfd6e4b08e78a3df82f119abd664901028d83a7"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_Famous_3.txt",
+        "bytes": 25838,
+        "sha256": "6a8cc7bba371e0e00cf9d2dde2ff988784266e3f6e7caaed46d1f319a2a6d68c"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_Famous_4.txt",
+        "bytes": 6914,
+        "sha256": "4fa888ac6472c63e8a0b752bf487b3d96192505f53cdabec9bb179c921fc1ceb"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_International_1.txt",
+        "bytes": 17845,
+        "sha256": "d62989ace2745fa23e18732f20ad54e3f4a2d27878185794863dc08bbe730593"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_International_3.txt",
+        "bytes": 7411,
+        "sha256": "ac0b3924ebd068be65b54dacebbc804fde17635bf7a368c62db1a36f4e65c773"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_International_4.txt",
+        "bytes": 11884,
+        "sha256": "262753b096f930418e27ba27aea71012d280134c5182c4808b50bd0679e4e33d"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_Ribbon_1.txt",
+        "bytes": 8405,
+        "sha256": "a9ee18890b58bf49c4bd52a2b0abbbf2e9495f7281f5567d084b648b84f361c1"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_Ribbon_3.txt",
+        "bytes": 6278,
+        "sha256": "1b64b09cfe12b342a4d33a756f58c4da8d0fe586c23315c02f83cca9dff50fac"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Howard_Ribbon_4.txt",
+        "bytes": 8220,
+        "sha256": "7790bfd012a497e09837911a7b48ec4ab00e891bfbd2635eb9dbac237ac430ee"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Morrison_Campaign_1.txt",
+        "bytes": 23260,
+        "sha256": "cbb8701715d6042595becaba2ed1ee0a0083f34406f79249e374b1f807c9f088"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Morrison_Famous_1.txt",
+        "bytes": 8269,
+        "sha256": "1ca93ed87274638bb58abf94413aa3240251042423a056e26e29bb8e95dea16d"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Morrison_International_1.txt",
+        "bytes": 15560,
+        "sha256": "f9cb6184310483f0c9c9d85ad9f8a0fbd5c115c1daa12c00aa587e608d54adb7"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Morrison_Ribbon_1.txt",
+        "bytes": 10101,
+        "sha256": "de3785845df8808216a21d245f7c99a550df25ec7b0c687dab5c100e8fa5b3a7"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Rudd_Campaign_1.txt",
+        "bytes": 25856,
+        "sha256": "a6f39257d612020ac6ae53405cd3bcebf84df5f79c5706b23374e76c28e6c742"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Rudd_Famous_1.txt",
+        "bytes": 24820,
+        "sha256": "acd74c6432b89de90c74e66d4460d71969fbd3957dbaee5917546ceacc6e161e"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Rudd_International_1.txt",
+        "bytes": 15052,
+        "sha256": "a5e6909a6ba8af668c50b53cb0d0e5aa9f5b97b06e07bdf46c11242ca776b715"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Rudd_Ribbon_1.txt",
+        "bytes": 29756,
+        "sha256": "dccfd79567557e06567bb906181f8569aedd024ccbcf5151f807de88e30c73e1"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Turnbull_Campaign_1.txt",
+        "bytes": 21173,
+        "sha256": "cf552c2a3721ab89624448242e42ceb3a441d98bac5ff72d6d266896c18f4304"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Turnbull_Famous_1.txt",
+        "bytes": 14444,
+        "sha256": "dbc2a04ab1ec6877d5a9d6ee55ff7c5eaddb9f6150cc161a24a138f300bb0b14"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Turnbull_International_1.txt",
+        "bytes": 14440,
+        "sha256": "4100c956ba174396a92c6c4867751afe8ade5eed882a521044d37c9b63fb56fd"
+      },
+      {
+        "path": "data/speeches_20251120/Australia_Turnbull_Ribbon_1.txt",
+        "bytes": 6501,
+        "sha256": "24ad60f0e5e3dc304d14db2c3be9b9c17e48487602ea198f8b6722bb25d88752"
+      },
+      {
+        "path": "data/speeches_20251120/Austria_Faymann_International_1.txt",
+        "bytes": 3233,
+        "sha256": "b9f2bd6d296a3c04ff1717cce6a67a55631c1509a672c615dd67e6eb967978a3"
+      },
+      {
+        "path": "data/speeches_20251120/Austria_Faymann_International_2.txt",
+        "bytes": 8401,
+        "sha256": "c67a769538556653f3f740d03420a5ca698d462262cd500f75a3fa04724afb82"
+      },
+      {
+        "path": "data/speeches_20251120/Austria_Gusenbauer_International_1.txt",
+        "bytes": 5103,
+        "sha256": "ebbb1ea772e420b0a561aabdc4f1248835163c30cdaeef0227cbd3061f2d0474"
+      },
+      {
+        "path": "data/speeches_20251120/Austria_Kurz_International_1.txt",
+        "bytes": 8390,
+        "sha256": "cd969175a09106b19ff8459996c03c919d3b8b3d5852ef80dc5309bd2c93143a"
+      },
+      {
+        "path": "data/speeches_20251120/Austria_Schussel_International_2.txt",
+        "bytes": 14217,
+        "sha256": "076ee099aa2c8d200acdbbfa6546f8af0b0ff37f14de60c338eeacd66062fcb7"
+      },
+      {
+        "path": "data/speeches_20251120/Belarus_Lukashenko_International_5.txt",
+        "bytes": 20619,
+        "sha256": "fddd69cf424767d96d06ebc64d77f0f83962bd99b61ffacf0a0563e56a9430a2"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Chretien_Famous_3.txt",
+        "bytes": 17041,
+        "sha256": "9e781d0224d2e62d1106b7abe36d6ef32c035cc5d1cfc303a967613727a52521"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Chretien_International_3.txt",
+        "bytes": 9820,
+        "sha256": "e5e0c29c9e1c00fe29929c195e0f85bc35b19f4ed0d872d0944f1829143ca592"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Chretien_Ribbon_3.txt",
+        "bytes": 3903,
+        "sha256": "7fbd360c96753d89e153ce3222122fa8685e91f0727c466746c8940c1f661d31"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_Campaign_1.txt",
+        "bytes": 12688,
+        "sha256": "504bc5a92988262e3b955c4b6faa54fb711e83ddb8aa6736c67900e67f8cff60"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_Campaign_2.txt",
+        "bytes": 3201,
+        "sha256": "d38efb146bb1c9e040e9cd052a70dba211010e5ba5d28497a8bae8a368659cdf"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_Campaign_3.txt",
+        "bytes": 7450,
+        "sha256": "9a20771a75e2c9a7fd65f5795c39c23bac0a997355ac887eca9b3e34408409a4"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_Famous_1.txt",
+        "bytes": 20989,
+        "sha256": "d82a1b1ed1d5e2092fbe4e69ca8a887c00b4c063f546f263613f2235e5944708"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_Famous_2.txt",
+        "bytes": 4031,
+        "sha256": "fccc117c83bd9b0251bcf3b90301f666a480c95847c3187425b28b61678df7d8"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_Famous_3.txt",
+        "bytes": 19013,
+        "sha256": "62748cc91503b1542338c1fcee7145f40c6e18ccd62fff92e425ae76b1d33fe3"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_International_1.txt",
+        "bytes": 5436,
+        "sha256": "3ea10d6a4253428d3170967f12be8641c5aa5ac7c0a5f65657d11b9206b8043e"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_International_2.txt",
+        "bytes": 20354,
+        "sha256": "7bf0587c2552d1f0b3ca4082620e7281322614c7e30b05bd1781f78d1fa90a73"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_International_3.txt",
+        "bytes": 14471,
+        "sha256": "b3f1adc28cf943c71f3acb96e94b17d7a62065a41a18c554f9b5a40f9dd3ac86"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_Ribbon_1.txt",
+        "bytes": 14236,
+        "sha256": "b186ccef64356589f5db2c8fae210239104b4edca5e03cd5969cad2cfc1b469b"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_Ribbon_2.txt",
+        "bytes": 6624,
+        "sha256": "799f1fb0d20e433ac7969754fc68212a5e90b970906495f4cb9adb2699160e72"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Harper_Ribbon_3.txt",
+        "bytes": 8351,
+        "sha256": "37f3ecd31528b8aac0b7dea9df1bcd23476817559c379b15a903f06d343af420"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Martin_Campaign_1.txt",
+        "bytes": 20816,
+        "sha256": "8881803e3347d59bb2e53356f0d0e270f5b3c5f8a3672a72f657b609d9b34c0d"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Martin_Famous_1.txt",
+        "bytes": 17112,
+        "sha256": "187a7f73687b9ed0971407cfc568952c68e6af5c01d1ea87f900945cbb4b7299"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Martin_International_1.txt",
+        "bytes": 9466,
+        "sha256": "47d8973d08e36920be30bee51dd56a6f836ec91a58075e20e87aff9c3f04a995"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Martin_Ribbon_1.txt",
+        "bytes": 23793,
+        "sha256": "d54a9d925ca0dbf734e3b25afbfc4d0531635dc4adf56a0e4e083d9a79fbf6d3"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Trudeau_Campaign_1.txt",
+        "bytes": 11972,
+        "sha256": "5904ee6b38ffcfa2908cdc4083307cbab12564bbdd154c54b55d24de819f6b37"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Trudeau_Famous_1.txt",
+        "bytes": 11189,
+        "sha256": "690dadc942b1b64dd47fc6d3f67c484b07253ecded737b2cbe78f62803dea10f"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Trudeau_International_1.txt",
+        "bytes": 17748,
+        "sha256": "5db134d2fb24d860adc91eb09c20b542aa78952df46598bc143daf6f6952a5b6"
+      },
+      {
+        "path": "data/speeches_20251120/Canada_Trudeau_Ribbon_1.txt",
+        "bytes": 5391,
+        "sha256": "b01c46dac60ae3aa41337d5976ea666dc1ccebaaf1efa2ec8316aa7d55e25f44"
+      },
+      {
+        "path": "data/speeches_20251120/Costa Rica_Solis_International_1.txt",
+        "bytes": 32230,
+        "sha256": "7cff5d9d9e49ffe37d985e237792d03ec350ec39856ddb0b3edcadeac80a870d"
+      },
+      {
+        "path": "data/speeches_20251120/Croatia_Racan_International_1.txt",
+        "bytes": 13640,
+        "sha256": "3372761093cddd82150cd960adb71cc93dbac8e8db1045803c7621222c85c1bd"
+      },
+      {
+        "path": "data/speeches_20251120/Croatia_Sanader_International_1.txt",
+        "bytes": 13187,
+        "sha256": "344588e73dd756458070278e03223cbcf805f3ab0ecc8c748e7af82619c22a44"
+      },
+      {
+        "path": "data/speeches_20251120/El Salvador_Funes_Famous_1.txt",
+        "bytes": 27683,
+        "sha256": "9043c0df090cfac39beb34986f9efea77c79845c49b3e3d7484b14fc333eeec1"
+      },
+      {
+        "path": "data/speeches_20251120/El Salvador_Saca_Famous_1.txt",
+        "bytes": 26320,
+        "sha256": "24c85536b53697c4722c71bdcea8fa519cd23410c40fc73cbe6e2d87171789f6"
+      },
+      {
+        "path": "data/speeches_20251120/El Salvador_Saca_International_1.txt",
+        "bytes": 4267,
+        "sha256": "d31cd15385aadabe29ed64284d82e80cd8f703b67c1b831cda659e837f85fce9"
+      },
+      {
+        "path": "data/speeches_20251120/Estonia_Ansip_International_1.txt",
+        "bytes": 14867,
+        "sha256": "013a6f62f3d2e6e28930f0061043fd8fb500805a8753a8f197bbcc9a5c5ccbea"
+      },
+      {
+        "path": "data/speeches_20251120/Estonia_Ansip_International_2.txt",
+        "bytes": 10134,
+        "sha256": "7037971928783c21d22140d0a2057eae1fb728f7446c9408169876e952d357d2"
+      },
+      {
+        "path": "data/speeches_20251120/Estonia_Ansip_International_3.txt",
+        "bytes": 4244,
+        "sha256": "a15c34d27592c21fdc918bcd3ffb5d68fb017233f9ed75e79f368d9bcd6e753b"
+      },
+      {
+        "path": "data/speeches_20251120/Finland_Halonen_International_1.txt",
+        "bytes": 10555,
+        "sha256": "8aa25dea866a3b224259dcb402ff3bbb88fa620a02d2d8cbf8abbb187e331e53"
+      },
+      {
+        "path": "data/speeches_20251120/GER_Merkel_International_1.txt",
+        "bytes": 11728,
+        "sha256": "274595eb5c3ec77b72c7bb30c54e97090e37cae233117e8d8ab41b23809e52e8"
+      },
+      {
+        "path": "data/speeches_20251120/Georgia_Kvirikashvili_Famous_1.txt",
+        "bytes": 2383,
+        "sha256": "36bd15778d0d9690699e6e2d2f7914a5c4ca5106569c939c2f6f029f3618c86b"
+      },
+      {
+        "path": "data/speeches_20251120/Georgia_Kvirikashvili_International_1.txt",
+        "bytes": 12948,
+        "sha256": "df9c1c59cd72d789f9fb80774c9a71d8319f9b1ff46edcfff8ca68d81729a51a"
+      },
+      {
+        "path": "data/speeches_20251120/Guatemala_Molina_International_1.txt",
+        "bytes": 12216,
+        "sha256": "c83d5a8c301914c9efda77175255a38a0d26d490c1d916b3cf241ef045f467ed"
+      },
+      {
+        "path": "data/speeches_20251120/India_Modi_Campaign_1.txt",
+        "bytes": 15703,
+        "sha256": "712fd5aa2e3e6031fd1798994e04808b5c47e21aa70fd35123dde537a8dc25cf"
+      },
+      {
+        "path": "data/speeches_20251120/India_Modi_Famous_1.txt",
+        "bytes": 11514,
+        "sha256": "53ca14eac98dae8a50cb427e3121040ec73e63781238f1838c08604ef6e5bc23"
+      },
+      {
+        "path": "data/speeches_20251120/India_Modi_International_1.txt",
+        "bytes": 9245,
+        "sha256": "3f25c56213bd531ff77cbda7ad97de65b41cf45f6d76543a47a922964ab8b2c9"
+      },
+      {
+        "path": "data/speeches_20251120/India_Modi_Ribbon_1.txt",
+        "bytes": 17403,
+        "sha256": "8c2d81d49ca49b69c1eb14074526ff7e4fb9dfe17948e254d9ffa43f7d9e57f4"
+      },
+      {
+        "path": "data/speeches_20251120/India_Singh_Famous_1.txt",
+        "bytes": 3406,
+        "sha256": "5c11fef104d6a30f734dd5ad1dd3b918097edf7731d276d56ad5ead98fd37686"
+      },
+      {
+        "path": "data/speeches_20251120/India_Singh_Famous_2.txt",
+        "bytes": 2377,
+        "sha256": "40c41267927d2c53827e3e104267c4be9015f974d7af44e0ce582305df63a75e"
+      },
+      {
+        "path": "data/speeches_20251120/India_Singh_International_1.txt",
+        "bytes": 14033,
+        "sha256": "131811a9bf9b08e08dad8d8521d2e0b403530b47b3dd8647ef6fb91868048d2f"
+      },
+      {
+        "path": "data/speeches_20251120/India_Singh_International_2.txt",
+        "bytes": 6900,
+        "sha256": "f0fbb73071214f841445fac0a795ccbc71383b83ba36b0de32a55d1cdfabe5e2"
+      },
+      {
+        "path": "data/speeches_20251120/India_Singh_Ribbon_1.txt",
+        "bytes": 11900,
+        "sha256": "0417952249abdce4cefef447c5a649d69dad87c609144a4ab2bdac5ee6201b45"
+      },
+      {
+        "path": "data/speeches_20251120/India_Singh_Ribbon_2.txt",
+        "bytes": 4548,
+        "sha256": "3e891bfb892810a7bdf4bb52bfda2514c11c29c70658d516452a1e23ca222840"
+      },
+      {
+        "path": "data/speeches_20251120/India_Vajpayee_Famous_3.txt",
+        "bytes": 16083,
+        "sha256": "525a157f22936d664c5514f1ceb4ea87a6e9f8dc0d67bfba1993ccb2bbbb9bf3"
+      },
+      {
+        "path": "data/speeches_20251120/India_Vajpayee_International_3.txt",
+        "bytes": 16083,
+        "sha256": "525a157f22936d664c5514f1ceb4ea87a6e9f8dc0d67bfba1993ccb2bbbb9bf3"
+      },
+      {
+        "path": "data/speeches_20251120/India_Vajpayee_Ribbon_3.txt",
+        "bytes": 10699,
+        "sha256": "f8cc4eb4b1dc3622c1fdb44335779f474eb75ab7ab7320962eea72483eaaa3d0"
+      },
+      {
+        "path": "data/speeches_20251120/Indonesia_Yudhoyono_International_1.txt",
+        "bytes": 14829,
+        "sha256": "53c511d17897789bcaacc266d7619c3bd2fe056b5c78ac62afe4fc9d4c7e0969"
+      },
+      {
+        "path": "data/speeches_20251120/Indonesia_Yudhoyono_International_2.txt",
+        "bytes": 17121,
+        "sha256": "3db2c84f255c78f7d0fe83864a982b90c7b21f5bbdb42a4c31de5fff24bcf8bb"
+      },
+      {
+        "path": "data/speeches_20251120/Iran_Ahmadinejad_Campaign_1.txt",
+        "bytes": 22581,
+        "sha256": "30cf8160eb848b514973532f99d8b314a74b9e46acfed866b84ac6063e3c6d9f"
+      },
+      {
+        "path": "data/speeches_20251120/Iran_Ahmadinejad_Famous_1.txt",
+        "bytes": 14599,
+        "sha256": "6b4a6abce7429d338b3f2ea2563dbfeb963c6fb4ab612f20f6c01c6ab5d81f3f"
+      },
+      {
+        "path": "data/speeches_20251120/Iran_Ahmadinejad_International_1.txt",
+        "bytes": 9469,
+        "sha256": "40b61ee01879b35a0cf8b823fd67e1a24b83049256ecdf6fc06ab656016256e3"
+      },
+      {
+        "path": "data/speeches_20251120/Iran_Ahmadinejad_Ribbon_1.txt",
+        "bytes": 8816,
+        "sha256": "bbce359aa9efa6935e7883d4867d4c1e50591a49adb73f5317df1873babfefda"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Ahern_Campaign_1.txt",
+        "bytes": 10595,
+        "sha256": "e7a5c4d29335dc00d847967c7164bb1e54ef80717d59f18b447d34e8c8d9b993"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Ahern_Famous_1.txt",
+        "bytes": 24790,
+        "sha256": "be7fca7e4ee98a97f594674fbd49442342d9314d7e6a9aeb3ecf444add4b48c7"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Ahern_International_1.txt",
+        "bytes": 6963,
+        "sha256": "25b8f6ec70803ebcd0f6f3d6129df77cd0bc3d54d2f4747fa9aea69dca24b4f7"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Ahern_Ribbon_1.txt",
+        "bytes": 5919,
+        "sha256": "17c5823f325a19ad75ad479026c4992bdddca94d117f9731b48682ceaa7d9772"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Cowen_Campaign_1.txt",
+        "bytes": 26998,
+        "sha256": "b7025d60583db958780eb8042d99e3be2bc8cc8260736ecc79bfa98cd051ccbd"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Cowen_Famous_1.txt",
+        "bytes": 20428,
+        "sha256": "fa8b4aa404f5c85f069aee2cd28c74207523bc944a938c992745a80d49299d1e"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Cowen_International_1.txt",
+        "bytes": 13361,
+        "sha256": "d631a1fa8223198ae75d01d3064cb65bfc990ba3ebc96d2fe4c9ddf49b6b4640"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Cowen_Ribbon_1.txt",
+        "bytes": 6704,
+        "sha256": "f7486744ef98abcf0ba12e3eb74fde2d795450086c0c937f1c08989a1576df76"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Kenny_Campaign_1.txt",
+        "bytes": 8202,
+        "sha256": "c488d8d45036c9fc3727f1561e45b1854a7f3b57104d792d6ac640ec5966a1da"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Kenny_Famous_1.txt",
+        "bytes": 9157,
+        "sha256": "0036a1148f919d6b8fd9d6c618b26fcb92c359bf542d7f899f05a63c6853288b"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Kenny_International_1.txt",
+        "bytes": 18144,
+        "sha256": "ace237742d38bffec7d3dfa54fcddf7c71c8bcb27b5099e5f675549af1b2704c"
+      },
+      {
+        "path": "data/speeches_20251120/Ireland_Kenny_Ribbon_1.txt",
+        "bytes": 6110,
+        "sha256": "f4398bd729bb52608898fbcc65d5f7f2d1b4d111c394477c42f2f81f5a88e638"
+      },
+      {
+        "path": "data/speeches_20251120/Italy_Conte_Campaign_1.txt",
+        "bytes": 6068,
+        "sha256": "de235ed67a5e1d3315187b02605bd5e71f05ef2fb1ed47096a355e6316de3ace"
+      },
+      {
+        "path": "data/speeches_20251120/Italy_Conte_International_1.txt",
+        "bytes": 6334,
+        "sha256": "dbf298fa2d7209af5602b6452f46aeb2cd0f8c6fb5ddb1489d9e78c8d297d5f8"
+      },
+      {
+        "path": "data/speeches_20251120/Lithuania_Butkevicius_International_1.txt",
+        "bytes": 13008,
+        "sha256": "a680618382e6ccbf6cd6fb098bc94b42075c4338a71ea9751984ba5b1674ef6f"
+      },
+      {
+        "path": "data/speeches_20251120/Lithuania_Grybauskaite_International_2.txt",
+        "bytes": 4770,
+        "sha256": "f70bcb456b5cc8e79b5979391b0f8d95d4ebde3f522213fe21300081fc1d1864"
+      },
+      {
+        "path": "data/speeches_20251120/Malaysia_Badawi_International_1.txt",
+        "bytes": 13991,
+        "sha256": "7936317278324ba34b7968ce5f4734864fa761a1b0f4e58fa4ed890f5859ece8"
+      },
+      {
+        "path": "data/speeches_20251120/Malaysia_Badawi_Ribbon_1.txt",
+        "bytes": 9605,
+        "sha256": "b51cdced1fdba701ac7de621bdd5c6bb0b13753b713d33e9eab516a813468df6"
+      },
+      {
+        "path": "data/speeches_20251120/Malaysia_Mohamad_International_1.txt",
+        "bytes": 17073,
+        "sha256": "c5d1ef37688b48bd8d333bd5ca72c0ffa5f4fa7f4c2c8331c471b400eb2c1d78"
+      },
+      {
+        "path": "data/speeches_20251120/Malaysia_Razak_Campaign_1.txt",
+        "bytes": 35146,
+        "sha256": "bf21b0508175146c3afbda2d9dd519d9bde2a794330636b031645ed37b6e5c0e"
+      },
+      {
+        "path": "data/speeches_20251120/Malaysia_Razak_International_1.txt",
+        "bytes": 8800,
+        "sha256": "959050e4e6b04b6e2857caeedffa3ddc781039cb3c6fdb7599a61d89f0149dfb"
+      },
+      {
+        "path": "data/speeches_20251120/Malaysia_Razak_International_2.txt",
+        "bytes": 14608,
+        "sha256": "9ea7447a6371561c7bf6c03a490c5c628ca8753874289fbd39ad80a3d6a90f03"
+      },
+      {
+        "path": "data/speeches_20251120/Malaysia_Razak_Ribbon_2.txt",
+        "bytes": 7365,
+        "sha256": "3d9347cedb82311e4bc3ca6a3ace5e4ec502c0e7b0846ec8a7c2c38b9e1843e2"
+      },
+      {
+        "path": "data/speeches_20251120/Moldova_Lupu_International_1.txt",
+        "bytes": 5640,
+        "sha256": "da784617bf9f8a7e4e6fa3930c3350742f7dfc19deb50f377d9d0b9f2738cb73"
+      },
+      {
+        "path": "data/speeches_20251120/Moldova_Timofti_International_1.txt",
+        "bytes": 116762,
+        "sha256": "067e23a5538fc026075dacc4e6c1eb2e674ca01bd82d1101af128f1cc81b66af"
+      },
+      {
+        "path": "data/speeches_20251120/Mongolia_Enkhbayar_International_1.txt",
+        "bytes": 16295,
+        "sha256": "2361f73d6c8146e4af24a1f7f959e4f38d4a5bd8f03c8f7c0c9590e826da4825"
+      },
+      {
+        "path": "data/speeches_20251120/Myanmar_Hlaing_Ribbon_1.txt",
+        "bytes": 15885,
+        "sha256": "879f739aa576809f59f9d70162c50544f040dc0adbf0ae7a9432184a8e5e91bf"
+      },
+      {
+        "path": "data/speeches_20251120/Myanmar_Kyi_Famous_1.txt",
+        "bytes": 21627,
+        "sha256": "d52094b0c98fc467d003a634a22fe0278864f04ed4eac98b44bebc16854b7c65"
+      },
+      {
+        "path": "data/speeches_20251120/Myanmar_Kyi_International_1.txt",
+        "bytes": 15915,
+        "sha256": "25f986fbf6b212fd365b4ce8babf09bd23be6985af3ba9e842a0a30e374a3ba1"
+      },
+      {
+        "path": "data/speeches_20251120/Myanmar_Sein_International_1.txt",
+        "bytes": 11365,
+        "sha256": "b4489f7503a01708f124d9e5cc7274fef8dd485d734c8cf6b0db315253fbe300"
+      },
+      {
+        "path": "data/speeches_20251120/Myanmar_Sein_Ribbon_1.txt",
+        "bytes": 11029,
+        "sha256": "844eff3d5e176ffe1f9c8941767a7bf15b9775d244b74b9f0c35c97e4c3e2dc1"
+      },
+      {
+        "path": "data/speeches_20251120/Netherlands_Balkenende_International_1.txt",
+        "bytes": 26116,
+        "sha256": "ea860e8ccb6702a1e83cd5ce2fffb8910b32c3dca98bc984c0eb79298a81c1d2"
+      },
+      {
+        "path": "data/speeches_20251120/Netherlands_Balkenende_Ribbon_1.txt",
+        "bytes": 3996,
+        "sha256": "7af717950169b102a80c125a37dc2961866747fcc67dd68d865e6442123c5e57"
+      },
+      {
+        "path": "data/speeches_20251120/Netherlands_Rutte_International_1.txt",
+        "bytes": 12720,
+        "sha256": "d51a7565e31dc577bfe8e89abb183e92a8a40d042130a89ae6efe9d5d463f86a"
+      },
+      {
+        "path": "data/speeches_20251120/Netherlands_Rutte_International_2.txt",
+        "bytes": 13414,
+        "sha256": "7a4ff97472213fd47bab54bc56795c2edd2b7f5e7a272cd38e179aa63702515b"
+      },
+      {
+        "path": "data/speeches_20251120/Netherlands_Rutte_Ribbon_2.txt",
+        "bytes": 8532,
+        "sha256": "0fa3197524145570f071ac67bd62f499eb8bd388f6acde36955f22d3df8f6d34"
+      },
+      {
+        "path": "data/speeches_20251120/Norway_Bondevik_International_2.txt",
+        "bytes": 10194,
+        "sha256": "0caa673b61f77638b3bfec8b9577d2df4586d29a97a00505629477da0586bf4e"
+      },
+      {
+        "path": "data/speeches_20251120/Norway_Solberg_Famous_1.txt",
+        "bytes": 10079,
+        "sha256": "2942c56d6f401bba1d7d792159bbf24d8d9724b1d9359d13080ffab407ac096d"
+      },
+      {
+        "path": "data/speeches_20251120/Norway_Solberg_International_2.txt",
+        "bytes": 12366,
+        "sha256": "c9a62f73fb48bd78c8774b340e8bb702eeeb3ae1186fe41b016ff9eb114cc4e4"
+      },
+      {
+        "path": "data/speeches_20251120/Norway_Stoltenberg_International_2.txt",
+        "bytes": 4341,
+        "sha256": "f0ca299c5ecdfe34104dd9b5aefb8ea27b625f63867b6a15ee6d0e081ab48cd8"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Aquino III_International_1.txt",
+        "bytes": 13674,
+        "sha256": "300eeda583cd051cc32b459fb53a7df513fe8245f6820e4d46ef97489f70b16f"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Arroyo_Campaign_1.txt",
+        "bytes": 6396,
+        "sha256": "fdb3ed113fcd74f8b7a853b093e4b81c3ff022829f153e458894c3a07ae024c2"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Arroyo_Famous_1.txt",
+        "bytes": 34345,
+        "sha256": "d0aff3c24e1d995b8facda4cff26d90fe9db8561f335e3ccbad9bd0fcc7e1723"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Arroyo_Famous_2.txt",
+        "bytes": 9641,
+        "sha256": "e1274cf2702c73def8d687d8b2262c03201ff9c9a5eb9b077d26d434c52b95d6"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Arroyo_International_1.txt",
+        "bytes": 10517,
+        "sha256": "5f59e91778aa18815d33da7b9558b004d7887cd71cc53855d2407c7e7b831931"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Arroyo_International_2.txt",
+        "bytes": 8686,
+        "sha256": "117278c0129b68ea0b64887c39e41b8321f95193c240344f10c560ec0807c3b5"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Arroyo_Ribbon_2.txt",
+        "bytes": 12282,
+        "sha256": "d038335b1b58089ee4b69096700d8310d590cbb52ed413c089a20c1d0d110ec6"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Duterte_Famous_1.txt",
+        "bytes": 55450,
+        "sha256": "41a6326f81117e3f242dd6ab9745835ef0d34b417b57acea714c5d722d994495"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Duterte_International_1.txt",
+        "bytes": 17454,
+        "sha256": "e71439c722925a75ef824131be9f8281eac4a5b5a138d26c5cf5dbd9a0a0cb5f"
+      },
+      {
+        "path": "data/speeches_20251120/Philippines_Estrada_International_1.txt",
+        "bytes": 16378,
+        "sha256": "d39d4df15f8d08e942a3e472d88de0135ca2182675e925d507c9f6b2ae39f5a3"
+      },
+      {
+        "path": "data/speeches_20251120/Serbia_Kostunica_International_1.txt",
+        "bytes": 17071,
+        "sha256": "6a59bf22b76917d0fb87950ef5a92fb9c2755320e67b0ecfecacb1a461b95aac"
+      },
+      {
+        "path": "data/speeches_20251120/Serbia_Nikolic_International_1.txt",
+        "bytes": 20655,
+        "sha256": "eb3dfd15dc5f388168bd79277c8a5ab2b31726814916f35c98180f61d831a275"
+      },
+      {
+        "path": "data/speeches_20251120/Serbia_Vucic_International_1.txt",
+        "bytes": 10338,
+        "sha256": "228da34a2f4fda1c95fb70b307cad7cc5d7abc5e291282f3d3bb9852208053f3"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_Campaign_2.txt",
+        "bytes": 33082,
+        "sha256": "e8cda7d1d954e58a36246a968598bd5138a38d77ee0353edf81b00299e0034d1"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_Campaign_3.txt",
+        "bytes": 31544,
+        "sha256": "7919e0cd3e7227c6fa8608aa70e0013188c3548ae8bcd959fc1a2f637eaa726a"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_Famous_1.txt",
+        "bytes": 83963,
+        "sha256": "7070209244962ecb44a49ef867f9626dc10e710fa99b7a3496fb35148d2839d0"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_Famous_2.txt",
+        "bytes": 7712,
+        "sha256": "a9bd52be96d1861e3aaaddb7bfb1aa91ab06279c488ec6ab76567937fb91bedd"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_Famous_3.txt",
+        "bytes": 31576,
+        "sha256": "24a928004326cef4da3a4f09508f75102ddd2a46d685325b3a13c26d02031ded"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_International_1.txt",
+        "bytes": 18477,
+        "sha256": "3e2582a6dd2dd2bda2e420c4c1ac19e0c9d05b9304c01f80e29ef51f4c73966a"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_International_2.txt",
+        "bytes": 15594,
+        "sha256": "5e6a84d63dc08f3be901c1b5e7ae00a9615b51cdf2124a22f34655f719fd171f"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_International_3.txt",
+        "bytes": 10801,
+        "sha256": "51498d8382c9195f1ac16dcdb97a8ee7e901d4d06f0eaad16e3416d36a81ce43"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_Ribbon_1.txt",
+        "bytes": 9841,
+        "sha256": "c29458a50ddac2770c872ecf307de69a0a15134d9ab00482cf8078d47375b1e5"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_Ribbon_2.txt",
+        "bytes": 15410,
+        "sha256": "9801740bde52b1bf2aa05376f60232939a4f0c513ace0dba1a6d3ba115ff9a27"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Loong_Ribbon_3.txt",
+        "bytes": 14838,
+        "sha256": "6f3e7a3721ebbc2ef52b38b5b29a38114c50f4c902d93d58d5c1ef7626f03cc6"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Tong_Campaign_2.txt",
+        "bytes": 10822,
+        "sha256": "48f032e0403dce5f51f7dc9aec4be2e7fa9d556ca98695f5a80402218200b3c6"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Tong_Campaign_3.txt",
+        "bytes": 6720,
+        "sha256": "26f831395497b3b27284833da516b4f7a80b24397f38e383071bacf569892392"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Tong_Famous_2.txt",
+        "bytes": 59894,
+        "sha256": "3f5b0d405df4ea890b303648534cd88c4523d579b912e13b9c61216b1368ac71"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Tong_Famous_3.txt",
+        "bytes": 56907,
+        "sha256": "e46e84b3b9abbe0408c7362b4aae9bafde8309806019c3685f1557be4c96be1e"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Tong_International_2.txt",
+        "bytes": 17736,
+        "sha256": "fe9b093b73ceb963ef2ec93934541084b09f18dd46638912366b8f6db7c94357"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Tong_International_3.txt",
+        "bytes": 28691,
+        "sha256": "68c6ab65620e1143a0ce66c4f64d52123124ca355866178294eeeada7632e76c"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Tong_Ribbon_2.txt",
+        "bytes": 9844,
+        "sha256": "58a7a11cca0a9b2e34b09617055ee80b7eb98fe142dc0accf0ee0d356b8aad6f"
+      },
+      {
+        "path": "data/speeches_20251120/Singapore_Tong_Ribbon_3.txt",
+        "bytes": 11327,
+        "sha256": "e1996c96fcec97f5ecdd1bd843411672d16146386b0341aad9f525967debcf85"
+      },
+      {
+        "path": "data/speeches_20251120/Slovakia_Dzurinda_Famous_1.txt",
+        "bytes": 6945,
+        "sha256": "f8d4eff878c1fb824857e4dcdda8946b16cd34dc00cfa66707a869cd81e2ca11"
+      },
+      {
+        "path": "data/speeches_20251120/Slovakia_Dzurinda_International_1.txt",
+        "bytes": 5778,
+        "sha256": "2414ff45e423bed1061e2ff7ba369d60508bf1d2ac629c81ca922867e3e3be15"
+      },
+      {
+        "path": "data/speeches_20251120/Slovakia_Dzurinda_International_2.txt",
+        "bytes": 10379,
+        "sha256": "3bcd52882e5502b5d76cd325a16cd7a6b690b1c4d7af442223ea61d83eda0e6d"
+      },
+      {
+        "path": "data/speeches_20251120/Slovakia_Dzurinda_Ribbon_2.txt",
+        "bytes": 15425,
+        "sha256": "d4e52f5c08c9872e29e98a8a9504629f8945a6e72fefd9b8801d2c5efcee3f79"
+      },
+      {
+        "path": "data/speeches_20251120/Slovakia_Fico_International_1.txt",
+        "bytes": 17362,
+        "sha256": "c41914d55391c7a6aa974f65c096150e47f0b6c1042dea7a2aa9afd90da5a75f"
+      },
+      {
+        "path": "data/speeches_20251120/Slovakia_Fico_International_2.txt",
+        "bytes": 14649,
+        "sha256": "364a24282c114647be87c9b36202d175d65f622a4f2a27cc28a33e84e970bf42"
+      },
+      {
+        "path": "data/speeches_20251120/Slovakia_Fico_International_3.txt",
+        "bytes": 17252,
+        "sha256": "381633bb584569fa91ba7706be2c9ed9eb9c68e4ca31052abb3682222edb7f7b"
+      },
+      {
+        "path": "data/speeches_20251120/Slovenia_Jansa_International_1.txt",
+        "bytes": 19652,
+        "sha256": "e0f74671b523ad3cad52413fcc8451254efbba17d456f8e680a293d03d6c7be4"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mandela_Campaign_1.txt",
+        "bytes": 10975,
+        "sha256": "21ac0a8dc45e30fa3729d9d70f377f52bfcebce54809d8d6ffa93d5f94c28f6f"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mandela_Famous_1.txt",
+        "bytes": 5334,
+        "sha256": "96a690ef495fb836e0cb3cc640696d3fb503a366ff94a9492e3ab812524508e9"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mandela_International_1.txt",
+        "bytes": 9038,
+        "sha256": "d7303c3ff5207422fc0314ead09591847b1abe48736c6e90487dae5516b37b05"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mandela_Ribbon_1.txt",
+        "bytes": 12939,
+        "sha256": "fe1515f216d07061c7c30581e7214e67cb9eb59ebc0dab57839ad7506f60fd39"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mbeki_Campaign_1.txt",
+        "bytes": 6190,
+        "sha256": "fa4d593258472e32be246475055406c5946b9077da502e3fd7d989e3dcbc0a06"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mbeki_Campaign_2.txt",
+        "bytes": 23788,
+        "sha256": "4acecd8a8d72b854ee601c5e964e63fa20bcbe5eee890b710b542a26931d45a3"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mbeki_Famous_1.txt",
+        "bytes": 11027,
+        "sha256": "8c3810638a8a9741e139affdf52c7a9f6e0752bc960a00c877a3963de93df137"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mbeki_Famous_2.txt",
+        "bytes": 11779,
+        "sha256": "ca6dd2b5d6eba6610201f58a62a6f075dfcc73a6d564ad3fbf7cde2be798892f"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mbeki_International_1.txt",
+        "bytes": 18399,
+        "sha256": "4009599dfca194e4d5279758e1102aff6d24aec7137caf89acfd214eb999f299"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mbeki_International_2.txt",
+        "bytes": 15937,
+        "sha256": "52e2d4f0a82ea155fb372196e6468fc4a184c60b53ad00658b2f405d8ca37596"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mbeki_Ribbon_1.txt",
+        "bytes": 13191,
+        "sha256": "04cee187df412f711d4b4c76f9d735d41d68a8589f68002e0859ecdd625f7955"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Mbeki_Ribbon_2.txt",
+        "bytes": 10938,
+        "sha256": "7637f42c841e39e87b301650cabd745aae3d9bd5115ae43315ea6a1d581f8085"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Ramaphosa_Campaign_1.txt",
+        "bytes": 14553,
+        "sha256": "7a35e9c9c369a249d9a75dbf48e91c5d2ad6cc2ebcdc12ccc045074f24c0bc0f"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Ramaphosa_Famous_1.txt",
+        "bytes": 34547,
+        "sha256": "898f607a925b615d6102c3389ad18f226af3f1d705908cf6de45f1d5daa86cbc"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Ramaphosa_International_1.txt",
+        "bytes": 19864,
+        "sha256": "1310c33c0a24561f7918174ccee6c3eda64b9cae29be42afd16ebf7c5233c145"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Ramaphosa_Ribbon_1.txt",
+        "bytes": 12116,
+        "sha256": "1b1dc6f9b9aad61051f423db7ba3ecae15d3b5acaebc1730f980872958a94fe8"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Zuma_Campaign_1.txt",
+        "bytes": 17356,
+        "sha256": "637a30fd8b8d00207fa9febc8d82a07e978b872aace08501d2fd83ed41091f88"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Zuma_Campaign_2.txt",
+        "bytes": 9457,
+        "sha256": "5efc026f175314a114b686646dba7c7d08206833e296086f213585f898a31cce"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Zuma_Famous_1.txt",
+        "bytes": 9594,
+        "sha256": "d214ae144757637bcff8c8bbd11db26ffb9f1713e1f110eb95dd8ffa181ded95"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Zuma_Famous_2.txt",
+        "bytes": 23846,
+        "sha256": "aa57becd0a62842cfaba94d725ca4d29c34a87107f21d2fefe73e24a2d4804fa"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Zuma_International_1.txt",
+        "bytes": 9042,
+        "sha256": "648c615d603e97388209ce3fdbb12e57cfdc24ac5cf7b9ef5ee9721ae1fc3581"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Zuma_International_2.txt",
+        "bytes": 11728,
+        "sha256": "8862dbd6fd5ef5fb5c7b33113ce9af4206a58b82aa69599cb913a10ca84ba30d"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Zuma_Ribbon_1.txt",
+        "bytes": 11181,
+        "sha256": "8a06a9c093b90618ab0195915f560806a23a2462fb2e0043b9505d0f84f05d2c"
+      },
+      {
+        "path": "data/speeches_20251120/South Africa_Zuma_Ribbon_2.txt",
+        "bytes": 14558,
+        "sha256": "5741680a383775a514cd22d3d419332d8e827f84e167b874a14b122519826264"
+      },
+      {
+        "path": "data/speeches_20251120/Sweden_Lofven_International_1.txt",
+        "bytes": 9424,
+        "sha256": "71b4b3ebb520955109991b4c6c787de494a2ecb888a3ed166d93ef9b5daa6ce4"
+      },
+      {
+        "path": "data/speeches_20251120/Sweden_Persson_International_1.txt",
+        "bytes": 4250,
+        "sha256": "4c24a747aa18fd4ae7d60cc603ff5607fa13552de3767dc7b1db933ceecbcb20"
+      },
+      {
+        "path": "data/speeches_20251120/Sweden_Reinfeldt_International_1.txt",
+        "bytes": 5817,
+        "sha256": "33044e2a377e34f6630c54cee621dfe7a25c535ed59fb452f4ed346f95c18695"
+      },
+      {
+        "path": "data/speeches_20251120/Switzerland_Leuthard_Darbellay_International_1.txt",
+        "bytes": 12747,
+        "sha256": "15b2b85b4d44772c0b6385cf95547d403dd1180aee1177fee5ba5f6268a57043"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Bian_International_1.txt",
+        "bytes": 23887,
+        "sha256": "b281a7ef5c0508b25f497b32c40b49c69023331b6d22fe925ec1f120cc874a14"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Bian_Ribbon_1.txt",
+        "bytes": 9862,
+        "sha256": "b6003f662d77272919854c74455bf29735cd77145f6603269f41acf9f692a96a"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Bian_Ribbon_2.txt",
+        "bytes": 14782,
+        "sha256": "9d2466247ebf8c2eb578b04c204263432409773d5d8d776f2199082162eb59b8"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Ing-wen_Famous_1.txt",
+        "bytes": 16493,
+        "sha256": "0a0b7d4643c7c8284d1b92da45df9c28353abd8c1b4d6379ccc7cabec31fd04a"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Ing-wen_International_1.txt",
+        "bytes": 23129,
+        "sha256": "727c80b51bf852ff58e575fbb0177b7235674539c6c1c132757e43920e5464eb"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Ing-wen_Ribbon_1.txt",
+        "bytes": 16095,
+        "sha256": "fd94a1944830648b3d21cf808950fa00e36afe34aba7c947240eb91f43cef786"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Ying-jeou_Campaign_2.txt",
+        "bytes": 10268,
+        "sha256": "b9bcd1a4f985e1a24952964fbb609ccb023a9d7e3f4d29f22bc24f11ae9d9969"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Ying-jeou_Famous_1.txt",
+        "bytes": 16831,
+        "sha256": "795e7f604d381a06f0c3b49c30626cc7b0a9210f1976b1b28e0feeb63ef01644"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Ying-jeou_Famous_2.txt",
+        "bytes": 11005,
+        "sha256": "375c9feec702d5985f7de5b8631b17549c066b5ee8bd6d42d36cf37b4203f37b"
+      },
+      {
+        "path": "data/speeches_20251120/Taiwan_Ying-jeou_International_1.txt",
+        "bytes": 17040,
+        "sha256": "0d76855715b95d1810db04ae19cc4d2af9a4a684d4dd91fad6ee7d92661aec0d"
+      },
+      {
+        "path": "data/speeches_20251120/Turkmenistan_Niyazov_International_1.txt",
+        "bytes": 8492,
+        "sha256": "99325d40efdb25fd80ba1e1d4e5fe531f8e09e5ff2003cc6dc47e407bf5a8fba"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Blair_Campaign_2.txt",
+        "bytes": 10414,
+        "sha256": "954677ccc05b699da29bdcb9a5f5466c51d51b8f2180b7fe90f62c1e4eff5419"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Blair_Campaign_3.txt",
+        "bytes": 24115,
+        "sha256": "a338379e4dcb0dd145f5c5034379b498172cc49fb21a083dd824ff03ce484165"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Blair_Famous_2.txt",
+        "bytes": 4011,
+        "sha256": "f004c9184fd5051ae150039e34518f157d309eaf1c1a0a6b208d3754c4b317f1"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Blair_Famous_3.txt",
+        "bytes": 9394,
+        "sha256": "85f36948cf64cf9716099ebce27cb881048d9072c51def3c2a7725f59e201800"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Blair_International_2.txt",
+        "bytes": 17899,
+        "sha256": "37c1f73989055e88ed384f90f042ced3bd5a7aa0eb86ed7f34ae5e7a1b11dd63"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Blair_International_3.txt",
+        "bytes": 18907,
+        "sha256": "f89f0354f016264d132418fd7b7233bb540c2c5b9bad3d972bdad0d92be8d5b6"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Blair_Ribbon_2.txt",
+        "bytes": 7886,
+        "sha256": "71afc6dc6af0ac0e21f190067aefd405089c1370d2060ead7333e593c5c80376"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Blair_Ribbon_3.txt",
+        "bytes": 21631,
+        "sha256": "a6340b3268a9f733f109eb14b5df09290fc741355956643ddaa6e972d77623e8"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Brown_Campaign_1.txt",
+        "bytes": 37048,
+        "sha256": "2424d5739a75356079e79bffd7ca94732235351d9b58e4adb7a380f6df55c055"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Brown_Famous_1.txt",
+        "bytes": 3147,
+        "sha256": "579b76b41f28c3db79353c6757af1bb9fc8c09cad9d201fea281b4bcfd695bcd"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Brown_International_1.txt",
+        "bytes": 19607,
+        "sha256": "c7190e37565ed93cb985d5f975d670b629aa8ba55b83f843e8b202de8ec328e1"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Brown_Ribbon_1.txt",
+        "bytes": 11231,
+        "sha256": "c8cf1918edaf9074889b2397c5e95b4f67da106bcdac9a075a55b272264c6b39"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Cameron_Campaign_1.txt",
+        "bytes": 16742,
+        "sha256": "671f8801d00521cdf13d9dec1ab92eeee187ebfcc1394b75d16e735c3405df02"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Cameron_Famous_1.txt",
+        "bytes": 6673,
+        "sha256": "8ba3760fe67ef18bee0cc1c48edff4ec22b69df340d2bca898103e6fb43f9d2c"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Cameron_International_1.txt",
+        "bytes": 5052,
+        "sha256": "c2b2e7a0207d4248c2cab96f20f65fdaad6d26c820051ffb1a40dc9a7a883daf"
+      },
+      {
+        "path": "data/speeches_20251120/UK_Cameron_Ribbon_1.txt",
+        "bytes": 14738,
+        "sha256": "ab721d683b5524df5b762d686cd068b50d9dc22896aafae981b00ce12bdae8c1"
+      },
+      {
+        "path": "data/speeches_20251120/UK_May_Campaign_1.txt",
+        "bytes": 12135,
+        "sha256": "46e60d1430c5c82390b1029089a177e2286e1d9eefa5364e413bfe2c9cf70fe1"
+      },
+      {
+        "path": "data/speeches_20251120/UK_May_Famous_1.txt",
+        "bytes": 42194,
+        "sha256": "9451d2440ed365ff771e0908581d39106e9f4221f96c15c033cc3eb5329327dd"
+      },
+      {
+        "path": "data/speeches_20251120/UK_May_International_1.txt",
+        "bytes": 18949,
+        "sha256": "18005c37585245f6bbfd5a36cbb1bd15c1cea027cf99488f48098a99f99490da"
+      },
+      {
+        "path": "data/speeches_20251120/UK_May_Ribbon_1.txt",
+        "bytes": 6694,
+        "sha256": "cbefb9dd1e2de888b8763c8e2f40d3366889263828dc2f7351ca7a691e61a149"
+      },
+      {
+        "path": "data/speeches_20251120/US_Bush_Campaign_1.txt",
+        "bytes": 51824,
+        "sha256": "a7dcb875dd07a09a851c502582cb17288b04248e52edaa40399302a797588f83"
+      },
+      {
+        "path": "data/speeches_20251120/US_Bush_Campaign_2.txt",
+        "bytes": 25968,
+        "sha256": "f09c1ce7ef8abb3b83baf19eefe3029320c10e1b9410955ed9eb9e63d57d09b7"
+      },
+      {
+        "path": "data/speeches_20251120/US_Bush_Famous_1.txt",
+        "bytes": 18194,
+        "sha256": "467223531253be88da8002004c1a40a67c743e2bcc3f969f5f74c8d0876ebb18"
+      },
+      {
+        "path": "data/speeches_20251120/US_Bush_Famous_2.txt",
+        "bytes": 12299,
+        "sha256": "cc2c1ebeccba8e7ab63c10e73fc904d37b75634a2b76dbf07054d102ee3b9e5f"
+      },
+      {
+        "path": "data/speeches_20251120/US_Bush_International_1.txt",
+        "bytes": 17711,
+        "sha256": "cdd47a84b3fe9dcc079062ab37cba315edbf3b1cb3da683272420095c503cb10"
+      },
+      {
+        "path": "data/speeches_20251120/US_Bush_International_2.txt",
+        "bytes": 18954,
+        "sha256": "0d3eff3968855c66b792dfd5103227a1d72aa2ba0bb4be33b54d2eb76777e7d0"
+      },
+      {
+        "path": "data/speeches_20251120/US_Bush_Ribbon_1.txt",
+        "bytes": 5862,
+        "sha256": "a3d1a0a3f98b6bc04beaddd6b32f82c908ae13a8aae2e1cf5b0c0927b2d22978"
+      },
+      {
+        "path": "data/speeches_20251120/US_Bush_Ribboncutting_2.txt",
+        "bytes": 10668,
+        "sha256": "a8c7decd6231c005ba8ddf8f887500969de6241ec30029bca62c08e8daac4cce"
+      },
+      {
+        "path": "data/speeches_20251120/US_Obama_Campaign_1.txt",
+        "bytes": 28197,
+        "sha256": "bb30bca7ee05c449ab47fed0ab92721a749c1e812663f846a0afe62f036d1389"
+      },
+      {
+        "path": "data/speeches_20251120/US_Obama_Campaign_2.txt",
+        "bytes": 22163,
+        "sha256": "c7cf761bf0c03207e764a42e93167930e3b19896a0344ba037ed4958f7846983"
+      },
+      {
+        "path": "data/speeches_20251120/US_Obama_Famous_1.txt",
+        "bytes": 9430,
+        "sha256": "6c3eead66540fc2042bed4f679a7de9bfa80b255f4361db931830f371fe91bf6"
+      },
+      {
+        "path": "data/speeches_20251120/US_Obama_Famous_2.txt",
+        "bytes": 20135,
+        "sha256": "38e47a024f0e20183ee85e6497fc13767f41db7f6f967a2302e0833b09eb9ddf"
+      },
+      {
+        "path": "data/speeches_20251120/US_Obama_International_1.txt",
+        "bytes": 34314,
+        "sha256": "8e47952493822b3ed1666a76a9838d5edc0527e62449a12ce6e357a6c90c8f68"
+      },
+      {
+        "path": "data/speeches_20251120/US_Obama_International_2.txt",
+        "bytes": 8423,
+        "sha256": "bda6d2fd648dd8b4b6318f1909c7b6e1794db5d478b73af4eacda68f525b80f6"
+      },
+      {
+        "path": "data/speeches_20251120/US_Obama_Ribbon_1.txt",
+        "bytes": 12240,
+        "sha256": "48277d9e340942c5b12f25bff7bb50e7362c6710fd954e206ca6215496d6cddd"
+      },
+      {
+        "path": "data/speeches_20251120/US_Obama_Ribbon_2.txt",
+        "bytes": 10697,
+        "sha256": "b62b806819538ab128a48854082bdbef3098169c0b39f7a097fe265bd0c74323"
+      },
+      {
+        "path": "data/speeches_20251120/US_Trump_Campaign_1.txt",
+        "bytes": 20087,
+        "sha256": "09d9ca802420cab86c66ceb87e3e2c920fe9d82ffb00bb70d2172a41b6ec139c"
+      },
+      {
+        "path": "data/speeches_20251120/US_Trump_Famous_1.txt",
+        "bytes": 10166,
+        "sha256": "47b4319ec3c33b959446f0b2ff56dfa7ba4b0a203a80aa6f79de0febeca035f3"
+      },
+      {
+        "path": "data/speeches_20251120/US_Trump_International_1.txt",
+        "bytes": 22748,
+        "sha256": "e2e180d30c17462942cbb9f5c4cc05ea5ef4c1e35204e601b9903da629c23644"
+      },
+      {
+        "path": "data/speeches_20251120/US_Trump_Ribbon_1.txt",
+        "bytes": 7294,
+        "sha256": "7c103d388fade22ad96419acd2d29ecaa96c161d3429079144b1085c8b78a1b0"
+      }
+    ]
+  },
+  {
+    "name": "eu",
+    "csv": "data/benchmarks/eu_sentences.csv",
+    "text_column": "text",
+    "text_path_column": null,
+    "documents": 1762,
+    "windows": 1807,
+    "doc_index_matches_legacy": true,
+    "ordered_windows_sha256": "e131bb8018dafce9a5af9d6e6151b73c2e567ada24314811d67a77fb8c2b3d56",
+    "inputs": [
+      {
+        "path": "data/benchmarks/eu_sentences.csv",
+        "bytes": 683220,
+        "sha256": "6c8dfa374a513c9fed2efb623edfc4ce006e2ff680cb751c3ecc3131550e1475"
+      }
+    ]
+  },
+  {
+    "name": "agora",
+    "csv": "data/benchmarks/agora_paragraphs.csv",
+    "text_column": "text",
+    "text_path_column": null,
+    "documents": 5272,
+    "windows": 41308,
+    "doc_index_matches_legacy": true,
+    "ordered_windows_sha256": "da88717a23de516302d43e933f3e33a5bce74f4d0be4c9d07cca14572823f0a2",
+    "inputs": [
+      {
+        "path": "data/benchmarks/agora_paragraphs.csv",
+        "bytes": 4466516,
+        "sha256": "d5e0568c10f7f556cf1084727273b87e3c9ce86e63866f9b8aeb682ca9f0f122"
+      }
+    ]
+  },
+  {
+    "name": "usgov_speeches",
+    "csv": "data/benchmark_usgov/speeches.csv",
+    "text_column": "text",
+    "text_path_column": null,
+    "documents": 359,
+    "windows": 51000,
+    "doc_index_matches_legacy": true,
+    "ordered_windows_sha256": "21f862f314c320de5fe80a209b9abe015a8af069702671bc09e27b45abcd6e61",
+    "inputs": [
+      {
+        "path": "data/benchmark_usgov/speeches.csv",
+        "bytes": 5267433,
+        "sha256": "dbfec54d17a62712aa19b1af4b1949c48b64075c69e24bb47d8710eee5d57b7c"
+      }
+    ]
+  },
+  {
+    "name": "antielite_tweets",
+    "csv": "data/external/licht_antielite/tweets_text.csv",
+    "text_column": "text_en_clean",
+    "text_path_column": null,
+    "documents": 5401,
+    "windows": 9635,
+    "doc_index_matches_legacy": true,
+    "ordered_windows_sha256": "6ee6e62fcf06ea237279986b4f1f9e5763eee3c3986a542a0a3e5ec947bffad0",
+    "inputs": [
+      {
+        "path": "data/external/licht_antielite/tweets_text.csv",
+        "bytes": 3054982,
+        "sha256": "dc54af58cb5a41930d8b211c9a10533a2b4f3fbf640e266b1c7688f62d6e3b9f"
+      }
+    ]
+  },
+  {
+    "name": "popbert_en_train",
+    "csv": "data/benchmark_popbert/train_en.csv",
+    "text_column": "text_en",
+    "text_path_column": null,
+    "documents": 7036,
+    "windows": 7442,
+    "doc_index_matches_legacy": true,
+    "ordered_windows_sha256": "ba5938f1800a9ce39dd0545f4d52a19a15082c8d84500be70ad4de493345eeac",
+    "inputs": [
+      {
+        "path": "data/benchmark_popbert/train_en.csv",
+        "bytes": 2427173,
+        "sha256": "ca4f83390bcc7766b004964709362d13066a0de3255b278e510616f5aa47a187"
+      }
+    ]
+  },
+  {
+    "name": "popbert_en_test",
+    "csv": "data/benchmark_popbert/test_en.csv",
+    "text_column": "text_en",
+    "text_path_column": null,
+    "documents": 1759,
+    "windows": 1853,
+    "doc_index_matches_legacy": true,
+    "ordered_windows_sha256": "f68090dd09c7ae23ddbc5b4e9d4a74e39f03856ef36e47b24ed2198d7a553ec9",
+    "inputs": [
+      {
+        "path": "data/benchmark_popbert/test_en.csv",
+        "bytes": 598845,
+        "sha256": "cb754ea57b1bdc7b8b80cb274a0e897ff23b7241b6e9d0b7957883ef3f149519"
+      }
+    ]
+  },
+  {
+    "name": "portugal_en",
+    "csv": "data/benchmark_portugal/paragraphs_en.csv",
+    "text_column": "text_en",
+    "text_path_column": null,
+    "documents": 6214,
+    "windows": 15607,
+    "doc_index_matches_legacy": true,
+    "ordered_windows_sha256": "4b7dc8a59228f6131f552dec574a9b5e50e420d0c3dddb3b7b094b197ba548d2",
+    "inputs": [
+      {
+        "path": "data/benchmark_portugal/paragraphs_en.csv",
+        "bytes": 5388721,
+        "sha256": "3682cde9ad17c7e05dd31b803664d83972566ac4a72cb5650abf28eb989b3acd"
+      }
+    ]
+  }
+]

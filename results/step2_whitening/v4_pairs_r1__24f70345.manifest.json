@@ -1,0 +1,73 @@
+{
+  "argv": [
+    "--encoder",
+    "e5-large-v2",
+    "--sentences",
+    "alternative-pairs/v4/pair_anchors.json",
+    "--set-id",
+    "v4_pairs_r1",
+    "--repeat",
+    "2"
+  ],
+  "encoder_id": "intfloat/e5-large-v2",
+  "extra": {
+    "device": "cuda",
+    "encoder_spec": {
+      "batch_size": 64,
+      "dtype": "float16",
+      "label": "e5-large-v2",
+      "max_length": 96,
+      "model_id": "intfloat/e5-large-v2",
+      "pooling": "mean",
+      "template": "query: {text}",
+      "trust_remote_code": false
+    },
+    "example_rendered_input": "query: On this question the people must have the final word, not the politicians.",
+    "gpu_name": "NVIDIA A30",
+    "groups": {
+      "E__mainstream": 40,
+      "E__populist": 40,
+      "M__mainstream": 40,
+      "M__populist": 40,
+      "P__mainstream": 40,
+      "P__populist": 40
+    },
+    "n_sentences": 240,
+    "output": "results/v4/embeddings/e5-large-v2/sentences/v4_pairs_r1__24f70345.npz",
+    "peak_vram_mb": 683.8,
+    "repeat": 2,
+    "repeat_byte_identical": true,
+    "schema": "populism_axis.v4.pair_anchors.v1",
+    "seconds": 8.22,
+    "set_id": "v4_pairs_r1",
+    "task": null,
+    "torch_cuda": "12.6",
+    "torch_version": "2.14.0+cu126"
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "b1d7e0661014ffa15454e7ba55d73b59460bb328",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "sentences": {
+      "path": "/home/atomasevic/populism-axis/alternative-pairs/v4/pair_anchors.json",
+      "sha256": "24f703452b0d740471dfed29ca7d2fabe8e13b02a6c85c45810776f95a05ca51"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "b5abd67df7e2c1e999dd8799352de7711743b905413a7b718fd6e7d9e0dc7aee",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/encode_sentences_v4.py",
+  "timestamp_utc": "2026-09-23T19:01:46Z"
+}

@@ -1,0 +1,460 @@
+{
+  "english_split": "holdout",
+  "label": "B4_axis",
+  "systems": {
+    "EM__frozen__soft": {
+      "english": {
+        "extreme_ap": 0.3892857142857143,
+        "extreme_auroc": 0.8351063829787235,
+        "extreme_auroc_ci95": [
+          0.6136923076923076,
+          1.0
+        ],
+        "leader_term_spearman": 0.17944463588020967,
+        "leader_term_spearman_ci95": [
+          -0.20992108413966473,
+          0.5251207796799368
+        ],
+        "n_leader_terms": 37,
+        "spearman": 0.3298405084985882,
+        "spearman_ci95": [
+          0.06187779897151731,
+          0.5797848747380856
+        ]
+      },
+      "eu": {
+        "auroc": 0.8048242903637787,
+        "auroc_speaker_clustered_ci95": [
+          0.6747542997542998,
+          0.8243697478991596
+        ],
+        "average_precision": 0.08826190183399654,
+        "pooled_within_speaker_auroc": 0.7753851156988396,
+        "within_speaker_auroc": [
+          {
+            "auroc": 0.7790277777777778,
+            "n": 324,
+            "n_positive": 24,
+            "speaker": "Alexis Tsipras"
+          },
+          {
+            "auroc": 0.4786516853932584,
+            "n": 446,
+            "n_positive": 1,
+            "speaker": "Eric Zemmour"
+          },
+          {
+            "auroc": 0.8087121212121212,
+            "n": 531,
+            "n_positive": 3,
+            "speaker": "Herbert Kickl"
+          },
+          {
+            "auroc": 0.8118279569892473,
+            "n": 127,
+            "n_positive": 3,
+            "speaker": "Marine Le Pen"
+          }
+        ]
+      }
+    },
+    "E__frozen__soft": {
+      "english": {
+        "extreme_ap": 0.31403186274509803,
+        "extreme_auroc": 0.8404255319148936,
+        "extreme_auroc_ci95": [
+          0.6402641509433963,
+          0.9820860389610391
+        ],
+        "leader_term_spearman": 0.14094911547282107,
+        "leader_term_spearman_ci95": [
+          -0.2581514410559343,
+          0.5028720156544373
+        ],
+        "n_leader_terms": 37,
+        "spearman": 0.3267581338080015,
+        "spearman_ci95": [
+          0.063785340184095,
+          0.5842427615003988
+        ]
+      },
+      "eu": {
+        "auroc": 0.8125695216907675,
+        "auroc_speaker_clustered_ci95": [
+          0.772010647010647,
+          0.8214911264995063
+        ],
+        "average_precision": 0.09113999142767942,
+        "pooled_within_speaker_auroc": 0.7817324382621242,
+        "within_speaker_auroc": [
+          {
+            "auroc": 0.7801388888888889,
+            "n": 324,
+            "n_positive": 24,
+            "speaker": "Alexis Tsipras"
+          },
+          {
+            "auroc": 0.7033707865168539,
+            "n": 446,
+            "n_positive": 1,
+            "speaker": "Eric Zemmour"
+          },
+          {
+            "auroc": 0.8200757575757576,
+            "n": 531,
+            "n_positive": 3,
+            "speaker": "Herbert Kickl"
+          },
+          {
+            "auroc": 0.7822580645161289,
+            "n": 127,
+            "n_positive": 3,
+            "speaker": "Marine Le Pen"
+          }
+        ]
+      }
+    },
+    "M__frozen__soft": {
+      "english": {
+        "extreme_ap": 0.2621212121212121,
+        "extreme_auroc": 0.8085106382978723,
+        "extreme_auroc_ci95": [
+          0.5974836601307189,
+          0.9635975609756098
+        ],
+        "leader_term_spearman": 0.19308098009975488,
+        "leader_term_spearman_ci95": [
+          -0.18932262141154352,
+          0.5115519672941234
+        ],
+        "n_leader_terms": 37,
+        "spearman": 0.3244086023833842,
+        "spearman_ci95": [
+          0.06454924970953407,
+          0.5745234575407677
+        ]
+      },
+      "eu": {
+        "auroc": 0.7752852964198905,
+        "auroc_speaker_clustered_ci95": [
+          0.5550778050778051,
+          0.8089966088170757
+        ],
+        "average_precision": 0.06668282514881672,
+        "pooled_within_speaker_auroc": 0.7429982113102166,
+        "within_speaker_auroc": [
+          {
+            "auroc": 0.7501388888888889,
+            "n": 324,
+            "n_positive": 24,
+            "speaker": "Alexis Tsipras"
+          },
+          {
+            "auroc": 0.24044943820224718,
+            "n": 446,
+            "n_positive": 1,
+            "speaker": "Eric Zemmour"
+          },
+          {
+            "auroc": 0.7872474747474747,
+            "n": 531,
+            "n_positive": 3,
+            "speaker": "Herbert Kickl"
+          },
+          {
+            "auroc": 0.8091397849462365,
+            "n": 127,
+            "n_positive": 3,
+            "speaker": "Marine Le Pen"
+          }
+        ]
+      }
+    },
+    "PEM__frozen__soft": {
+      "english": {
+        "extreme_ap": 0.4623397435897436,
+        "extreme_auroc": 0.9148936170212767,
+        "extreme_auroc_ci95": [
+          0.7916666666666666,
+          1.0
+        ],
+        "leader_term_spearman": 0.24943649116637084,
+        "leader_term_spearman_ci95": [
+          -0.1301140808732261,
+          0.5774000286693525
+        ],
+        "n_leader_terms": 37,
+        "spearman": 0.40392412331826977,
+        "spearman_ci95": [
+          0.12168222076920446,
+          0.6314095193249242
+        ]
+      },
+      "eu": {
+        "auroc": 0.8699789890001235,
+        "auroc_speaker_clustered_ci95": [
+          0.7340236686390532,
+          0.8844089736502672
+        ],
+        "average_precision": 0.20928455367574317,
+        "pooled_within_speaker_auroc": 0.8415541335084997,
+        "within_speaker_auroc": [
+          {
+            "auroc": 0.8537499999999999,
+            "n": 324,
+            "n_positive": 24,
+            "speaker": "Alexis Tsipras"
+          },
+          {
+            "auroc": 0.5775280898876405,
+            "n": 446,
+            "n_positive": 1,
+            "speaker": "Eric Zemmour"
+          },
+          {
+            "auroc": 0.8724747474747474,
+            "n": 531,
+            "n_positive": 3,
+            "speaker": "Herbert Kickl"
+          },
+          {
+            "auroc": 0.8010752688172043,
+            "n": 127,
+            "n_positive": 3,
+            "speaker": "Marine Le Pen"
+          }
+        ]
+      }
+    },
+    "PE__frozen__hard": {
+      "english": {
+        "extreme_ap": 0.5075757575757576,
+        "extreme_auroc": 0.9361702127659575,
+        "extreme_auroc_ci95": [
+          0.84,
+          1.0
+        ],
+        "leader_term_spearman": 0.24269304165628072,
+        "leader_term_spearman_ci95": [
+          -0.1401278482159386,
+          0.5650921702275336
+        ],
+        "n_leader_terms": 37,
+        "spearman": 0.41989483372451974,
+        "spearman_ci95": [
+          0.16735563460863717,
+          0.6197313014044631
+        ]
+      },
+      "eu": {
+        "auroc": 0.8727289581015945,
+        "auroc_speaker_clustered_ci95": [
+          0.7584869059165857,
+          0.8896694214876033
+        ],
+        "average_precision": 0.22356551267797808,
+        "pooled_within_speaker_auroc": 0.8525544180123913,
+        "within_speaker_auroc": [
+          {
+            "auroc": 0.8665277777777777,
+            "n": 324,
+            "n_positive": 24,
+            "speaker": "Alexis Tsipras"
+          },
+          {
+            "auroc": 0.8134831460674157,
+            "n": 446,
+            "n_positive": 1,
+            "speaker": "Eric Zemmour"
+          },
+          {
+            "auroc": 0.8724747474747475,
+            "n": 531,
+            "n_positive": 3,
+            "speaker": "Herbert Kickl"
+          },
+          {
+            "auroc": 0.7338709677419355,
+            "n": 127,
+            "n_positive": 3,
+            "speaker": "Marine Le Pen"
+          }
+        ]
+      }
+    },
+    "PE__frozen__soft": {
+      "english": {
+        "extreme_ap": 0.5075757575757576,
+        "extreme_auroc": 0.9361702127659575,
+        "extreme_auroc_ci95": [
+          0.84,
+          1.0
+        ],
+        "leader_term_spearman": 0.25088459851711903,
+        "leader_term_spearman_ci95": [
+          -0.12920352380578357,
+          0.5701198160894559
+        ],
+        "n_leader_terms": 37,
+        "spearman": 0.41687023167405063,
+        "spearman_ci95": [
+          0.16198169403014584,
+          0.6183117255241646
+        ]
+      },
+      "eu": {
+        "auroc": 0.890269023194496,
+        "auroc_speaker_clustered_ci95": [
+          0.7752486610558531,
+          0.907333510685466
+        ],
+        "average_precision": 0.22636792002845685,
+        "pooled_within_speaker_auroc": 0.8602323259486329,
+        "within_speaker_auroc": [
+          {
+            "auroc": 0.8756944444444446,
+            "n": 324,
+            "n_positive": 24,
+            "speaker": "Alexis Tsipras"
+          },
+          {
+            "auroc": 0.8044943820224719,
+            "n": 446,
+            "n_positive": 1,
+            "speaker": "Eric Zemmour"
+          },
+          {
+            "auroc": 0.8787878787878788,
+            "n": 531,
+            "n_positive": 3,
+            "speaker": "Herbert Kickl"
+          },
+          {
+            "auroc": 0.7365591397849462,
+            "n": 127,
+            "n_positive": 3,
+            "speaker": "Marine Le Pen"
+          }
+        ]
+      }
+    },
+    "PM__frozen__soft": {
+      "english": {
+        "extreme_ap": 0.6325757575757576,
+        "extreme_auroc": 0.9414893617021276,
+        "extreme_auroc_ci95": [
+          0.8400486111111112,
+          1.0
+        ],
+        "leader_term_spearman": 0.24895378871612145,
+        "leader_term_spearman_ci95": [
+          -0.1358492572345447,
+          0.5719670556604338
+        ],
+        "n_leader_terms": 37,
+        "spearman": 0.43706209676441155,
+        "spearman_ci95": [
+          0.14267953585565832,
+          0.6520322698174854
+        ]
+      },
+      "eu": {
+        "auroc": 0.8779508095414658,
+        "auroc_speaker_clustered_ci95": [
+          0.6733727810650887,
+          0.9010042380689147
+        ],
+        "average_precision": 0.25298005208482804,
+        "pooled_within_speaker_auroc": 0.850608892358679,
+        "within_speaker_auroc": [
+          {
+            "auroc": 0.87,
+            "n": 324,
+            "n_positive": 24,
+            "speaker": "Alexis Tsipras"
+          },
+          {
+            "auroc": 0.48539325842696635,
+            "n": 446,
+            "n_positive": 1,
+            "speaker": "Eric Zemmour"
+          },
+          {
+            "auroc": 0.8882575757575758,
+            "n": 531,
+            "n_positive": 3,
+            "speaker": "Herbert Kickl"
+          },
+          {
+            "auroc": 0.7795698924731183,
+            "n": 127,
+            "n_positive": 3,
+            "speaker": "Marine Le Pen"
+          }
+        ]
+      }
+    },
+    "P__frozen__soft": {
+      "english": {
+        "extreme_ap": 0.7026315789473684,
+        "extreme_auroc": 0.9095744680851063,
+        "extreme_auroc_ci95": [
+          0.7241766136162688,
+          1.0
+        ],
+        "leader_term_spearman": 0.18089274323095786,
+        "leader_term_spearman_ci95": [
+          -0.1765344315212335,
+          0.48100641156822177
+        ],
+        "n_leader_terms": 37,
+        "spearman": 0.44858067779772653,
+        "spearman_ci95": [
+          0.17899707878976737,
+          0.626859698036226
+        ]
+      },
+      "eu": {
+        "auroc": 0.8821324104972603,
+        "auroc_speaker_clustered_ci95": [
+          0.6675904115283359,
+          0.9143928715263794
+        ],
+        "average_precision": 0.21616293291417668,
+        "pooled_within_speaker_auroc": 0.8364950183474894,
+        "within_speaker_auroc": [
+          {
+            "auroc": 0.8656944444444444,
+            "n": 324,
+            "n_positive": 24,
+            "speaker": "Alexis Tsipras"
+          },
+          {
+            "auroc": 0.8269662921348314,
+            "n": 446,
+            "n_positive": 1,
+            "speaker": "Eric Zemmour"
+          },
+          {
+            "auroc": 0.8484848484848485,
+            "n": 531,
+            "n_positive": 3,
+            "speaker": "Herbert Kickl"
+          },
+          {
+            "auroc": 0.5940860215053763,
+            "n": 127,
+            "n_positive": 3,
+            "speaker": "Marine Le Pen"
+          }
+        ]
+      }
+    }
+  },
+  "top_k": 3,
+  "top_rule": "k:8",
+  "window_counts": {
+    "english": 13373,
+    "eu": 1763
+  }
+}

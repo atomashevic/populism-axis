@@ -1,0 +1,61 @@
+{
+  "dimensions": {
+    "AE": {
+      "auroc": 0.8332102636985773,
+      "average_precision": 0.29349261351684536,
+      "channel": "E",
+      "f1": 0.32620320855614976,
+      "precision": 0.33152173913043476,
+      "recall": 0.32105263157894737,
+      "test_positive_rate": 0.052821795941062
+    },
+    "PC": {
+      "auroc": 0.8597823951272227,
+      "average_precision": 0.36673051498879894,
+      "channel": "P",
+      "f1": 0.3858267716535433,
+      "precision": 0.35766423357664234,
+      "recall": 0.4188034188034188,
+      "test_positive_rate": 0.03252710592160134
+    }
+  },
+  "encoder": "intfloat/e5-large-v2",
+  "macro_f1_two_dimensions": 0.3560149901048465,
+  "published": {
+    "DeBERTa (fine-tuned)": {
+      "AE": 0.639,
+      "PC": 0.583,
+      "macro4": 0.731
+    },
+    "Dist. random": {
+      "AE": 0.068,
+      "PC": 0.053,
+      "macro4": 0.35
+    },
+    "GPT-4.1 zero-shot": {
+      "AE": 0.461,
+      "PC": 0.201,
+      "macro4": 0.503
+    },
+    "Gemini 2.5 Flash zero-shot": {
+      "AE": 0.513,
+      "PC": 0.306,
+      "macro4": 0.574
+    },
+    "Qwen3-14B zero-shot": {
+      "AE": 0.491,
+      "PC": 0.34,
+      "macro4": 0.582
+    },
+    "RoBERTa (fine-tuned)": {
+      "AE": 0.661,
+      "PC": 0.602,
+      "macro4": 0.746
+    },
+    "TFIDF-SVM": {
+      "AE": 0.531,
+      "PC": 0.385,
+      "macro4": 0.63
+    }
+  }
+}

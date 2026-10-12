@@ -1,0 +1,112 @@
+leader_term_id,n_speeches,leader_term_score,country,leader
+Albania|Edi Rama|1,1,0.1375,Albania,Edi Rama
+Albania|Sali Berisha|2,1,0.125,Albania,Sali Berisha
+Armenia|Robert Kocharyan|1,2,0.0,Armenia,Robert Kocharyan
+Armenia|Robert Kocharyan|2,1,0.0,Armenia,Robert Kocharyan
+Australia|John Howard|2,4,0.1625,Australia,John Howard
+Australia|John Howard|3,4,0.0875,Australia,John Howard
+Australia|John Howard|4,4,0.0625,Australia,John Howard
+Australia|Julia Gillard|1,4,0.1125,Australia,Julia Gillard
+Australia|Kevin Rudd|1,4,0.15,Australia,Kevin Rudd
+Australia|Malcolm Turnbull|1,4,0.1,Australia,Malcolm Turnbull
+Australia|Scott Morrison|1,4,0.15625,Australia,Scott Morrison
+Australia|Tony Abbott|1,4,0.15,Australia,Tony Abbott
+Austria|Alfred Gusenbauer|1,1,0.2875,Austria,Alfred Gusenbauer
+Austria|Sebastian Kurz|1,1,0.075,Austria,Sebastian Kurz
+Austria|Werner Faymann|1,1,0.075,Austria,Werner Faymann
+Austria|Werner Faymann|2,1,0.1,Austria,Werner Faymann
+Austria|Wolfgang Schussel|2,1,0.0,Austria,Wolfgang Schussel
+Belarus|Alexander Lukashenko|5,1,0.45,Belarus,Alexander Lukashenko
+Canada|Jean Chretien|3,3,0.025,Canada,Jean Chretien
+Canada|Justin Trudeau|1,4,0.1125,Canada,Justin Trudeau
+Canada|Paul Martin|1,4,0.25,Canada,Paul Martin
+Canada|Stephen Harper|1,4,0.25,Canada,Stephen Harper
+Canada|Stephen Harper|2,4,0.1875,Canada,Stephen Harper
+Canada|Stephen Harper|3,4,0.225,Canada,Stephen Harper
+Costa Rica|Luis Guillermo Solis|1,1,0.4,Costa Rica,Luis Guillermo Solis
+Croatia|Ivica Racan|1,1,0.0,Croatia,Ivica Racan
+Croatia|Ivo Sanader|1,1,0.5,Croatia,Ivo Sanader
+El Salvador|Antonio Saca|1,2,0.583333333333333,El Salvador,Antonio Saca
+El Salvador|Mauricio Funes|1,1,0.625,El Salvador,Mauricio Funes
+Estonia|Andrus Ansip|1,1,0.0,Estonia,Andrus Ansip
+Estonia|Andrus Ansip|2,1,0.125,Estonia,Andrus Ansip
+Estonia|Andrus Ansip|3,1,0.0,Estonia,Andrus Ansip
+Finland|Tarja Halonen|1,1,0.0,Finland,Tarja Halonen
+Georgia|Giorgi Kvirikashvili|1,2,0.1,Georgia,Giorgi Kvirikashvili
+Germany|Angela Merkel|1,1,0.0,Germany,Angela Merkel
+Guatemala|Otto Perez Molina|1,1,0.35,Guatemala,Otto Perez Molina
+India|Atal Bihari Vajpayee|3,3,0.0375,India,Atal Bihari Vajpayee
+India|Manmohan Singh|1,3,0.0,India,Manmohan Singh
+India|Manmohan Singh|2,3,0.0,India,Manmohan Singh
+India|Narendra Modi|1,4,0.55,India,Narendra Modi
+Indonesia|Susilo Bambang Yudhoyono|1,1,0.05,Indonesia,Susilo Bambang Yudhoyono
+Indonesia|Susilo Bambang Yudhoyono|2,1,0.0,Indonesia,Susilo Bambang Yudhoyono
+Iran|Mahmoud Ahmadinejad|1,4,1.16666666666667,Iran,Mahmoud Ahmadinejad
+Ireland|Bertie Ahern|1,4,0.0375,Ireland,Bertie Ahern
+Ireland|Brian Cowen|1,4,0.025,Ireland,Brian Cowen
+Ireland|Enda Kenny|1,4,0.1,Ireland,Enda Kenny
+Italy|Giuseppe Conte|1,2,0.6875,Italy,Giuseppe Conte
+Lithuania|Algirdas Butkevicius|1,1,0.15,Lithuania,Algirdas Butkevicius
+Lithuania|Dalia Grybauskaite|2,1,0.275,Lithuania,Dalia Grybauskaite
+Malaysia|Abdullah Ahmad Badawi|1,2,0.2125,Malaysia,Abdullah Ahmad Badawi
+Malaysia|Mahathir Mohamad|1,1,0.4875,Malaysia,Mahathir Mohamad
+Malaysia|Najib Tun Razak|1,2,0.0375,Malaysia,Najib Tun Razak
+Malaysia|Najib Tun Razak|2,2,0.15,Malaysia,Najib Tun Razak
+Moldova|Marian Lupu|1,1,0.125,Moldova,Marian Lupu
+Moldova|Nicolae Timofti|1,1,0.0375,Moldova,Nicolae Timofti
+Mongolia|Nambaryn Enkhbayar|1,1,0.083333333333333,Mongolia,Nambaryn Enkhbayar
+Myanmar|Aung San Suu Kyi|1,2,0.0,Myanmar,Aung San Suu Kyi
+Myanmar|Min Aung Hlaing|1,1,0.0,Myanmar,Min Aung Hlaing
+Myanmar|Thein Sein|1,2,0.0833,Myanmar,Thein Sein
+Netherlands|Jan Peter Balkenende|1,2,0.225,Netherlands,Jan Peter Balkenende
+Netherlands|Mark Rutte|1,1,0.325,Netherlands,Mark Rutte
+Netherlands|Mark Rutte|2,2,0.2,Netherlands,Mark Rutte
+Norway|Erna Solberg|1,1,0.0,Norway,Erna Solberg
+Norway|Erna Solberg|2,1,0.175,Norway,Erna Solberg
+Norway|Jens Stoltenberg|2,1,0.166666666666667,Norway,Jens Stoltenberg
+Norway|Kjell Magne Bondevik|2,1,0.1,Norway,Kjell Magne Bondevik
+Philippines|Benigno Aquino III|1,1,0.8,Philippines,Benigno Aquino III
+Philippines|Gloria Macapagal Arroyo|1,3,0.4,Philippines,Gloria Macapagal Arroyo
+Philippines|Gloria Macapagal Arroyo|2,3,0.3375,Philippines,Gloria Macapagal Arroyo
+Philippines|Joseph Estrada|1,1,0.55,Philippines,Joseph Estrada
+Philippines|Rodrigo Duterte|1,2,1.375,Philippines,Rodrigo Duterte
+Serbia|Aleksandar Vucic|1,1,0.366666666666667,Serbia,Aleksandar Vucic
+Serbia|Tomislav Nikolic|1,1,0.333333333333333,Serbia,Tomislav Nikolic
+Serbia|Vojislav Kostunica|1,1,0.5,Serbia,Vojislav Kostunica
+Singapore|Goh Chok Tong|2,4,0.0,Singapore,Goh Chok Tong
+Singapore|Goh Chok Tong|3,4,0.0,Singapore,Goh Chok Tong
+Singapore|Lee Hsien Loong|1,3,0.0,Singapore,Lee Hsien Loong
+Singapore|Lee Hsien Loong|2,4,0.0375,Singapore,Lee Hsien Loong
+Singapore|Lee Hsien Loong|3,4,0.0,Singapore,Lee Hsien Loong
+Slovakia|Mikulas Dzurinda|1,2,0.25,Slovakia,Mikulas Dzurinda
+Slovakia|Mikulas Dzurinda|2,2,0.375,Slovakia,Mikulas Dzurinda
+Slovakia|Robert Fico|1,1,0.75,Slovakia,Robert Fico
+Slovakia|Robert Fico|2,1,0.1,Slovakia,Robert Fico
+Slovakia|Robert Fico|3,1,0.0625,Slovakia,Robert Fico
+Slovenia|Janez Jansa|1,1,0.75,Slovenia,Janez Jansa
+South Africa|Cyril Ramaphosa|1,4,0.15,South Africa,Cyril Ramaphosa
+South Africa|Jacob Zuma|1,4,0.225,South Africa,Jacob Zuma
+South Africa|Jacob Zuma|2,4,0.15,South Africa,Jacob Zuma
+South Africa|Nelson Mandela|1,4,0.1,South Africa,Nelson Mandela
+South Africa|Thabo Mbeki|1,4,0.041666666666667,South Africa,Thabo Mbeki
+South Africa|Thabo Mbeki|2,4,0.15,South Africa,Thabo Mbeki
+Sweden|Fredrik Reinfeldt|1,1,0.0,Sweden,Fredrik Reinfeldt
+Sweden|Goran Persson|1,1,0.0,Sweden,Goran Persson
+Sweden|Stefan Lofven|1,1,0.1,Sweden,Stefan Lofven
+Switzerland|Doris Leuthard/Christophe Darbellay|1,1,0.266666666666667,Switzerland,Doris Leuthard/Christophe Darbellay
+Taiwan|Chen Shui Bian|1,2,0.4375,Taiwan,Chen Shui Bian
+Taiwan|Chen Shui Bian|2,1,0.8,Taiwan,Chen Shui Bian
+Taiwan|Ma Ying-jeou|1,2,0.1625,Taiwan,Ma Ying-jeou
+Taiwan|Ma Ying-jeou|2,2,0.0,Taiwan,Ma Ying-jeou
+Taiwan|Tsai Ing-wen|1,3,0.65,Taiwan,Tsai Ing-wen
+Turkmenistan|Saparmurat Niyazov|1,1,0.25,Turkmenistan,Saparmurat Niyazov
+UK|David Cameron|1,4,0.0125,UK,David Cameron
+UK|Gordon Brown|1,4,0.075,UK,Gordon Brown
+UK|Theresa May|1,4,0.4875,UK,Theresa May
+UK|Tony Blair|2,4,0.1,UK,Tony Blair
+UK|Tony Blair|3,4,0.125,UK,Tony Blair
+United States|Barack Obama|1,4,0.15,United States,Barack Obama
+United States|Barack Obama|2,4,0.2875,United States,Barack Obama
+United States|Donald Trump|1,4,0.779166666666667,United States,Donald Trump
+United States|George W. Bush|1,4,0.2125,United States,George W. Bush
+United States|George W. Bush|2,4,0.1875,United States,George W. Bush

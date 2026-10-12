@@ -1,0 +1,33 @@
+{
+  "step": 6,
+  "label": "B6_axis_plus_nli_k8",
+  "result_dir": "results/step6_nli/combined_k8",
+  "encoder": "e5-large-v2",
+  "window_setting": "spw3 stride 1, cap 60 words per sentence, 256 tokens (English cleaned v4_clean_r1)",
+  "embeddings_dirs": {
+    "english": "results/embeddings/e5-large-v2/spw3_cap60_clean",
+    "agora": "results/embeddings/e5-large-v2/spw3_cap60_clean"
+  },
+  "anchors": "results/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+  "anchor_file": "anchors/proposition_anchors.json",
+  "anchor_sha256": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6",
+  "text_cleaning": "v4_clean_r1 (src/populism_axis/v4_text.py), English only",
+  "transform": "v3",
+  "top_k": 8,
+  "system": "combined (axis PE soft k:8 + NLI)",
+  "dev_english_spearman": 0.5367,
+  "agora_spearman": 0.3823,
+  "decision": "combined passes the adoption rule (English +.020, Agora +.024 significant); axis-only B4 remains reported as the primary interpretable measure",
+  "grid": "results/step2_whitening/grid.json",
+  "top_rule": "k:8",
+  "axis_result_dir": "results/step4_windows_topk/grid/spw3_k8",
+  "second_stage": {
+    "type": "nli",
+    "model": "facebook/bart-large-mnli",
+    "premises": "top-8 windows per document under the axis",
+    "hypotheses": "results/step6_nli/hypotheses.json (5 P + 5 E populist anchor sentences closest to their axis)",
+    "window_score": "sqrt(max P entailment * max E entailment)",
+    "document_score": "mean over top-8 windows",
+    "combination": "mean of within-dataset z-scores of axis and NLI document scores"
+  }
+}

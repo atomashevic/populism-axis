@@ -1,0 +1,823 @@
+{
+  "source": "results/roberta-correction/rc-20261002T1415Z-sigmoid",
+  "n_checks": 102,
+  "n_equal": 102,
+  "checks": [
+    {
+      "check": "english spearman",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/english_holdout/spearman",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english ci95",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/english_holdout/spearman_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english extreme_auroc",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/english_holdout/extreme_auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english leader_term",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/english_holdout/leader_term_spearman",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu auroc",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/eu/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu ci95",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/eu/auroc_speaker_clustered_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu within-speaker",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/eu/pooled_within_speaker_auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu loso (final)",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/eu_paper_protocol_macro_f1_loso/RoBERTa_comparator",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu loso (protocol)",
+      "version": "softmax",
+      "file": "results/final/eu_paper_protocol.json",
+      "path": "/ours/RoBERTa_comparator/loso_f1/overall",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu prevalence",
+      "version": "softmax",
+      "file": "results/final/eu_paper_protocol.json",
+      "path": "/ours/RoBERTa_comparator/prevalence/overall/macro",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "usgov 2010-18 spearman",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/governors_2010_2018/RoBERTa_anti_elitism_top3/spearman",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "usgov 2010-18 ci95",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/governors_2010_2018/RoBERTa_anti_elitism_top3/spearman_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "tweets auroc",
+      "version": "softmax",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/test/y_general/RoBERTa_anti_elitism/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "tweets ci95",
+      "version": "softmax",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/test/y_general/RoBERTa_anti_elitism/auroc_ci95_country",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert elite auroc",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/elite/majority/E_roberta/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert elite ci95",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/elite/majority/E_roberta/auroc_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert centr auroc",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/centr/majority/P_roberta/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert centr ci95",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/centr/majority/P_roberta/auroc_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal elite auroc",
+      "version": "softmax",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/elite/E_roberta/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal elite ci95",
+      "version": "softmax",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/elite/E_roberta/auroc_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal centr auroc",
+      "version": "softmax",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/centr/P_roberta/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal centr ci95",
+      "version": "softmax",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/centr/P_roberta/auroc_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english paired B6_axis_plus_nli - RoBERTa",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/paired_english_holdout/B6_axis_plus_nli - RoBERTa_comparator",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english paired B4_axis - RoBERTa",
+      "version": "softmax",
+      "file": "results/final/final_results.json",
+      "path": "/paired_english_holdout/B4_axis - RoBERTa_comparator",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "usgov 2010-18 paired",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/governors_2010_2018/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "tweets paired E_axis - RoBERTa_anti_elitism",
+      "version": "softmax",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/E_axis - RoBERTa_anti_elitism",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "tweets paired E_axis_plus_nli - RoBERTa_anti_elitism",
+      "version": "softmax",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/E_axis_plus_nli - RoBERTa_anti_elitism",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert paired E_axis_plus_nli - E_roberta",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/paired_auroc_test/elite: E_axis_plus_nli - E_roberta",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert paired P_axis_plus_nli - P_roberta",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/paired_auroc_test/centr: P_axis_plus_nli - P_roberta",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal paired E_axis_plus_nli - E_roberta",
+      "version": "softmax",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/paired_auroc/elite/E_axis_plus_nli - E_roberta",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal paired P_axis_plus_nli - P_roberta",
+      "version": "softmax",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/paired_auroc/centr/P_axis_plus_nli - P_roberta",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "usgov all_pooled metrics",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/all_pooled/RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov all_pooled paired",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/all_pooled/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov governors_2010_2018 metrics",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/governors_2010_2018/RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov governors_2010_2018 paired",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/governors_2010_2018/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov governors_2018_2022 metrics",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/governors_2018_2022/RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov governors_2018_2022 paired",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/governors_2018_2022/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov presidential_2016 metrics",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/presidential_2016/RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov presidential_2016 paired",
+      "version": "softmax",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/presidential_2016/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets y_any",
+      "version": "softmax",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/test/y_any/RoBERTa_anti_elitism",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets y_general",
+      "version": "softmax",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/test/y_general/RoBERTa_anti_elitism",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets paired (secondary) E_axis - RoBERTa_anti_elitism",
+      "version": "softmax",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/E_axis - RoBERTa_anti_elitism",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets paired (secondary) E_axis_plus_nli - RoBERTa_anti_elitism",
+      "version": "softmax",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/E_axis_plus_nli - RoBERTa_anti_elitism",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets paired (secondary) RoBERTa_anti_elitism - XLMT_released_classifier",
+      "version": "softmax",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/RoBERTa_anti_elitism - XLMT_released_classifier",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "popbert centr_any_coder",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/centr/any_coder/P_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "popbert centr_majority",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/centr/majority/P_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "popbert elite_any_coder",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/elite/any_coder/E_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "popbert elite_majority",
+      "version": "softmax",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/elite/majority/E_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "portugal elite E_roberta",
+      "version": "softmax",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/elite/E_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "portugal elite PE_roberta_total",
+      "version": "softmax",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/elite/PE_roberta_total",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "portugal centr P_roberta",
+      "version": "softmax",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/centr/P_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "english spearman",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/english_holdout/spearman",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english ci95",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/english_holdout/spearman_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english extreme_auroc",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/english_holdout/extreme_auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english leader_term",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/english_holdout/leader_term_spearman",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu auroc",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/eu/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu ci95",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/eu/auroc_speaker_clustered_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu within-speaker",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/configurations/RoBERTa_comparator/eu/pooled_within_speaker_auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu loso (final)",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/eu_paper_protocol_macro_f1_loso/RoBERTa_comparator",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu loso (protocol)",
+      "version": "sigmoid",
+      "file": "results/final/eu_paper_protocol.json",
+      "path": "/ours/RoBERTa_comparator/loso_f1/overall",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "eu prevalence",
+      "version": "sigmoid",
+      "file": "results/final/eu_paper_protocol.json",
+      "path": "/ours/RoBERTa_comparator/prevalence/overall/macro",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "usgov 2010-18 spearman",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/governors_2010_2018/RoBERTa_anti_elitism_top3/spearman",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "usgov 2010-18 ci95",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/governors_2010_2018/RoBERTa_anti_elitism_top3/spearman_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "tweets auroc",
+      "version": "sigmoid",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/test/y_general/RoBERTa_anti_elitism/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "tweets ci95",
+      "version": "sigmoid",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/test/y_general/RoBERTa_anti_elitism/auroc_ci95_country",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert elite auroc",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/elite/majority/E_roberta/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert elite ci95",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/elite/majority/E_roberta/auroc_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert centr auroc",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/centr/majority/P_roberta/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert centr ci95",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/centr/majority/P_roberta/auroc_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal elite auroc",
+      "version": "sigmoid",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/elite/E_roberta/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal elite ci95",
+      "version": "sigmoid",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/elite/E_roberta/auroc_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal centr auroc",
+      "version": "sigmoid",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/centr/P_roberta/auroc",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal centr ci95",
+      "version": "sigmoid",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/centr/P_roberta/auroc_ci95",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english paired B6_axis_plus_nli - RoBERTa",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/paired_english_holdout/B6_axis_plus_nli - RoBERTa_comparator",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "english paired B4_axis - RoBERTa",
+      "version": "sigmoid",
+      "file": "results/final/final_results.json",
+      "path": "/paired_english_holdout/B4_axis - RoBERTa_comparator",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "usgov 2010-18 paired",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/governors_2010_2018/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "tweets paired E_axis - RoBERTa_anti_elitism",
+      "version": "sigmoid",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/E_axis - RoBERTa_anti_elitism",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "tweets paired E_axis_plus_nli - RoBERTa_anti_elitism",
+      "version": "sigmoid",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/E_axis_plus_nli - RoBERTa_anti_elitism",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert paired E_axis_plus_nli - E_roberta",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/paired_auroc_test/elite: E_axis_plus_nli - E_roberta",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "popbert paired P_axis_plus_nli - P_roberta",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/paired_auroc_test/centr: P_axis_plus_nli - P_roberta",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal paired E_axis_plus_nli - E_roberta",
+      "version": "sigmoid",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/paired_auroc/elite/E_axis_plus_nli - E_roberta",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "portugal paired P_axis_plus_nli - P_roberta",
+      "version": "sigmoid",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/paired_auroc/centr/P_axis_plus_nli - P_roberta",
+      "precision": "exact",
+      "equal": true
+    },
+    {
+      "check": "usgov all_pooled metrics",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/all_pooled/RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov all_pooled paired",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/all_pooled/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov governors_2010_2018 metrics",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/governors_2010_2018/RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov governors_2010_2018 paired",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/governors_2010_2018/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov governors_2018_2022 metrics",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/governors_2018_2022/RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov governors_2018_2022 paired",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/governors_2018_2022/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov presidential_2016 metrics",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/speeches/presidential_2016/RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "usgov presidential_2016 paired",
+      "version": "sigmoid",
+      "file": "results/external/usgov/final_results.json",
+      "path": "/paired_spearman/presidential_2016/B6_axis_plus_nli - RoBERTa_anti_elitism_top3",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets y_any",
+      "version": "sigmoid",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/test/y_any/RoBERTa_anti_elitism",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets y_general",
+      "version": "sigmoid",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/test/y_general/RoBERTa_anti_elitism",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets paired (secondary) E_axis - RoBERTa_anti_elitism",
+      "version": "sigmoid",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/E_axis - RoBERTa_anti_elitism",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets paired (secondary) E_axis_plus_nli - RoBERTa_anti_elitism",
+      "version": "sigmoid",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/E_axis_plus_nli - RoBERTa_anti_elitism",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "tweets paired (secondary) RoBERTa_anti_elitism - XLMT_released_classifier",
+      "version": "sigmoid",
+      "file": "results/external/antielite_tweets/final_results.json",
+      "path": "/paired_auroc_test/RoBERTa_anti_elitism - XLMT_released_classifier",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "popbert centr_any_coder",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/centr/any_coder/P_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "popbert centr_majority",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/centr/majority/P_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "popbert elite_any_coder",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/elite/any_coder/E_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "popbert elite_majority",
+      "version": "sigmoid",
+      "file": "results/external/popbert_en/final_results.json",
+      "path": "/test/elite/majority/E_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "portugal elite E_roberta",
+      "version": "sigmoid",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/elite/E_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "portugal elite PE_roberta_total",
+      "version": "sigmoid",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/elite/PE_roberta_total",
+      "precision": "rounded to 6",
+      "equal": true
+    },
+    {
+      "check": "portugal centr P_roberta",
+      "version": "sigmoid",
+      "file": "results/external/portugal/final_results.json",
+      "path": "/primary/centr/P_roberta",
+      "precision": "rounded to 6",
+      "equal": true
+    }
+  ]
+}

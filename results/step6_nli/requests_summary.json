@@ -1,0 +1,14 @@
+{
+  "english_dev": {
+    "documents": 174,
+    "requests": 1392,
+    "pairs": 13920,
+    "premise_words_median": 59.0
+  },
+  "agora": {
+    "documents": 5272,
+    "requests": 22668,
+    "pairs": 226680,
+    "premise_words_median": 49.0
+  }
+}

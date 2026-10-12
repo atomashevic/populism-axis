@@ -1,0 +1,48 @@
+{
+  "argv": [
+    "--encoder",
+    "e5-large-v2",
+    "--datasets",
+    "english,agora",
+    "--max-words",
+    "60"
+  ],
+  "encoder_id": "intfloat/e5-large-v2",
+  "extra": {
+    "gpu_name": "NVIDIA A30",
+    "peak_vram_mb": 792.6,
+    "seconds_total": 83.8,
+    "setting": "spw1_cap60",
+    "task": null
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "ff9af06d99bb7e6a7158535bb438ca8062e592b5",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "bench_agora": {
+      "path": "/home/atomasevic/populism-axis/data/benchmark_v3/agora_paragraphs.csv",
+      "sha256": "d5e0568c10f7f556cf1084727273b87e3c9ce86e63866f9b8aeb682ca9f0f122"
+    },
+    "bench_english": {
+      "path": "/home/atomasevic/populism-axis/data/benchmark_v3/english_gpd_speeches.csv",
+      "sha256": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "19850a219f4cc6ab2e9975901922e7a6f3b1a01d799fb1fd1fca2c6e8dc15313",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/encode_windows_v4.py",
+  "timestamp_utc": "2026-09-23T17:35:19Z"
+}

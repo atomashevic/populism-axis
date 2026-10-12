@@ -1,0 +1,11 @@
+abstract.md
+docs/frozen-scorer.md
+docs/roberta-correction.md
+results/frozen_reference/SHA256SUMS
+results/frozen_reference/reference_mean_embedding.npy
+results/frozen_reference/runtime_manifest.json
+scripts/verify_frozen_assets.py
+src/populism_axis/roberta_comparator.py
+tests/test_frozen_assets.py
+tests/test_remote_helpers.py
+tests/test_roberta_comparator.py

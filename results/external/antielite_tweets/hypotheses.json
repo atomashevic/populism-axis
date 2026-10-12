@@ -1,0 +1,62 @@
+[
+  {
+    "hypothesis_id": "P00",
+    "channel": "P",
+    "text": "The ordinary people are the only true source of legitimate political power.",
+    "cosine_to_axis": 0.25679508209065605
+  },
+  {
+    "hypothesis_id": "P05",
+    "channel": "P",
+    "text": "This movement is nothing more and nothing less than the voice of ordinary people.",
+    "cosine_to_axis": 0.24670143086909058
+  },
+  {
+    "hypothesis_id": "P01",
+    "channel": "P",
+    "text": "It is the people, not the officials, who must decide the future of this country.",
+    "cosine_to_axis": 0.2408663646619899
+  },
+  {
+    "hypothesis_id": "P06",
+    "channel": "P",
+    "text": "Power must be returned to the hands of the people who built this nation.",
+    "cosine_to_axis": 0.24084339489788897
+  },
+  {
+    "hypothesis_id": "P08",
+    "channel": "P",
+    "text": "Our people are sovereign and no authority stands above them.",
+    "cosine_to_axis": 0.2336969053526175
+  },
+  {
+    "hypothesis_id": "E05",
+    "channel": "E",
+    "text": "Entrenched insiders block every reform that would help ordinary families.",
+    "cosine_to_axis": 0.2908752768954828
+  },
+  {
+    "hypothesis_id": "E00",
+    "channel": "E",
+    "text": "A corrupt elite has captured our institutions and turned them against the public.",
+    "cosine_to_axis": 0.2661720224192583
+  },
+  {
+    "hypothesis_id": "E02",
+    "channel": "E",
+    "text": "Bankers, lobbyists and career politicians have rigged the system against you.",
+    "cosine_to_axis": 0.2656166759012504
+  },
+  {
+    "hypothesis_id": "E04",
+    "channel": "E",
+    "text": "The people in power have betrayed the country they were elected to serve.",
+    "cosine_to_axis": 0.2405556848163589
+  },
+  {
+    "hypothesis_id": "E06",
+    "channel": "E",
+    "text": "They enrich themselves while the rest of the country is told to sacrifice.",
+    "cosine_to_axis": 0.22750023791250226
+  }
+]

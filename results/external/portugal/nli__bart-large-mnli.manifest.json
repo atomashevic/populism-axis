@@ -1,0 +1,53 @@
+{
+  "argv": [
+    "--in-dir",
+    "results/v4/external/portugal",
+    "--names",
+    "portugal",
+    "--model",
+    "facebook/bart-large-mnli",
+    "--batch-size",
+    "64"
+  ],
+  "encoder_id": "facebook/bart-large-mnli",
+  "extra": {
+    "id2label": {
+      "0": "contradiction",
+      "1": "neutral",
+      "2": "entailment"
+    },
+    "model": "facebook/bart-large-mnli",
+    "peak_vram_mb": 2493.0,
+    "portugal": {
+      "output": "nli_portugal__bart-large-mnli.npz",
+      "pairs": 87150,
+      "seconds": 121.0
+    }
+  },
+  "git": {
+    "branch": "feature/v2-v3-benchmark-pipeline",
+    "commit": "244c25eca4955ef407f5b8498ef18628a1c9151b",
+    "dirty": false
+  },
+  "hostname": "pvgpu1",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis/results/v4/external/portugal/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.11.11",
+  "run_hash": "66fdd5b9e4bc7076b0b4fbf27e2cf70d2ea02f96fd18f6b392fa0694d954d07d",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/v4/nli_stage_v4.py",
+  "timestamp_utc": "2026-09-24T09:38:11Z"
+}
