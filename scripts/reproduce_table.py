@@ -4,8 +4,9 @@
 Reads only the score tables under ``results/`` and the gold labels under ``data/``;
 it loads no model and writes nothing unless ``--json`` is given. Each cell is compared
 with the value reported in the README (three decimals), and the paired bootstrap
-intervals are recomputed with the seeds and draw counts of the scripts that produced
-them (``scripts/final_holdout.py``, ``scripts/external/score_*.py``).
+intervals are recomputed as ``scripts/within_speaker_intervals.py`` computes them:
+4,000 resamples of the texts within speakers (leaders, state-terms, countries;
+PopBERT has no speaker identifiers, so its sentences are resampled).
 
 The EU-OOD rows need ``data/benchmarks/eu_sentences.csv``; when it is absent (the
 dataset is CC BY-NC-ND and is not redistributed), they are marked ``skipped`` and
@@ -29,9 +30,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts")]
 
 from evaluate_eu_paper_protocol import SURNAME, best_f1_threshold, macro_f1  # noqa: E402
-from paired_comparison import paired_delta  # noqa: E402
+from populism_axis.resampling import sampler  # noqa: E402
 
-SEED = 20260923
+SEED, DRAWS = 20260923, 4000
 COLUMNS = ("axis", "combined", "roberta")
 # README "Benchmarks" table: (row label, axis, axis + claim check, RoBERTa-large).
 REPORTED = {
@@ -53,34 +54,27 @@ def read(path: str) -> pd.DataFrame:
     return pd.read_csv(ROOT / path)
 
 
-def auroc_paired(a, b, y, groups, draws: int, style: str) -> dict:
-    """AUROC difference a - b with the resampling scheme of the producing script."""
-    rng = np.random.default_rng(SEED)
+def spearman(y, s) -> float:
+    return float(spearmanr(s, y).statistic)
+
+
+def paired_interval(a, b, y, strata, metric) -> dict:
+    """Difference a - b, both scored on each resample of the texts within strata."""
+    draw, rng = sampler(strata), np.random.default_rng(SEED)
     deltas = []
-    if style == "cluster_choice":  # score_antielite_tweets.py
-        unique = np.unique(groups)
-        index_by = {g: np.flatnonzero(groups == g) for g in unique}
-    elif style == "cluster_integers":  # score_portugal.py
-        codes, inverse = np.unique(groups, return_inverse=True)
-        members = [np.flatnonzero(inverse == i) for i in range(len(codes))]
-    for _ in range(draws):
-        if style == "cluster_choice":
-            idx = np.concatenate([index_by[g] for g in rng.choice(unique, size=len(unique), replace=True)])
-        elif style == "cluster_integers":
-            idx = np.concatenate([members[i] for i in rng.integers(0, len(codes), len(codes))])
-        else:  # score_popbert_en.py: sentences resampled independently
-            idx = rng.integers(0, len(y), len(y))
+    for _ in range(DRAWS):
+        idx = draw(rng)
         if len(np.unique(y[idx])) < 2:
             continue
-        deltas.append(roc_auc_score(y[idx], a[idx]) - roc_auc_score(y[idx], b[idx]))
+        deltas.append(metric(y[idx], a[idx]) - metric(y[idx], b[idx]))
     low, high = np.percentile(deltas, [2.5, 97.5])
-    return {"delta": float(roc_auc_score(y, a) - roc_auc_score(y, b)), "ci95": [float(low), float(high)]}
+    return {"delta": float(metric(y, a) - metric(y, b)), "ci95": [float(low), float(high)]}
 
 
 def compute() -> tuple[dict, dict, dict]:
     cells, paired, notes = {}, {}, {}
 
-    # English holdout (GPD): final axis and combined scores; leader-clustered paired bootstrap.
+    # English holdout (GPD): final axis and combined scores; texts resampled within leaders.
     split = read("data/benchmarks/english_split.csv").set_index("id")["split"]
     english = read("data/benchmarks/english_gpd_speeches.csv")
     holdout = english[english["id"].map(split).eq("holdout")].reset_index(drop=True)
@@ -92,7 +86,7 @@ def compute() -> tuple[dict, dict, dict]:
     a, c = axis["PE__frozen__soft"].to_numpy(float), combined["PE__frozen__soft"].to_numpy(float)
     cells["holdout"] = {"axis": spearmanr(a, y).statistic, "combined": spearmanr(c, y).statistic,
                         "roberta": spearmanr(roberta.RoBERTa_anti_elitism_top3, y).statistic}
-    paired["holdout: axis + claim check vs axis"] = paired_delta(c, a, y, holdout.leader.astype(str).to_numpy(), 4000, SEED)
+    paired["holdout: axis + claim check vs axis"] = paired_interval(c, a, y, holdout.leader.astype(str).to_numpy(), spearman)
 
     # EU-OOD: AUROC on codes 3 vs 0, and the paper's leave-one-speaker-out macro-F1.
     eu_path = ROOT / "data/benchmarks/eu_sentences.csv"
@@ -138,37 +132,40 @@ def compute() -> tuple[dict, dict, dict]:
     cells["agora"] = {name: spearmanr(agora_scores[col], agora.populism_human).statistic for name, col in
                       (("axis", "axis"), ("combined", "combined"), ("roberta", "RoBERTa_populist_total"))}
 
-    # US governors 2010-18 (speech level), group-clustered paired bootstrap.
+    # US governors 2010-18 (speech level), texts resampled within state-terms.
     usgov = read("results/external/usgov/final_scores_speeches.csv")
     governors = usgov[usgov.subset == "governors_2010_2018"].reset_index(drop=True)
     cells["usgov"] = {name: spearmanr(governors[col], governors.score).statistic for name, col in
                       (("axis", "B4_axis"), ("combined", "B6_axis_plus_nli"), ("roberta", "RoBERTa_anti_elitism_top3"))}
-    paired["US governors: axis + claim check vs RoBERTa"] = paired_delta(
+    paired["US governors: axis + claim check vs RoBERTa"] = paired_interval(
         governors.B6_axis_plus_nli.to_numpy(), governors.RoBERTa_anti_elitism_top3.to_numpy(),
-        governors.score.to_numpy(float), governors.group.astype(str).to_numpy(), 4000, SEED)
+        governors.score.to_numpy(float), governors.group.astype(str).to_numpy(), spearman)
 
-    # Party tweets, test split, E dimension; country-clustered.
+    # Party tweets, test split, E dimension; texts resampled within countries.
     tweets = read("results/external/antielite_tweets/final_scores.csv")
     test = tweets[tweets.split == "test"].reset_index(drop=True)
     yt = test.y_general.to_numpy(int)
     cells["tweets"] = {name: roc_auc_score(yt, test[col]) for name, col in
                        (("axis", "E_axis"), ("combined", "E_axis_plus_nli"), ("roberta", "RoBERTa_anti_elitism"))}
-    paired["tweets: axis + claim check vs RoBERTa"] = auroc_paired(
+    paired["tweets: axis + claim check vs RoBERTa"] = paired_interval(
         test.E_axis_plus_nli.to_numpy(), test.RoBERTa_anti_elitism.to_numpy(), yt,
-        test.country.astype(str).to_numpy(), 2000, "cluster_choice")
+        test.country.astype(str).to_numpy(), roc_auc_score)
+    paired["tweets: axis + claim check vs XLM-T"] = paired_interval(
+        test.E_axis_plus_nli.to_numpy(), test.XLMT_released_classifier.to_numpy(), yt,
+        test.country.astype(str).to_numpy(), roc_auc_score)
 
     # PopBERT test split (English translation) and Portuguese parliament, per dimension.
     popbert = read("results/external/popbert_en/final_scores.csv")
     popbert = popbert[popbert.split == "test"].reset_index(drop=True)
     portugal = read("results/external/portugal/final_scores.csv")
-    for frame, name, groups, style in ((popbert, "popbert", None, "iid"),
-                                       (portugal, "portugal", portugal.actor.astype(str).to_numpy(), "cluster_integers")):
+    for frame, name, groups in ((popbert, "popbert", np.full(len(popbert), "all")),
+                                (portugal, "portugal", portugal.actor.astype(str).to_numpy())):
         for dim, ch in (("elite", "E"), ("centr", "P")):
             yy = frame[f"{dim}_gold"].to_numpy(int)
             cells[f"{name}_{dim}"] = {col: roc_auc_score(yy, frame[key]) for col, key in
                                       (("axis", f"{ch}_axis"), ("combined", f"{ch}_axis_plus_nli"), ("roberta", f"{ch}_roberta"))}
-            paired[f"{name} {dim}: axis + claim check vs RoBERTa"] = auroc_paired(
-                frame[f"{ch}_axis_plus_nli"].to_numpy(), frame[f"{ch}_roberta"].to_numpy(), yy, groups, 2000, style)
+            paired[f"{name} {dim}: axis + claim check vs RoBERTa"] = paired_interval(
+                frame[f"{ch}_axis_plus_nli"].to_numpy(), frame[f"{ch}_roberta"].to_numpy(), yy, groups, roc_auc_score)
 
     return cells, paired, notes
 

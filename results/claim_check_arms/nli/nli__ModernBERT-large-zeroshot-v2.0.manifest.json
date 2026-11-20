@@ -1,0 +1,87 @@
+{
+  "argv": [
+    "--model",
+    "MoritzLaurer/ModernBERT-large-zeroshot-v2.0",
+    "--revision",
+    "a51e07b524299e309dd2b88d48b0cfa2bd9ec598",
+    "--probs-dtype",
+    "float32",
+    "--out-dir",
+    "results/claim_check_arms/nli"
+  ],
+  "encoder_id": "MoritzLaurer/ModernBERT-large-zeroshot-v2.0",
+  "extra": {
+    "agora": {
+      "forward_calls": 3542,
+      "output": "nli_agora__ModernBERT-large-zeroshot-v2.0.npz",
+      "pairs": 226680,
+      "seconds": 875.7,
+      "sequences": 226680,
+      "stored_entailment": {
+        "distinct": 7976,
+        "exact_one": 0,
+        "exact_zero": 0,
+        "n": 226680,
+        "on_4_decimal_grid": 0.00210428798305982
+      }
+    },
+    "batch_size": 64,
+    "english_dev": {
+      "forward_calls": 218,
+      "output": "nli_english_dev__ModernBERT-large-zeroshot-v2.0.npz",
+      "pairs": 13920,
+      "seconds": 66.9,
+      "sequences": 13920,
+      "stored_entailment": {
+        "distinct": 4056,
+        "exact_one": 0,
+        "exact_zero": 0,
+        "n": 13920,
+        "on_4_decimal_grid": 0.001867816091954023
+      }
+    },
+    "gpu": "NVIDIA A30",
+    "id2label": {
+      "0": "entailment",
+      "1": "not_entailment"
+    },
+    "model": "MoritzLaurer/ModernBERT-large-zeroshot-v2.0",
+    "model_revision": "a51e07b524299e309dd2b88d48b0cfa2bd9ec598",
+    "peak_vram_mb": 1387.2,
+    "probs_dtype": "float32",
+    "resolved_model_revision": "a51e07b524299e309dd2b88d48b0cfa2bd9ec598",
+    "stored_labels": [
+      "not_entailment",
+      "unused",
+      "entailment"
+    ]
+  },
+  "git": {
+    "branch": "analysis/claim-check-arms",
+    "commit": "e25a2a09eddd8a934532de6bbc6bc8eacef6aacd",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis-claim-check-arms/code/results/step6_nli/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "2f4eee004e520ab35489a49f407cb1828f47ff379ada06b1d3574746dfc7609e",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/nli_stage.py",
+  "timestamp_utc": "2026-11-19T11:02:10Z"
+}

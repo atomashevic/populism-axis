@@ -1,0 +1,137 @@
+{
+  "argv": [
+    "--arm",
+    "von"
+  ],
+  "encoder_id": "wfzyx/von",
+  "extra": {
+    "agora": {
+      "forward_calls": 226680,
+      "output": "nli_agora__von.npz",
+      "pairs": 226680,
+      "sd_yes": 0.12728350111907163,
+      "sdk_max_gap": 0.0,
+      "seconds": 9126.5,
+      "sequences": 226680,
+      "share_yes_gt_0.5": 0.8531365802011647,
+      "stored_yes": {
+        "distinct": 221403,
+        "exact_one": 0,
+        "exact_zero": 0,
+        "n": 226680,
+        "on_4_decimal_grid": 0.0020381154049761777
+      },
+      "windows": 22668,
+      "yes_quantiles": {
+        "median": 0.6869510486038956,
+        "p01": 0.2882578459776913,
+        "p99": 0.8079419365473094
+      }
+    },
+    "arm": "D",
+    "batch_size": 64,
+    "criteria": null,
+    "device_after_run": "cuda",
+    "english_dev": {
+      "forward_calls": 13920,
+      "output": "nli_english_dev__von.npz",
+      "pairs": 13920,
+      "sd_yes": 0.12410415081599677,
+      "sdk_max_gap": 0.0,
+      "seconds": 841.4,
+      "sequences": 13920,
+      "share_yes_gt_0.5": 0.864367816091954,
+      "stored_yes": {
+        "distinct": 13796,
+        "exact_one": 0,
+        "exact_zero": 0,
+        "n": 13920,
+        "on_4_decimal_grid": 0.0015086206896551724
+      },
+      "windows": 1392,
+      "yes_quantiles": {
+        "median": 0.6918084967499071,
+        "p01": 0.29480402459448485,
+        "p99": 0.8006270616333231
+      }
+    },
+    "gpu": "NVIDIA A30",
+    "libraries": {
+      "torch": "2.14.0+cu126",
+      "transformers": "5.6.2"
+    },
+    "model": "wfzyx/von",
+    "model_revision": "3a34cbdfaa1e90f2a9eb6b3bfc5ac5c92a18cb01",
+    "peak_vram_mb": 1539.7,
+    "probe": 0,
+    "probs_dtype": "float32",
+    "question_order": [
+      "P00",
+      "P05",
+      "P01",
+      "P06",
+      "P08",
+      "E05",
+      "E00",
+      "E02",
+      "E04",
+      "E06"
+    ],
+    "question_template": "Does this passage assert the following claim? {claim}",
+    "sdk": {
+      "distribution": "von-sdk",
+      "version": "1.3.7"
+    },
+    "settings": {
+      "calibration_map": true,
+      "default_temperature": 2.2,
+      "descriptions": [
+        "Yes, condition holds true.",
+        "No, condition is false."
+      ],
+      "device": "cuda",
+      "independent_options": true,
+      "noul_prior": {
+        "a": -0.5,
+        "b": 0.3
+      }
+    },
+    "stored_labels": [
+      "not_yes",
+      "unused",
+      "yes"
+    ],
+    "weights_sha256": {
+      "model.safetensors": "af57d5d2ab15715a753a1eb4add4271d1aecce7e76f3365f629c082df329297a",
+      "option_marker.pt": "3faf27f88d30aaf9aa37860d4cdef99f1d05450cf40364f6236ac892d4d139ed"
+    }
+  },
+  "git": {
+    "branch": "analysis/claim-check-arms",
+    "commit": "e25a2a09eddd8a934532de6bbc6bc8eacef6aacd",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis-claim-check-arms/code/results/step6_nli/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "63b1c693a8cea22656dcf41c9904eb430a2a3e8bf894e264d810f5c9b7c3c20c",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/decision_model_stage.py",
+  "timestamp_utc": "2026-11-19T14:21:31Z"
+}

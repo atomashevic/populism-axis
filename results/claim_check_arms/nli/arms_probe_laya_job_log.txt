@@ -1,0 +1,9 @@
+# job arms_probe_laya started 2026-11-19T11:09:52Z on pvgpu2
+# commit e25a2a09eddd8a934532de6bbc6bc8eacef6aacd dirty=no
+# gpu before: 10821 MiB used, load 1.63
+# command: python scripts/decision_model_stage.py --arm laya --probe 200
+/home/atomasevic/populism-axis-claim-check-arms/code/.venv/lib/python3.14/site-packages/laya/agent.py:2259: RuntimeWarning: laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated.
+  return Agent(model_id_or_path, device=device, token=token, subfolder=subfolder, fast=fast,
+english_dev {"windows": 200, "pairs": 2000, "sequences": 2000, "forward_calls": 34, "seconds": 13.7, "sdk_max_gap": 0.0, "stored_yes": {"n": 2000, "exact_zero": 0, "exact_one": 0, "distinct": 1575, "on_4_decimal_grid": 0.003}, "yes_quantiles": {"p01": 0.00028360241181903865, "median": 0.09589252496864686, "p99": 0.867495537668524}, "share_yes_gt_0.5": 0.081, "sd_yes": 0.18537768653756032}
+{
+}

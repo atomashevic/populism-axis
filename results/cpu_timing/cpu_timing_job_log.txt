@@ -1,0 +1,8 @@
+host aleksandar-scl; cpu 11th Gen Intel(R) Core(TM) i7-11700F @ 2.50GHz; start 2026-10-21T12:29:55Z
+359 documents -> 51787 windows
+
+encoded 51787 windows in 9191 s
+
+claim check: 28590 pairs in 4583 s
+wrote scored/cpu_timing/usgov/scores.csv (359 documents) in 13800 s total
+exit 0; elapsed_seconds 13801; end 2026-10-21T16:19:56Z

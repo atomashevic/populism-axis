@@ -1,0 +1,154 @@
+{
+  "training_dataset": "mlburnham/Pol_NLI",
+  "revision": "062724c0a0e601ffc5fba98a5546cc2237a766fa",
+  "split": "train",
+  "training_file": "data/train-00000-of-00001.parquet",
+  "training_sha256": "3186a1a374f3a296ffa1c4212e98845dd3768d339245b2ff07e514fd366089c6",
+  "normalization": "Unicode NFKC, casefold, collapse whitespace; exact SHA-256 equality",
+  "training_rows": 171289,
+  "unique_training_premises": 110069,
+  "training_source_rows": {
+    "mlburnham/PoliStance_Affect": 23139,
+    "mlburnham/targeted_hatespeech_entailment": 20002,
+    "mlburnham/dem_rep_party_platform_topics": 17287,
+    "mlburnham/bill_summary_entailment": 16172,
+    "mlburnham/argument_quality_ranking_entailment": 14026,
+    "mlburnham/acled_event_entailment": 12612,
+    "mlburnham/supreme_court_summary_entailment": 11353,
+    "mlburnham/polistance_issue_tweets": 10993,
+    "mlburnham/gtd_event_entailment": 8825,
+    "mlburnham/dehumanizing_hatespeech_entailment": 5667,
+    "mlburnham/violent_hatespeech_entailment": 5191,
+    "mlburnham/political_or_not": 4524,
+    "mlburnham/global_warming_stance_entailment": 3517,
+    "mlburnham/ibm_claimstance_topic_entailment": 3180,
+    "mlburnham/hatespeech_entailment": 2904,
+    "mlburnham/PoliStance_Affect_QT": 2803,
+    "mlburnham/scad_event_entailment": 2537,
+    "mlburnham/ibm_claimstance_entailment": 2152,
+    "mlburnham/adl_events_entailment": 1628,
+    "mlburnham/polarizing_rhetoric": 1514,
+    "mlburnham/anthropic_persuasion": 1263
+  },
+  "documents": {
+    "agora": {
+      "rows": 5272,
+      "overlapping_rows": 0,
+      "unique_texts": 5272,
+      "unique_overlapping_texts": 0
+    },
+    "antielite_tweets": {
+      "rows": 5401,
+      "overlapping_rows": 0,
+      "unique_texts": 5352,
+      "unique_overlapping_texts": 0
+    },
+    "english_dev": {
+      "rows": 174,
+      "overlapping_rows": 0,
+      "unique_texts": 173,
+      "unique_overlapping_texts": 0
+    },
+    "english_holdout": {
+      "rows": 84,
+      "overlapping_rows": 0,
+      "unique_texts": 83,
+      "unique_overlapping_texts": 0
+    },
+    "eu": {
+      "rows": 1762,
+      "overlapping_rows": 0,
+      "unique_texts": 1740,
+      "unique_overlapping_texts": 0
+    },
+    "popbert_en": {
+      "rows": 8795,
+      "overlapping_rows": 0,
+      "unique_texts": 8765,
+      "unique_overlapping_texts": 0
+    },
+    "portugal": {
+      "rows": 6214,
+      "overlapping_rows": 0,
+      "unique_texts": 6198,
+      "unique_overlapping_texts": 0
+    },
+    "usgov_speeches": {
+      "rows": 359,
+      "overlapping_rows": 0,
+      "unique_texts": 357,
+      "unique_overlapping_texts": 0
+    }
+  },
+  "limitations": [
+    "Exact normalized matches only; no substring, near-duplicate or translation matching.",
+    "Does not audit underlying universal-classifier training or language-model pretraining.",
+    "Dataset current pinned revision may differ from the training-time snapshot."
+  ],
+  "requests": {
+    "requests_agora": {
+      "all": {
+        "rows": 22668,
+        "overlapping_rows": 0,
+        "unique_texts": 22668,
+        "unique_overlapping_texts": 0
+      }
+    },
+    "requests_antielite_tweets": {
+      "all": {
+        "rows": 5401,
+        "overlapping_rows": 0,
+        "unique_texts": 5352,
+        "unique_overlapping_texts": 0
+      }
+    },
+    "requests_english_dev": {
+      "all": {
+        "rows": 1392,
+        "overlapping_rows": 0,
+        "unique_texts": 1382,
+        "unique_overlapping_texts": 0
+      }
+    },
+    "requests_english_holdout": {
+      "all": {
+        "rows": 672,
+        "overlapping_rows": 0,
+        "unique_texts": 664,
+        "unique_overlapping_texts": 0
+      }
+    },
+    "requests_eu": {
+      "all": {
+        "rows": 1763,
+        "overlapping_rows": 0,
+        "unique_texts": 1741,
+        "unique_overlapping_texts": 0
+      }
+    },
+    "requests_popbert_en": {
+      "all": {
+        "rows": 8795,
+        "overlapping_rows": 0,
+        "unique_texts": 8765,
+        "unique_overlapping_texts": 0
+      }
+    },
+    "requests_portugal": {
+      "all": {
+        "rows": 8715,
+        "overlapping_rows": 0,
+        "unique_texts": 8637,
+        "unique_overlapping_texts": 0
+      }
+    },
+    "requests_usgov_speeches": {
+      "all": {
+        "rows": 2859,
+        "overlapping_rows": 0,
+        "unique_texts": 2814,
+        "unique_overlapping_texts": 0
+      }
+    }
+  }
+}

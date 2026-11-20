@@ -1,0 +1,81 @@
+{
+  "argv": [
+    "--encoder",
+    "e5-large-v2",
+    "--sentences",
+    "anchors/candidates/v5_green.json",
+    "--set-id",
+    "v5_green",
+    "--out-root",
+    "results/anchor_revision_pilot/embeddings",
+    "--device",
+    "cpu",
+    "--repeat",
+    "2"
+  ],
+  "encoder_id": "intfloat/e5-large-v2",
+  "extra": {
+    "device": "cpu",
+    "encoder_spec": {
+      "batch_size": 64,
+      "dtype": "float16",
+      "label": "e5-large-v2",
+      "max_length": 96,
+      "model_id": "intfloat/e5-large-v2",
+      "pooling": "mean",
+      "revision": "f169b11e22de13617baa190a028a32f3493550b6",
+      "template": "query: {text}",
+      "trust_remote_code": false
+    },
+    "example_rendered_input": "query: The ordinary people are the only true source of legitimate political power.",
+    "gpu_name": null,
+    "groups": {
+      "E__mainstream": 10,
+      "E__populist": 10,
+      "M__mainstream": 10,
+      "M__populist": 10,
+      "P__mainstream": 10,
+      "P__populist": 10
+    },
+    "n_sentences": 60,
+    "output": "results/anchor_revision_pilot/embeddings/e5-large-v2/sentences/v5_green__7036e7a4.npz",
+    "peak_vram_mb": null,
+    "repeat": 2,
+    "repeat_byte_identical": true,
+    "resolved_model_revision": "f169b11e22de13617baa190a028a32f3493550b6",
+    "schema": "populism_axis.v3.proposition_anchors.v1",
+    "seconds": 36.35,
+    "set_id": "v5_green",
+    "task": null,
+    "torch_cuda": null,
+    "torch_version": "2.14.0+cpu"
+  },
+  "git": {
+    "branch": "analysis/anchor-revision-pilot",
+    "commit": "457b2494dcf1ce95fbe9d54f4b6770f1d06fa14f",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "sentences": {
+      "path": "/home/aleksandar/work/populism-axis/anchors/candidates/v5_green.json",
+      "sha256": "7036e7a447b722ab42e5af5196cc3021d7ef41cf4087c31b66f19e0bdd649613"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.16",
+  "run_hash": "4b6fe59536a460bdb43bf1a0fbfd6dd3c9cdbc4d0cdd2e2eddec4ea74a532f43",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/encode_sentences.py",
+  "timestamp_utc": "2026-11-20T07:34:56Z"
+}

@@ -1,0 +1,12 @@
+# job apsi_comparison_20261017 started 2026-10-17T20:09:10Z on pvgpu2
+# commit 604c9b750f110d13adefa03b5865b40a5bf7bfa2 dirty=no
+# gpu before: 1 MiB used, load 0.13
+# command: bash -c set -e; python scripts/political_debate_nli.py --in-dir results/apsi_comparison/cache --output-dir results/apsi_comparison/nli --batch-size 32; python scripts/apsi_comparator.py --input results/apsi_comparison/cache/documents.parquet --output-dir results/apsi_comparison/large --model-size large --dtype float32 --batch-size 32; python scripts/apsi_comparator.py --input results/apsi_comparison/cache/documents.parquet --output-dir results/apsi_comparison/base --model-size base --dtype float32 --batch-size 32; echo INFERENCE_QUEUE_COMPLETE
+base: 32384/32456 units
+base: 32456/32456 units
+INFERENCE_QUEUE_COMPLETE
+Wrote 126 paired comparisons to results/apsi_comparison
+results/apsi_comparison/paired_comparisons.svg
+OK: 4 frozen assets and 23 source/dependency files match.
+Model cache not checked. Installed dependencies and inference were not tested.
+COMPARISON_COMPLETE

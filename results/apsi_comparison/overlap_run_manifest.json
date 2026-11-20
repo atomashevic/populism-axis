@@ -1,0 +1,84 @@
+{
+  "argv": [
+    "--documents",
+    "results/apsi_comparison/cache/documents.parquet",
+    "--requests",
+    "results/apsi_comparison/cache",
+    "--training-cache",
+    "results/apsi_comparison/cache/polnli_train.parquet",
+    "--output",
+    "results/apsi_comparison/overlap_audit.json"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "training_revision": "062724c0a0e601ffc5fba98a5546cc2237a766fa"
+  },
+  "git": {
+    "branch": "run/apsi-comparison-20261017",
+    "commit": "604c9b750f110d13adefa03b5865b40a5bf7bfa2",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "documents": {
+      "path": "results/apsi_comparison/cache/documents.parquet",
+      "sha256": "bbfe00a43300bd1403dd0cda750b7d434e489b459eb91ccd585046b6a0374e77"
+    },
+    "requests_agora": {
+      "path": "results/apsi_comparison/cache/requests_agora.parquet",
+      "sha256": "3f22b094e2d15726cf9f3cc39ad98d7e92797a2f60a727deec7573ae1bfcb786"
+    },
+    "requests_antielite_tweets": {
+      "path": "results/apsi_comparison/cache/requests_antielite_tweets.parquet",
+      "sha256": "7bcecc2e37acce2f62c4e73205e7dd7d1a273f775433eb7e0fff28f759b3dc2c"
+    },
+    "requests_english_dev": {
+      "path": "results/apsi_comparison/cache/requests_english_dev.parquet",
+      "sha256": "724101d6cdea58678eb983026cded33092d6c24b4b4b2b79c9db8d573277e21b"
+    },
+    "requests_english_holdout": {
+      "path": "results/apsi_comparison/cache/requests_english_holdout.parquet",
+      "sha256": "1c5afad1c658d212797fdb15f3dff58fba0718f0e3fe3574c25309d09e5df7b4"
+    },
+    "requests_eu": {
+      "path": "results/apsi_comparison/cache/requests_eu.parquet",
+      "sha256": "479947becc561ea1299cd1299647b99446dc81206ef60e4dee2eb6d21e83a35f"
+    },
+    "requests_popbert_en": {
+      "path": "results/apsi_comparison/cache/requests_popbert_en.parquet",
+      "sha256": "3ec3bb37fd2b4508d793616f35861ca6f59bfa42b4ffdb6dbb0fd35e59d61d97"
+    },
+    "requests_portugal": {
+      "path": "results/apsi_comparison/cache/requests_portugal.parquet",
+      "sha256": "eda18a0ac6d1cffdff6f5597a38298c6bd2cabb59e99f3f0d0986de73907ccaf"
+    },
+    "requests_usgov_speeches": {
+      "path": "results/apsi_comparison/cache/requests_usgov_speeches.parquet",
+      "sha256": "7538e85cfb332539d885d7d20251744096e14754d1feafb90b661015cf3524a7"
+    },
+    "script": {
+      "path": "/tmp/populism-apsi-run-20261017/scripts/audit_political_overlap.py",
+      "sha256": "aae8e87887e127110f582e056d4e57f4c5b7771835c4570e8c5a2ec8328758d0"
+    },
+    "training": {
+      "path": "results/apsi_comparison/cache/polnli_train.parquet",
+      "sha256": "3186a1a374f3a296ffa1c4212e98845dd3768d339245b2ff07e514fd366089c6"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "dbe1919fb844f4bb06f94bebc69cfff952642daa0f372edd4840fdff39cfe012",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/audit_political_overlap.py",
+  "timestamp_utc": "2026-10-17T20:02:48Z"
+}

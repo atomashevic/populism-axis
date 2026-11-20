@@ -1,0 +1,129 @@
+{
+  "argv": [
+    "--arm",
+    "laya"
+  ],
+  "encoder_id": "convaiinnovations/laya",
+  "extra": {
+    "agora": {
+      "forward_calls": 3778,
+      "output": "nli_agora__laya.npz",
+      "pairs": 226680,
+      "sd_yes": 0.1974920538302203,
+      "sdk_max_gap": 0.0,
+      "seconds": 1273.8,
+      "sequences": 226680,
+      "share_yes_gt_0.5": 0.09763543320981119,
+      "stored_yes": {
+        "distinct": 24189,
+        "exact_one": 0,
+        "exact_zero": 0,
+        "n": 226680,
+        "on_4_decimal_grid": 0.0019984118581259924
+      },
+      "windows": 22668,
+      "yes_quantiles": {
+        "median": 0.10212761116873381,
+        "p01": 0.000593028640956586,
+        "p99": 0.8701753499868988
+      }
+    },
+    "arm": "E",
+    "batch_size": 64,
+    "criteria": null,
+    "device_after_run": "cuda",
+    "english_dev": {
+      "forward_calls": 232,
+      "output": "nli_english_dev__laya.npz",
+      "pairs": 13920,
+      "sd_yes": 0.18834077327721796,
+      "sdk_max_gap": 0.0,
+      "seconds": 89.5,
+      "sequences": 13920,
+      "share_yes_gt_0.5": 0.08484195402298851,
+      "stored_yes": {
+        "distinct": 5994,
+        "exact_one": 0,
+        "exact_zero": 0,
+        "n": 13920,
+        "on_4_decimal_grid": 0.001939655172413793
+      },
+      "windows": 1392,
+      "yes_quantiles": {
+        "median": 0.09896632771938459,
+        "p01": 0.00018233387178111238,
+        "p99": 0.8668554818842399
+      }
+    },
+    "gpu": "NVIDIA A30",
+    "libraries": {
+      "torch": "2.14.0+cu126",
+      "transformers": "5.6.2"
+    },
+    "model": "convaiinnovations/laya",
+    "model_revision": "e333cb7c823cd1787276228260f56d02fbf5180b",
+    "peak_vram_mb": 4430.3,
+    "probe": 0,
+    "probs_dtype": "float32",
+    "question_order": [
+      "P00",
+      "P05",
+      "P01",
+      "P06",
+      "P08",
+      "E05",
+      "E00",
+      "E02",
+      "E04",
+      "E06"
+    ],
+    "question_template": "Does this passage assert the following claim? {claim}",
+    "sdk": {
+      "distribution": "laya",
+      "version": "0.4.37"
+    },
+    "settings": {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "head_max_len": 192,
+      "max_len": 512,
+      "resolved_revision": "e333cb7c823cd1787276228260f56d02fbf5180b"
+    },
+    "stored_labels": [
+      "not_yes",
+      "unused",
+      "yes"
+    ],
+    "weights_sha256": {
+      "model.safetensors": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+    }
+  },
+  "git": {
+    "branch": "analysis/claim-check-arms",
+    "commit": "e25a2a09eddd8a934532de6bbc6bc8eacef6aacd",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis-claim-check-arms/code/results/step6_nli/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "df689c9d0809ce553542ab8f9757fcb5af0a475b613c77b76b68d5bdf8722e1b",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/decision_model_stage.py",
+  "timestamp_utc": "2026-11-19T11:34:10Z"
+}

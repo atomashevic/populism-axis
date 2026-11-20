@@ -1,0 +1,52 @@
+{
+  "argv": [
+    "results/apsi_comparison/comparisons.csv"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "format": "standalone SVG",
+    "output": "results/apsi_comparison/paired_comparisons.svg",
+    "panels": [
+      "Spearman correlation",
+      "AUROC",
+      "Macro-F1"
+    ],
+    "reference": "ours",
+    "systems": [
+      "ours_political_debate",
+      "apsi_large_native"
+    ]
+  },
+  "git": {
+    "branch": "run/apsi-comparison-20261017",
+    "commit": "6ebf2b49619ba111694e561562edcd2b17541348",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "comparisons": {
+      "path": "results/apsi_comparison/comparisons.csv",
+      "sha256": "ffee616dd06f71d2b6877d47957a5105b3e51ef1e844d7aa69c8ff5b4e4ace3f"
+    },
+    "plot_script": {
+      "path": "/home/atomasevic/populism-axis-apsi-20261017/scripts/plot_apsi_comparison.py",
+      "sha256": "6d2b7c99c70381653e22028f26e4da0b2562e19f67a2d6d288af7ffb64800d88"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "89f6319f37ba06d53e4123adce5bd2791875ed2edf5e712b73a0c51223567c0f",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/plot_apsi_comparison.py",
+  "timestamp_utc": "2026-10-18T06:46:33Z"
+}

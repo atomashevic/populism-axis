@@ -1,0 +1,72 @@
+{
+  "argv": [
+    "--in-dir",
+    "results/anchor_revision_pilot/nli_in",
+    "--out-dir",
+    "results/anchor_revision_pilot/nli_out",
+    "--names",
+    "dev_dedup"
+  ],
+  "encoder_id": "facebook/bart-large-mnli",
+  "extra": {
+    "batch_size": 64,
+    "dev_dedup": {
+      "forward_calls": 5536,
+      "output": "nli_dev_dedup__bart-large-mnli.npz",
+      "pairs": 354298,
+      "seconds": 491.8,
+      "sequences": 354298,
+      "stored_entailment": {
+        "distinct": 12865,
+        "exact_one": 0,
+        "exact_zero": 0,
+        "n": 354298,
+        "on_4_decimal_grid": 0.0018346137996827529
+      }
+    },
+    "gpu": "NVIDIA A30",
+    "id2label": {
+      "0": "contradiction",
+      "1": "neutral",
+      "2": "entailment"
+    },
+    "model": "facebook/bart-large-mnli",
+    "model_revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+    "peak_vram_mb": 3192.4,
+    "probs_dtype": "float16",
+    "resolved_model_revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+    "stored_labels": [
+      "contradiction",
+      "neutral",
+      "entailment"
+    ]
+  },
+  "git": {
+    "branch": "analysis/anchor-revision-pilot",
+    "commit": "457b2494dcf1ce95fbe9d54f4b6770f1d06fa14f",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/atomasevic/populism-axis-anchor-pilot/code/results/anchor_revision_pilot/nli_in/hypotheses.json",
+      "sha256": "d804f25050ea053ad7b1b82e4d28bc162c1c97ca33f34ebe9558f0762379433a"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "ab952edf71508ee25b09b3cbd005a9692c897fab114bb61f36a5e4a5e310c1bb",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/nli_stage.py",
+  "timestamp_utc": "2026-11-20T08:07:14Z"
+}

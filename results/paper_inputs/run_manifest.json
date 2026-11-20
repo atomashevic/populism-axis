@@ -1,0 +1,91 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "output": "results/paper_inputs/cache_extract.json"
+  },
+  "git": {
+    "branch": "paper/method-figures",
+    "commit": "bc3d2d9c3034f7540f2be7d4c9ed7e1a6dd33985",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "anchors/claim_hypotheses.json": {
+      "path": "/home/aleksandar/work/populism-axis/anchors/claim_hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    },
+    "anchors/proposition_anchors.json": {
+      "path": "/home/aleksandar/work/populism-axis/anchors/proposition_anchors.json",
+      "sha256": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6"
+    },
+    "data/benchmark_usgov/speeches.csv": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmark_usgov/speeches.csv",
+      "sha256": "dbfec54d17a62712aa19b1af4b1949c48b64075c69e24bb47d8710eee5d57b7c"
+    },
+    "data/benchmarks/english_gpd_speeches.csv": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmarks/english_gpd_speeches.csv",
+      "sha256": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7"
+    },
+    "data/benchmarks/english_split.csv": {
+      "path": "/home/aleksandar/work/populism-axis/data/benchmarks/english_split.csv",
+      "sha256": "fe6bea109fcba5946eb1cc9cbacb3d9cfd112954137f4f884c93653f4c7824cb"
+    },
+    "results/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz": {
+      "path": "/home/aleksandar/work/populism-axis/results/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz",
+      "sha256": "322ed72f9360521a6dd34e7b8c89a3af3ccc19509e741afa8858c2a20e346f8f"
+    },
+    "results/embeddings/e5-large-v2/spw3_cap60_clean/embeddings_english.npz": {
+      "path": "/home/aleksandar/work/populism-axis/results/embeddings/e5-large-v2/spw3_cap60_clean/embeddings_english.npz",
+      "sha256": "dd10bc3ead6bdf8638977a033812a6522124b125a497055ec032220ee5338382"
+    },
+    "results/embeddings/e5-large-v2/spw3_cap60_clean/windows_english.parquet": {
+      "path": "/home/aleksandar/work/populism-axis/results/embeddings/e5-large-v2/spw3_cap60_clean/windows_english.parquet",
+      "sha256": "a69592c0e75a6fc35e47d9a7e6297e2da645b87102f940d057aedc023f23d26a"
+    },
+    "results/embeddings_external/usgov/e5-large-v2/spw3_cap60/embeddings_usgov_speeches.npz": {
+      "path": "/home/aleksandar/work/populism-axis/results/embeddings_external/usgov/e5-large-v2/spw3_cap60/embeddings_usgov_speeches.npz",
+      "sha256": "2450fb83604326b78aaa16c78b30a69bd3764e358af7bec5511591c45d87bf03"
+    },
+    "results/embeddings_external/usgov/e5-large-v2/spw3_cap60/windows_usgov_speeches.parquet": {
+      "path": "/home/aleksandar/work/populism-axis/results/embeddings_external/usgov/e5-large-v2/spw3_cap60/windows_usgov_speeches.parquet",
+      "sha256": "0413c0dc1a7e1f80054881cc1d774bb26d694e6dbc6617f4477267abbb5591a7"
+    },
+    "results/external/usgov/final_scores_speeches.csv": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/usgov/final_scores_speeches.csv",
+      "sha256": "abbc9b13d8eb17592d02f3f724b4b141f686818154060abe40a3037cd14a8c1e"
+    },
+    "results/external/usgov/nli_usgov_speeches__bart-large-mnli.npz": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/usgov/nli_usgov_speeches__bart-large-mnli.npz",
+      "sha256": "a926c39b23a1a2efa75121d6249197dc8af6d6eb18cc01dce62c2d8fb319c640"
+    },
+    "results/external/usgov/requests_usgov_speeches.parquet": {
+      "path": "/home/aleksandar/work/populism-axis/results/external/usgov/requests_usgov_speeches.parquet",
+      "sha256": "7538e85cfb332539d885d7d20251744096e14754d1feafb90b661015cf3524a7"
+    },
+    "results/step6_nli/nli_agora__bart-large-mnli.npz": {
+      "path": "/home/aleksandar/work/populism-axis/results/step6_nli/nli_agora__bart-large-mnli.npz",
+      "sha256": "9422e3af6416c4c4e4099b8abca070d2b102a79b92c0adfcd3a0b8939f1856ac"
+    },
+    "results/step6_nli/nli_english_dev__bart-large-mnli.npz": {
+      "path": "/home/aleksandar/work/populism-axis/results/step6_nli/nli_english_dev__bart-large-mnli.npz",
+      "sha256": "32c8df6855fa8d830d143b212c899f1bbbb0c3d480f143c5c0a68b7fd2959e2b"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.13",
+  "run_hash": "59424be236d1dea43b0b341843b4833cdf8084e83fc9c433c72f09452711fdb2",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "paper/scripts/extract_paper_inputs.py",
+  "timestamp_utc": "2026-10-19T15:00:01Z"
+}

@@ -1,0 +1,2259 @@
+{
+  "metadata": {
+    "datasets": [
+      "english_dev",
+      "agora"
+    ],
+    "arms": [
+      "v4",
+      "v5_green",
+      "v5_red",
+      "v5_green_red"
+    ],
+    "bootstrap_seed": 20260923,
+    "paired_draws": 4000,
+    "ci_draws": 2000,
+    "reference": "committed V4 scores: step4 spw3_k8 (axis), step6 nli_only_k8 and combined_k8 (B6)",
+    "nli_manifest": {
+      "argv": [
+        "--in-dir",
+        "results/anchor_revision_pilot/nli_in",
+        "--out-dir",
+        "results/anchor_revision_pilot/nli_out",
+        "--names",
+        "dev_dedup"
+      ],
+      "encoder_id": "facebook/bart-large-mnli",
+      "extra": {
+        "batch_size": 64,
+        "dev_dedup": {
+          "forward_calls": 5536,
+          "output": "nli_dev_dedup__bart-large-mnli.npz",
+          "pairs": 354298,
+          "seconds": 491.8,
+          "sequences": 354298,
+          "stored_entailment": {
+            "distinct": 12865,
+            "exact_one": 0,
+            "exact_zero": 0,
+            "n": 354298,
+            "on_4_decimal_grid": 0.0018346137996827529
+          }
+        },
+        "gpu": "NVIDIA A30",
+        "id2label": {
+          "0": "contradiction",
+          "1": "neutral",
+          "2": "entailment"
+        },
+        "model": "facebook/bart-large-mnli",
+        "model_revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+        "peak_vram_mb": 3192.4,
+        "probs_dtype": "float16",
+        "resolved_model_revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+        "stored_labels": [
+          "contradiction",
+          "neutral",
+          "entailment"
+        ]
+      },
+      "git": {
+        "branch": "analysis/anchor-revision-pilot",
+        "commit": "457b2494dcf1ce95fbe9d54f4b6770f1d06fa14f",
+        "dirty": false
+      },
+      "hostname": "pvgpu2",
+      "inputs": {
+        "hypotheses": {
+          "path": "/home/atomasevic/populism-axis-anchor-pilot/code/results/anchor_revision_pilot/nli_in/hypotheses.json",
+          "sha256": "d804f25050ea053ad7b1b82e4d28bc162c1c97ca33f34ebe9558f0762379433a"
+        }
+      },
+      "package_version": "0.1.0",
+      "packages": {
+        "numpy": "2.4.4",
+        "pandas": "3.0.2",
+        "populism-axis": "0.1.0",
+        "pyarrow": "25.0.1",
+        "scikit-learn": "1.8.0",
+        "scipy": "1.17.1",
+        "torch": "2.14.0+cu126",
+        "transformers": "5.6.2"
+      },
+      "python": "3.14.2",
+      "run_hash": "ab952edf71508ee25b09b3cbd005a9692c897fab114bb61f36a5e4a5e310c1bb",
+      "schema": "populism_axis.v4.run_manifest.v1",
+      "script": "scripts/nli_stage.py",
+      "timestamp_utc": "2026-11-20T08:07:14Z"
+    }
+  },
+  "v4_rerun_check": {
+    "tolerance_spearman": 0.001,
+    "english_dev": {
+      "combined_spearman_committed": 0.5367457391310595,
+      "combined_spearman_reported": 0.537,
+      "combined_spearman_rerun": 0.5367583111437717,
+      "max_abs_diff_claim_check": 8.534027683787526e-05,
+      "max_abs_diff_combined": 0.005280903378869439,
+      "spearman_rerun_vs_committed_combined": 0.9999931660846447
+    },
+    "agora": {
+      "combined_spearman_committed": 0.3823007058125725,
+      "combined_spearman_reported": 0.382,
+      "combined_spearman_rerun": 0.3823044269052882,
+      "max_abs_diff_claim_check": 0.0003656932018692993,
+      "max_abs_diff_combined": 0.017525294685913906,
+      "spearman_rerun_vs_committed_combined": 0.9999992269153481
+    },
+    "passed": true
+  },
+  "metrics": {
+    "v4": {
+      "axis": {
+        "english_dev": {
+          "spearman": 0.5165550867152585,
+          "spearman_ci95": [
+            0.37519877001394286,
+            0.6450593332693619
+          ],
+          "extreme_auroc": 0.9206349206349206,
+          "extreme_auroc_ci95": [
+            0.7632657987437399,
+            0.9917582417582418
+          ],
+          "extreme_ap": 0.698366735435701,
+          "leader_term_spearman": 0.3084538758006857,
+          "leader_term_spearman_ci95": [
+            0.06063542613321402,
+            0.5400409177820984
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3588332643197715,
+          "spearman_ci95": [
+            0.24529006398454323,
+            0.379942948775116
+          ],
+          "high_vs_low_auroc": 0.8743361828897092,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9349474912485414
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.7785185185185185
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.8418982977806507
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8307240704500978
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.8449808289265182
+        }
+      },
+      "nli_only": {
+        "english_dev": {
+          "spearman": 0.4677983070147858,
+          "spearman_ci95": [
+            0.35151942700605254,
+            0.5758812177001156
+          ],
+          "extreme_auroc": 0.9387755102040817,
+          "extreme_auroc_ci95": [
+            0.8799855769230769,
+            0.9819708595015206
+          ],
+          "extreme_ap": 0.5065309998643333,
+          "leader_term_spearman": 0.3977130962447162,
+          "leader_term_spearman_ci95": [
+            0.1633448566913955,
+            0.5954943327719792
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3420376886819554,
+          "spearman_ci95": [
+            0.27171620613832326,
+            0.3590400283462903
+          ],
+          "high_vs_low_auroc": 0.7521128812900719,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9183197199533256
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.6396296296296295
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.6574014221073045
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8781800391389433
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.7347222758406353
+        }
+      },
+      "combined": {
+        "english_dev": {
+          "spearman": 0.5367457391310595,
+          "spearman_ci95": [
+            0.4213456781791022,
+            0.6423363970612613
+          ],
+          "extreme_auroc": 0.9512471655328798,
+          "extreme_auroc_ci95": [
+            0.8673747468978765,
+            0.9947600958387942
+          ],
+          "extreme_ap": 0.6424501424501425,
+          "leader_term_spearman": 0.40877963745316664,
+          "leader_term_spearman_ci95": [
+            0.16804227627033655,
+            0.6087827320075392
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3823007058125725,
+          "spearman_ci95": [
+            0.29526516172819095,
+            0.3965266340496564
+          ],
+          "high_vs_low_auroc": 0.8592707726183537,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9463243873978996
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.7740740740740741
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.8036522301228184
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8683953033268103
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.8332917425278733
+        }
+      }
+    },
+    "v5_green": {
+      "axis": {
+        "english_dev": {
+          "spearman": 0.5254434997027874,
+          "spearman_ci95": [
+            0.38812894706517576,
+            0.6528812545121118
+          ],
+          "extreme_auroc": 0.9172335600907029,
+          "extreme_auroc_ci95": [
+            0.7408718825422365,
+            0.9940697474002721
+          ],
+          "extreme_ap": 0.7242063492063493,
+          "leader_term_spearman": 0.3067182386406472,
+          "leader_term_spearman_ci95": [
+            0.06478901750873359,
+            0.5417857158304901
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.35442106482644925,
+          "spearman_ci95": [
+            0.23916370120886013,
+            0.37871492737366425
+          ],
+          "high_vs_low_auroc": 0.8623065215983421,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9384480746791132
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.7666666666666666
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.8165266106442577
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8424657534246575
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.832860054450535
+        }
+      },
+      "nli_only": {
+        "english_dev": {
+          "spearman": 0.4302997646980924,
+          "spearman_ci95": [
+            0.2834668155215459,
+            0.5573614744837513
+          ],
+          "extreme_auroc": 0.9648526077097506,
+          "extreme_auroc_ci95": [
+            0.9340364992150706,
+            0.9918844367015098
+          ],
+          "extreme_ap": 0.6900404606286958,
+          "leader_term_spearman": 0.3900881603450599,
+          "leader_term_spearman_ci95": [
+            0.1436549703783744,
+            0.5864325358865319
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3380031678185411,
+          "spearman_ci95": [
+            0.2586705075673433,
+            0.3506661485101567
+          ],
+          "high_vs_low_auroc": 0.7824137037756621,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9533255542590432
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.732962962962963
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.676147382029735
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.9055772994129158
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.7700513271206878
+        }
+      },
+      "combined": {
+        "english_dev": {
+          "spearman": 0.5430455747011453,
+          "spearman_ci95": [
+            0.4237384517636405,
+            0.6500138061336023
+          ],
+          "extreme_auroc": 0.9705215419501133,
+          "extreme_auroc_ci95": [
+            0.924437352245863,
+            1.0
+          ],
+          "extreme_ap": 0.8107671957671958,
+          "leader_term_spearman": 0.3786507564955755,
+          "leader_term_spearman_ci95": [
+            0.1356194815525999,
+            0.5842888879957832
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3741387118222594,
+          "spearman_ci95": [
+            0.2768802668097504,
+            0.3886362189229296
+          ],
+          "high_vs_low_auroc": 0.8613998445696521,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9617852975495916
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.7955555555555556
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.7977806507218272
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.87720156555773
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.837980728471393
+        }
+      },
+      "nli_only_v4hyp": {
+        "english_dev": {
+          "spearman": 0.4694175822521177,
+          "spearman_ci95": [
+            0.36187095524020463,
+            0.5732333371362688
+          ],
+          "extreme_auroc": 0.9421768707482993,
+          "extreme_auroc_ci95": [
+            0.8950982939503873,
+            0.9811355495167218
+          ],
+          "extreme_ap": 0.49967363695433864,
+          "leader_term_spearman": 0.3867503965757551,
+          "leader_term_spearman_ci95": [
+            0.14399794691069742,
+            0.5809673986918414
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.34326807026894124,
+          "spearman_ci95": [
+            0.27578599351049365,
+            0.3612159827739939
+          ],
+          "high_vs_low_auroc": 0.74132180558254,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9180280046674446
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.6325925925925926
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.6368778280542986
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8776908023483366
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.723157480628545
+        }
+      },
+      "combined_v4hyp": {
+        "english_dev": {
+          "spearman": 0.5443907800613513,
+          "spearman_ci95": [
+            0.4318645717500735,
+            0.6442850294742187
+          ],
+          "extreme_auroc": 0.9614512471655329,
+          "extreme_auroc_ci95": [
+            0.9007974137931033,
+            0.9983490038872692
+          ],
+          "extreme_ap": 0.6740771148817126,
+          "leader_term_spearman": 0.39809879339139137,
+          "leader_term_spearman_ci95": [
+            0.1593323818801076,
+            0.596223513917451
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.37955844489914875,
+          "spearman_ci95": [
+            0.2915409208651023,
+            0.39641602432190043
+          ],
+          "high_vs_low_auroc": 0.8440110744122791,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9509918319719953
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.7555555555555555
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.7733247145011851
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8718199608610568
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.8163902486486938
+        }
+      }
+    },
+    "v5_red": {
+      "axis": {
+        "english_dev": {
+          "spearman": 0.5196390014335625,
+          "spearman_ci95": [
+            0.38148946366282543,
+            0.6422007488844471
+          ],
+          "extreme_auroc": 0.9206349206349206,
+          "extreme_auroc_ci95": [
+            0.7551017992424243,
+            0.9925925925925925
+          ],
+          "extreme_ap": 0.7153226947344595,
+          "leader_term_spearman": 0.3102340164776482,
+          "leader_term_spearman_ci95": [
+            0.06211942560362552,
+            0.5454308837051549
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3649135111791387,
+          "spearman_ci95": [
+            0.2486331458941095,
+            0.3855682398769181
+          ],
+          "high_vs_low_auroc": 0.8988083673337219,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9311551925320887
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.7877777777777777
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.8841305753070459
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8654598825831702
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.8727974298023624
+        }
+      },
+      "nli_only": {
+        "english_dev": {
+          "spearman": 0.4599156550442334,
+          "spearman_ci95": [
+            0.3414964007684811,
+            0.573023903486836
+          ],
+          "extreme_auroc": 0.9285714285714286,
+          "extreme_auroc_ci95": [
+            0.871677897574124,
+            0.97426868921726
+          ],
+          "extreme_ap": 0.5080804327181139,
+          "leader_term_spearman": 0.36429095503474423,
+          "leader_term_spearman_ci95": [
+            0.11956444592048784,
+            0.5669554432035047
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.34198600405325874,
+          "spearman_ci95": [
+            0.27142766570434906,
+            0.35893958531343045
+          ],
+          "high_vs_low_auroc": 0.7526147917880966,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9180280046674446
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.6396296296296297
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.6579400991165698
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8742661448140899
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.7342906794101456
+        }
+      },
+      "combined": {
+        "english_dev": {
+          "spearman": 0.5377074981035431,
+          "spearman_ci95": [
+            0.4190683892529345,
+            0.6381944820418222
+          ],
+          "extreme_auroc": 0.947845804988662,
+          "extreme_auroc_ci95": [
+            0.8670130038704805,
+            0.9928070175438596
+          ],
+          "extreme_ap": 0.6271553065670713,
+          "leader_term_spearman": 0.39858833207755606,
+          "leader_term_spearman_ci95": [
+            0.1515672293345038,
+            0.6117121663985322
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3887542776980239,
+          "spearman_ci95": [
+            0.297646580487598,
+            0.40176028242166056
+          ],
+          "high_vs_low_auroc": 0.885256783887054,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9489498249708285
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.782962962962963
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.846854126265891
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8928571428571428
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.8608887182647678
+        }
+      },
+      "nli_only_v4hyp": {
+        "english_dev": {
+          "spearman": 0.4599156550442334,
+          "spearman_ci95": [
+            0.3414964007684811,
+            0.573023903486836
+          ],
+          "extreme_auroc": 0.9285714285714286,
+          "extreme_auroc_ci95": [
+            0.871677897574124,
+            0.97426868921726
+          ],
+          "extreme_ap": 0.5080804327181139,
+          "leader_term_spearman": 0.36429095503474423,
+          "leader_term_spearman_ci95": [
+            0.11956444592048784,
+            0.5669554432035047
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.34198600405325874,
+          "spearman_ci95": [
+            0.27142766570434906,
+            0.35893958531343045
+          ],
+          "high_vs_low_auroc": 0.7526147917880966,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9180280046674446
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.6396296296296297
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.6579400991165698
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8742661448140899
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.7342906794101456
+        }
+      },
+      "combined_v4hyp": {
+        "english_dev": {
+          "spearman": 0.5377074981035431,
+          "spearman_ci95": [
+            0.4190683892529345,
+            0.6381944820418222
+          ],
+          "extreme_auroc": 0.947845804988662,
+          "extreme_auroc_ci95": [
+            0.8670130038704805,
+            0.9928070175438596
+          ],
+          "extreme_ap": 0.6271553065670713,
+          "leader_term_spearman": 0.39858833207755606,
+          "leader_term_spearman_ci95": [
+            0.1515672293345038,
+            0.6117121663985322
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3887542776980239,
+          "spearman_ci95": [
+            0.297646580487598,
+            0.40176028242166056
+          ],
+          "high_vs_low_auroc": 0.885256783887054,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9489498249708285
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.782962962962963
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.846854126265891
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8928571428571428
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.8608887182647678
+        }
+      }
+    },
+    "v5_green_red": {
+      "axis": {
+        "english_dev": {
+          "spearman": 0.5332796352263046,
+          "spearman_ci95": [
+            0.4008295966741733,
+            0.6491863966272831
+          ],
+          "extreme_auroc": 0.9195011337868481,
+          "extreme_auroc_ci95": [
+            0.7395833333333334,
+            0.9955435008305648
+          ],
+          "extreme_ap": 0.7438219732337379,
+          "leader_term_spearman": 0.3041667036703342,
+          "leader_term_spearman_ci95": [
+            0.05060387340259677,
+            0.5444007212723349
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3605836683673828,
+          "spearman_ci95": [
+            0.24340161894181703,
+            0.3828885222059905
+          ],
+          "high_vs_low_auroc": 0.8889239686548799,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9340723453908985
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.7748148148148148
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.8623141564318034
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8811154598825832
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.8628241815639511
+        }
+      },
+      "nli_only": {
+        "english_dev": {
+          "spearman": 0.39270441788351507,
+          "spearman_ci95": [
+            0.24713382731227623,
+            0.5259832173657323
+          ],
+          "extreme_auroc": 0.9399092970521542,
+          "extreme_auroc_ci95": [
+            0.8747628048555964,
+            0.9857969656673113
+          ],
+          "extreme_ap": 0.6124492101465786,
+          "leader_term_spearman": 0.32229446956406954,
+          "leader_term_spearman_ci95": [
+            0.07154443912430926,
+            0.535046623699686
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.33795198511084273,
+          "spearman_ci95": [
+            0.2598851733369403,
+            0.3498607569790531
+          ],
+          "high_vs_low_auroc": 0.7874328087559096,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9530338389731623
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.7322222222222222
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.6839043309631545
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.9085127201565558
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.7742469623735673
+        }
+      },
+      "combined": {
+        "english_dev": {
+          "spearman": 0.5296387803448501,
+          "spearman_ci95": [
+            0.4074724258463028,
+            0.6355890095931955
+          ],
+          "extreme_auroc": 0.9433106575963719,
+          "extreme_auroc_ci95": [
+            0.8270302863772363,
+            1.0
+          ],
+          "extreme_ap": 0.7234587071543594,
+          "leader_term_spearman": 0.34502093220662466,
+          "leader_term_spearman_ci95": [
+            0.0938136133618719,
+            0.5670279641863412
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3818523788828284,
+          "spearman_ci95": [
+            0.2809776847990641,
+            0.3972099747526553
+          ],
+          "high_vs_low_auroc": 0.8893934978304514,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9673278879813303
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.8111111111111111
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.8444300797241974
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.9045988258317026
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.8693880106827893
+        }
+      },
+      "nli_only_v4hyp": {
+        "english_dev": {
+          "spearman": 0.4596528999785483,
+          "spearman_ci95": [
+            0.34603217256505026,
+            0.5653872081412399
+          ],
+          "extreme_auroc": 0.9319727891156462,
+          "extreme_auroc_ci95": [
+            0.8736396705146705,
+            0.9819833333333334
+          ],
+          "extreme_ap": 0.5308270071313549,
+          "leader_term_spearman": 0.33533400002282016,
+          "leader_term_spearman_ci95": [
+            0.09979250783067609,
+            0.5390073514230221
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.3429093741028712,
+          "spearman_ci95": [
+            0.2757142231046322,
+            0.3604545751907708
+          ],
+          "high_vs_low_auroc": 0.7520400233145521,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9183197199533256
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.6325925925925925
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.6586403792286146
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.8747553816046967
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.7335981386394098
+        }
+      },
+      "combined_v4hyp": {
+        "english_dev": {
+          "spearman": 0.5421014165464587,
+          "spearman_ci95": [
+            0.43519091006929994,
+            0.6396658470125527
+          ],
+          "extreme_auroc": 0.9546485260770974,
+          "extreme_auroc_ci95": [
+            0.8832954545454546,
+            0.9964285714285714
+          ],
+          "extreme_ap": 0.6537598204264872,
+          "leader_term_spearman": 0.37237576060928257,
+          "leader_term_spearman_ci95": [
+            0.12513416104975017,
+            0.589065633617576
+          ],
+          "n_leader_terms": 74
+        },
+        "agora": {
+          "spearman": 0.38542835192539965,
+          "spearman_ci95": [
+            0.2943890771315681,
+            0.3996888713694219
+          ],
+          "high_vs_low_auroc": 0.8733161712324331,
+          "within_speaker_high_vs_low_auroc": [
+            {
+              "speaker": "Androulakis",
+              "n": 861,
+              "n_positive": 4,
+              "auroc": 0.9530338389731622
+            },
+            {
+              "speaker": "Koutsoumpas",
+              "n": 679,
+              "n_positive": 4,
+              "auroc": 0.7648148148148148
+            },
+            {
+              "speaker": "Tsipras",
+              "n": 1559,
+              "n_positive": 12,
+              "auroc": 0.8241758241758241
+            },
+            {
+              "speaker": "Varoufakis",
+              "n": 515,
+              "n_positive": 4,
+              "auroc": 0.901174168297456
+            }
+          ],
+          "pooled_within_speaker_auroc": 0.8485917157688175
+        }
+      }
+    }
+  },
+  "paired_vs_v4": {
+    "v5_green": {
+      "axis": {
+        "english_dev": {
+          "delta_spearman": 0.008888412987528849,
+          "ci95": [
+            -0.002283716310369879,
+            0.021954503956552553
+          ],
+          "p_two_sided": 0.1115,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -0.0044121994933222775,
+          "ci95": [
+            -0.012249477512323415,
+            0.001789966010798727
+          ],
+          "p_two_sided": 0.2275,
+          "n_draws": 4000
+        }
+      },
+      "nli_only": {
+        "english_dev": {
+          "delta_spearman": -0.03749854231669342,
+          "ci95": [
+            -0.12802565120534581,
+            0.041073250963554714
+          ],
+          "p_two_sided": 0.3665,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -0.00403452086341427,
+          "ci95": [
+            -0.027630187959347463,
+            0.018727413101789825
+          ],
+          "p_two_sided": 0.7455,
+          "n_draws": 4000
+        }
+      },
+      "combined": {
+        "english_dev": {
+          "delta_spearman": 0.006299835570085843,
+          "ci95": [
+            -0.036842215973998484,
+            0.046946883067185634
+          ],
+          "p_two_sided": 0.7455,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -0.008161993990313143,
+          "ci95": [
+            -0.017517174157356763,
+            -0.0017823123234208538
+          ],
+          "p_two_sided": 0.01,
+          "n_draws": 4000
+        }
+      },
+      "nli_only_v4hyp": {
+        "english_dev": {
+          "delta_spearman": 0.0016192752373319075,
+          "ci95": [
+            -0.024080944742951006,
+            0.024384719969385224
+          ],
+          "p_two_sided": 0.9195,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.0012303815869858514,
+          "ci95": [
+            2.6873112942249477e-05,
+            0.004139843246904029
+          ],
+          "p_two_sided": 0.0395,
+          "n_draws": 4000
+        }
+      },
+      "combined_v4hyp": {
+        "english_dev": {
+          "delta_spearman": 0.007645040930291835,
+          "ci95": [
+            -0.006485676616083411,
+            0.02542665862435323
+          ],
+          "p_two_sided": 0.292,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -0.0027422609134237774,
+          "ci95": [
+            -0.007612506142973929,
+            0.0016442884563355742
+          ],
+          "p_two_sided": 0.3145,
+          "n_draws": 4000
+        }
+      }
+    },
+    "v5_red": {
+      "axis": {
+        "english_dev": {
+          "delta_spearman": 0.0030839147183039373,
+          "ci95": [
+            -0.0214121451420192,
+            0.027586968170940807
+          ],
+          "p_two_sided": 0.7805,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.0060802468593672,
+          "ci95": [
+            -0.0007458274854753588,
+            0.015890443780518126
+          ],
+          "p_two_sided": 0.1875,
+          "n_draws": 4000
+        }
+      },
+      "nli_only": {
+        "english_dev": {
+          "delta_spearman": -0.007882651970552434,
+          "ci95": [
+            -0.04183441258989683,
+            0.0273968308881535
+          ],
+          "p_two_sided": 0.6085,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -5.1684628696646584e-05,
+          "ci95": [
+            -0.0004761791646656355,
+            0.0005638848097614946
+          ],
+          "p_two_sided": 0.9085,
+          "n_draws": 4000
+        }
+      },
+      "combined": {
+        "english_dev": {
+          "delta_spearman": 0.0009617589724836284,
+          "ci95": [
+            -0.02432454659281609,
+            0.02727061840826664
+          ],
+          "p_two_sided": 0.898,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.00645357188545137,
+          "ci95": [
+            0.0011894233487301786,
+            0.01221741097205975
+          ],
+          "p_two_sided": 0.0155,
+          "n_draws": 4000
+        }
+      },
+      "nli_only_v4hyp": {
+        "english_dev": {
+          "delta_spearman": -0.007882651970552434,
+          "ci95": [
+            -0.04183441258989683,
+            0.0273968308881535
+          ],
+          "p_two_sided": 0.6085,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -5.1684628696646584e-05,
+          "ci95": [
+            -0.0004761791646656355,
+            0.0005638848097614946
+          ],
+          "p_two_sided": 0.9085,
+          "n_draws": 4000
+        }
+      },
+      "combined_v4hyp": {
+        "english_dev": {
+          "delta_spearman": 0.0009617589724836284,
+          "ci95": [
+            -0.02432454659281609,
+            0.02727061840826664
+          ],
+          "p_two_sided": 0.898,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.00645357188545137,
+          "ci95": [
+            0.0011894233487301786,
+            0.01221741097205975
+          ],
+          "p_two_sided": 0.0155,
+          "n_draws": 4000
+        }
+      }
+    },
+    "v5_green_red": {
+      "axis": {
+        "english_dev": {
+          "delta_spearman": 0.0167245485110461,
+          "ci95": [
+            -0.01101505539872364,
+            0.04496439369358148
+          ],
+          "p_two_sided": 0.2315,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.001750404047611287,
+          "ci95": [
+            -0.003593145753460758,
+            0.005548629272210948
+          ],
+          "p_two_sided": 0.466,
+          "n_draws": 4000
+        }
+      },
+      "nli_only": {
+        "english_dev": {
+          "delta_spearman": -0.07509388913127074,
+          "ci95": [
+            -0.1708242883798819,
+            0.008642349163463242
+          ],
+          "p_two_sided": 0.0835,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -0.004085703571112653,
+          "ci95": [
+            -0.02837265691326002,
+            0.018436763507282017
+          ],
+          "p_two_sided": 0.7575,
+          "n_draws": 4000
+        }
+      },
+      "combined": {
+        "english_dev": {
+          "delta_spearman": -0.007106958786209372,
+          "ci95": [
+            -0.05082575165101905,
+            0.03476162677145965
+          ],
+          "p_two_sided": 0.7605,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -0.0004483269297441139,
+          "ci95": [
+            -0.01337059823571174,
+            0.010629251042067578
+          ],
+          "p_two_sided": 0.9105,
+          "n_draws": 4000
+        }
+      },
+      "nli_only_v4hyp": {
+        "english_dev": {
+          "delta_spearman": -0.008145407036237506,
+          "ci95": [
+            -0.04252032900379488,
+            0.030618766611221992
+          ],
+          "p_two_sided": 0.6875,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.0008716854209158131,
+          "ci95": [
+            -0.00016114399828515147,
+            0.0038034367113526923
+          ],
+          "p_two_sided": 0.1135,
+          "n_draws": 4000
+        }
+      },
+      "combined_v4hyp": {
+        "english_dev": {
+          "delta_spearman": 0.005355677415399218,
+          "ci95": [
+            -0.02351774506174829,
+            0.03656519052102779
+          ],
+          "p_two_sided": 0.6555,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.0031276461128271205,
+          "ci95": [
+            0.00011844256544474296,
+            0.004813608730252772
+          ],
+          "p_two_sided": 0.0495,
+          "n_draws": 4000
+        }
+      }
+    }
+  },
+  "paired_between_arms": {
+    "axis": {
+      "v5_red \u2212 v5_green": {
+        "english_dev": {
+          "delta_spearman": -0.005804498269224911,
+          "ci95": [
+            -0.03324781826922278,
+            0.019115544284528583
+          ],
+          "p_two_sided": 0.662,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.010492446352689477,
+          "ci95": [
+            -0.0019118409425933442,
+            0.02702848714946371
+          ],
+          "p_two_sided": 0.191,
+          "n_draws": 4000
+        }
+      },
+      "v5_green_red \u2212 v5_green": {
+        "english_dev": {
+          "delta_spearman": 0.007836135523517251,
+          "ci95": [
+            -0.01648275509638953,
+            0.031218251104468263
+          ],
+          "p_two_sided": 0.5295,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.0061626035409335644,
+          "ci95": [
+            -0.0005538288616179221,
+            0.015590070931363775
+          ],
+          "p_two_sided": 0.155,
+          "n_draws": 4000
+        }
+      },
+      "v5_green_red \u2212 v5_red": {
+        "english_dev": {
+          "delta_spearman": 0.013640633792742163,
+          "ci95": [
+            -0.0012025834392370897,
+            0.029990163073860977
+          ],
+          "p_two_sided": 0.0715,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -0.004329842811755913,
+          "ci95": [
+            -0.0122398351563844,
+            0.002170827190191238
+          ],
+          "p_two_sided": 0.2475,
+          "n_draws": 4000
+        }
+      }
+    },
+    "combined": {
+      "v5_red \u2212 v5_green": {
+        "english_dev": {
+          "delta_spearman": -0.005338076597602215,
+          "ci95": [
+            -0.05656515884841729,
+            0.05271474605309906
+          ],
+          "p_two_sided": 0.8405,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.014615565875764513,
+          "ci95": [
+            0.008317740756937586,
+            0.023490909643329505
+          ],
+          "p_two_sided": 0.0,
+          "n_draws": 4000
+        }
+      },
+      "v5_green_red \u2212 v5_green": {
+        "english_dev": {
+          "delta_spearman": -0.013406794356295215,
+          "ci95": [
+            -0.041325204012377145,
+            0.01632186882238343
+          ],
+          "p_two_sided": 0.382,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": 0.007713667060569029,
+          "ci95": [
+            0.00303319501851851,
+            0.013887648301563027
+          ],
+          "p_two_sided": 0.0,
+          "n_draws": 4000
+        }
+      },
+      "v5_green_red \u2212 v5_red": {
+        "english_dev": {
+          "delta_spearman": -0.008068717758693,
+          "ci95": [
+            -0.05716449096639728,
+            0.03666461075567325
+          ],
+          "p_two_sided": 0.7505,
+          "n_draws": 4000
+        },
+        "agora": {
+          "delta_spearman": -0.006901898815195484,
+          "ci95": [
+            -0.01661783275930958,
+            -7.848030506862891e-05
+          ],
+          "p_two_sided": 0.0495,
+          "n_draws": 4000
+        }
+      }
+    }
+  },
+  "adoption_rule": {
+    "v5_green": {
+      "conditions": {
+        "english_dev_delta_at_least_+.01": false,
+        "agora_delta_at_least_-.01": true,
+        "english_dev_ci_not_below_0": true,
+        "agora_ci_not_below_0": false
+      },
+      "passes": false,
+      "mean_delta": -0.00093107921011365
+    },
+    "v5_red": {
+      "conditions": {
+        "english_dev_delta_at_least_+.01": false,
+        "agora_delta_at_least_-.01": true,
+        "english_dev_ci_not_below_0": true,
+        "agora_ci_not_below_0": true
+      },
+      "passes": false,
+      "mean_delta": 0.0037076654289674993
+    },
+    "v5_green_red": {
+      "conditions": {
+        "english_dev_delta_at_least_+.01": false,
+        "agora_delta_at_least_-.01": true,
+        "english_dev_ci_not_below_0": true,
+        "agora_ci_not_below_0": true
+      },
+      "passes": false,
+      "mean_delta": -0.003777642857976743
+    }
+  },
+  "nli_health": {
+    "stored_entailment": {
+      "n": 354298,
+      "exact_zero": 0,
+      "exact_one": 0,
+      "distinct": 12865,
+      "on_4_decimal_grid": 0.0018346137996827529
+    },
+    "per_arm": {
+      "v4": {
+        "english_dev": {
+          "n_windows": 1392,
+          "PE_median": 0.0043106060057374294,
+          "PE_p90": 0.01568853512070933,
+          "PE_p99": 0.06058652712058952,
+          "P_median": 0.0066986083984375,
+          "P_p90": 0.04051208496093754,
+          "P_p99": 0.18664062499999956,
+          "E_median": 0.0024728775024414062,
+          "E_p90": 0.013880920410156261,
+          "E_p99": 0.11251586914062453,
+          "share_P_gt_0.5": 0.0028735632183908046,
+          "share_E_gt_0.5": 0.0007183908045977011,
+          "share_both_gt_0.5": 0.0,
+          "distinct_float32_values": 6711,
+          "exact_zero": 0,
+          "exact_one": 0,
+          "window_spearman_axis_vs_nli": 0.3860326514851931,
+          "best_P_hypothesis_counts": {
+            "P05": 886,
+            "P08": 297,
+            "P06": 126,
+            "P01": 77,
+            "P00": 6
+          },
+          "best_E_hypothesis_counts": {
+            "E04": 944,
+            "E06": 356,
+            "E02": 81,
+            "E00": 7,
+            "E05": 4
+          }
+        },
+        "agora": {
+          "n_windows": 22668,
+          "PE_median": 0.005517605870100542,
+          "PE_p90": 0.019676483880396903,
+          "PE_p99": 0.06340198795242934,
+          "P_median": 0.00754547119140625,
+          "P_p90": 0.04313049316406248,
+          "P_p99": 0.1834704589843743,
+          "E_median": 0.0033082962036132812,
+          "E_p90": 0.02766876220703124,
+          "E_p99": 0.21232055664062477,
+          "share_P_gt_0.5": 0.0014999117698958884,
+          "share_E_gt_0.5": 0.0018528321863419798,
+          "share_both_gt_0.5": 0.0,
+          "distinct_float32_values": 12330,
+          "exact_zero": 0,
+          "exact_one": 0,
+          "window_spearman_axis_vs_nli": 0.41734086188527325,
+          "best_P_hypothesis_counts": {
+            "P05": 16598,
+            "P08": 2799,
+            "P06": 1593,
+            "P01": 1460,
+            "P00": 218
+          },
+          "best_E_hypothesis_counts": {
+            "E04": 15509,
+            "E06": 5098,
+            "E02": 1144,
+            "E00": 876,
+            "E05": 41
+          }
+        }
+      },
+      "v5_green": {
+        "english_dev": {
+          "n_windows": 1392,
+          "PE_median": 0.002716085744583787,
+          "PE_p90": 0.0077691048771635065,
+          "PE_p99": 0.0320127836119443,
+          "P_median": 0.0032482147216796875,
+          "P_p90": 0.013287353515625003,
+          "P_p99": 0.1501342773437499,
+          "E_median": 0.0023164749145507812,
+          "E_p90": 0.007537078857421879,
+          "E_p99": 0.10120910644530966,
+          "share_P_gt_0.5": 0.0021551724137931034,
+          "share_E_gt_0.5": 0.0028735632183908046,
+          "share_both_gt_0.5": 0.0,
+          "distinct_float32_values": 6118,
+          "exact_zero": 0,
+          "exact_one": 0,
+          "window_spearman_axis_vs_nli": 0.32484181205276136,
+          "best_P_hypothesis_counts": {
+            "P08": 796,
+            "P01": 218,
+            "P05": 213,
+            "P06": 133,
+            "P00": 32
+          },
+          "best_E_hypothesis_counts": {
+            "E06": 1111,
+            "E02": 136,
+            "E04": 93,
+            "E00": 46,
+            "E05": 6
+          }
+        },
+        "agora": {
+          "n_windows": 22668,
+          "PE_median": 0.003113218352213155,
+          "PE_p90": 0.010597979268133263,
+          "PE_p99": 0.04078056255798954,
+          "P_median": 0.00298309326171875,
+          "P_p90": 0.01151504516601562,
+          "P_p99": 0.09383117675781238,
+          "E_median": 0.0028438568115234375,
+          "E_p90": 0.0203094482421875,
+          "E_p99": 0.2919897460937486,
+          "share_P_gt_0.5": 0.0011911064055055585,
+          "share_E_gt_0.5": 0.004764425622022234,
+          "share_both_gt_0.5": 0.0,
+          "distinct_float32_values": 11650,
+          "exact_zero": 0,
+          "exact_one": 0,
+          "window_spearman_axis_vs_nli": 0.4412543362663394,
+          "best_P_hypothesis_counts": {
+            "P08": 11592,
+            "P01": 4087,
+            "P05": 3510,
+            "P06": 2827,
+            "P00": 652
+          },
+          "best_E_hypothesis_counts": {
+            "E06": 18382,
+            "E02": 1795,
+            "E00": 1299,
+            "E04": 1152,
+            "E05": 40
+          }
+        }
+      },
+      "v5_red": {
+        "english_dev": {
+          "n_windows": 1392,
+          "PE_median": 0.004260919935618055,
+          "PE_p90": 0.01621967451794233,
+          "PE_p99": 0.06058652712058952,
+          "P_median": 0.006908416748046875,
+          "P_p90": 0.04450073242187505,
+          "P_p99": 0.2212268066406222,
+          "E_median": 0.0023794174194335938,
+          "E_p90": 0.013208007812500012,
+          "E_p99": 0.11188842773437499,
+          "share_P_gt_0.5": 0.0035919540229885057,
+          "share_E_gt_0.5": 0.0007183908045977011,
+          "share_both_gt_0.5": 0.0,
+          "distinct_float32_values": 6754,
+          "exact_zero": 0,
+          "exact_one": 0,
+          "window_spearman_axis_vs_nli": 0.3997899660521433,
+          "best_P_hypothesis_counts": {
+            "P05": 888,
+            "P08": 281,
+            "P06": 123,
+            "P01": 92,
+            "P00": 8
+          },
+          "best_E_hypothesis_counts": {
+            "E04": 971,
+            "E06": 326,
+            "E02": 82,
+            "E00": 9,
+            "E05": 4
+          }
+        },
+        "agora": {
+          "n_windows": 22668,
+          "PE_median": 0.005509222584854726,
+          "PE_p90": 0.01966892564668153,
+          "PE_p99": 0.06327762486611119,
+          "P_median": 0.0075531005859375,
+          "P_p90": 0.0433349609375,
+          "P_p99": 0.1823718261718743,
+          "E_median": 0.003299713134765625,
+          "E_p90": 0.02800445556640624,
+          "E_p99": 0.21232055664062477,
+          "share_P_gt_0.5": 0.00154402682195165,
+          "share_E_gt_0.5": 0.0018528321863419798,
+          "share_both_gt_0.5": 0.0,
+          "distinct_float32_values": 12334,
+          "exact_zero": 0,
+          "exact_one": 0,
+          "window_spearman_axis_vs_nli": 0.41210150154422864,
+          "best_P_hypothesis_counts": {
+            "P05": 16593,
+            "P08": 2766,
+            "P06": 1622,
+            "P01": 1470,
+            "P00": 217
+          },
+          "best_E_hypothesis_counts": {
+            "E04": 15487,
+            "E06": 5122,
+            "E02": 1149,
+            "E00": 867,
+            "E05": 43
+          }
+        }
+      },
+      "v5_green_red": {
+        "english_dev": {
+          "n_windows": 1392,
+          "PE_median": 0.002674451288845545,
+          "PE_p90": 0.007669027879124256,
+          "PE_p99": 0.0320127836119443,
+          "P_median": 0.0032873153686523438,
+          "P_p90": 0.013812255859375018,
+          "P_p99": 0.14413696289062447,
+          "E_median": 0.00220489501953125,
+          "E_p90": 0.007582855224609379,
+          "E_p99": 0.09430664062499966,
+          "share_P_gt_0.5": 0.0035919540229885057,
+          "share_E_gt_0.5": 0.0035919540229885057,
+          "share_both_gt_0.5": 0.0,
+          "distinct_float32_values": 6197,
+          "exact_zero": 0,
+          "exact_one": 0,
+          "window_spearman_axis_vs_nli": 0.32585917812661125,
+          "best_P_hypothesis_counts": {
+            "P08": 771,
+            "P01": 225,
+            "P05": 222,
+            "P06": 143,
+            "P00": 31
+          },
+          "best_E_hypothesis_counts": {
+            "E06": 1090,
+            "E02": 139,
+            "E04": 104,
+            "E00": 50,
+            "E05": 9
+          }
+        },
+        "agora": {
+          "n_windows": 22668,
+          "PE_median": 0.0031073718187831726,
+          "PE_p90": 0.010603578320510636,
+          "PE_p99": 0.04054997637007994,
+          "P_median": 0.0029811859130859375,
+          "P_p90": 0.01148223876953125,
+          "P_p99": 0.09515258789062431,
+          "E_median": 0.0028362274169921875,
+          "E_p90": 0.0203704833984375,
+          "E_p99": 0.2928833007812477,
+          "share_P_gt_0.5": 0.0011911064055055585,
+          "share_E_gt_0.5": 0.004808540674077996,
+          "share_both_gt_0.5": 0.0,
+          "distinct_float32_values": 11662,
+          "exact_zero": 0,
+          "exact_one": 0,
+          "window_spearman_axis_vs_nli": 0.42646675250767935,
+          "best_P_hypothesis_counts": {
+            "P08": 11569,
+            "P01": 4107,
+            "P05": 3509,
+            "P06": 2830,
+            "P00": 653
+          },
+          "best_E_hypothesis_counts": {
+            "E06": 18348,
+            "E02": 1805,
+            "E00": 1315,
+            "E04": 1157,
+            "E05": 43
+          }
+        }
+      }
+    }
+  },
+  "spotcheck_numeric": [
+    {
+      "doc_id": "Philippines_Arroyo_Famous_2",
+      "gpd_score": 0.05,
+      "arms": {
+        "v4": {
+          "axis": 182.2882106563854,
+          "axis_pct": 0.9540229885057471,
+          "nli_only": 0.0521813678097889,
+          "nli_only_pct": 1.0,
+          "combined": 4.0912159515754505,
+          "combined_pct": 1.0
+        },
+        "v5_green": {
+          "axis": 171.43359522499952,
+          "axis_pct": 0.9540229885057471,
+          "nli_only": 0.028095744916507417,
+          "nli_only_pct": 1.0,
+          "combined": 4.339417630435664,
+          "combined_pct": 1.0
+        },
+        "v5_red": {
+          "axis": 181.2728608957304,
+          "axis_pct": 0.9540229885057471,
+          "nli_only": 0.05209602753295103,
+          "nli_only_pct": 1.0,
+          "combined": 4.075538413695126,
+          "combined_pct": 1.0
+        },
+        "v5_green_red": {
+          "axis": 167.21003543465937,
+          "axis_pct": 0.9540229885057471,
+          "nli_only": 0.02828551949485549,
+          "nli_only_pct": 1.0,
+          "combined": 4.329073179304742,
+          "combined_pct": 1.0
+        }
+      }
+    },
+    {
+      "doc_id": "South Africa_Mbeki_Campaign_1",
+      "gpd_score": 0.033333333333333,
+      "arms": {
+        "v4": {
+          "axis": 21.699091889324983,
+          "axis_pct": 0.22413793103448276,
+          "nli_only": 0.0072423091733865,
+          "nli_only_pct": 0.6551724137931034,
+          "combined": -0.4340733682063679,
+          "combined_pct": 0.40804597701149425
+        },
+        "v5_green": {
+          "axis": 23.638247224511396,
+          "axis_pct": 0.21839080459770116,
+          "nli_only": 0.0028562173992418122,
+          "nli_only_pct": 0.3850574712643678,
+          "combined": -0.6032773054812491,
+          "combined_pct": 0.27011494252873564
+        },
+        "v5_red": {
+          "axis": 25.104798298823233,
+          "axis_pct": 0.26436781609195403,
+          "nli_only": 0.00724625811914509,
+          "nli_only_pct": 0.6666666666666666,
+          "combined": -0.3876582377923934,
+          "combined_pct": 0.46551724137931033
+        },
+        "v5_green_red": {
+          "axis": 28.521253822941645,
+          "axis_pct": 0.2988505747126437,
+          "nli_only": 0.003204724202091302,
+          "nli_only_pct": 0.5172413793103449,
+          "combined": -0.47500282175523745,
+          "combined_pct": 0.3735632183908046
+        }
+      }
+    },
+    {
+      "doc_id": "South Africa_Mbeki_Campaign_2",
+      "gpd_score": 0.0,
+      "arms": {
+        "v4": {
+          "axis": 164.9050353509952,
+          "axis_pct": 0.9482758620689655,
+          "nli_only": 0.0085023570490674,
+          "nli_only_pct": 0.7068965517241379,
+          "combined": 0.8120838815418266,
+          "combined_pct": 0.8448275862068966
+        },
+        "v5_green": {
+          "axis": 165.00549971201593,
+          "axis_pct": 0.9482758620689655,
+          "nli_only": 0.009102864187406766,
+          "nli_only_pct": 0.9252873563218391,
+          "combined": 1.4670214235643786,
+          "combined_pct": 0.9367816091954023
+        },
+        "v5_red": {
+          "axis": 126.28651752690844,
+          "axis_pct": 0.8620689655172413,
+          "nli_only": 0.009846342497603479,
+          "nli_only_pct": 0.7758620689655172,
+          "combined": 0.6401552048942201,
+          "combined_pct": 0.8275862068965517
+        },
+        "v5_green_red": {
+          "axis": 128.71881248120377,
+          "axis_pct": 0.8563218390804598,
+          "nli_only": 0.009011443525323482,
+          "nli_only_pct": 0.9252873563218391,
+          "combined": 1.212759783666731,
+          "combined_pct": 0.9137931034482759
+        }
+      }
+    },
+    {
+      "doc_id": "South Africa_Mbeki_Famous_1",
+      "gpd_score": 0.0,
+      "arms": {
+        "v4": {
+          "axis": 88.92419358587468,
+          "axis_pct": 0.6724137931034483,
+          "nli_only": 0.0042897741185582,
+          "nli_only_pct": 0.40804597701149425,
+          "combined": -0.1037717651514082,
+          "combined_pct": 0.5747126436781609
+        },
+        "v5_green": {
+          "axis": 92.01313593941009,
+          "axis_pct": 0.6724137931034483,
+          "nli_only": 0.0024294597525792226,
+          "nli_only_pct": 0.2471264367816092,
+          "combined": -0.11397560346211721,
+          "combined_pct": 0.5747126436781609
+        },
+        "v5_red": {
+          "axis": 97.46180631570685,
+          "axis_pct": 0.7586206896551724,
+          "nli_only": 0.003778231242192932,
+          "nli_only_pct": 0.25862068965517243,
+          "combined": -0.027948675708976523,
+          "combined_pct": 0.6091954022988506
+        },
+        "v5_green_red": {
+          "axis": 98.96118926917853,
+          "axis_pct": 0.7701149425287356,
+          "nli_only": 0.0024446723252757115,
+          "nli_only_pct": 0.27011494252873564,
+          "combined": 0.010336642265478757,
+          "combined_pct": 0.6264367816091954
+        }
+      }
+    },
+    {
+      "doc_id": "South Africa_Mbeki_Famous_2",
+      "gpd_score": 0.0,
+      "arms": {
+        "v4": {
+          "axis": 28.978440460075312,
+          "axis_pct": 0.28160919540229884,
+          "nli_only": 0.0047104421643264,
+          "nli_only_pct": 0.46551724137931033,
+          "combined": -0.5572771151933794,
+          "combined_pct": 0.27586206896551724
+        },
+        "v5_green": {
+          "axis": 33.73751593104966,
+          "axis_pct": 0.3160919540229885,
+          "nli_only": 0.004619051963102462,
+          "nli_only_pct": 0.7241379310344828,
+          "combined": -0.25986431480157945,
+          "combined_pct": 0.4827586206896552
+        },
+        "v5_red": {
+          "axis": 26.001503647296165,
+          "axis_pct": 0.28735632183908044,
+          "nli_only": 0.00438890881615292,
+          "nli_only_pct": 0.39655172413793105,
+          "combined": -0.5814647096009637,
+          "combined_pct": 0.27586206896551724
+        },
+        "v5_green_red": {
+          "axis": 30.929656031783335,
+          "axis_pct": 0.3275862068965517,
+          "nli_only": 0.004552304904732311,
+          "nli_only_pct": 0.735632183908046,
+          "combined": -0.2595105316912725,
+          "combined_pct": 0.4942528735632184
+        }
+      }
+    },
+    {
+      "doc_id": "South Africa_Mbeki_International_1",
+      "gpd_score": 0.133333333333333,
+      "arms": {
+        "v4": {
+          "axis": 98.59319901530044,
+          "axis_pct": 0.7183908045977011,
+          "nli_only": 0.0049592531557869,
+          "nli_only_pct": 0.4827586206896552,
+          "combined": 0.0223628255726941,
+          "combined_pct": 0.6379310344827587
+        },
+        "v5_green": {
+          "axis": 98.29339472295922,
+          "axis_pct": 0.7068965517241379,
+          "nli_only": 0.00352779084738488,
+          "nli_only_pct": 0.5747126436781609,
+          "combined": 0.09988968947499488,
+          "combined_pct": 0.6494252873563219
+        },
+        "v5_red": {
+          "axis": 96.71882515138195,
+          "axis_pct": 0.7528735632183908,
+          "nli_only": 0.004791452471612888,
+          "nli_only_pct": 0.45977011494252873,
+          "combined": 0.03722756818201273,
+          "combined_pct": 0.6264367816091954
+        },
+        "v5_green_red": {
+          "axis": 96.90514316952263,
+          "axis_pct": 0.735632183908046,
+          "nli_only": 0.0037027029652135,
+          "nli_only_pct": 0.632183908045977,
+          "combined": 0.17512568875692205,
+          "combined_pct": 0.6839080459770115
+        }
+      }
+    },
+    {
+      "doc_id": "South Africa_Mbeki_International_2",
+      "gpd_score": 0.5,
+      "arms": {
+        "v4": {
+          "axis": 119.32841082482526,
+          "axis_pct": 0.8103448275862069,
+          "nli_only": 0.0123035530268985,
+          "nli_only_pct": 0.8448275862068966,
+          "combined": 0.7174621923441287,
+          "combined_pct": 0.8275862068965517
+        },
+        "v5_green": {
+          "axis": 121.70748892406993,
+          "axis_pct": 0.8160919540229885,
+          "nli_only": 0.005579540047229297,
+          "nli_only_pct": 0.8103448275862069,
+          "combined": 0.5938303331370081,
+          "combined_pct": 0.8160919540229885
+        },
+        "v5_red": {
+          "axis": 118.16920365580495,
+          "axis_pct": 0.8275862068965517,
+          "nli_only": 0.012299968108773807,
+          "nli_only_pct": 0.8390804597701149,
+          "combined": 0.7452442959637262,
+          "combined_pct": 0.8390804597701149
+        },
+        "v5_green_red": {
+          "axis": 120.17143939505621,
+          "axis_pct": 0.8275862068965517,
+          "nli_only": 0.006096862922733622,
+          "nli_only_pct": 0.8448275862068966,
+          "combined": 0.7184695502304435,
+          "combined_pct": 0.8448275862068966
+        }
+      }
+    },
+    {
+      "doc_id": "South Africa_Mbeki_Ribbon_1",
+      "gpd_score": 0.0,
+      "arms": {
+        "v4": {
+          "axis": 1.1033596591819674,
+          "axis_pct": 0.040229885057471264,
+          "nli_only": 0.0054082891642153,
+          "nli_only_pct": 0.5402298850574713,
+          "combined": -0.7320678993029858,
+          "combined_pct": 0.20114942528735633
+        },
+        "v5_green": {
+          "axis": 1.5940675976263747,
+          "axis_pct": 0.05172413793103448,
+          "nli_only": 0.003638637009327887,
+          "nli_only_pct": 0.603448275862069,
+          "combined": -0.6652715839291248,
+          "combined_pct": 0.22988505747126436
+        },
+        "v5_red": {
+          "axis": 1.8704795865203543,
+          "axis_pct": 0.06321839080459771,
+          "nli_only": 0.005407272410708231,
+          "nli_only_pct": 0.5344827586206896,
+          "combined": -0.7111649668074489,
+          "combined_pct": 0.19540229885057472
+        },
+        "v5_green_red": {
+          "axis": 3.2053739271617063,
+          "axis_pct": 0.09195402298850575,
+          "nli_only": 0.003120539030354687,
+          "nli_only_pct": 0.5,
+          "combined": -0.7011772605479871,
+          "combined_pct": 0.1839080459770115
+        }
+      }
+    },
+    {
+      "doc_id": "South Africa_Mbeki_Ribbon_2",
+      "gpd_score": 0.1,
+      "arms": {
+        "v4": {
+          "axis": 78.70549349568321,
+          "axis_pct": 0.6149425287356322,
+          "nli_only": 0.006169355835782,
+          "nli_only_pct": 0.5862068965517241,
+          "combined": -0.0511617420360386,
+          "combined_pct": 0.603448275862069
+        },
+        "v5_green": {
+          "axis": 85.1455233617217,
+          "axis_pct": 0.632183908045977,
+          "nli_only": 0.004347802500444061,
+          "nli_only_pct": 0.6839080459770115,
+          "combined": 0.11538679323121577,
+          "combined_pct": 0.6666666666666666
+        },
+        "v5_red": {
+          "axis": 70.53791093510904,
+          "axis_pct": 0.603448275862069,
+          "nli_only": 0.006026968325951144,
+          "nli_only_pct": 0.5862068965517241,
+          "combined": -0.09428701903876138,
+          "combined_pct": 0.5919540229885057
+        },
+        "v5_green_red": {
+          "axis": 78.38669050968412,
+          "axis_pct": 0.6436781609195402,
+          "nli_only": 0.005994212419883102,
+          "nli_only_pct": 0.8390804597701149,
+          "combined": 0.350417093399262,
+          "combined_pct": 0.764367816091954
+        }
+      }
+    },
+    {
+      "doc_id": "UK_Brown_Campaign_1",
+      "gpd_score": 0.0,
+      "arms": {
+        "v4": {
+          "axis": 224.0128000751888,
+          "axis_pct": 0.9770114942528736,
+          "nli_only": 0.0354727773706775,
+          "nli_only_pct": 0.9942528735632183,
+          "combined": 3.227203278259672,
+          "combined_pct": 0.9942528735632183
+        },
+        "v5_green": {
+          "axis": 212.51882789562646,
+          "axis_pct": 0.9655172413793104,
+          "nli_only": 0.012043200795641465,
+          "nli_only_pct": 0.9770114942528736,
+          "combined": 2.2877114822295104,
+          "combined_pct": 0.9712643678160919
+        },
+        "v5_red": {
+          "axis": 220.33557253140225,
+          "axis_pct": 0.9770114942528736,
+          "nli_only": 0.03748867891274507,
+          "nli_only_pct": 0.9942528735632183,
+          "combined": 3.372580774314147,
+          "combined_pct": 0.9942528735632183
+        },
+        "v5_green_red": {
+          "axis": 206.8341812114523,
+          "axis_pct": 0.9655172413793104,
+          "nli_only": 0.013735003076539477,
+          "nli_only_pct": 0.9827586206896551,
+          "combined": 2.5570253722243175,
+          "combined_pct": 0.9827586206896551
+        }
+      }
+    }
+  ]
+}

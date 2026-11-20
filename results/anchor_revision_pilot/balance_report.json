@@ -1,0 +1,401 @@
+[
+  {
+    "file": "anchors/candidates/v5_green.json",
+    "kind": "anchors",
+    "schema": "populism_axis.v3.proposition_anchors.v1",
+    "groups": {
+      "P": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 12.1,
+          "vader": 0.19967000000000001,
+          "neg": 0.012,
+          "they": 0.2,
+          "we": 0.3,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 9.6,
+          "vader": 0.09605,
+          "neg": 0.0,
+          "they": 0.1,
+          "we": 0.4,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 2.5,
+          "vader": 0.10362000000000002,
+          "neg": 0.012,
+          "they": 0.1,
+          "we": -0.10000000000000003,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": false,
+          "vader": true,
+          "pronoun_they": true,
+          "pronoun_we": false,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [],
+        "near_duplicates_left": []
+      },
+      "E": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 11.4,
+          "vader": 0.07973,
+          "neg": 0.0663,
+          "they": 0.2,
+          "we": 0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 9.8,
+          "vader": 0.077,
+          "neg": 0.0217,
+          "they": 0.1,
+          "we": 0.1,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 1.5999999999999996,
+          "vader": 0.0027299999999999963,
+          "neg": 0.0446,
+          "they": 0.1,
+          "we": 0.0,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": true,
+          "vader": true,
+          "pronoun_they": true,
+          "pronoun_we": true,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [],
+        "near_duplicates_left": []
+      },
+      "M": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 11.3,
+          "vader": -0.22703,
+          "neg": 0.19580000000000003,
+          "they": 0.7,
+          "we": 0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 10.7,
+          "vader": 0.31443000000000004,
+          "neg": 0.0923,
+          "they": 0.2,
+          "we": 0.4,
+          "you": 0.0,
+          "i": 0.3
+        },
+        "gaps": {
+          "words": 0.6000000000000014,
+          "vader": -0.54146,
+          "neg": 0.10350000000000004,
+          "they": 0.49999999999999994,
+          "we": -0.30000000000000004,
+          "you": 0.1,
+          "i": -0.3
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [],
+        "near_duplicates_left": []
+      }
+    },
+    "gates_passed": false
+  },
+  {
+    "file": "anchors/candidates/v5_red.json",
+    "kind": "anchors",
+    "schema": "populism_axis.v3.proposition_anchors.v1",
+    "groups": {
+      "P": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 12.7,
+          "vader": 0.12124000000000001,
+          "neg": 0.012,
+          "they": 0.2,
+          "we": 0.2,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 9.5,
+          "vader": 0.08447,
+          "neg": 0.0,
+          "they": 0.1,
+          "we": 0.4,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 3.1999999999999993,
+          "vader": 0.03677000000000001,
+          "neg": 0.012,
+          "they": 0.1,
+          "we": -0.2,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": false,
+          "vader": true,
+          "pronoun_they": true,
+          "pronoun_we": false,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [],
+        "near_duplicates_left": []
+      },
+      "E": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 11.2,
+          "vader": 0.060050000000000006,
+          "neg": 0.0663,
+          "they": 0.3,
+          "we": 0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 10.7,
+          "vader": 0.11273000000000002,
+          "neg": 0.028100000000000003,
+          "they": 0.1,
+          "we": 0.2,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 0.5,
+          "vader": -0.05268000000000002,
+          "neg": 0.0382,
+          "they": 0.19999999999999998,
+          "we": -0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": true,
+          "vader": true,
+          "pronoun_they": false,
+          "pronoun_we": true,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [],
+        "near_duplicates_left": []
+      },
+      "M": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 11.3,
+          "vader": -0.22703,
+          "neg": 0.19580000000000003,
+          "they": 0.7,
+          "we": 0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 10.7,
+          "vader": 0.31443000000000004,
+          "neg": 0.0923,
+          "they": 0.2,
+          "we": 0.4,
+          "you": 0.0,
+          "i": 0.3
+        },
+        "gaps": {
+          "words": 0.6000000000000014,
+          "vader": -0.54146,
+          "neg": 0.10350000000000004,
+          "they": 0.49999999999999994,
+          "we": -0.30000000000000004,
+          "you": 0.1,
+          "i": -0.3
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [],
+        "near_duplicates_left": []
+      }
+    },
+    "gates_passed": false
+  },
+  {
+    "file": "anchors/candidates/v5_green_red.json",
+    "kind": "anchors",
+    "schema": "populism_axis.v3.proposition_anchors.v1",
+    "groups": {
+      "P": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 12.1,
+          "vader": 0.19967000000000001,
+          "neg": 0.012,
+          "they": 0.2,
+          "we": 0.3,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 9.5,
+          "vader": 0.08447,
+          "neg": 0.0,
+          "they": 0.1,
+          "we": 0.4,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 2.5999999999999996,
+          "vader": 0.11520000000000001,
+          "neg": 0.012,
+          "they": 0.1,
+          "we": -0.10000000000000003,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": false,
+          "vader": true,
+          "pronoun_they": true,
+          "pronoun_we": false,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [],
+        "near_duplicates_left": []
+      },
+      "E": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 11.4,
+          "vader": 0.07973,
+          "neg": 0.0663,
+          "they": 0.2,
+          "we": 0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 10.8,
+          "vader": 0.11273000000000002,
+          "neg": 0.028100000000000003,
+          "they": 0.1,
+          "we": 0.1,
+          "you": 0.0,
+          "i": 0.0
+        },
+        "gaps": {
+          "words": 0.5999999999999996,
+          "vader": -0.03300000000000003,
+          "neg": 0.0382,
+          "they": 0.1,
+          "we": 0.0,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "gated": true,
+        "gates": {
+          "words": true,
+          "vader": true,
+          "pronoun_they": true,
+          "pronoun_we": true,
+          "pronoun_you": true,
+          "pronoun_i": true
+        },
+        "pair_flags": [],
+        "near_duplicates_left": []
+      },
+      "M": {
+        "left_name": "populist",
+        "right_name": "mainstream",
+        "left": {
+          "n": 10,
+          "words": 11.3,
+          "vader": -0.22703,
+          "neg": 0.19580000000000003,
+          "they": 0.7,
+          "we": 0.1,
+          "you": 0.1,
+          "i": 0.0
+        },
+        "right": {
+          "n": 10,
+          "words": 10.7,
+          "vader": 0.31443000000000004,
+          "neg": 0.0923,
+          "they": 0.2,
+          "we": 0.4,
+          "you": 0.0,
+          "i": 0.3
+        },
+        "gaps": {
+          "words": 0.6000000000000014,
+          "vader": -0.54146,
+          "neg": 0.10350000000000004,
+          "they": 0.49999999999999994,
+          "we": -0.30000000000000004,
+          "you": 0.1,
+          "i": -0.3
+        },
+        "gated": false,
+        "gates": {},
+        "pair_flags": [],
+        "near_duplicates_left": []
+      }
+    },
+    "gates_passed": false
+  }
+]

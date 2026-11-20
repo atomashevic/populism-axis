@@ -1,0 +1,72 @@
+{
+ "description": "CPU scoring run of the 359 US speeches with scripts/score_texts.py (corpus reference), compared with the stored GPU-scored results; no text.",
+ "host": "aleksandar-scl",
+ "cpu": "11th Gen Intel(R) Core(TM) i7-11700F @ 2.50GHz",
+ "device": "cpu",
+ "threads": 16,
+ "n_documents": 359,
+ "n_windows": 51787,
+ "n_claim_check_pairs": 28590,
+ "seconds": {
+  "encoding": 9191,
+  "claim_check": 4583,
+  "total": 13800,
+  "elapsed_including_model_download": 13801
+ },
+ "run_manifest": {
+  "git": {
+   "branch": "paper/literal-numbers",
+   "commit": "a0669d2b667054d8ac5bddc3db42aac05eee32e0",
+   "dirty": false
+  },
+  "hostname": "aleksandar-scl",
+  "package_version": "0.1.0",
+  "timestamp_utc": "2026-10-21T16:19:56Z",
+  "run_hash": "ca5d8f6c343fa76e356a26b7ab03862cecb1d4460b520e2186ac62b51568e481"
+ },
+ "agreement_with_stored_scores": {
+  "axis": {
+   "spearman": 0.9999967580112219,
+   "max_abs_diff": 0.3346744526860448,
+   "n_rank_changes": 28
+  },
+  "claim_check": {
+   "spearman": 0.9989624992194936,
+   "max_abs_diff": 0.0018254213503923,
+   "n_rank_changes": 203
+  },
+  "combined": {
+   "spearman": 0.9999100024379743,
+   "max_abs_diff": 0.06964947229580559,
+   "n_rank_changes": 80
+  }
+ },
+ "worked_example_ranks_in_governors_2010_2018": {
+  "axis": {
+   "stored": 5,
+   "cpu": 5
+  },
+  "claim_check": {
+   "stored": 12,
+   "cpu": 12
+  },
+  "combined": {
+   "stored": 6,
+   "cpu": 6
+  }
+ },
+ "governor_spearman_with_coders": {
+  "axis": {
+   "stored": 0.45841981203340865,
+   "cpu": 0.4587891861195742
+  },
+  "claim_check": {
+   "stored": 0.3986073509900971,
+   "cpu": 0.3988047293928651
+  },
+  "combined": {
+   "stored": 0.5264219260957432,
+   "cpu": 0.5257900528513837
+  }
+ }
+}

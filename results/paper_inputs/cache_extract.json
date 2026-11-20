@@ -1,0 +1,979 @@
+{
+ "description": "Numbers the manuscript reads from local caches that are not in git; no passage text. Written by paper/scripts/extract_paper_inputs.py, read by paper/scripts/make_numbers.py.",
+ "cache_sha256": {
+  "results/step6_nli/nli_english_dev__bart-large-mnli.npz": "32c8df6855fa8d830d143b212c899f1bbbb0c3d480f143c5c0a68b7fd2959e2b",
+  "results/step6_nli/nli_agora__bart-large-mnli.npz": "9422e3af6416c4c4e4099b8abca070d2b102a79b92c0adfcd3a0b8939f1856ac",
+  "results/embeddings/e5-large-v2/sentences/v3_proposition__ea98e5b2.npz": "322ed72f9360521a6dd34e7b8c89a3af3ccc19509e741afa8858c2a20e346f8f",
+  "results/embeddings_external/usgov/e5-large-v2/spw3_cap60/embeddings_usgov_speeches.npz": "2450fb83604326b78aaa16c78b30a69bd3764e358af7bec5511591c45d87bf03",
+  "results/embeddings_external/usgov/e5-large-v2/spw3_cap60/windows_usgov_speeches.parquet": "0413c0dc1a7e1f80054881cc1d774bb26d694e6dbc6617f4477267abbb5591a7",
+  "results/external/usgov/requests_usgov_speeches.parquet": "7538e85cfb332539d885d7d20251744096e14754d1feafb90b661015cf3524a7",
+  "results/external/usgov/nli_usgov_speeches__bart-large-mnli.npz": "a926c39b23a1a2efa75121d6249197dc8af6d6eb18cc01dce62c2d8fb319c640",
+  "results/embeddings/e5-large-v2/spw3_cap60_clean/embeddings_english.npz": "dd10bc3ead6bdf8638977a033812a6522124b125a497055ec032220ee5338382",
+  "results/embeddings/e5-large-v2/spw3_cap60_clean/windows_english.parquet": "a69592c0e75a6fc35e47d9a7e6297e2da645b87102f940d057aedc023f23d26a"
+ },
+ "tracked_input_sha256": {
+  "data/benchmark_usgov/speeches.csv": "dbfec54d17a62712aa19b1af4b1949c48b64075c69e24bb47d8710eee5d57b7c",
+  "results/external/usgov/final_scores_speeches.csv": "abbc9b13d8eb17592d02f3f724b4b141f686818154060abe40a3037cd14a8c1e",
+  "anchors/claim_hypotheses.json": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047",
+  "anchors/proposition_anchors.json": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6",
+  "data/benchmarks/english_gpd_speeches.csv": "a680de982758aa2ae377f6da3a6ca35135da864ff330f19f1b8ca1b14df04ef7",
+  "data/benchmarks/english_split.csv": "fe6bea109fcba5946eb1cc9cbacb3d9cfd112954137f4f884c93653f4c7824cb"
+ },
+ "entailment_diagnostics": {
+  "sources": {
+   "english_dev": "results/step6_nli/nli_english_dev__bart-large-mnli.npz",
+   "agora": "results/step6_nli/nli_agora__bart-large-mnli.npz"
+  },
+  "entailment": "probs[:, :, 2] (entailment class of the three-class softmax)",
+  "threshold": 0.5,
+  "hypothesis_ids": [
+   "P00",
+   "P05",
+   "P01",
+   "P06",
+   "P08",
+   "E05",
+   "E00",
+   "E02",
+   "E04",
+   "E06"
+  ],
+  "english_dev": {
+   "n_windows": 1392,
+   "median_entailment": 0.0009765625,
+   "p99_entailment": 0.0640869140625,
+   "n_windows_best_p_above_threshold": 4,
+   "n_windows_best_e_above_threshold": 1,
+   "best_p_hypothesis_counts": {
+    "P05": 885,
+    "P08": 297,
+    "P06": 127,
+    "P01": 77,
+    "P00": 6
+   },
+   "best_e_hypothesis_counts": {
+    "E04": 944,
+    "E06": 356,
+    "E02": 81,
+    "E00": 7,
+    "E05": 4
+   },
+   "most_frequent_best_p": {
+    "id": "P05",
+    "count": 885
+   },
+   "most_frequent_best_e": {
+    "id": "E04",
+    "count": 944
+   }
+  },
+  "english_dev_plus_agora": {
+   "n_windows": 24060,
+   "n_windows_both_above_threshold": 0
+  }
+ },
+ "worked_example": {
+  "doc_id": "governors_2010_2018__130",
+  "subset": "governors_2010_2018",
+  "selection_rule": "the speech with the highest coder grade (score) among the 288 speeches of subset governors_2010_2018; ties broken by the smallest id",
+  "tied_at_highest_grade": [
+   "governors_2010_2018__130",
+   "governors_2010_2018__141"
+  ],
+  "binary_populist": 1,
+  "n_in_subset": 288,
+  "human_score": 1.95,
+  "n_in_subset_with_higher_human_score": 0,
+  "ranks_in_subset": {
+   "axis": 5,
+   "combined": 6,
+   "claim_check": 12
+  },
+  "rank_columns": {
+   "axis": "B4_axis",
+   "combined": "B6_axis_plus_nli",
+   "claim_check": "NLI_only"
+  },
+  "scores": {
+   "B4_axis": 230.1729608891551,
+   "B6_axis_plus_nli": 1.2026371656607209,
+   "NLI_only": 0.0175468916518459
+  },
+  "windowing": {
+   "sentences_per_window": 3,
+   "stride": 1,
+   "sentence_word_cap": 60,
+   "function": "populism_axis.contextual_axis.split_windows",
+   "text_column": "data/benchmark_usgov/speeches.csv:text",
+   "n_windows_in_speech": 48
+  },
+  "z_standardization": "projection z-scores over all 51787 windows of the 359 speeches in data/benchmark_usgov/speeches.csv",
+  "evidence_rule": "the selected passage with the largest entailment probability for any hypothesis",
+  "windows": [
+   {
+    "evidence_rank": 0,
+    "window_index_in_speech": 13,
+    "window_position_in_embeddings": 17254,
+    "nli_request_id": 1035,
+    "nli_window_rank": 2,
+    "z_P": 2.894067167469064,
+    "z_E": 1.661775818898205,
+    "cosine_P": 0.2764295229420753,
+    "cosine_E": 0.19617306575829124,
+    "best_P": {
+     "id": "P08",
+     "entailment": 0.505859375
+    },
+    "best_E": {
+     "id": "E04",
+     "entailment": 0.0016632080078125
+    },
+    "entailment": {
+     "P00": 0.09954833984375,
+     "P05": 0.1097412109375,
+     "P01": 0.06475830078125,
+     "P06": 0.01497650146484375,
+     "P08": 0.505859375,
+     "E05": 9.554624557495117e-05,
+     "E00": 0.00040435791015625,
+     "E02": 0.0004603862762451172,
+     "E04": 0.0016632080078125,
+     "E06": 0.0008482933044433594
+    },
+    "premise_sha256": "1c74edbc3458eed08501be7a83c331f26b5ce7f2c62748018250efdc0268bf80",
+    "premise_words": 45
+   }
+  ],
+  "max_entailment_shown_windows": 0.505859375,
+  "max_entailment_other_selected_windows": 0.10504150390625,
+  "passages": {
+   "z_P": [
+    0.014553114066840282,
+    0.2291581479912007,
+    0.29445838233526855,
+    2.077328902243207,
+    2.603971166308978,
+    1.952506027725707,
+    0.8902919547828069,
+    0.6037673418080977,
+    0.787398749084004,
+    1.3195162050308191,
+    0.8721341758308329,
+    1.2723372611822925,
+    1.585617847625515,
+    2.894067167469064,
+    2.7810270388250062,
+    2.2500180170475157,
+    1.0586695239843755,
+    1.2688339153986572,
+    0.9620421036872567,
+    2.1627373815847006,
+    2.1699699013355183,
+    2.5607220472550662,
+    1.5187854301070811,
+    1.4163578145032347,
+    1.2237449510937097,
+    0.8368599062041521,
+    1.8945219907315671,
+    2.059433042037324,
+    2.0062662495586046,
+    1.5542359683992533,
+    1.0894515348867084,
+    1.5915794111734325,
+    1.3400710296285163,
+    1.3511697337640798,
+    1.8097068743907367,
+    1.7767082113854131,
+    1.5582839651680747,
+    0.8974976791083236,
+    0.25659390760636475,
+    0.4173683418387388,
+    0.7791748137271383,
+    1.3161371663881019,
+    1.5086574248029692,
+    1.4655032392855616,
+    1.3706423088630726,
+    1.5184620431903533,
+    2.9167095405023074,
+    2.913739798977635
+   ],
+   "z_E": [
+    -0.07689333027656838,
+    -0.5796593760030107,
+    0.23394187654772905,
+    2.1853195218554626,
+    2.626661544998363,
+    1.721001446381067,
+    0.31264011055487173,
+    0.001962176844313135,
+    0.10166029240807285,
+    0.17399930582021192,
+    0.44576888760791494,
+    1.0396454649231877,
+    1.3846278393595872,
+    1.661775818898205,
+    1.5547575271327219,
+    0.6599296400691573,
+    0.6262170018804926,
+    1.0934828009020718,
+    1.160696548759193,
+    2.034935233624184,
+    1.5655886692652916,
+    2.6707578514758454,
+    2.4615046072326994,
+    2.3158515531841637,
+    2.324293463093377,
+    2.065156960077715,
+    1.7329168904034657,
+    1.148654193773414,
+    0.7379943557118458,
+    -0.3012217592431653,
+    -0.030357571694213076,
+    -0.29119130042201613,
+    -0.0341967446713051,
+    -0.16988630706413357,
+    0.7735562811489929,
+    0.16310524633882237,
+    0.43274950515215166,
+    -0.30837632606337706,
+    0.12981421805266136,
+    0.55233158564973,
+    0.6798742170786147,
+    1.0747625519254813,
+    0.1252210913576586,
+    -0.03608048735424715,
+    -0.031437715118692665,
+    0.18781581745058673,
+    1.2561228239040105,
+    1.3614143740348077
+   ],
+   "selected_window_indices": [
+    4,
+    21,
+    13,
+    3,
+    19,
+    14,
+    47,
+    22
+   ],
+   "selection_rule": "top 8 windows by window_conjunction_scores (soft); equal to the claim-check requests"
+  },
+  "sentence_word_counts": [
+   12,
+   5,
+   15,
+   20,
+   8,
+   37,
+   17,
+   35,
+   28,
+   45,
+   35,
+   13,
+   6,
+   21,
+   18,
+   6,
+   14,
+   11,
+   26,
+   15,
+   23,
+   17,
+   2,
+   41,
+   20,
+   4,
+   6,
+   8,
+   16,
+   25,
+   9,
+   11,
+   8,
+   15,
+   15,
+   17,
+   3,
+   11,
+   5,
+   5,
+   22,
+   11,
+   9,
+   11,
+   10,
+   14,
+   9,
+   5,
+   8,
+   4
+  ]
+ },
+ "axis_geometry": {
+  "axis_cosine": 0.5029144872605233,
+  "propositions": [
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 0,
+    "cosine_P": 0.25679508209065605,
+    "cosine_E": 0.15622867013679573,
+    "hypothesis_id": "P00"
+   },
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 1,
+    "cosine_P": 0.24086636466198996,
+    "cosine_E": 0.1546530173875817,
+    "hypothesis_id": "P01"
+   },
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 2,
+    "cosine_P": 0.19476063948659067,
+    "cosine_E": 0.06085134130289594,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 3,
+    "cosine_P": 0.15539135627532463,
+    "cosine_E": 0.14928781265411734,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 4,
+    "cosine_P": 0.19468328718403582,
+    "cosine_E": 0.0913013376509631,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 5,
+    "cosine_P": 0.24670143086909055,
+    "cosine_E": 0.09464727716539861,
+    "hypothesis_id": "P05"
+   },
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 6,
+    "cosine_P": 0.2408433948978889,
+    "cosine_E": 0.12283461415957486,
+    "hypothesis_id": "P06"
+   },
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 7,
+    "cosine_P": 0.10565988225052214,
+    "cosine_E": -0.02359036022160169,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 8,
+    "cosine_P": 0.2336969053526175,
+    "cosine_E": 0.06784430856553468,
+    "hypothesis_id": "P08"
+   },
+   {
+    "claim": "P",
+    "pole": "populist",
+    "index": 9,
+    "cosine_P": 0.11854296330579951,
+    "cosine_E": 0.02313213226317496,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 0,
+    "cosine_P": -0.2017187646308059,
+    "cosine_E": -0.06933366187124591,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 1,
+    "cosine_P": -0.12221060344569598,
+    "cosine_E": -0.05466998772062685,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 2,
+    "cosine_P": -0.08675085728887649,
+    "cosine_E": -0.10200581355913105,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 3,
+    "cosine_P": -0.15612270507364454,
+    "cosine_E": -0.09027450491135378,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 4,
+    "cosine_P": -0.12673701680155486,
+    "cosine_E": -0.06761513025307762,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 5,
+    "cosine_P": -0.2261020391573379,
+    "cosine_E": -0.12392686239985878,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 6,
+    "cosine_P": -0.24305348609801702,
+    "cosine_E": -0.2018800272249459,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 7,
+    "cosine_P": -0.09477688573551576,
+    "cosine_E": 0.038986508192780406,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 8,
+    "cosine_P": -0.21596307287598435,
+    "cosine_E": -0.1722808394747039,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "P",
+    "pole": "contrast",
+    "index": 9,
+    "cosine_P": -0.2113181152173841,
+    "cosine_E": -0.10686097842304937,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 0,
+    "cosine_P": 0.11546658018633726,
+    "cosine_E": 0.2661720224192583,
+    "hypothesis_id": "E00"
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 1,
+    "cosine_P": 0.07564872714734823,
+    "cosine_E": 0.18763963412542228,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 2,
+    "cosine_P": 0.05969762453407235,
+    "cosine_E": 0.2656166759012504,
+    "hypothesis_id": "E02"
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 3,
+    "cosine_P": 0.029352130616498114,
+    "cosine_E": 0.14686128541932358,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 4,
+    "cosine_P": 0.1566176322818129,
+    "cosine_E": 0.24055568481635894,
+    "hypothesis_id": "E04"
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 5,
+    "cosine_P": 0.14049167380392996,
+    "cosine_E": 0.29087527689548276,
+    "hypothesis_id": "E05"
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 6,
+    "cosine_P": 0.09633326617666838,
+    "cosine_E": 0.22750023791250226,
+    "hypothesis_id": "E06"
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 7,
+    "cosine_P": 0.08478110840543969,
+    "cosine_E": 0.16535009088937203,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 8,
+    "cosine_P": 0.10389799961503324,
+    "cosine_E": 0.14239632426308,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "populist",
+    "index": 9,
+    "cosine_P": 0.09547392089204881,
+    "cosine_E": 0.19631477406548814,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 0,
+    "cosine_P": -0.09002834140638044,
+    "cosine_E": -0.2133848869331474,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 1,
+    "cosine_P": -0.1434610364478357,
+    "cosine_E": -0.26538976368457645,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 2,
+    "cosine_P": -0.11099784086425075,
+    "cosine_E": -0.21954667447103446,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 3,
+    "cosine_P": 0.009770400635958364,
+    "cosine_E": -0.14748931939339988,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 4,
+    "cosine_P": -0.18265942723384443,
+    "cosine_E": -0.22451099848933337,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 5,
+    "cosine_P": -0.03759920340095413,
+    "cosine_E": -0.08833893891621228,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 6,
+    "cosine_P": -0.2099439525389622,
+    "cosine_E": -0.1913539725804796,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 7,
+    "cosine_P": -0.05322701210734741,
+    "cosine_E": -0.11456719262192977,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 8,
+    "cosine_P": -0.034295209465736776,
+    "cosine_E": -0.05513448607183842,
+    "hypothesis_id": null
+   },
+   {
+    "claim": "E",
+    "pole": "contrast",
+    "index": 9,
+    "cosine_P": -0.16203385625041278,
+    "cosine_E": -0.27261506159279913,
+    "hypothesis_id": null
+   }
+  ],
+  "proposition_coordinates": "cosine of each unit-length proposition embedding (not centered) with d_P and d_E",
+  "usgov_speeches": {
+   "n_windows": 51787,
+   "n_documents": 359,
+   "mean_plain_cosine_between_windows_sample": 0.7689681761309233,
+   "corpus_mean_direction_cosine_with_axis": {
+    "P": 0.057109245245220035,
+    "E": 0.03850725114480731
+   },
+   "projection_correlation": 0.5952362425587516,
+   "plain_vs_centered_projection_spearman": {
+    "P": 0.9992174459748648,
+    "E": 0.9993354451265105
+   },
+   "residual_axes_top_k_overlap": {
+    "k": 8,
+    "n_documents_with_more_than_k": 353,
+    "mean": 0.7064447592067988,
+    "median": 0.75,
+    "minimum": 0.25
+   },
+   "projection": {
+    "P": {
+     "mean": -0.0003846129904139464,
+     "sd": 0.09564882910943986
+    },
+    "E": {
+     "mean": -0.0030002449627901037,
+     "sd": 0.1198557040342167
+    }
+   },
+   "centered_propositions": {
+    "P": {
+     "spearman_plain_vs_centered": 0.8909090909090909,
+     "same_top_hypotheses": true
+    },
+    "E": {
+     "spearman_plain_vs_centered": 0.9878787878787878,
+     "same_top_hypotheses": true
+    }
+   },
+   "histogram": {
+    "P": {
+     "counts": [
+      1,
+      0,
+      1,
+      2,
+      11,
+      11,
+      23,
+      22,
+      32,
+      52,
+      87,
+      125,
+      187,
+      242,
+      324,
+      462,
+      568,
+      731,
+      969,
+      1110,
+      1371,
+      1561,
+      1908,
+      2188,
+      2407,
+      2645,
+      2739,
+      3002,
+      2940,
+      3015,
+      2855,
+      2751,
+      2580,
+      2402,
+      2147,
+      1928,
+      1621,
+      1358,
+      1204,
+      932,
+      777,
+      633,
+      497,
+      398,
+      267,
+      209,
+      142,
+      101,
+      80,
+      58,
+      38,
+      21,
+      18,
+      15,
+      6,
+      4,
+      2,
+      5,
+      1,
+      1
+     ],
+     "edges": [
+      -0.39594672953511745,
+      -0.3823654383928927,
+      -0.36878414725066794,
+      -0.3552028561084432,
+      -0.3416215649662185,
+      -0.3280402738239937,
+      -0.314458982681769,
+      -0.30087769153954425,
+      -0.28729640039731946,
+      -0.27371510925509474,
+      -0.26013381811286995,
+      -0.24655252697064522,
+      -0.2329712358284205,
+      -0.21938994468619574,
+      -0.205808653543971,
+      -0.19222736240174626,
+      -0.1786460712595215,
+      -0.16506478011729675,
+      -0.15148348897507202,
+      -0.13790219783284724,
+      -0.12432090669062251,
+      -0.11073961554839779,
+      -0.097158324406173,
+      -0.08357703326394827,
+      -0.06999574212172355,
+      -0.056414450979498765,
+      -0.04283315983727404,
+      -0.02925186869504931,
+      -0.015670577552824527,
+      -0.0020892864105998,
+      0.011492004731624927,
+      0.02507329587384971,
+      0.03865458701607444,
+      0.052235878158299165,
+      0.06581716930052395,
+      0.07939846044274868,
+      0.0929797515849734,
+      0.10656104272719813,
+      0.12014233386942297,
+      0.1337236250116477,
+      0.14730491615387242,
+      0.16088620729609715,
+      0.17446749843832188,
+      0.1880487895805466,
+      0.20163008072277144,
+      0.21521137186499617,
+      0.2287926630072209,
+      0.24237395414944563,
+      0.25595524529167035,
+      0.2695365364338951,
+      0.2831178275761199,
+      0.29669911871834465,
+      0.3102804098605694,
+      0.3238617010027941,
+      0.3374429921450188,
+      0.35102428328724355,
+      0.3646055744294684,
+      0.3781868655716931,
+      0.39176815671391785,
+      0.4053494478561426,
+      0.41893073899836725
+     ]
+    },
+    "E": {
+     "counts": [
+      1,
+      0,
+      3,
+      5,
+      7,
+      13,
+      21,
+      43,
+      77,
+      104,
+      179,
+      247,
+      379,
+      509,
+      674,
+      916,
+      1137,
+      1348,
+      1630,
+      1862,
+      2079,
+      2288,
+      2460,
+      2520,
+      2612,
+      2606,
+      2546,
+      2415,
+      2277,
+      2058,
+      2050,
+      1854,
+      1755,
+      1582,
+      1431,
+      1331,
+      1274,
+      1155,
+      1036,
+      886,
+      770,
+      658,
+      622,
+      546,
+      434,
+      369,
+      277,
+      214,
+      155,
+      113,
+      86,
+      60,
+      36,
+      36,
+      17,
+      11,
+      8,
+      1,
+      3,
+      1
+     ],
+     "edges": [
+      -0.40510527069764,
+      -0.39058747322842186,
+      -0.37606967575920364,
+      -0.3615518782899855,
+      -0.34703408082076725,
+      -0.3325162833515491,
+      -0.31799848588233093,
+      -0.3034806884131127,
+      -0.28896289094389455,
+      -0.2744450934746764,
+      -0.25992729600545816,
+      -0.24540949853623997,
+      -0.23089170106702178,
+      -0.2163739035978036,
+      -0.20185610612858543,
+      -0.18733830865936724,
+      -0.17282051119014905,
+      -0.15830271372093085,
+      -0.1437849162517127,
+      -0.12926711878249447,
+      -0.11474932131327631,
+      -0.10023152384405809,
+      -0.08571372637483993,
+      -0.07119592890562176,
+      -0.056678131436403545,
+      -0.04216033396718538,
+      -0.027642536497967163,
+      -0.013124739028749,
+      0.0013930584404691637,
+      0.015910855909687383,
+      0.030428653378905546,
+      0.044946450848123765,
+      0.05946424831734193,
+      0.07398204578656009,
+      0.08849984325577831,
+      0.10301764072499653,
+      0.11753543819421464,
+      0.13205323566343286,
+      0.14657103313265107,
+      0.16108883060186918,
+      0.1756066280710874,
+      0.19012442554030562,
+      0.20464222300952384,
+      0.21916002047874195,
+      0.23367781794796016,
+      0.24819561541717838,
+      0.2627134128863965,
+      0.2772312103556147,
+      0.29174900782483293,
+      0.30626680529405104,
+      0.32078460276326926,
+      0.3353024002324875,
+      0.3498201977017057,
+      0.3643379951709238,
+      0.378855792640142,
+      0.39337359010936024,
+      0.40789138757857835,
+      0.42240918504779656,
+      0.4369269825170148,
+      0.4514447799862329,
+      0.4659625774554511
+     ]
+    }
+   }
+  },
+  "english_dev": {
+   "n_windows": 20284,
+   "n_documents": 174,
+   "mean_plain_cosine_between_windows_sample": 0.7801697125746303,
+   "corpus_mean_direction_cosine_with_axis": {
+    "P": 0.04591592981939023,
+    "E": 0.029695821605802142
+   },
+   "projection_correlation": 0.6212079599327103,
+   "plain_vs_centered_projection_spearman": {
+    "P": 0.999303387318514,
+    "E": 0.9994327776538308
+   },
+   "residual_axes_top_k_overlap": {
+    "k": 8,
+    "n_documents_with_more_than_k": 172,
+    "mean": 0.7281976744186046,
+    "median": 0.75,
+    "minimum": 0.125
+   },
+   "projection": {
+    "P": {
+     "mean": -0.000654460513103516,
+     "sd": 0.10364815130874797
+    },
+    "E": {
+     "mean": -0.0028587593178337157,
+     "sd": 0.11759952416671197
+    }
+   },
+   "centered_propositions": {
+    "P": {
+     "spearman_plain_vs_centered": 0.8909090909090909,
+     "same_top_hypotheses": true
+    },
+    "E": {
+     "spearman_plain_vs_centered": 0.9878787878787878,
+     "same_top_hypotheses": true
+    }
+   }
+  }
+ }
+}

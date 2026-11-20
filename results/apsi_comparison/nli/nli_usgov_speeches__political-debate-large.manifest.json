@@ -1,0 +1,59 @@
+{
+  "argv": [
+    "--in-dir",
+    "results/apsi_comparison/cache",
+    "--output-dir",
+    "results/apsi_comparison/nli",
+    "--batch-size",
+    "32"
+  ],
+  "encoder_id": "mlburnham/Political_DEBATE_large_v1.0",
+  "extra": {
+    "batch_size": 32,
+    "dtype": "torch.float16",
+    "max_length": 320,
+    "model_revision": "1a3aff1ecb97ad93a6de598f7414b1707de7e7c3",
+    "native_labels": {
+      "entailment": 0,
+      "not_entailment": 1
+    },
+    "output_sha256": "413d3d4cd463ab32b43e817457dfff236d6fc912519e03495af08bd6b11a96d1",
+    "pairs": 28590,
+    "peak_vram_mb": 2030.5,
+    "script_sha256": "698e40493036b4300d7b5e95446dedfbbb8d2b5d58d11a09ff93d82b351eadb6",
+    "seconds": 69.38,
+    "truncation": "only_first"
+  },
+  "git": {
+    "branch": "run/apsi-comparison-20261017",
+    "commit": "604c9b750f110d13adefa03b5865b40a5bf7bfa2",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "hypotheses": {
+      "path": "results/apsi_comparison/cache/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    },
+    "requests": {
+      "path": "results/apsi_comparison/cache/requests_usgov_speeches.parquet",
+      "sha256": "7538e85cfb332539d885d7d20251744096e14754d1feafb90b661015cf3524a7"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "158e5fbbf11fbce4ebbc9befdd40bb3bb9959c42032204bb25fb52f26a017fea",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/political_debate_nli.py",
+  "timestamp_utc": "2026-10-17T20:19:40Z"
+}

@@ -1,0 +1,59 @@
+{
+  "argv": [
+    "--in-dir",
+    "results/apsi_comparison/cache",
+    "--output-dir",
+    "results/apsi_comparison/nli",
+    "--batch-size",
+    "32"
+  ],
+  "encoder_id": "mlburnham/Political_DEBATE_large_v1.0",
+  "extra": {
+    "batch_size": 32,
+    "dtype": "torch.float16",
+    "max_length": 320,
+    "model_revision": "1a3aff1ecb97ad93a6de598f7414b1707de7e7c3",
+    "native_labels": {
+      "entailment": 0,
+      "not_entailment": 1
+    },
+    "output_sha256": "4cedf80699e3937a27a2a0c0de070b562dd459f2be9a8749ae3d32d2db8663b0",
+    "pairs": 17630,
+    "peak_vram_mb": 2030.5,
+    "script_sha256": "698e40493036b4300d7b5e95446dedfbbb8d2b5d58d11a09ff93d82b351eadb6",
+    "seconds": 20.67,
+    "truncation": "only_first"
+  },
+  "git": {
+    "branch": "run/apsi-comparison-20261017",
+    "commit": "604c9b750f110d13adefa03b5865b40a5bf7bfa2",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "hypotheses": {
+      "path": "results/apsi_comparison/cache/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    },
+    "requests": {
+      "path": "results/apsi_comparison/cache/requests_eu.parquet",
+      "sha256": "479947becc561ea1299cd1299647b99446dc81206ef60e4dee2eb6d21e83a35f"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "3244626f623fe368eab77af8c5e5b41d9c397a7ebdb6bc6e6dcb5b6e4b3387f1",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/political_debate_nli.py",
+  "timestamp_utc": "2026-10-17T20:18:30Z"
+}

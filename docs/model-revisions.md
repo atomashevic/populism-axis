@@ -19,6 +19,25 @@ multilingual-e5, gte, e5-small) are not part of the frozen configuration and
 still follow `main`; their manifests now record the resolved commit. The RoBERTa
 comparator was already pinned (`docs/roberta-correction.md`).
 
+## Comparison models outside the frozen configuration
+
+The same-size claim-check comparison (`research/development-log/claim-check-arms-plan.md`)
+loads four further models. Their commits are the Hub `main` of each repository as
+read on 2026-11-19 and live in `scripts/claim_check_arms.py`, not in
+`PINNED_REVISIONS`, which stays the two frozen models.
+
+| Arm | Model | Commit | Loaded by |
+|---|---|---|---|
+| B | `tasksource/ModernBERT-large-nli` | `ca476cb923a8637073d4ceb0f19f7fc236e260d4` | `nli_stage.py --revision` |
+| C | `MoritzLaurer/ModernBERT-large-zeroshot-v2.0` | `a51e07b524299e309dd2b88d48b0cfa2bd9ec598` | `nli_stage.py --revision` |
+| D | `wfzyx/von` | `3a34cbdfaa1e90f2a9eb6b3bfc5ac5c92a18cb01` | `decision_model_stage.py`, `von-sdk` 1.3.7 |
+| E | `convaiinnovations/laya` (repository root, English) | `e333cb7c823cd1787276228260f56d02fbf5180b` | `decision_model_stage.py`, `laya` 0.4.37 |
+
+The Von model card cites a weights hash that differs from the repository commit,
+and the Laya repository was last changed on 2026-11-15. `decision_model_stage.py`
+therefore records the SHA-256 of the weight files it loaded and the installed SDK
+version in its manifest. The two SDKs are not in `uv.lock`.
+
 ## What the historical runs loaded
 
 **Recorded.** All committed e5 and BART encoding manifests (9 for e5, 5 for BART)

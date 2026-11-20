@@ -1,0 +1,72 @@
+[
+  {
+    "hypothesis_id": "U_P00",
+    "channel": "P",
+    "text": "The ordinary people are the only true source of legitimate political power."
+  },
+  {
+    "hypothesis_id": "U_P01",
+    "channel": "P",
+    "text": "This movement is nothing more and nothing less than the voice of ordinary people."
+  },
+  {
+    "hypothesis_id": "U_P02",
+    "channel": "P",
+    "text": "It is the people, not the officials, who must decide the future of this country."
+  },
+  {
+    "hypothesis_id": "U_P03",
+    "channel": "P",
+    "text": "Power must be returned to the hands of the people who built this nation."
+  },
+  {
+    "hypothesis_id": "U_P04",
+    "channel": "P",
+    "text": "Our people are sovereign and no authority stands above them."
+  },
+  {
+    "hypothesis_id": "U_P05",
+    "channel": "P",
+    "text": "We are the only true voice of the ordinary people."
+  },
+  {
+    "hypothesis_id": "U_P06",
+    "channel": "P",
+    "text": "Power must be returned to the honest, hard-working people who made this country what it is."
+  },
+  {
+    "hypothesis_id": "U_E00",
+    "channel": "E",
+    "text": "Entrenched insiders block every reform that would help ordinary families."
+  },
+  {
+    "hypothesis_id": "U_E01",
+    "channel": "E",
+    "text": "A corrupt elite has captured our institutions and turned them against the public."
+  },
+  {
+    "hypothesis_id": "U_E02",
+    "channel": "E",
+    "text": "Bankers, lobbyists and career politicians have rigged the system against you."
+  },
+  {
+    "hypothesis_id": "U_E03",
+    "channel": "E",
+    "text": "The people in power have betrayed the country they were elected to serve."
+  },
+  {
+    "hypothesis_id": "U_E04",
+    "channel": "E",
+    "text": "They enrich themselves while the rest of the country is told to sacrifice."
+  },
+  {
+    "hypothesis_id": "U_E05",
+    "channel": "E",
+    "text": "The entire political class has betrayed the people it was elected to serve."
+  },
+  {
+    "hypothesis_id": "U_E06",
+    "channel": "E",
+    "text": "The powerful enrich themselves while the rest of the country is told to sacrifice."
+  }
+]

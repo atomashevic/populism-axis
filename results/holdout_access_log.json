@@ -49,5 +49,97 @@
     "final": true,
     "reason": "V4 final one-time scoring of English holdout and EU-OOD (pre-declared B0, B4, B6)",
     "out_dir": "results/v4/final/B6_axis_plus_nli"
+  },
+  {
+    "timestamp_utc": "2026-10-17T19:58:46.135558+00:00",
+    "script": "scripts/evaluate_apsi_comparison.py",
+    "stage": "prepare",
+    "datasets": [
+      "english_dev",
+      "english_holdout",
+      "agora",
+      "eu",
+      "usgov_speeches",
+      "popbert_en",
+      "portugal",
+      "antielite_tweets"
+    ],
+    "reason": "User-authorized pinned external comparator evaluation; no measure selection or tuning",
+    "selection": "none"
+  },
+  {
+    "timestamp_utc": "2026-10-17T19:58:57.637538+00:00",
+    "script": "scripts/evaluate_apsi_comparison.py",
+    "stage": "prepare",
+    "datasets": [
+      "english_dev",
+      "english_holdout",
+      "agora",
+      "eu",
+      "usgov_speeches",
+      "popbert_en",
+      "portugal",
+      "antielite_tweets"
+    ],
+    "reason": "User-authorized pinned external comparator evaluation; no measure selection or tuning",
+    "selection": "none"
+  },
+  {
+    "timestamp_utc": "2026-10-17T20:02:12.625661+00:00",
+    "script": "scripts/evaluate_apsi_comparison.py",
+    "stage": "prepare",
+    "datasets": [
+      "english_dev",
+      "english_holdout",
+      "agora",
+      "eu",
+      "usgov_speeches",
+      "popbert_en",
+      "portugal",
+      "antielite_tweets"
+    ],
+    "reason": "Authorized fixed external comparison; no configuration selection; clean snapshot preparation",
+    "selection": "none"
+  },
+  {
+    "timestamp_utc": "2026-10-17T20:12:37.163164+00:00",
+    "script": "scripts/remote_job.sh",
+    "stage": "inference_launched",
+    "datasets": [
+      "english_dev",
+      "english_holdout",
+      "agora",
+      "eu",
+      "usgov_speeches",
+      "popbert_en",
+      "portugal",
+      "antielite_tweets"
+    ],
+    "reason": "User-authorized fixed Political DEBATE replacement and APSI external comparators, all seven benchmarks; no configuration selection",
+    "selection": "none",
+    "host": "pvgpu2",
+    "commit": "604c9b750f110d13adefa03b5865b40a5bf7bfa2",
+    "job": "apsi_comparison_20261017",
+    "apsi_dtype": "float32"
+  },
+  {
+    "timestamp_utc": "2026-11-19T16:00:42Z",
+    "script": "scripts/pilot_anchor_revision.py",
+    "stage": "prepare_axis_only_superseded",
+    "datasets": [
+      "english_dev",
+      "english_holdout",
+      "agora",
+      "eu",
+      "usgov",
+      "popbert_en",
+      "portugal",
+      "antielite_tweets"
+    ],
+    "reason": "Exploratory all-benchmark axis-only run of early candidate anchors (v5_green, v5_green_red) from dirty tree at bb1ebdf (saved as 9e0201c); superseded by dev-only 2x2 pilot and excluded from wording, primary-arm and configuration selection",
+    "selection": "none",
+    "host": "laptop-omarchy",
+    "commit": "bb1ebdff5c7a5a41c6410e50be80380dd14db2f5",
+    "dirty": true
   }
 ]

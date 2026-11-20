@@ -11,9 +11,9 @@ authors:
   - family-names: "Tomašević"
     given-names: "Aleksandar"
     email: "atomashevic@gmail.com"
-version: "0.1.0"
+version: "0.2.0"
 doi: "10.5281/zenodo.23315930"
-date-released: "2026-10-12"
+date-released: "2026-11-20"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23315930"

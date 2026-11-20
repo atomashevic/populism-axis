@@ -1,0 +1,93 @@
+{
+  "argv": [
+    "--input",
+    "scored/cpu_timing/usgov_input.csv",
+    "--text-column",
+    "text",
+    "--id-column",
+    "id",
+    "--unit",
+    "speech",
+    "--reference",
+    "corpus",
+    "--device",
+    "cpu",
+    "--threads",
+    "16",
+    "--allow-download",
+    "--out-dir",
+    "scored/cpu_timing/usgov"
+  ],
+  "encoder_id": "intfloat/e5-large-v2",
+  "extra": {
+    "device": "cpu",
+    "encode_seconds": 9191.5,
+    "encoder_revision": "f169b11e22de13617baa190a028a32f3493550b6",
+    "n_documents": 359,
+    "n_windows": 51787,
+    "nli_model": "facebook/bart-large-mnli",
+    "nli_revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+    "nli_seconds": 4582.8,
+    "reference": "corpus",
+    "resolved_revisions": {
+      "encoder": "f169b11e22de13617baa190a028a32f3493550b6",
+      "nli_model": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce"
+    },
+    "seconds_total": 13799.9,
+    "standardization": {
+      "act": {
+        "E": 0.25843411289898033,
+        "P": 0.4543663035906386
+      },
+      "proj": {
+        "E": [
+          -0.003000908850437539,
+          0.11986390236669549
+        ],
+        "P": [
+          -0.0003846846203367376,
+          0.09564921115178174
+        ]
+      }
+    },
+    "threads": 16,
+    "top_rule": "k:8",
+    "unit": "speech"
+  },
+  "git": {
+    "branch": "paper/literal-numbers",
+    "commit": "a0669d2b667054d8ac5bddc3db42aac05eee32e0",
+    "dirty": false
+  },
+  "hostname": "aleksandar-scl",
+  "inputs": {
+    "anchors": {
+      "path": "/home/aleksandar/work/populism-axis-research/anchors/proposition_anchors.json",
+      "sha256": "ea98e5b2071567a825edef608e45bac02b82b374e87623ebdd8397427cb4bcd6"
+    },
+    "hypotheses": {
+      "path": "/home/aleksandar/work/populism-axis-research/anchors/claim_hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    },
+    "input": {
+      "path": "scored/cpu_timing/usgov_input.csv",
+      "sha256": "30107eeb9af4d79e016ca8b437e39c9a49f7de6618a8a414804b216bbbec800c"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.14",
+  "run_hash": "ca5d8f6c343fa76e356a26b7ab03862cecb1d4460b520e2186ac62b51568e481",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/score_texts.py",
+  "timestamp_utc": "2026-10-21T16:19:56Z"
+}

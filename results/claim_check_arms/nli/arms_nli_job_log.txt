@@ -1,0 +1,16 @@
+# job arms_nli started 2026-11-19T10:14:11Z on pvgpu2
+# commit e25a2a09eddd8a934532de6bbc6bc8eacef6aacd dirty=no
+# gpu before: 10821 MiB used, load 1.42
+# command: bash -c O=results/claim_check_arms/nli; python scripts/nli_stage.py --model facebook/bart-large-mnli --out-dir $O && python scripts/nli_stage.py --model tasksource/ModernBERT-large-nli --revision ca476cb923a8637073d4ceb0f19f7fc236e260d4 --probs-dtype float32 --out-dir $O && python scripts/nli_stage.py --model MoritzLaurer/ModernBERT-large-zeroshot-v2.0 --revision a51e07b524299e309dd2b88d48b0cfa2bd9ec598 --probs-dtype float32 --out-dir $O
+english_dev {'pairs': 13920, 'sequences': 13920, 'forward_calls': 218, 'seconds': 63.0, 'output': 'nli_english_dev__bart-large-mnli.npz', 'stored_entailment': {'n': 13920, 'exact_zero': 0, 'exact_one': 0, 'distinct': 6734, 'on_4_decimal_grid': 0.0015086206896551724}}
+agora {'pairs': 226680, 'sequences': 226680, 'forward_calls': 3542, 'seconds': 727.0, 'output': 'nli_agora__bart-large-mnli.npz', 'stored_entailment': {'n': 226680, 'exact_zero': 0, 'exact_one': 0, 'distinct': 12355, 'on_4_decimal_grid': 0.0018660667019587084}}
+{
+}
+english_dev {'pairs': 13920, 'sequences': 13920, 'forward_calls': 218, 'seconds': 72.1, 'output': 'nli_english_dev__ModernBERT-large-nli.npz', 'stored_entailment': {'n': 13920, 'exact_zero': 0, 'exact_one': 0, 'distinct': 13818, 'on_4_decimal_grid': 0.0020833333333333333}}
+agora {'pairs': 226680, 'sequences': 226680, 'forward_calls': 3542, 'seconds': 878.4, 'output': 'nli_agora__ModernBERT-large-nli.npz', 'stored_entailment': {'n': 226680, 'exact_zero': 0, 'exact_one': 0, 'distinct': 225260, 'on_4_decimal_grid': 0.0019631198164813835}}
+{
+}
+english_dev {'pairs': 13920, 'sequences': 13920, 'forward_calls': 218, 'seconds': 66.9, 'output': 'nli_english_dev__ModernBERT-large-zeroshot-v2.0.npz', 'stored_entailment': {'n': 13920, 'exact_zero': 0, 'exact_one': 0, 'distinct': 4056, 'on_4_decimal_grid': 0.001867816091954023}}
+agora {'pairs': 226680, 'sequences': 226680, 'forward_calls': 3542, 'seconds': 875.7, 'output': 'nli_agora__ModernBERT-large-zeroshot-v2.0.npz', 'stored_entailment': {'n': 226680, 'exact_zero': 0, 'exact_one': 0, 'distinct': 7976, 'on_4_decimal_grid': 0.00210428798305982}}
+{
+}

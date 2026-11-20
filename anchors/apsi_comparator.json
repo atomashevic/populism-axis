@@ -1,0 +1,164 @@
+{
+  "upstream_commit": "9a7fa79b858c5cce4357f0af57bb6aec8c4de97c",
+  "upstream_file": "classifier/alternativePop.py",
+  "upstream_file_sha256": "0746cd68f27c859145583ca44296aa99d539890cecb854a683f7a443e715a2ba",
+  "hypotheses_sha256": "6ce24cc7c0e36b98c870201c2fd937d47910292dea493b7c2caf7e5a50165d73",
+  "hypotheses_hash_serialization": "UTF-8 JSON of hypotheses and topic_hypotheses; ensure_ascii=False, sort_keys=True, separators=(comma,colon)",
+  "hypotheses": [
+    {
+      "text": "The text claims that it or its movement alone truly represents the people.",
+      "weight": 1.0,
+      "direction": "populist"
+    },
+    {
+      "text": "The text argues that corrupt elites or establishment insiders have betrayed ordinary people.",
+      "weight": 1.0,
+      "direction": "populist"
+    },
+    {
+      "text": "The text argues that elected representatives can legitimately make decisions on behalf of citizens.",
+      "weight": 0.6,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text claims that elections or lawmaking are rigged by wealthy donors, corporations, or lobbyists against ordinary voters.",
+      "weight": 0.8,
+      "direction": "populist"
+    },
+    {
+      "text": "The text defends institutional checks and oversight as necessary safeguards against abuse of power.",
+      "weight": 0.85,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text argues that direct decisions by the people should replace parliaments, parties, or representatives.",
+      "weight": 0.75,
+      "direction": "populist"
+    },
+    {
+      "text": "The text argues that political decisions must follow formal procedures such as parliamentary debate or constitutional process.",
+      "weight": 0.65,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text portrays the people as a unified and virtuous whole betrayed by a corrupt elite.",
+      "weight": 1.0,
+      "direction": "populist"
+    },
+    {
+      "text": "The text says society contains diverse groups whose different interests must be settled through compromise.",
+      "weight": 0.9,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text argues that ordinary people's common sense is more trustworthy than experts or technocrats.",
+      "weight": 0.9,
+      "direction": "populist"
+    },
+    {
+      "text": "The text argues that expert knowledge and evidence contribute valuable input to political decisions.",
+      "weight": 0.75,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text portrays bureaucrats or state agencies as self-interested obstacles to the will of the people.",
+      "weight": 0.95,
+      "direction": "populist"
+    },
+    {
+      "text": "The text argues that professional civil servants provide continuity and competence in governance.",
+      "weight": 0.8,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text claims mainstream media suppress ordinary people's voices or coordinate against them.",
+      "weight": 1.0,
+      "direction": "populist"
+    },
+    {
+      "text": "The text supports a free and diverse press as essential to democratic accountability.",
+      "weight": 0.85,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text calls for overriding or abolishing courts and legal limits on what elected majorities can do.",
+      "weight": 0.75,
+      "direction": "populist"
+    },
+    {
+      "text": "The text argues that courts and constitutional protections should defend minority rights against majority overreach.",
+      "weight": 1.0,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text claims that established parties and career politicians are incapable of solving the country's core problems.",
+      "weight": 0.8,
+      "direction": "populist"
+    },
+    {
+      "text": "The text argues that only an outsider or anti-establishment movement can bring genuine change.",
+      "weight": 0.85,
+      "direction": "populist"
+    },
+    {
+      "text": "The text warns against sudden or revolutionary change and argues for gradual, negotiated reform.",
+      "weight": 0.7,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text defends legal norms and constitutional rules against attempts to circumvent them.",
+      "weight": 0.9,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text argues that corruption should be prosecuted through existing legal institutions.",
+      "weight": 0.65,
+      "direction": "pluralist"
+    },
+    {
+      "text": "The text contrasts the interests of the super-rich or large corporations with those of ordinary people.",
+      "weight": 0.35,
+      "direction": "populist"
+    }
+  ],
+  "topic_hypotheses": [
+    "This text supports the idea that political authority is legitimate only when it follows constitutional rules and legal procedures.",
+    "This text portrays the direct will of the people as the primary source of political legitimacy.",
+    "This text suggests that elected leaders lose legitimacy when they ignore popular demands.",
+    "This text emphasizes the role of courts and independent agencies in validating political authority.",
+    "This text portrays charismatic leadership as a sufficient basis for political legitimacy.",
+    "This text portrays political institutions as protecting citizens from arbitrary and abusive power.",
+    "This text depicts political institutions as outdated structures that primarily serve elite interests.",
+    "This text supports reforming institutions without weakening or bypassing them.",
+    "This text portrays unelected institutions as unjust obstacles to democratic decision-making.",
+    "This text emphasizes that strong institutions are more important than strong leaders.",
+    "This text supports political decision-making through negotiation and compromise.",
+    "This text emphasizes decisive leadership over deliberation.",
+    "This text promotes expert knowledge as a legitimate basis for policymaking, even when unpopular.",
+    "This text portrays popular opinion as superior to expert or technocratic judgment.",
+    "This text frames slow decision-making as a necessary feature of democracy.",
+    "This text portrays political opponents as legitimate actors with valid interests.",
+    "This text depicts elites as manipulating institutions for personal gain.",
+    "This text frames criticism and dissent as strengthening democracy.",
+    "This text portrays those who oppose the people’s will as enemies of democracy.",
+    "This text frames political conflict as a struggle between ordinary citizens and corrupt elites.",
+    "This text portrays society as composed of diverse groups with competing interests.",
+    "This text portrays the people as a unified moral community with shared goals.",
+    "This text supports limiting majority power in order to protect minority rights.",
+    "This text portrays the will of the majority as something that should not be constrained by special interests.",
+    "This text suggests that leaders can clearly identify and represent the true will of the people."
+  ],
+  "prob_floor": 0.25,
+  "topic_threshold": 0.6,
+  "threshold": 0.15,
+  "models": {
+    "large": {
+      "id": "mlburnham/Political_DEBATE_large_v1.0",
+      "revision": "1a3aff1ecb97ad93a6de598f7414b1707de7e7c3"
+    },
+    "base": {
+      "id": "mlburnham/Political_DEBATE_base_v1.0",
+      "revision": "55ec647c8b708ad8dee650e3843577c26a7dc32e"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "populism_axis.v3.proposition_anchors.v1",
+  "anchor_set_id": "pa_v5_green_red_pilot_r1",
+  "outcome_labels_used": false,
+  "rationale": "Pilot revision arm v5_green_red of proposition_anchors.json from the co-author review document 'Populism by Proposition: the forty propositions': combines the nine v5_green revisions (P+02, P+05, P+06, P+07, P+09, E+04, E+06, E+09, E-00) with the six v5_red negation-framed contrast revisions (P-04, P-07, P-08, E-04, E-07, E-08), keeping all M anchors unchanged. Multi-option review slots and the retention of the candidate E+09 wording were settled using author review and label-free embedding geometry without consulting benchmark outcome labels.",
+  "construct_source": "Ideational definition of populism: people-centrism, anti-elitism, and Manichean moral antagonism.",
+  "channels": {
+    "P": {
+      "label": "people sovereignty",
+      "populist": [
+        "The ordinary people are the only true source of legitimate political power.",
+        "It is the people, not the officials, who must decide the future of this country.",
+        "We must reclaim this country for its people.",
+        "The will of the ordinary citizen must come before the preferences of any institution.",
+        "Nobody has the right to overrule what the people have decided.",
+        "We are the only true voice of the ordinary people.",
+        "Power must be returned to the honest, hard-working people who made this country what it is.",
+        "The common people know what is good for them better than any politician.",
+        "Our people are sovereign and no authority stands above them.",
+        "This government is guided only by the will of ordinary working families."
+      ],
+      "mainstream": [
+        "Complex policy questions require careful analysis by qualified specialists.",
+        "Our constitutional institutions provide the proper framework for these decisions.",
+        "This government will follow the recommendations of the independent commission.",
+        "Sound policy is developed through deliberation among many stakeholders.",
+        "We must not abandon the procedures that our legal system prescribes.",
+        "Expert advice has guided our approach throughout this process.",
+        "The relevant ministries have reviewed the evidence and issued their guidance.",
+        "Competing interests cannot be reconciled without representative institutions.",
+        "We will not depart from established regulatory practice.",
+        "A technical assessment will determine the appropriate course of action."
+      ]
+    },
+    "E": {
+      "label": "elite obstruction",
+      "populist": [
+        "A corrupt elite has captured our institutions and turned them against the public.",
+        "The establishment in the capital works only for itself and its donors.",
+        "Bankers, lobbyists and career politicians have rigged the system against you.",
+        "A small privileged clique makes every decision behind closed doors.",
+        "The entire political class has betrayed the people it was elected to serve.",
+        "Entrenched insiders block every reform that would help ordinary families.",
+        "The powerful enrich themselves while the rest of the country is told to sacrifice.",
+        "An unelected bureaucracy overrules whatever the voters ask for.",
+        "The political class protects its own privileges above everything else.",
+        "Wealthy elites have bought the political influence that belongs to ordinary citizens."
+      ],
+      "mainstream": [
+        "Public servants must carry out the policies that elected governments determine.",
+        "The agency has met its obligations and reported transparently on its work.",
+        "Officials across government cooperated effectively on this initiative.",
+        "The civil service continues to deliver essential services to the public.",
+        "The regulators have not acted beyond the mandate and powers granted to them by law.",
+        "Members of this chamber have debated the proposal in good faith.",
+        "The commission consulted widely before publishing its recommendations.",
+        "The strain of recent years has not eroded the accountability of our institutions.",
+        "No public body is exempt from audit and parliamentary oversight.",
+        "The department has responded constructively to the concerns raised."
+      ]
+    },
+    "M": {
+      "label": "moralized antagonism",
+      "populist": [
+        "This is a battle between honest people and a thoroughly corrupt establishment.",
+        "They lie to your face and they have been lying for decades.",
+        "These people are not merely mistaken, they are morally rotten.",
+        "It is time to drain the swamp and throw out the crooks.",
+        "Their greed and their treachery have brought this country to its knees.",
+        "We are the decent ones and they are the parasites feeding on us.",
+        "Everything they say is a fraud designed to deceive ordinary citizens.",
+        "They have sold out the nation for their own miserable profit.",
+        "There can be no compromise with people this dishonest.",
+        "Their corruption is not an accident, it is who they are."
+      ],
+      "mainstream": [
+        "Reasonable people can disagree about the best way forward.",
+        "I want to acknowledge the constructive contribution of the opposition.",
+        "We should seek common ground wherever it can honestly be found.",
+        "My colleagues hold a different view and they argue it sincerely.",
+        "This is a difficult trade-off with legitimate arguments on both sides.",
+        "I thank the honourable member for raising a serious point.",
+        "Our disagreements are real but they are conducted in good faith.",
+        "Let us debate the substance rather than question anyone's motives.",
+        "Both parties share a commitment to the wellbeing of this country.",
+        "We will continue to work with all sides to reach a durable agreement."
+      ]
+    }
+  }
+}

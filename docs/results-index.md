@@ -36,6 +36,8 @@ Each stage directory holds a `carried_config.json` when it changed the carried c
 | `results/fusion_weight_sweep/` | Axis / claim-check weight sweep on every corpus | `fusion-weight-sweep.md` |
 | `results/frozen_reference/` | English-dev reference statistics (`reference_stats.json`, `reference_mean_embedding.npy`) and re-scoring under frozen scales; used by `scripts/score_texts.py --reference frozen` | `frozen-reference-scales.md` |
 | `results/nli_replication/` | Smaller entailment models against BART-large-MNLI on the development sets | `claim-check-replication.md` |
+| `results/claim_check_arms/` | ModernBERT NLI models and two decision models at BART's size, on the development sets: non-inferiority, incremental information, diagnostics, cost. `nli/` holds the GPU manifests, probe summaries and job logs (probability files untracked); `disagreement/` holds window text and is untracked | `claim-check-arms.md` |
+| `results/anchor_revision_pilot/` | Revised P and E propositions (`anchors/candidates/`) against the frozen anchors on the development sets: label-free audit, axis and combined scores, hypothesis decomposition and adoption-rule reading (`v5_green` primary; none passes). `disagreement/` holds window text and is untracked | `anchor-revision-pilot.md` |
 
 ## Reading the development log
 

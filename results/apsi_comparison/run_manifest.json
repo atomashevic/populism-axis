@@ -1,0 +1,201 @@
+{
+  "argv": [
+    "evaluate",
+    "--work-dir",
+    "results/apsi_comparison/cache",
+    "--out-dir",
+    "results/apsi_comparison",
+    "--apsi-large",
+    "results/apsi_comparison/large/scores.csv",
+    "--apsi-base",
+    "results/apsi_comparison/base/scores.csv",
+    "--political-nli-dir",
+    "results/apsi_comparison/nli",
+    "--draws",
+    "4000"
+  ],
+  "encoder_id": null,
+  "extra": {
+    "apsi_component_mapping": "same overall score, no hypothesis subsets",
+    "draws": 4000,
+    "eu_macro_f1_intervals": "sentences resampled within speakers, conditional on fixed LOSO predictions",
+    "resampling": "texts within clusters",
+    "seed": 20260923
+  },
+  "git": {
+    "branch": "paper/smr-revision",
+    "commit": "35159bc61807d78752e2fca5a3d61b6239621c0b",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "agora_baseline": {
+      "path": "results/apsi_comparison/cache/baseline_agora.parquet",
+      "sha256": "ad400bc5e462c390bda0650139736f422e7b34fc596cf3493526d44e3ee13f73"
+    },
+    "agora_labels": {
+      "path": "results/apsi_comparison/cache/labels_agora.parquet",
+      "sha256": "996f27454beec05310ddeed83e16eac5088cbe5870d8093b04aa9ff0aa4f8a08"
+    },
+    "agora_nli": {
+      "path": "results/apsi_comparison/nli/nli_agora__political-debate-large.npz",
+      "sha256": "20fc7e80753519f6db1e29976154b18672ef2e9b00b36277edb40c6a3c8900aa"
+    },
+    "agora_requests": {
+      "path": "results/apsi_comparison/cache/requests_agora.parquet",
+      "sha256": "3f22b094e2d15726cf9f3cc39ad98d7e92797a2f60a727deec7573ae1bfcb786"
+    },
+    "antielite_tweets_baseline": {
+      "path": "results/apsi_comparison/cache/baseline_antielite_tweets.parquet",
+      "sha256": "3348f91fb91d96123b82491aae0447a547773f37b9b1aeccd1ec7a2c80668af9"
+    },
+    "antielite_tweets_labels": {
+      "path": "results/apsi_comparison/cache/labels_antielite_tweets.parquet",
+      "sha256": "8e875a4fe28f13163d0531ad1ea12e473e1bea862b9f157d3664230a708cc84f"
+    },
+    "antielite_tweets_nli": {
+      "path": "results/apsi_comparison/nli/nli_antielite_tweets__political-debate-large.npz",
+      "sha256": "b1917a36b30f3d82c93d3e072299da22942111c286c352dded236c7d86086af9"
+    },
+    "antielite_tweets_requests": {
+      "path": "results/apsi_comparison/cache/requests_antielite_tweets.parquet",
+      "sha256": "7bcecc2e37acce2f62c4e73205e7dd7d1a273f775433eb7e0fff28f759b3dc2c"
+    },
+    "apsi_base": {
+      "path": "results/apsi_comparison/base/scores.csv",
+      "sha256": "00995c46e6cdc19038c3cf7f17fe1759528650b4899a740c786f1c0fbfc248f6"
+    },
+    "apsi_large": {
+      "path": "results/apsi_comparison/large/scores.csv",
+      "sha256": "32ac1df810321100746990fef01f42197fd7190ce573e6a373cfa61c0e066adc"
+    },
+    "english_dev_baseline": {
+      "path": "results/apsi_comparison/cache/baseline_english_dev.parquet",
+      "sha256": "3cc3c708b4ae8f960af8b1f0e35ab12d7e8144079badbae8ee02d5bdbe2e8602"
+    },
+    "english_dev_labels": {
+      "path": "results/apsi_comparison/cache/labels_english_dev.parquet",
+      "sha256": "41aa4cc3ec72d99034b4c75a098caef01ba7864b3443e806741bd553aef205b8"
+    },
+    "english_dev_nli": {
+      "path": "results/apsi_comparison/nli/nli_english_dev__political-debate-large.npz",
+      "sha256": "f8aedebf8fec1b324adc04f2d179614f3b0e63847961f7329b8e8856fc4252b3"
+    },
+    "english_dev_requests": {
+      "path": "results/apsi_comparison/cache/requests_english_dev.parquet",
+      "sha256": "724101d6cdea58678eb983026cded33092d6c24b4b4b2b79c9db8d573277e21b"
+    },
+    "english_holdout_baseline": {
+      "path": "results/apsi_comparison/cache/baseline_english_holdout.parquet",
+      "sha256": "407668bd750beba68d3794c448601b2e472d7ae644c757ecf6c284410b843ff6"
+    },
+    "english_holdout_labels": {
+      "path": "results/apsi_comparison/cache/labels_english_holdout.parquet",
+      "sha256": "74a25da43f556943cf485c484515d8915c7d885c9918d5702d8ec61ea5179c24"
+    },
+    "english_holdout_nli": {
+      "path": "results/apsi_comparison/nli/nli_english_holdout__political-debate-large.npz",
+      "sha256": "47647eb55ffb3a8f68b5bbad8aec3d5982a2295158bedd17d1f7cfa07cca5aa4"
+    },
+    "english_holdout_requests": {
+      "path": "results/apsi_comparison/cache/requests_english_holdout.parquet",
+      "sha256": "1c5afad1c658d212797fdb15f3dff58fba0718f0e3fe3574c25309d09e5df7b4"
+    },
+    "eu_baseline": {
+      "path": "results/apsi_comparison/cache/baseline_eu.parquet",
+      "sha256": "36f7490a3a153e537e2a56045a9b9fdb81a3c0dfda6fdc73ec4a7cc9be60a472"
+    },
+    "eu_labels": {
+      "path": "results/apsi_comparison/cache/labels_eu.parquet",
+      "sha256": "57a35941d71e4039a9698fa0342275827d74ffff618f49fd56119b1506e1fa58"
+    },
+    "eu_nli": {
+      "path": "results/apsi_comparison/nli/nli_eu__political-debate-large.npz",
+      "sha256": "4cedf80699e3937a27a2a0c0de070b562dd459f2be9a8749ae3d32d2db8663b0"
+    },
+    "eu_requests": {
+      "path": "results/apsi_comparison/cache/requests_eu.parquet",
+      "sha256": "479947becc561ea1299cd1299647b99446dc81206ef60e4dee2eb6d21e83a35f"
+    },
+    "evaluation_script": {
+      "path": "/home/aleksandar/work/populism-axis/scripts/evaluate_apsi_comparison.py",
+      "sha256": "c606814e6d234ab20c22718de308e52ceba8dbbe9af29df50c7ca41a15a6b571"
+    },
+    "hypotheses": {
+      "path": "results/apsi_comparison/cache/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    },
+    "inventory": {
+      "path": "results/apsi_comparison/cache/inventory.json",
+      "sha256": "bf650436dacabb2e2f3ce69ce8650852cdbe66e023435c8878c8e144d798e17c"
+    },
+    "popbert_en_baseline": {
+      "path": "results/apsi_comparison/cache/baseline_popbert_en.parquet",
+      "sha256": "df3546da421a79cfe507ab28d5e36640de1e6d1338fa73a5785032e18af5aded"
+    },
+    "popbert_en_labels": {
+      "path": "results/apsi_comparison/cache/labels_popbert_en.parquet",
+      "sha256": "b98417364372f9bb359d5bd9d07befa83a126dee56e1b72fd3389a95039c7462"
+    },
+    "popbert_en_nli": {
+      "path": "results/apsi_comparison/nli/nli_popbert_en__political-debate-large.npz",
+      "sha256": "64a11b5fa2e4e2113967da63a7e126f4b0ef5a657d1175ed716127b9164a74b2"
+    },
+    "popbert_en_requests": {
+      "path": "results/apsi_comparison/cache/requests_popbert_en.parquet",
+      "sha256": "3ec3bb37fd2b4508d793616f35861ca6f59bfa42b4ffdb6dbb0fd35e59d61d97"
+    },
+    "portugal_baseline": {
+      "path": "results/apsi_comparison/cache/baseline_portugal.parquet",
+      "sha256": "8e99954e7f079cdd5499234fef8c349f7c4f8f7d5283914c21f23dfadee86c5d"
+    },
+    "portugal_labels": {
+      "path": "results/apsi_comparison/cache/labels_portugal.parquet",
+      "sha256": "654a5b772b24210db29aee908e63b0104e4a04ba748ac9994d8ca77acb3f052d"
+    },
+    "portugal_nli": {
+      "path": "results/apsi_comparison/nli/nli_portugal__political-debate-large.npz",
+      "sha256": "281aa4520508cb42b2d2827b98e64c59f43a5bcaf15e0908bdaa9b56160d505c"
+    },
+    "portugal_requests": {
+      "path": "results/apsi_comparison/cache/requests_portugal.parquet",
+      "sha256": "eda18a0ac6d1cffdff6f5597a38298c6bd2cabb59e99f3f0d0986de73907ccaf"
+    },
+    "prepare_manifest": {
+      "path": "results/apsi_comparison/cache/run_manifest.json",
+      "sha256": "75219882e131394688a974c41642c52e83d430284fc6e7538567522ab333983b"
+    },
+    "usgov_speeches_baseline": {
+      "path": "results/apsi_comparison/cache/baseline_usgov_speeches.parquet",
+      "sha256": "7d38da0b27f097cef8435334019d2ba980d629625f9c90c54bb6dd69e2476461"
+    },
+    "usgov_speeches_labels": {
+      "path": "results/apsi_comparison/cache/labels_usgov_speeches.parquet",
+      "sha256": "9cc75198420ad1450d076c46ae16bd1943053e0403638fe7a5d5c440563bd97f"
+    },
+    "usgov_speeches_nli": {
+      "path": "results/apsi_comparison/nli/nli_usgov_speeches__political-debate-large.npz",
+      "sha256": "413d3d4cd463ab32b43e817457dfff236d6fc912519e03495af08bd6b11a96d1"
+    },
+    "usgov_speeches_requests": {
+      "path": "results/apsi_comparison/cache/requests_usgov_speeches.parquet",
+      "sha256": "7538e85cfb332539d885d7d20251744096e14754d1feafb90b661015cf3524a7"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.15",
+  "run_hash": "6082dba1480fad82c905fe3fc36952eecc5f95fb8ec8fd5fcca60c37aaa6e947",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/evaluate_apsi_comparison.py",
+  "timestamp_utc": "2026-10-22T12:07:03Z"
+}

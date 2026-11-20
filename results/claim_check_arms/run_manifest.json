@@ -1,0 +1,42 @@
+{
+  "argv": [],
+  "encoder_id": null,
+  "extra": {
+    "arms": [
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "nli_dir": "/home/aleksandar/work/populism-axis/results/claim_check_arms/nli",
+    "non_inferior": []
+  },
+  "git": {
+    "branch": "analysis/claim-check-arms",
+    "commit": "7d8a666ad4043e6ef0cd10a1bd04ef8637ac4686",
+    "dirty": false
+  },
+  "hostname": "laptop-omarchy",
+  "inputs": {
+    "hypotheses": {
+      "path": "/home/aleksandar/work/populism-axis/results/step6_nli/hypotheses.json",
+      "sha256": "487a7cc29bb1f0893fd66df877f33e34da38fcc4c9124ecb18b3a949bbe5c047"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.6.2"
+  },
+  "python": "3.12.16",
+  "run_hash": "3823b66935e6e7ad3050a5247117c6fe49705b94207741054006d5c19b3d3ed4",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/evaluate_claim_check_arms.py",
+  "timestamp_utc": "2026-11-19T14:31:36Z"
+}

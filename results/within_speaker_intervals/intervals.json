@@ -1,0 +1,1264 @@
+{
+  "method": {
+    "resampling": "texts within strata (src/populism_axis/resampling.py)",
+    "draws": 4000,
+    "seed": 20260923,
+    "interval": "percentile, 2.5 and 97.5",
+    "paired": "both systems evaluated on the same resampled texts",
+    "comparison": "cluster_ci95 resamples whole clusters with the same seed and draws"
+  },
+  "benchmarks": {
+    "english_holdout": {
+      "label": "GPD English evaluation speeches",
+      "metric": "spearman",
+      "n": 84,
+      "stratum": "leader",
+      "n_strata": 27,
+      "n_clusters": 27,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 4000
+      }
+    },
+    "eu_both_vs_neither": {
+      "label": "EU-OOD, both claims vs neither",
+      "metric": "auroc",
+      "n": 1597,
+      "stratum": "speaker",
+      "n_strata": 5,
+      "n_clusters": 5,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 3999
+      }
+    },
+    "agora": {
+      "label": "AgoraSpeech paragraphs (development)",
+      "metric": "spearman",
+      "n": 5272,
+      "stratum": "politician",
+      "n_strata": 6,
+      "n_clusters": 6,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 4000
+      }
+    },
+    "usgov_governors_2010_2018": {
+      "label": "US governor speeches 2010-18",
+      "metric": "spearman",
+      "n": 288,
+      "stratum": "state-term",
+      "n_strata": 73,
+      "n_clusters": 73,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 4000
+      }
+    },
+    "usgov_setfit_subset": {
+      "label": "US governor speeches 2010-18 with SetFit predictions",
+      "metric": "spearman",
+      "n": 274,
+      "stratum": "state-term",
+      "n_strata": 72,
+      "n_clusters": 72,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 4000
+      }
+    },
+    "tweets": {
+      "label": "Party tweets, general elite criticism",
+      "metric": "auroc",
+      "n": 1059,
+      "stratum": "country",
+      "n_strata": 20,
+      "n_clusters": 20,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 4000
+      }
+    },
+    "popbert_elite": {
+      "label": "PopBERT test sentences, anti-elitism",
+      "metric": "auroc",
+      "n": 1759,
+      "stratum": "none (one stratum)",
+      "n_strata": 1,
+      "n_clusters": 1759,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 4000
+      }
+    },
+    "portugal_elite": {
+      "label": "Portuguese parliamentary paragraphs, anti-elitism",
+      "metric": "auroc",
+      "n": 6214,
+      "stratum": "speaker",
+      "n_strata": 144,
+      "n_clusters": 144,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 4000
+      }
+    },
+    "popbert_centr": {
+      "label": "PopBERT test sentences, people-centrism",
+      "metric": "auroc",
+      "n": 1759,
+      "stratum": "none (one stratum)",
+      "n_strata": 1,
+      "n_clusters": 1759,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 4000
+      }
+    },
+    "portugal_centr": {
+      "label": "Portuguese parliamentary paragraphs, people-centrism",
+      "metric": "auroc",
+      "n": 6214,
+      "stratum": "speaker",
+      "n_strata": 144,
+      "n_clusters": 144,
+      "valid_draws": {
+        "within": 4000,
+        "cluster": 4000
+      }
+    }
+  },
+  "entries": {
+    "english_holdout:B6_axis_plus_nli": {
+      "benchmark": "english_holdout",
+      "statistic": "B6_axis_plus_nli",
+      "metric": "spearman",
+      "estimate": 0.518292351477985,
+      "within_ci95": [
+        0.3774464523752825,
+        0.6417523962591577
+      ],
+      "cluster_ci95": [
+        0.2822868206641022,
+        0.7014732411846306
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "configurations/B6_axis_plus_nli/english_holdout/spearman_ci95",
+          "stored_ci95": [
+            0.28261039478696065,
+            0.7003974715938436
+          ],
+          "stored_estimate": 0.518292351477985,
+          "max_gap_cluster_recomputed_vs_stored": 0.0010757695907870346
+        }
+      ]
+    },
+    "english_holdout:B4_axis": {
+      "benchmark": "english_holdout",
+      "statistic": "B4_axis",
+      "metric": "spearman",
+      "estimate": 0.41687023167405063,
+      "within_ci95": [
+        0.26272728491737773,
+        0.5567550002701221
+      ],
+      "cluster_ci95": [
+        0.1576011563497368,
+        0.6208542202867787
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "configurations/B4_axis/english_holdout/spearman_ci95",
+          "stored_ci95": [
+            0.16198169403014584,
+            0.6183117255241646
+          ],
+          "stored_estimate": 0.41687023167405063,
+          "max_gap_cluster_recomputed_vs_stored": 0.004380537680409052
+        }
+      ]
+    },
+    "english_holdout:NLI_only": {
+      "benchmark": "english_holdout",
+      "statistic": "NLI_only",
+      "metric": "spearman",
+      "estimate": 0.5197646620261119,
+      "within_ci95": [
+        0.36448193302688275,
+        0.6600474698412342
+      ],
+      "cluster_ci95": [
+        0.30476888608844094,
+        0.6993326377457673
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "configurations/NLI_only/english_holdout/spearman_ci95",
+          "stored_ci95": [
+            0.30883058743869307,
+            0.6993938318017165
+          ],
+          "stored_estimate": 0.5197646620261119,
+          "max_gap_cluster_recomputed_vs_stored": 0.004061701350252134
+        }
+      ]
+    },
+    "english_holdout:B0_v3_config": {
+      "benchmark": "english_holdout",
+      "statistic": "B0_v3_config",
+      "metric": "spearman",
+      "estimate": 0.37591690308156084,
+      "within_ci95": [
+        0.22644133067961522,
+        0.5106482948526344
+      ],
+      "cluster_ci95": [
+        0.11070621289764078,
+        0.6036730287497512
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "configurations/B0_v3_config/english_holdout/spearman_ci95",
+          "stored_ci95": [
+            0.12125831971367022,
+            0.5981573452333709
+          ],
+          "stored_estimate": 0.37591690308156084,
+          "max_gap_cluster_recomputed_vs_stored": 0.010552106816029444
+        }
+      ]
+    },
+    "english_holdout:RoBERTa": {
+      "benchmark": "english_holdout",
+      "statistic": "RoBERTa",
+      "metric": "spearman",
+      "estimate": 0.43960516574647834,
+      "within_ci95": [
+        0.3097405560898786,
+        0.5559210911958512
+      ],
+      "cluster_ci95": [
+        0.13985047185064597,
+        0.6848157741442673
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "configurations/RoBERTa_comparator/english_holdout/spearman_ci95",
+          "stored_ci95": [
+            0.1419367808182539,
+            0.6778126935858455
+          ],
+          "stored_estimate": 0.43960516574647834,
+          "max_gap_cluster_recomputed_vs_stored": 0.007003080558421804
+        },
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/english_holdout/sigmoid/ci95",
+          "stored_ci95": [
+            0.1419367808182539,
+            0.6778126935858455
+          ],
+          "stored_estimate": 0.43960516574647834,
+          "max_gap_cluster_recomputed_vs_stored": 0.007003080558421804
+        }
+      ]
+    },
+    "english_holdout:B6_axis_plus_nli - B0_v3_config": {
+      "benchmark": "english_holdout",
+      "statistic": "B6_axis_plus_nli - B0_v3_config",
+      "metric": "spearman",
+      "estimate": 0.1423754483964242,
+      "within_ci95": [
+        0.07012529968080634,
+        0.2153987208921314
+      ],
+      "cluster_ci95": [
+        0.003806234889359487,
+        0.33167688210763585
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "paired_english_holdout/B6_axis_plus_nli - B0_v3_config/ci95",
+          "stored_ci95": [
+            0.003806234889359487,
+            0.33167688210763585
+          ],
+          "stored_estimate": 0.1423754483964242,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "english_holdout:B6_axis_plus_nli - B4_axis": {
+      "benchmark": "english_holdout",
+      "statistic": "B6_axis_plus_nli - B4_axis",
+      "metric": "spearman",
+      "estimate": 0.1014221198039344,
+      "within_ci95": [
+        0.04516081783259342,
+        0.16446839399474514
+      ],
+      "cluster_ci95": [
+        0.009257192814126017,
+        0.241330829967126
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "paired_english_holdout/B6_axis_plus_nli - B4_axis/ci95",
+          "stored_ci95": [
+            0.009257192814126017,
+            0.241330829967126
+          ],
+          "stored_estimate": 0.1014221198039344,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "english_holdout:B6_axis_plus_nli - RoBERTa": {
+      "benchmark": "english_holdout",
+      "statistic": "B6_axis_plus_nli - RoBERTa",
+      "metric": "spearman",
+      "estimate": 0.07868718573150668,
+      "within_ci95": [
+        -0.033662759639316066,
+        0.19097582887936113
+      ],
+      "cluster_ci95": [
+        -0.08046131580797018,
+        0.25085881930925397
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "paired_english_holdout/B6_axis_plus_nli - RoBERTa_comparator/ci95",
+          "stored_ci95": [
+            -0.08046131580797018,
+            0.25085881930925397
+          ],
+          "stored_estimate": 0.07868718573150668,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        },
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/english_holdout/sigmoid/paired/B6_axis_plus_nli - RoBERTa/ci95",
+          "stored_ci95": [
+            -0.08046131580797018,
+            0.25085881930925397
+          ],
+          "stored_estimate": 0.07868718573150668,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "english_holdout:B4_axis - RoBERTa": {
+      "benchmark": "english_holdout",
+      "statistic": "B4_axis - RoBERTa",
+      "metric": "spearman",
+      "estimate": -0.022734934072427715,
+      "within_ci95": [
+        -0.14468476601369856,
+        0.0950936305317314
+      ],
+      "cluster_ci95": [
+        -0.17500448406946398,
+        0.1299730472364342
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "paired_english_holdout/B4_axis - RoBERTa_comparator/ci95",
+          "stored_ci95": [
+            -0.17500448406946398,
+            0.1299730472364342
+          ],
+          "stored_estimate": -0.022734934072427715,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "english_holdout:B4_axis - B0_v3_config": {
+      "benchmark": "english_holdout",
+      "statistic": "B4_axis - B0_v3_config",
+      "metric": "spearman",
+      "estimate": 0.04095332859248979,
+      "within_ci95": [
+        -0.01274602479463599,
+        0.09864282233907548
+      ],
+      "cluster_ci95": [
+        -0.04410658716873928,
+        0.1290325375355492
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "paired_english_holdout/B4_axis - B0_v3_config/ci95",
+          "stored_ci95": [
+            -0.04410658716873928,
+            0.1290325375355492
+          ],
+          "stored_estimate": 0.04095332859248979,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "eu_both_vs_neither:B6_axis_plus_nli": {
+      "benchmark": "eu_both_vs_neither",
+      "statistic": "B6_axis_plus_nli",
+      "metric": "auroc",
+      "estimate": 0.941519383677337,
+      "within_ci95": [
+        0.9054051153614231,
+        0.9694281039323992
+      ],
+      "cluster_ci95": [
+        0.9023950131233596,
+        0.950829454588853
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "configurations/B6_axis_plus_nli/eu/auroc_speaker_clustered_ci95",
+          "stored_ci95": [
+            0.9023950131233596,
+            0.950829454588853
+          ],
+          "stored_estimate": 0.9415193836773369,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "eu_both_vs_neither:RoBERTa": {
+      "benchmark": "eu_both_vs_neither",
+      "statistic": "RoBERTa",
+      "metric": "auroc",
+      "estimate": 0.9000535574506654,
+      "within_ci95": [
+        0.8376792746368626,
+        0.9520425007456195
+      ],
+      "cluster_ci95": [
+        0.7293639053254438,
+        0.9784438588786415
+      ],
+      "replaces": [
+        {
+          "file": "results/final/final_results.json",
+          "path": "configurations/RoBERTa_comparator/eu/auroc_speaker_clustered_ci95",
+          "stored_ci95": [
+            0.7293639053254438,
+            0.9784438588786415
+          ],
+          "stored_estimate": 0.9000535574506654,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        },
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/eu_auroc_3v0/sigmoid/ci95",
+          "stored_ci95": [
+            0.7293639053254438,
+            0.9784438588786415
+          ],
+          "stored_estimate": 0.9000535574506654,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "eu_both_vs_neither:B6_axis_plus_nli - RoBERTa": {
+      "benchmark": "eu_both_vs_neither",
+      "statistic": "B6_axis_plus_nli - RoBERTa",
+      "metric": "auroc",
+      "estimate": 0.04146582622667161,
+      "within_ci95": [
+        -0.020019731174224745,
+        0.10830319371534758
+      ],
+      "cluster_ci95": [
+        -0.061594202898550776,
+        0.17921597633136088
+      ],
+      "replaces": []
+    },
+    "agora:combined": {
+      "benchmark": "agora",
+      "statistic": "combined",
+      "metric": "spearman",
+      "estimate": 0.3823007058125725,
+      "within_ci95": [
+        0.35927673420892237,
+        0.40401590922398284
+      ],
+      "cluster_ci95": [
+        0.29526516172819095,
+        0.3965266340496564
+      ],
+      "replaces": []
+    },
+    "agora:RoBERTa": {
+      "benchmark": "agora",
+      "statistic": "RoBERTa",
+      "metric": "spearman",
+      "estimate": 0.3716083026010186,
+      "within_ci95": [
+        0.3470126896385574,
+        0.3955379609622074
+      ],
+      "cluster_ci95": [
+        0.28870186740328785,
+        0.39076327385312426
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/agora/sigmoid/ci95",
+          "stored_ci95": [
+            0.2874073368428233,
+            0.38992870921090517
+          ],
+          "stored_estimate": 0.3716083026010186,
+          "max_gap_cluster_recomputed_vs_stored": 0.001294530560464524
+        }
+      ]
+    },
+    "agora:combined - RoBERTa": {
+      "benchmark": "agora",
+      "statistic": "combined - RoBERTa",
+      "metric": "spearman",
+      "estimate": 0.010692403211553902,
+      "within_ci95": [
+        -0.012476445413010103,
+        0.03346461941714871
+      ],
+      "cluster_ci95": [
+        -0.03585346251828492,
+        0.06730101245697634
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/agora/sigmoid/paired_supplementary_not_previously_reported/combined - RoBERTa/ci95",
+          "stored_ci95": [
+            -0.03585346251828492,
+            0.06730101245697634
+          ],
+          "stored_estimate": 0.010692403211553902,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "usgov_governors_2010_2018:B6_axis_plus_nli": {
+      "benchmark": "usgov_governors_2010_2018",
+      "statistic": "B6_axis_plus_nli",
+      "metric": "spearman",
+      "estimate": 0.5264219260957432,
+      "within_ci95": [
+        0.4418689521242684,
+        0.601747871685303
+      ],
+      "cluster_ci95": [
+        0.4379526787261189,
+        0.6050486474882485
+      ],
+      "replaces": [
+        {
+          "file": "results/external/usgov/final_results.json",
+          "path": "speeches/governors_2010_2018/B6_axis_plus_nli/spearman_ci95",
+          "stored_ci95": [
+            0.4379526787261189,
+            0.6050486474882485
+          ],
+          "stored_estimate": 0.5264219260957432,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "usgov_governors_2010_2018:B4_axis": {
+      "benchmark": "usgov_governors_2010_2018",
+      "statistic": "B4_axis",
+      "metric": "spearman",
+      "estimate": 0.45841981203340865,
+      "within_ci95": [
+        0.3717573938352873,
+        0.5396560991040091
+      ],
+      "cluster_ci95": [
+        0.364915635869512,
+        0.5447713170358347
+      ],
+      "replaces": [
+        {
+          "file": "results/external/usgov/final_results.json",
+          "path": "speeches/governors_2010_2018/B4_axis/spearman_ci95",
+          "stored_ci95": [
+            0.364915635869512,
+            0.5447713170358347
+          ],
+          "stored_estimate": 0.45841981203340865,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "usgov_governors_2010_2018:NLI_only": {
+      "benchmark": "usgov_governors_2010_2018",
+      "statistic": "NLI_only",
+      "metric": "spearman",
+      "estimate": 0.3986073509900971,
+      "within_ci95": [
+        0.3058119637250988,
+        0.49185967825380805
+      ],
+      "cluster_ci95": [
+        0.2815090774092333,
+        0.5051849668917587
+      ],
+      "replaces": [
+        {
+          "file": "results/external/usgov/final_results.json",
+          "path": "speeches/governors_2010_2018/NLI_only/spearman_ci95",
+          "stored_ci95": [
+            0.2815090774092333,
+            0.5051849668917587
+          ],
+          "stored_estimate": 0.3986073509900971,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "usgov_governors_2010_2018:B0_v3_config": {
+      "benchmark": "usgov_governors_2010_2018",
+      "statistic": "B0_v3_config",
+      "metric": "spearman",
+      "estimate": 0.345140541684168,
+      "within_ci95": [
+        0.2520203681395844,
+        0.43604409089547086
+      ],
+      "cluster_ci95": [
+        0.22888651417915845,
+        0.4563273408199508
+      ],
+      "replaces": [
+        {
+          "file": "results/external/usgov/final_results.json",
+          "path": "speeches/governors_2010_2018/B0_v3_config/spearman_ci95",
+          "stored_ci95": [
+            0.22888651417915845,
+            0.4563273408199508
+          ],
+          "stored_estimate": 0.345140541684168,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "usgov_governors_2010_2018:RoBERTa": {
+      "benchmark": "usgov_governors_2010_2018",
+      "statistic": "RoBERTa",
+      "metric": "spearman",
+      "estimate": 0.32599814892475254,
+      "within_ci95": [
+        0.23105513203712702,
+        0.4149646354039194
+      ],
+      "cluster_ci95": [
+        0.1970331115482086,
+        0.44743302565285764
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/usgov_2010_2018/sigmoid/ci95",
+          "stored_ci95": [
+            0.1970331115482086,
+            0.44743302565285764
+          ],
+          "stored_estimate": 0.32599814892475254,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "usgov_governors_2010_2018:B6_axis_plus_nli - RoBERTa": {
+      "benchmark": "usgov_governors_2010_2018",
+      "statistic": "B6_axis_plus_nli - RoBERTa",
+      "metric": "spearman",
+      "estimate": 0.2004237771709907,
+      "within_ci95": [
+        0.10878007017174487,
+        0.2901377528455793
+      ],
+      "cluster_ci95": [
+        0.08573365069048267,
+        0.3178681213022624
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/usgov_2010_2018/sigmoid/paired/B6_axis_plus_nli - RoBERTa/ci95",
+          "stored_ci95": [
+            0.08573365069048267,
+            0.3178681213022624
+          ],
+          "stored_estimate": 0.2004237771709907,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "usgov_setfit_subset:SetFit_share_published": {
+      "benchmark": "usgov_setfit_subset",
+      "statistic": "SetFit_share_published",
+      "metric": "spearman",
+      "estimate": 0.5139504348147595,
+      "within_ci95": [
+        0.4295579919725937,
+        0.5932818047384768
+      ],
+      "cluster_ci95": [
+        0.4034623207582372,
+        0.613738156831467
+      ],
+      "replaces": [
+        {
+          "file": "results/external/usgov/final_results.json",
+          "path": "speeches/governors_2010_2018/SetFit_share_published/spearman_ci95",
+          "stored_ci95": [
+            0.4034623207582372,
+            0.613738156831467
+          ],
+          "stored_estimate": 0.5139504348147595,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "usgov_setfit_subset:B6_axis_plus_nli - SetFit_share_published": {
+      "benchmark": "usgov_setfit_subset",
+      "statistic": "B6_axis_plus_nli - SetFit_share_published",
+      "metric": "spearman",
+      "estimate": 0.005878035023503481,
+      "within_ci95": [
+        -0.0691024323303869,
+        0.07944585369220954
+      ],
+      "cluster_ci95": [
+        -0.07833708984238207,
+        0.09310927627232313
+      ],
+      "replaces": [
+        {
+          "file": "results/external/usgov/final_results.json",
+          "path": "paired_spearman/governors_2010_2018/B6_axis_plus_nli - SetFit_share_published/ci95",
+          "stored_ci95": [
+            -0.07833708984238207,
+            0.09310927627232313
+          ],
+          "stored_estimate": 0.005878035023503481,
+          "max_gap_cluster_recomputed_vs_stored": 0.0
+        }
+      ]
+    },
+    "tweets:E_axis_plus_nli": {
+      "benchmark": "tweets",
+      "statistic": "E_axis_plus_nli",
+      "metric": "auroc",
+      "estimate": 0.7556580010455777,
+      "within_ci95": [
+        0.723946547266506,
+        0.7857057695042439
+      ],
+      "cluster_ci95": [
+        0.7138281696723991,
+        0.8010705260521478
+      ],
+      "replaces": [
+        {
+          "file": "results/external/antielite_tweets/final_results.json",
+          "path": "test/y_general/E_axis_plus_nli/auroc_ci95_country",
+          "stored_ci95": [
+            0.7142581632192331,
+            0.8008072253740812
+          ],
+          "stored_estimate": 0.7556580010455777,
+          "max_gap_cluster_recomputed_vs_stored": 0.0004299935468339289
+        }
+      ]
+    },
+    "tweets:RoBERTa_anti_elitism": {
+      "benchmark": "tweets",
+      "statistic": "RoBERTa_anti_elitism",
+      "metric": "auroc",
+      "estimate": 0.5710351219048524,
+      "within_ci95": [
+        0.5291655117412128,
+        0.6132598204805079
+      ],
+      "cluster_ci95": [
+        0.5320822945672656,
+        0.6049809907807235
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/tweets/sigmoid/ci95",
+          "stored_ci95": [
+            0.5304905425381283,
+            0.6038117931559175
+          ],
+          "stored_estimate": 0.5710351219048524,
+          "max_gap_cluster_recomputed_vs_stored": 0.0015917520291373055
+        }
+      ]
+    },
+    "tweets:E_axis_plus_nli - XLMT_released_classifier": {
+      "benchmark": "tweets",
+      "statistic": "E_axis_plus_nli - XLMT_released_classifier",
+      "metric": "auroc",
+      "estimate": -0.0520507580438192,
+      "within_ci95": [
+        -0.09069241110690893,
+        -0.014515020622191602
+      ],
+      "cluster_ci95": [
+        -0.1010269897977531,
+        -0.0006573319709321951
+      ],
+      "replaces": [
+        {
+          "file": "results/external/antielite_tweets/final_results.json",
+          "path": "paired_auroc_test/E_axis_plus_nli - XLMT_released_classifier/ci95",
+          "stored_ci95": [
+            -0.1020382891636853,
+            0.0017120408904742579
+          ],
+          "stored_estimate": -0.05205075804381909,
+          "max_gap_cluster_recomputed_vs_stored": 0.002369372861406453
+        }
+      ]
+    },
+    "tweets:E_axis_plus_nli - RoBERTa_anti_elitism": {
+      "benchmark": "tweets",
+      "statistic": "E_axis_plus_nli - RoBERTa_anti_elitism",
+      "metric": "auroc",
+      "estimate": 0.18462287914072528,
+      "within_ci95": [
+        0.1364053840176331,
+        0.2320584182981796
+      ],
+      "cluster_ci95": [
+        0.12355042043880603,
+        0.2568556440641639
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/tweets/sigmoid/paired/E_axis_plus_nli - RoBERTa_anti_elitism/ci95",
+          "stored_ci95": [
+            0.12180579370952938,
+            0.25691957872341276
+          ],
+          "stored_estimate": 0.18462287914072528,
+          "max_gap_cluster_recomputed_vs_stored": 0.001744626729276652
+        }
+      ]
+    },
+    "popbert_elite:E_axis_plus_nli": {
+      "benchmark": "popbert_elite",
+      "statistic": "E_axis_plus_nli",
+      "metric": "auroc",
+      "estimate": 0.8061682996614188,
+      "within_ci95": [
+        0.7802251835678644,
+        0.8323901687192834
+      ],
+      "cluster_ci95": [
+        0.7806945595329373,
+        0.8320489812449535
+      ],
+      "replaces": [
+        {
+          "file": "results/external/popbert_en/final_results.json",
+          "path": "test/elite/majority/E_axis_plus_nli/auroc_ci95",
+          "stored_ci95": [
+            0.7808076710230137,
+            0.8316510532318351
+          ],
+          "stored_estimate": 0.8061682996614187,
+          "max_gap_cluster_recomputed_vs_stored": 0.0003979280131184426
+        }
+      ]
+    },
+    "popbert_elite:E_roberta": {
+      "benchmark": "popbert_elite",
+      "statistic": "E_roberta",
+      "metric": "auroc",
+      "estimate": 0.6688497952482039,
+      "within_ci95": [
+        0.6314227728593623,
+        0.7063463305497535
+      ],
+      "cluster_ci95": [
+        0.6309998681599038,
+        0.7047734600764225
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/popbert_elite/sigmoid/ci95",
+          "stored_ci95": [
+            0.6315826549339245,
+            0.7039750187108519
+          ],
+          "stored_estimate": 0.6688497952482039,
+          "max_gap_cluster_recomputed_vs_stored": 0.0007984413655706124
+        }
+      ]
+    },
+    "popbert_elite:E_axis_plus_nli - E_roberta": {
+      "benchmark": "popbert_elite",
+      "statistic": "E_axis_plus_nli - E_roberta",
+      "metric": "auroc",
+      "estimate": 0.13731850441321491,
+      "within_ci95": [
+        0.09345515072499282,
+        0.18054360276663628
+      ],
+      "cluster_ci95": [
+        0.09491600763956738,
+        0.18013821007508168
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/popbert_elite/sigmoid/paired/E_axis_plus_nli - E_roberta/ci95",
+          "stored_ci95": [
+            0.09548976622312227,
+            0.1808974608290066
+          ],
+          "stored_estimate": 0.1373185044132148,
+          "max_gap_cluster_recomputed_vs_stored": 0.0007592507539249116
+        }
+      ]
+    },
+    "portugal_elite:E_axis_plus_nli": {
+      "benchmark": "portugal_elite",
+      "statistic": "E_axis_plus_nli",
+      "metric": "auroc",
+      "estimate": 0.7983821716560545,
+      "within_ci95": [
+        0.7571931594781365,
+        0.8386959955327418
+      ],
+      "cluster_ci95": [
+        0.7439328494248771,
+        0.8687505297897945
+      ],
+      "replaces": [
+        {
+          "file": "results/external/portugal/final_results.json",
+          "path": "primary/elite/E_axis_plus_nli/auroc_ci95",
+          "stored_ci95": [
+            0.7448627735665786,
+            0.8666690577761531
+          ],
+          "stored_estimate": 0.7983821716560546,
+          "max_gap_cluster_recomputed_vs_stored": 0.0020814720136413944
+        }
+      ]
+    },
+    "portugal_elite:E_roberta": {
+      "benchmark": "portugal_elite",
+      "statistic": "E_roberta",
+      "metric": "auroc",
+      "estimate": 0.8672480236595379,
+      "within_ci95": [
+        0.8282734585012489,
+        0.9017063203187864
+      ],
+      "cluster_ci95": [
+        0.8168855350953105,
+        0.9169302994837076
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/portugal_elite/sigmoid/ci95",
+          "stored_ci95": [
+            0.8178475213796276,
+            0.9182457982015063
+          ],
+          "stored_estimate": 0.8672480236595379,
+          "max_gap_cluster_recomputed_vs_stored": 0.0013154987177986799
+        }
+      ]
+    },
+    "portugal_elite:E_axis_plus_nli - supervised_lr_elite": {
+      "benchmark": "portugal_elite",
+      "statistic": "E_axis_plus_nli - supervised_lr_elite",
+      "metric": "auroc",
+      "estimate": -0.024188258445391964,
+      "within_ci95": [
+        -0.07602053499458415,
+        0.025567704924881748
+      ],
+      "cluster_ci95": [
+        -0.06266037281768146,
+        0.024630583367575662
+      ],
+      "replaces": [
+        {
+          "file": "results/external/portugal/final_results.json",
+          "path": "paired_auroc/elite/E_axis_plus_nli - supervised_lr_elite/ci95",
+          "stored_ci95": [
+            -0.06305004184090024,
+            0.022930559898208188
+          ],
+          "stored_estimate": -0.02418825844539174,
+          "max_gap_cluster_recomputed_vs_stored": 0.0017000234693674739
+        }
+      ]
+    },
+    "portugal_elite:E_axis_plus_nli - E_roberta": {
+      "benchmark": "portugal_elite",
+      "statistic": "E_axis_plus_nli - E_roberta",
+      "metric": "auroc",
+      "estimate": -0.06886585200348339,
+      "within_ci95": [
+        -0.11755185421328457,
+        -0.01956989990563807
+      ],
+      "cluster_ci95": [
+        -0.11584313828750678,
+        -0.015115650120722855
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/portugal_elite/sigmoid/paired/E_axis_plus_nli - E_roberta/ci95",
+          "stored_ci95": [
+            -0.11628727170848546,
+            -0.016317216742143408
+          ],
+          "stored_estimate": -0.06886585200348327,
+          "max_gap_cluster_recomputed_vs_stored": 0.0012015666214205533
+        }
+      ]
+    },
+    "popbert_centr:P_axis_plus_nli": {
+      "benchmark": "popbert_centr",
+      "statistic": "P_axis_plus_nli",
+      "metric": "auroc",
+      "estimate": 0.7711987443594271,
+      "within_ci95": [
+        0.7093315896001786,
+        0.8295490822861098
+      ],
+      "cluster_ci95": [
+        0.7089145051921835,
+        0.831627347995258
+      ],
+      "replaces": [
+        {
+          "file": "results/external/popbert_en/final_results.json",
+          "path": "test/centr/majority/P_axis_plus_nli/auroc_ci95",
+          "stored_ci95": [
+            0.7059266028394217,
+            0.8311318660880168
+          ],
+          "stored_estimate": 0.7711987443594271,
+          "max_gap_cluster_recomputed_vs_stored": 0.0029879023527618065
+        }
+      ]
+    },
+    "popbert_centr:P_roberta": {
+      "benchmark": "popbert_centr",
+      "statistic": "P_roberta",
+      "metric": "auroc",
+      "estimate": 0.6898518736511674,
+      "within_ci95": [
+        0.618224344600067,
+        0.7597537693026084
+      ],
+      "cluster_ci95": [
+        0.6206431657322878,
+        0.7585593369643205
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/popbert_centr/sigmoid/ci95",
+          "stored_ci95": [
+            0.6173502217278359,
+            0.7572837742387837
+          ],
+          "stored_estimate": 0.6898518736511674,
+          "max_gap_cluster_recomputed_vs_stored": 0.003292944004451903
+        }
+      ]
+    },
+    "popbert_centr:P_axis_plus_nli - P_roberta": {
+      "benchmark": "popbert_centr",
+      "statistic": "P_axis_plus_nli - P_roberta",
+      "metric": "auroc",
+      "estimate": 0.08134687070825974,
+      "within_ci95": [
+        0.0079903902758868,
+        0.15371941528270971
+      ],
+      "cluster_ci95": [
+        0.007685971951128385,
+        0.15567723846654083
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/popbert_centr/sigmoid/paired/P_axis_plus_nli - P_roberta/ci95",
+          "stored_ci95": [
+            0.005039478053903726,
+            0.1512601836345737
+          ],
+          "stored_estimate": 0.08134687070825974,
+          "max_gap_cluster_recomputed_vs_stored": 0.004417054831967138
+        }
+      ]
+    },
+    "portugal_centr:P_axis_plus_nli": {
+      "benchmark": "portugal_centr",
+      "statistic": "P_axis_plus_nli",
+      "metric": "auroc",
+      "estimate": 0.6953421148141842,
+      "within_ci95": [
+        0.6657527840873093,
+        0.7250552414614698
+      ],
+      "cluster_ci95": [
+        0.6420119796275201,
+        0.7364975296115268
+      ],
+      "replaces": [
+        {
+          "file": "results/external/portugal/final_results.json",
+          "path": "primary/centr/P_axis_plus_nli/auroc_ci95",
+          "stored_ci95": [
+            0.6411207070764682,
+            0.7347379201827247
+          ],
+          "stored_estimate": 0.6953421148141842,
+          "max_gap_cluster_recomputed_vs_stored": 0.0017596094288021558
+        }
+      ]
+    },
+    "portugal_centr:P_roberta": {
+      "benchmark": "portugal_centr",
+      "statistic": "P_roberta",
+      "metric": "auroc",
+      "estimate": 0.5824652855568201,
+      "within_ci95": [
+        0.5456372796947636,
+        0.618309686421595
+      ],
+      "cluster_ci95": [
+        0.524617042756582,
+        0.6357276084054476
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/portugal_centr/sigmoid/ci95",
+          "stored_ci95": [
+            0.5232564933848265,
+            0.6349214312751797
+          ],
+          "stored_estimate": 0.5824652855568201,
+          "max_gap_cluster_recomputed_vs_stored": 0.0013605493717555595
+        }
+      ]
+    },
+    "portugal_centr:P_axis_plus_nli - supervised_lr_centr": {
+      "benchmark": "portugal_centr",
+      "statistic": "P_axis_plus_nli - supervised_lr_centr",
+      "metric": "auroc",
+      "estimate": -0.10265236716880699,
+      "within_ci95": [
+        -0.14009335093686942,
+        -0.06558529215621198
+      ],
+      "cluster_ci95": [
+        -0.1727231397215865,
+        -0.048167119395539346
+      ],
+      "replaces": [
+        {
+          "file": "results/external/portugal/final_results.json",
+          "path": "paired_auroc/centr/P_axis_plus_nli - supervised_lr_centr/ci95",
+          "stored_ci95": [
+            -0.1738978927387227,
+            -0.05087344674553754
+          ],
+          "stored_estimate": -0.10265236716880699,
+          "max_gap_cluster_recomputed_vs_stored": 0.0027063273499981916
+        }
+      ]
+    },
+    "portugal_centr:P_axis_plus_nli - P_roberta": {
+      "benchmark": "portugal_centr",
+      "statistic": "P_axis_plus_nli - P_roberta",
+      "metric": "auroc",
+      "estimate": 0.11287682925736409,
+      "within_ci95": [
+        0.07600037686810451,
+        0.1499695842447941
+      ],
+      "cluster_ci95": [
+        0.06159878584284301,
+        0.1434323371023953
+      ],
+      "replaces": [
+        {
+          "file": "results/roberta-correction/rc-20261002T1415Z-sigmoid/comparison.json",
+          "path": "rows/portugal_centr/sigmoid/paired/P_axis_plus_nli - P_roberta/ci95",
+          "stored_ci95": [
+            0.06352010212838123,
+            0.1430327307816248
+          ],
+          "stored_estimate": 0.11287682925736409,
+          "max_gap_cluster_recomputed_vs_stored": 0.0019213162855382243
+        }
+      ]
+    },
+    "popbert_elite:E_nli - E_axis_plus_nli": {
+      "benchmark": "popbert_elite",
+      "statistic": "E_nli - E_axis_plus_nli",
+      "metric": "auroc",
+      "estimate": 0.014246401663274288,
+      "within_ci95": [
+        -0.013897157038545535,
+        0.04146919418888979
+      ],
+      "cluster_ci95": [
+        -0.013407353861890636,
+        0.04208058255603376
+      ],
+      "replaces": [
+        {
+          "file": "results/external/popbert_en/final_results.json",
+          "path": "paired_auroc_test/elite: E_nli - E_axis_plus_nli/ci95",
+          "stored_ci95": [
+            -0.015040490890857234,
+            0.04009012435094874
+          ],
+          "stored_estimate": 0.01424640166327451,
+          "max_gap_cluster_recomputed_vs_stored": 0.001990458205085019
+        }
+      ]
+    }
+  },
+  "reproduction": {
+    "max_gap_cluster_recomputed_vs_stored": 0.010552106816029444,
+    "n_replaced": 44
+  }
+}

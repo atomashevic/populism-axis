@@ -1,0 +1,67 @@
+# job anchor_pilot_nli started 2026-11-20T07:54:13Z on pvgpu2
+# commit 457b2494dcf1ce95fbe9d54f4b6770f1d06fa14f dirty=no
+# gpu before: 1 MiB used, load 0.00
+# command: python scripts/nli_stage.py --in-dir results/anchor_revision_pilot/nli_in --out-dir results/anchor_revision_pilot/nli_out --names dev_dedup
+
+  dev_dedup: 64/354298 pairs
+  dev_dedup: 12864/354298 pairs
+  dev_dedup: 25664/354298 pairs
+  dev_dedup: 38464/354298 pairs
+  dev_dedup: 51264/354298 pairs
+  dev_dedup: 64064/354298 pairs
+  dev_dedup: 76864/354298 pairs
+  dev_dedup: 89664/354298 pairs
+  dev_dedup: 102464/354298 pairs
+  dev_dedup: 115264/354298 pairs
+  dev_dedup: 128064/354298 pairs
+  dev_dedup: 140864/354298 pairs
+  dev_dedup: 153664/354298 pairs
+  dev_dedup: 166464/354298 pairs
+  dev_dedup: 179264/354298 pairs
+  dev_dedup: 192064/354298 pairs
+  dev_dedup: 204864/354298 pairs
+  dev_dedup: 217664/354298 pairs
+  dev_dedup: 230464/354298 pairs
+  dev_dedup: 243264/354298 pairs
+  dev_dedup: 256064/354298 pairs
+  dev_dedup: 268864/354298 pairs
+  dev_dedup: 281664/354298 pairs
+  dev_dedup: 294464/354298 pairs
+  dev_dedup: 307264/354298 pairs
+  dev_dedup: 320064/354298 pairs
+  dev_dedup: 332864/354298 pairs
+  dev_dedup: 345664/354298 pairs
+dev_dedup {'pairs': 354298, 'sequences': 354298, 'forward_calls': 5536, 'seconds': 491.8, 'output': 'nli_dev_dedup__bart-large-mnli.npz', 'stored_entailment': {'n': 354298, 'exact_zero': 0, 'exact_one': 0, 'distinct': 12865, 'on_4_decimal_grid': 0.0018346137996827529}}
+{
+  "dev_dedup": {
+    "pairs": 354298,
+    "sequences": 354298,
+    "forward_calls": 5536,
+    "seconds": 491.8,
+    "output": "nli_dev_dedup__bart-large-mnli.npz",
+    "stored_entailment": {
+      "n": 354298,
+      "exact_zero": 0,
+      "exact_one": 0,
+      "distinct": 12865,
+      "on_4_decimal_grid": 0.0018346137996827529
+    }
+  },
+  "peak_vram_mb": 3192.4,
+  "model": "facebook/bart-large-mnli",
+  "model_revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+  "resolved_model_revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+  "id2label": {
+    "0": "contradiction",
+    "1": "neutral",
+    "2": "entailment"
+  },
+  "stored_labels": [
+    "contradiction",
+    "neutral",
+    "entailment"
+  ],
+  "probs_dtype": "float16",
+  "batch_size": 64,
+  "gpu": "NVIDIA A30"
+}

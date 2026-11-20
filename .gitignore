@@ -54,7 +54,18 @@ results/**/scores_agora.csv
 !results/final/scores_agora.csv
 results/popbert/**/*.npz
 
+# Window text of the claim-check arm comparison (scripts/evaluate_claim_check_arms.py)
+results/claim_check_arms/disagreement/
+results/anchor_revision_pilot/disagreement/
+
 # Score tables written by scripts/score_texts.py for local inputs
 scored/
 # Window text written by scripts/score_texts.py, wherever its output is copied
 results/**/evidence.json
+# Rebuildable inputs and local source snapshots for the APSI comparison.
+results/apsi_comparison/cache/
+
+# Large reconstructable numeric score exports; retain compact comparison evidence.
+results/apsi_comparison/scores.csv
+results/apsi_comparison/large/scores.csv
+results/apsi_comparison/base/scores.csv

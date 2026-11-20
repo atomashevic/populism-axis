@@ -1,0 +1,1148 @@
+{
+  "endpoints": {
+    "Dev": {
+      "dataset": "english_dev",
+      "task": "holistic",
+      "metric": "spearman",
+      "n": 174,
+      "n_clusters": 57,
+      "systems": {
+        "axis": 0.5165550867152585,
+        "bart_combined": 0.5367457391310595,
+        "bart_nli": 0.46779830701478586,
+        "political_nli": 0.5030373721709424,
+        "political_combined": 0.5123129978676052
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 174,
+          "n_clusters": 57,
+          "left": 0.5367457391310595,
+          "right": 0.5165550867152585,
+          "delta": 0.02019065241580098,
+          "left_ci95": [
+            0.4388911336958421,
+            0.6205649547274384
+          ],
+          "right_ci95": [
+            0.4181046441035439,
+            0.6016372474870293
+          ],
+          "delta_ci95": [
+            -0.02305755474858939,
+            0.06407813550347027
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 174,
+          "n_clusters": 57,
+          "left": 0.5367457391310595,
+          "right": 0.46779830701478586,
+          "delta": 0.06894743211627363,
+          "left_ci95": [
+            0.4388911336958421,
+            0.6205649547274384
+          ],
+          "right_ci95": [
+            0.36674888023603514,
+            0.560301457656727
+          ],
+          "delta_ci95": [
+            0.007916653303601244,
+            0.13349404794576603
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 174,
+          "n_clusters": 57,
+          "left": 0.5123129978676052,
+          "right": 0.5030373721709424,
+          "delta": 0.009275625696662848,
+          "left_ci95": [
+            0.41205021411034254,
+            0.6005892534487373
+          ],
+          "right_ci95": [
+            0.40741521067793546,
+            0.5897307879498672
+          ],
+          "delta_ci95": [
+            -0.04935160616599655,
+            0.06805880784711452
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 174,
+          "n_clusters": 57,
+          "left": 0.5030373721709424,
+          "right": 0.46779830701478586,
+          "delta": 0.03523906515615649,
+          "left_ci95": [
+            0.40741521067793546,
+            0.5897307879498672
+          ],
+          "right_ci95": [
+            0.36674888023603514,
+            0.560301457656727
+          ],
+          "delta_ci95": [
+            -0.054236651648236225,
+            0.12262874492279181
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "Holdout": {
+      "dataset": "english_holdout",
+      "task": "holistic",
+      "metric": "spearman",
+      "n": 84,
+      "n_clusters": 27,
+      "systems": {
+        "axis": 0.41687023167405063,
+        "bart_combined": 0.518292351477985,
+        "bart_nli": 0.5197646620261119,
+        "political_nli": 0.5144472397362498,
+        "political_combined": 0.4436428454460755
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 84,
+          "n_clusters": 27,
+          "left": 0.518292351477985,
+          "right": 0.41687023167405063,
+          "delta": 0.1014221198039344,
+          "left_ci95": [
+            0.37744645237528246,
+            0.6417523962591576
+          ],
+          "right_ci95": [
+            0.26272728491737773,
+            0.5567550002701221
+          ],
+          "delta_ci95": [
+            0.04516081783259341,
+            0.16446839399474514
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 84,
+          "n_clusters": 27,
+          "left": 0.518292351477985,
+          "right": 0.5197646620261119,
+          "delta": -0.0014723105481269094,
+          "left_ci95": [
+            0.37744645237528246,
+            0.6417523962591576
+          ],
+          "right_ci95": [
+            0.36448193302688275,
+            0.6600474698412342
+          ],
+          "delta_ci95": [
+            -0.10112243600249217,
+            0.09877902975897519
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 84,
+          "n_clusters": 27,
+          "left": 0.4436428454460755,
+          "right": 0.5144472397362498,
+          "delta": -0.07080439429017432,
+          "left_ci95": [
+            0.27989652954063665,
+            0.5884461567995738
+          ],
+          "right_ci95": [
+            0.3463997506818225,
+            0.6579809626701771
+          ],
+          "delta_ci95": [
+            -0.17654014500356272,
+            0.03258694236526778
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 84,
+          "n_clusters": 27,
+          "left": 0.5144472397362498,
+          "right": 0.5197646620261119,
+          "delta": -0.005317422289862095,
+          "left_ci95": [
+            0.3463997506818225,
+            0.6579809626701771
+          ],
+          "right_ci95": [
+            0.36448193302688275,
+            0.6600474698412342
+          ],
+          "delta_ci95": [
+            -0.16194587347001516,
+            0.13843586400849847
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "Agora": {
+      "dataset": "agora",
+      "task": "holistic",
+      "metric": "spearman",
+      "n": 5272,
+      "n_clusters": 6,
+      "systems": {
+        "axis": 0.35883326431977147,
+        "bart_combined": 0.3823007058125725,
+        "bart_nli": 0.34203768868195533,
+        "political_nli": 0.36074929385617804,
+        "political_combined": 0.38640148416840886
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 5272,
+          "n_clusters": 6,
+          "left": 0.3823007058125725,
+          "right": 0.35883326431977147,
+          "delta": 0.023467441492801056,
+          "left_ci95": [
+            0.3592767342089224,
+            0.40401590922398284
+          ],
+          "right_ci95": [
+            0.33598375651036416,
+            0.38126132823215514
+          ],
+          "delta_ci95": [
+            0.010400935937745078,
+            0.03621068261777913
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 5272,
+          "n_clusters": 6,
+          "left": 0.3823007058125725,
+          "right": 0.34203768868195533,
+          "delta": 0.040263017130617196,
+          "left_ci95": [
+            0.3592767342089224,
+            0.40401590922398284
+          ],
+          "right_ci95": [
+            0.31839448578920354,
+            0.3644204147178647
+          ],
+          "delta_ci95": [
+            0.026242591719627013,
+            0.054471180487532786
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 5272,
+          "n_clusters": 6,
+          "left": 0.38640148416840886,
+          "right": 0.36074929385617804,
+          "delta": 0.025652190312230816,
+          "left_ci95": [
+            0.364140948891971,
+            0.4080307213234223
+          ],
+          "right_ci95": [
+            0.33763674767082014,
+            0.38275802905690876
+          ],
+          "delta_ci95": [
+            0.013407923518342208,
+            0.03822310330824156
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 5272,
+          "n_clusters": 6,
+          "left": 0.36074929385617804,
+          "right": 0.34203768868195533,
+          "delta": 0.018711605174222712,
+          "left_ci95": [
+            0.33763674767082014,
+            0.38275802905690876
+          ],
+          "right_ci95": [
+            0.31839448578920354,
+            0.3644204147178647
+          ],
+          "delta_ci95": [
+            -0.002417184056315842,
+            0.041328728288490275
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "EuAuc": {
+      "dataset": "eu",
+      "task": "both_vs_neither",
+      "metric": "auroc",
+      "n": 1597,
+      "n_clusters": 5,
+      "systems": {
+        "axis": 0.890269023194496,
+        "bart_combined": 0.9415193836773369,
+        "bart_nli": 0.9451860091459647,
+        "political_nli": 0.8566308243727598,
+        "political_combined": 0.9003007456845054
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 1597,
+          "n_clusters": 5,
+          "left": 0.9415193836773369,
+          "right": 0.890269023194496,
+          "delta": 0.05125036048284093,
+          "left_ci95": [
+            0.9054051153614231,
+            0.9694281039323992
+          ],
+          "right_ci95": [
+            0.8364595013474836,
+            0.9355429537303489
+          ],
+          "delta_ci95": [
+            0.01549279672122448,
+            0.09417046542584197
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 1597,
+          "n_clusters": 5,
+          "left": 0.9415193836773369,
+          "right": 0.9451860091459647,
+          "delta": -0.0036666254686278377,
+          "left_ci95": [
+            0.9054051153614231,
+            0.9694281039323992
+          ],
+          "right_ci95": [
+            0.905800673837489,
+            0.9749987073223699
+          ],
+          "delta_ci95": [
+            -0.017844762365196366,
+            0.01090292902097795
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 1597,
+          "n_clusters": 5,
+          "left": 0.9003007456845054,
+          "right": 0.8566308243727598,
+          "delta": 0.04366992131174552,
+          "left_ci95": [
+            0.8472484682260809,
+            0.9471033837864706
+          ],
+          "right_ci95": [
+            0.7826963349275853,
+            0.9205776100858389
+          ],
+          "delta_ci95": [
+            -0.0001929555254215937,
+            0.092482285522669
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 1597,
+          "n_clusters": 5,
+          "left": 0.8566308243727598,
+          "right": 0.9451860091459647,
+          "delta": -0.0885551847732049,
+          "left_ci95": [
+            0.7826963349275853,
+            0.9205776100858389
+          ],
+          "right_ci95": [
+            0.905800673837489,
+            0.9749987073223699
+          ],
+          "delta_ci95": [
+            -0.1667902384192931,
+            -0.015618628452306741
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "EuFOne": {
+      "dataset": "eu",
+      "task": "original_protocol_loso",
+      "metric": "macro_f1",
+      "n": 1762,
+      "n_clusters": 5,
+      "systems": {
+        "axis": 0.5325613374922594,
+        "bart_combined": 0.5453892555922258,
+        "bart_nli": 0.5115010557630097,
+        "political_nli": 0.549250486193639,
+        "political_combined": 0.5338541571980132
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 1762,
+          "n_clusters": 5,
+          "left": 0.5453892555922258,
+          "right": 0.5325613374922594,
+          "delta": 0.012827918099966418,
+          "left_ci95": [
+            0.5099882904317286,
+            0.5812301802402814
+          ],
+          "right_ci95": [
+            0.49499795671894364,
+            0.570380996113591
+          ],
+          "delta_ci95": [
+            -0.013920862781461651,
+            0.04079702253587449
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 1762,
+          "n_clusters": 5,
+          "left": 0.5453892555922258,
+          "right": 0.5115010557630097,
+          "delta": 0.03388819982921609,
+          "left_ci95": [
+            0.5099882904317286,
+            0.5812301802402814
+          ],
+          "right_ci95": [
+            0.476786822285493,
+            0.5453608510694683
+          ],
+          "delta_ci95": [
+            0.0035919525723465983,
+            0.06444830472809683
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 1762,
+          "n_clusters": 5,
+          "left": 0.5338541571980132,
+          "right": 0.549250486193639,
+          "delta": -0.015396328995625819,
+          "left_ci95": [
+            0.49512260714644735,
+            0.5730550821704363
+          ],
+          "right_ci95": [
+            0.5087448537809685,
+            0.589008603601562
+          ],
+          "delta_ci95": [
+            -0.05050624783859857,
+            0.021140151583740507
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 1762,
+          "n_clusters": 5,
+          "left": 0.549250486193639,
+          "right": 0.5115010557630097,
+          "delta": 0.03774943043062928,
+          "left_ci95": [
+            0.5087448537809685,
+            0.589008603601562
+          ],
+          "right_ci95": [
+            0.476786822285493,
+            0.5453608510694683
+          ],
+          "delta_ci95": [
+            -0.004213036125677641,
+            0.07979994759227872
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "Gov": {
+      "dataset": "usgov_speeches",
+      "task": "governors_2010_2018",
+      "metric": "spearman",
+      "n": 288,
+      "n_clusters": 73,
+      "systems": {
+        "axis": 0.4584198120334087,
+        "bart_combined": 0.5264219260957432,
+        "bart_nli": 0.3986073509900971,
+        "political_nli": 0.513885601792532,
+        "political_combined": 0.5531033740417862
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 288,
+          "n_clusters": 73,
+          "left": 0.5264219260957432,
+          "right": 0.4584198120334087,
+          "delta": 0.06800211406233453,
+          "left_ci95": [
+            0.4418689521242684,
+            0.601747871685303
+          ],
+          "right_ci95": [
+            0.3717573938352872,
+            0.5396560991040092
+          ],
+          "delta_ci95": [
+            0.03896202257179007,
+            0.09893475032743829
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 288,
+          "n_clusters": 73,
+          "left": 0.5264219260957432,
+          "right": 0.3986073509900971,
+          "delta": 0.12781457510564614,
+          "left_ci95": [
+            0.4418689521242684,
+            0.601747871685303
+          ],
+          "right_ci95": [
+            0.30581196372509883,
+            0.49185967825380805
+          ],
+          "delta_ci95": [
+            0.04635095459065285,
+            0.20691028524872504
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 288,
+          "n_clusters": 73,
+          "left": 0.5531033740417862,
+          "right": 0.513885601792532,
+          "delta": 0.03921777224925427,
+          "left_ci95": [
+            0.47469080342758707,
+            0.6223601136770773
+          ],
+          "right_ci95": [
+            0.42969228644148594,
+            0.5846927174587557
+          ],
+          "delta_ci95": [
+            -0.009040914720709552,
+            0.0904265876170741
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 288,
+          "n_clusters": 73,
+          "left": 0.513885601792532,
+          "right": 0.3986073509900971,
+          "delta": 0.11527825080243487,
+          "left_ci95": [
+            0.42969228644148594,
+            0.5846927174587557
+          ],
+          "right_ci95": [
+            0.30581196372509883,
+            0.49185967825380805
+          ],
+          "delta_ci95": [
+            0.02126809184509804,
+            0.20436762196624883
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "PopAE": {
+      "dataset": "popbert_en",
+      "task": "anti_elitism",
+      "metric": "auroc",
+      "n": 1759,
+      "n_clusters": 1,
+      "systems": {
+        "axis": 0.7814256359935683,
+        "bart_combined": 0.8061682996614187,
+        "bart_nli": 0.8204147013246932,
+        "political_nli": 0.8347048222326932,
+        "political_combined": 0.8394775064485887
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 1759,
+          "n_clusters": 1,
+          "left": 0.8061682996614187,
+          "right": 0.7814256359935683,
+          "delta": 0.024742663667850384,
+          "left_ci95": [
+            0.7802251835678644,
+            0.8323901687192834
+          ],
+          "right_ci95": [
+            0.7548737590673956,
+            0.8086994758138049
+          ],
+          "delta_ci95": [
+            0.016884921584075778,
+            0.03368511301781463
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 1759,
+          "n_clusters": 1,
+          "left": 0.8061682996614187,
+          "right": 0.8204147013246932,
+          "delta": -0.01424640166327451,
+          "left_ci95": [
+            0.7802251835678644,
+            0.8323901687192834
+          ],
+          "right_ci95": [
+            0.7950237572398743,
+            0.8438584414223949
+          ],
+          "delta_ci95": [
+            -0.04146919418888979,
+            0.01389715703854554
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 1759,
+          "n_clusters": 1,
+          "left": 0.8394775064485887,
+          "right": 0.8347048222326932,
+          "delta": 0.004772684215895495,
+          "left_ci95": [
+            0.8145957621866226,
+            0.8636075899998505
+          ],
+          "right_ci95": [
+            0.8087982582065038,
+            0.8591125797393024
+          ],
+          "delta_ci95": [
+            -0.015955850139816933,
+            0.02537826059277298
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 1759,
+          "n_clusters": 1,
+          "left": 0.8347048222326932,
+          "right": 0.8204147013246932,
+          "delta": 0.01429012090799997,
+          "left_ci95": [
+            0.8087982582065038,
+            0.8591125797393024
+          ],
+          "right_ci95": [
+            0.7950237572398743,
+            0.8438584414223949
+          ],
+          "delta_ci95": [
+            -0.00990219808384841,
+            0.038831074474322706
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "PopPC": {
+      "dataset": "popbert_en",
+      "task": "people_centrism",
+      "metric": "auroc",
+      "n": 1759,
+      "n_clusters": 1,
+      "systems": {
+        "axis": 0.75364920541495,
+        "bart_combined": 0.7711987443594271,
+        "bart_nli": 0.7257994898960173,
+        "political_nli": 0.7544585050029429,
+        "political_combined": 0.7600745536590151
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 1759,
+          "n_clusters": 1,
+          "left": 0.7711987443594271,
+          "right": 0.75364920541495,
+          "delta": 0.017549538944477194,
+          "left_ci95": [
+            0.7093315896001786,
+            0.8295490822861098
+          ],
+          "right_ci95": [
+            0.6864112247650029,
+            0.8154208262956043
+          ],
+          "delta_ci95": [
+            -0.005578555048444756,
+            0.043753656922111736
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 1759,
+          "n_clusters": 1,
+          "left": 0.7711987443594271,
+          "right": 0.7257994898960173,
+          "delta": 0.045399254463409866,
+          "left_ci95": [
+            0.7093315896001786,
+            0.8295490822861098
+          ],
+          "right_ci95": [
+            0.6518160037777326,
+            0.7902437516592077
+          ],
+          "delta_ci95": [
+            -0.02663892915510051,
+            0.11610752340707448
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 1759,
+          "n_clusters": 1,
+          "left": 0.7600745536590151,
+          "right": 0.7544585050029429,
+          "delta": 0.005616048656072237,
+          "left_ci95": [
+            0.6959736636139512,
+            0.8195210894736362
+          ],
+          "right_ci95": [
+            0.6981058135859965,
+            0.8074164986585823
+          ],
+          "delta_ci95": [
+            -0.035427116713496465,
+            0.047290104823269716
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 1759,
+          "n_clusters": 1,
+          "left": 0.7544585050029429,
+          "right": 0.7257994898960173,
+          "delta": 0.02865901510692559,
+          "left_ci95": [
+            0.6981058135859965,
+            0.8074164986585823
+          ],
+          "right_ci95": [
+            0.6518160037777326,
+            0.7902437516592077
+          ],
+          "delta_ci95": [
+            -0.046652017424768245,
+            0.10729322183651929
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "PtAE": {
+      "dataset": "portugal",
+      "task": "anti_elitism",
+      "metric": "auroc",
+      "n": 6214,
+      "n_clusters": 144,
+      "systems": {
+        "axis": 0.76985105348277,
+        "bart_combined": 0.7983821716560546,
+        "bart_nli": 0.7674491919340428,
+        "political_nli": 0.8661297938272583,
+        "political_combined": 0.8342305560896166
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 6214,
+          "n_clusters": 144,
+          "left": 0.7983821716560546,
+          "right": 0.76985105348277,
+          "delta": 0.028531118173284575,
+          "left_ci95": [
+            0.7571931594781365,
+            0.8386959955327418
+          ],
+          "right_ci95": [
+            0.73080139869798,
+            0.8078687607077724
+          ],
+          "delta_ci95": [
+            0.016295522724237715,
+            0.041480120982015534
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 6214,
+          "n_clusters": 144,
+          "left": 0.7983821716560546,
+          "right": 0.7674491919340428,
+          "delta": 0.03093297972201181,
+          "left_ci95": [
+            0.7571931594781365,
+            0.8386959955327418
+          ],
+          "right_ci95": [
+            0.7176862527421571,
+            0.8148827824132959
+          ],
+          "delta_ci95": [
+            -0.006791911087132848,
+            0.07119617828236455
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 6214,
+          "n_clusters": 144,
+          "left": 0.8342305560896166,
+          "right": 0.8661297938272583,
+          "delta": -0.031899237737641695,
+          "left_ci95": [
+            0.7958563263817158,
+            0.8724747836761099
+          ],
+          "right_ci95": [
+            0.836566674125228,
+            0.8930538966054854
+          ],
+          "delta_ci95": [
+            -0.061461202345740394,
+            -0.003439473697771885
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 6214,
+          "n_clusters": 144,
+          "left": 0.8661297938272583,
+          "right": 0.7674491919340428,
+          "delta": 0.09868060189321548,
+          "left_ci95": [
+            0.836566674125228,
+            0.8930538966054854
+          ],
+          "right_ci95": [
+            0.7176862527421571,
+            0.8148827824132959
+          ],
+          "delta_ci95": [
+            0.05847745941861256,
+            0.14128623599083656
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "PtPC": {
+      "dataset": "portugal",
+      "task": "people_centrism",
+      "metric": "auroc",
+      "n": 6214,
+      "n_clusters": 144,
+      "systems": {
+        "axis": 0.6677178642160069,
+        "bart_combined": 0.6953421148141842,
+        "bart_nli": 0.6885972183638172,
+        "political_nli": 0.7403345087777469,
+        "political_combined": 0.7133299989246252
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 6214,
+          "n_clusters": 144,
+          "left": 0.6953421148141842,
+          "right": 0.6677178642160069,
+          "delta": 0.027624250598177302,
+          "left_ci95": [
+            0.6657527840873093,
+            0.7250552414614699
+          ],
+          "right_ci95": [
+            0.6383826736915322,
+            0.6973148331561017
+          ],
+          "delta_ci95": [
+            0.017023692191427953,
+            0.03927819532399396
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 6214,
+          "n_clusters": 144,
+          "left": 0.6953421148141842,
+          "right": 0.6885972183638172,
+          "delta": 0.006744896450367022,
+          "left_ci95": [
+            0.6657527840873093,
+            0.7250552414614699
+          ],
+          "right_ci95": [
+            0.6570395614100742,
+            0.7191773157441798
+          ],
+          "delta_ci95": [
+            -0.02214907827188738,
+            0.03504923354317397
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 6214,
+          "n_clusters": 144,
+          "left": 0.7133299989246252,
+          "right": 0.7403345087777469,
+          "delta": -0.02700450985312164,
+          "left_ci95": [
+            0.684642005125356,
+            0.7422199674551421
+          ],
+          "right_ci95": [
+            0.712641341464896,
+            0.7666131118218737
+          ],
+          "delta_ci95": [
+            -0.047166319610613024,
+            -0.007342246757165938
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 6214,
+          "n_clusters": 144,
+          "left": 0.7403345087777469,
+          "right": 0.6885972183638172,
+          "delta": 0.051737290413929715,
+          "left_ci95": [
+            0.712641341464896,
+            0.7666131118218737
+          ],
+          "right_ci95": [
+            0.6570395614100742,
+            0.7191773157441798
+          ],
+          "delta_ci95": [
+            0.017744879338297475,
+            0.08584778712217504
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    },
+    "Tweets": {
+      "dataset": "antielite_tweets",
+      "task": "anti_elitism",
+      "metric": "auroc",
+      "n": 1059,
+      "n_clusters": 20,
+      "systems": {
+        "axis": 0.7541371607813319,
+        "bart_combined": 0.7556580010455777,
+        "bart_nli": 0.6699253837745354,
+        "political_nli": 0.7049379782329737,
+        "political_combined": 0.7582529347464474
+      },
+      "pairs": {
+        "bart_combined_minus_axis": {
+          "n_matched": 1059,
+          "n_clusters": 20,
+          "left": 0.7556580010455777,
+          "right": 0.7541371607813319,
+          "delta": 0.0015208402642458152,
+          "left_ci95": [
+            0.723946547266506,
+            0.7857057695042439
+          ],
+          "right_ci95": [
+            0.7222079092229733,
+            0.7844943643377962
+          ],
+          "delta_ci95": [
+            -0.005874623208002588,
+            0.008737045557343937
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "bart_combined_minus_bart_nli": {
+          "n_matched": 1059,
+          "n_clusters": 20,
+          "left": 0.7556580010455777,
+          "right": 0.6699253837745354,
+          "delta": 0.08573261727104231,
+          "left_ci95": [
+            0.723946547266506,
+            0.7857057695042439
+          ],
+          "right_ci95": [
+            0.632930721481993,
+            0.7046893218286087
+          ],
+          "delta_ci95": [
+            0.05099814950399278,
+            0.12217843868030002
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_combined_minus_political_nli": {
+          "n_matched": 1059,
+          "n_clusters": 20,
+          "left": 0.7582529347464474,
+          "right": 0.7049379782329737,
+          "delta": 0.05331495651347373,
+          "left_ci95": [
+            0.7249900885071554,
+            0.7887445814809936
+          ],
+          "right_ci95": [
+            0.6683452260915654,
+            0.7402108149502662
+          ],
+          "delta_ci95": [
+            0.02004835448959869,
+            0.0866964226495212
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        },
+        "political_nli_minus_bart_nli": {
+          "n_matched": 1059,
+          "n_clusters": 20,
+          "left": 0.7049379782329737,
+          "right": 0.6699253837745354,
+          "delta": 0.035012594458438295,
+          "left_ci95": [
+            0.6683452260915654,
+            0.7402108149502662
+          ],
+          "right_ci95": [
+            0.632930721481993,
+            0.7046893218286087
+          ],
+          "delta_ci95": [
+            -0.0032634756295046026,
+            0.07332221818263687
+          ],
+          "valid_draws": 4000,
+          "requested_draws": 4000,
+          "resampling": "within"
+        }
+      }
+    }
+  }
+}

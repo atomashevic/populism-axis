@@ -1,0 +1,76 @@
+{
+  "argv": [
+    "--input",
+    "results/apsi_comparison/cache/documents.parquet",
+    "--output-dir",
+    "results/apsi_comparison/large",
+    "--model-size",
+    "large",
+    "--dtype",
+    "float32",
+    "--batch-size",
+    "32"
+  ],
+  "encoder_id": "mlburnham/Political_DEBATE_large_v1.0",
+  "extra": {
+    "batch_size": 32,
+    "chunk_aggregation": "unweighted mean of non-abstained chunk scores; NA if none",
+    "chunk_boundaries": "original-text offsets every premise_budget tokens; no overlap; retokenized chunks retain native max_length=512 truncation",
+    "config_sha256": "71383dd6fbdcbc504396f033b31af75748722a0dae530ab9e3cd47209d290621",
+    "dtype": "float32",
+    "elapsed_seconds": 26671.31826731772,
+    "input_sha256": "bbfe00a43300bd1403dd0cda750b7d434e489b459eb91ccd585046b6a0374e77",
+    "model": {
+      "id": "mlburnham/Political_DEBATE_large_v1.0",
+      "revision": "1a3aff1ecb97ad93a6de598f7414b1707de7e7c3"
+    },
+    "modes": [
+      "native",
+      "chunk"
+    ],
+    "n_documents": 28061,
+    "n_inference_units": 32456,
+    "native_truncation": "longest_first, max_length=512",
+    "peak_cuda_allocated_bytes": 6455181824,
+    "premise_budget": 487,
+    "script_sha256": "25f8eb67cf96357a7ed728b14659b3e782f98cd739d13aab76cadb220e36598a",
+    "torch_cpu_threads": 2,
+    "unit_batch_size": 128
+  },
+  "git": {
+    "branch": "run/apsi-comparison-20261017",
+    "commit": "604c9b750f110d13adefa03b5865b40a5bf7bfa2",
+    "dirty": false
+  },
+  "hostname": "pvgpu2",
+  "inputs": {
+    "config": {
+      "path": "/home/atomasevic/populism-axis-apsi-20261017/anchors/apsi_comparator.json",
+      "sha256": "71383dd6fbdcbc504396f033b31af75748722a0dae530ab9e3cd47209d290621"
+    },
+    "input": {
+      "path": "results/apsi_comparison/cache/documents.parquet",
+      "sha256": "bbfe00a43300bd1403dd0cda750b7d434e489b459eb91ccd585046b6a0374e77"
+    },
+    "script": {
+      "path": "/home/atomasevic/populism-axis-apsi-20261017/scripts/apsi_comparator.py",
+      "sha256": "25f8eb67cf96357a7ed728b14659b3e782f98cd739d13aab76cadb220e36598a"
+    }
+  },
+  "package_version": "0.1.0",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "populism-axis": "0.1.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "torch": "2.14.0+cu126",
+    "transformers": "5.6.2"
+  },
+  "python": "3.14.2",
+  "run_hash": "6bda818d1209f8296c55f5d703084117452667a357d52fd36c7af9a9d87f430e",
+  "schema": "populism_axis.v4.run_manifest.v1",
+  "script": "scripts/apsi_comparator.py",
+  "timestamp_utc": "2026-10-18T03:50:44Z"
+}
